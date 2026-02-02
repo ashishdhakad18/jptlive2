@@ -12,62 +12,72 @@
 </head>
 
 <body>
-  <nav class="bg-white flex flex-col">
-    <!-- Badge -->
-    <div class="nav-badge body-4 bg-red text-white text-center py-3">
-      Delivery within INDIA in time for Christmas if you order by December 19,
-      2025!
-    </div>
-
-    <!-- Navbar -->
-    <div class="container w-full">
-      <div class="flex items-center justify-between h-16">
-
-        <!-- LEFT (Mobile: Menu + Search) -->
-        <div class="flex items-center gap-2 lg:hidden   w-20 h-20">
-          <a href="#" class="nav-link-right flex items-center justify-center rounded-md bg-off-white ">
-            <img src="./Assets/Header-menu.svg" alt="">
-          </a>
-          <a href="#" class="nav-link-right flex items-center justify-center rounded-md bg-off-white ">
-            <img src="./Assets/Header-search.svg" alt="">
-          </a>
+    <nav class="bg-white flex flex-col lg:px-0 px-5 ">
+        <!-- Badge -->
+        <div class="lg:block hidden nav-badge body-4 bg-red text-white text-center py-3">
+            Delivery within INDIA in time for Christmas if you order by December 19,
+            2025!
         </div>
 
-        <!-- LOGO (Center always) -->
-        <img src="./Assets/Logo.svg" alt="Logo" class="nav-logo mx-auto lg:mx-0" />
+        <!-- Navbar -->
+        <div class="container w-full">
+            <div class="flex items-center justify-between h-16">
 
-        <!-- RIGHT (Mobile: Profile + Cart) -->
-        <div class="flex items-center gap-2 lg:hidden   w-20 h-20">
-          <a href="#" class="nav-link-right flex items-center justify-center rounded-md bg-off-white">
-            <img src="./Assets/Header-profile.svg" alt="">
-          </a>
-          <a href="#" class="nav-link-right flex items-center justify-center rounded-md bg-off-white ">
-            <img src="./Assets/Header-cart.svg" alt="">
-          </a>
+                <!-- LEFT (Mobile: Menu + Search) -->
+                <div class="flex items-center gap-2 lg:hidden   w-20 h-20">
+                    <a href="#" class="nav-link-right flex items-center justify-center rounded-md bg-off-white ">
+                        <img src="./Assets/Header-menu.svg" alt="">
+                    </a>
+                    <a href="#" class="nav-link-right flex items-center justify-center rounded-md bg-off-white ">
+                        <img src="./Assets/Header-search.svg" alt="">
+                    </a>
+                </div>
+
+                <!-- LOGO (Center always) -->
+            <div class="mx-auto lg:mx-0 w-[82px] sm:w-[150px] lg:w-[152px] flex-shrink-0">
+  <img
+    src="./Assets/Logo.svg"
+    alt="Logo"
+    class="w-full h-auto object-contain"
+  />
+</div>
+
+
+                <!-- RIGHT (Mobile: Profile + Cart) -->
+                <div class="flex items-center gap-2 lg:hidden   w-20 h-20">
+                    <a href="#" class="nav-link-right flex items-center justify-center rounded-md bg-off-white">
+                        <img src="./Assets/Header-profile.svg" alt="">
+                    </a>
+                    <a href="#" class="nav-link-right flex items-center justify-center rounded-md bg-off-white ">
+                        <img src="./Assets/Header-cart.svg" alt="">
+                    </a>
+                </div>
+
+                <!-- DESKTOP NAV LINKS -->
+                <div class="hidden lg:flex items-center gap-6">
+                    <a href="#"
+                        class="nav-link nav-link-shop active caption-medium-12 rounded-md uppercase px-4">Shop</a>
+                    <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4">JPT
+                        Insiders</a>
+                    <a href="#" class="nav-link nav-link-support caption-medium-12 rounded-md uppercase px-4">Support
+                        HUB</a>
+
+                    <div class="flex gap-2">
+                        <a href="#" class="nav-link-right flex items-center justify-center rounded-md bg-off-white">
+                            <img src="./Assets/Header-search.svg" alt="">
+                        </a>
+                        <a href="#" class="nav-link-right flex items-center justify-center rounded-md bg-off-white">
+                            <img src="./Assets/Header-profile.svg" alt="">
+                        </a>
+                        <a href="#" class="nav-link-right flex items-center justify-center rounded-md bg-off-white">
+                            <img src="./Assets/Header-cart.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
         </div>
-
-        <!-- DESKTOP NAV LINKS -->
-        <div class="hidden lg:flex items-center gap-6">
-          <a href="#" class="nav-link nav-link-shop active caption-medium-12 rounded-md uppercase px-4">Shop</a>
-          <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4">JPT Insiders</a>
-          <a href="#" class="nav-link nav-link-support caption-medium-12 rounded-md uppercase px-4">Support HUB</a>
-
-          <div class="flex gap-2">
-            <a href="#" class="nav-link-right flex items-center justify-center rounded-md bg-off-white">
-              <img src="./Assets/Header-search.svg" alt="">
-            </a>
-            <a href="#" class="nav-link-right flex items-center justify-center rounded-md bg-off-white">
-              <img src="./Assets/Header-profile.svg" alt="">
-            </a>
-            <a href="#" class="nav-link-right flex items-center justify-center rounded-md bg-off-white">
-              <img src="./Assets/Header-cart.svg" alt="">
-            </a>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </nav>
+    </nav>
 
 
   <!-- Bestsellers Section -->
@@ -4149,7 +4159,8 @@
 
 
   <!-- Meet the Insiders Section -->
-  <section class="lg:py-20 py-10">
+   <div class="bg-black">
+  <section class=" bg-white lg:py-20 py-10 overflow-hidden lg:rounded-b-[40px] rounded-b-[24px]">
     <div class="grid grid-cols-1 md:grid-cols-2 justify-between gap-6 items-center lg:px-40 px-5">
       <!-- Text Content -->
       <div class="flex flex-col gap-4">
@@ -4171,7 +4182,7 @@
       </div>
     </div>
   </section>
-
+</div>
   <!-- Footer Section -->
   <footer class="bg-black text-white lg:py-16 py-10">
     <div class=" lg:px-40 px-5 flex flex-col lg:gap-12 gap-8 ">

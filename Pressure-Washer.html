@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <nav class="bg-white flex flex-col">
+        <!-- Badge -->
+        <div class="nav-badge body-4 bg-red text-white text-center py-3">
+            Delivery within INDIA in time for Christmas if you order by December 19,
+            2025!
+        </div>
+
+        <!-- Navbar -->
+        <div class="container w-full">
+            <div class="flex items-center justify-between h-16">
+
+                <!-- LEFT (Mobile: Menu + Search) -->
+                <div class="flex items-center gap-2 lg:hidden   w-20 h-20">
+                    <a href="#" class="nav-link-right flex items-center justify-center rounded-md bg-off-white ">
+                        <img src="./Assets/Header-menu.svg" alt="">
+                    </a>
+                    <a href="#" class="nav-link-right flex items-center justify-center rounded-md bg-off-white ">
+                        <img src="./Assets/Header-search.svg" alt="">
+                    </a>
+                </div>
+
+                <!-- LOGO (Center always) -->
+                <img src="./Assets/Logo.svg" alt="Logo" class="nav-logo mx-auto lg:mx-0 " />
+
+                <!-- RIGHT (Mobile: Profile + Cart) -->
+                <div class="flex items-center gap-2 lg:hidden   w-20 h-20">
+                    <a href="#" class="nav-link-right flex items-center justify-center rounded-md bg-off-white">
+                        <img src="./Assets/Header-profile.svg" alt="">
+                    </a>
+                    <a href="#" class="nav-link-right flex items-center justify-center rounded-md bg-off-white ">
+                        <img src="./Assets/Header-cart.svg" alt="">
+                    </a>
+                </div>
+
+                <!-- DESKTOP NAV LINKS -->
+                <div class="hidden lg:flex items-center gap-6">
+                    <a href="#"
+                        class="nav-link nav-link-shop active caption-medium-12 rounded-md uppercase px-4">Shop</a>
+                    <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4">JPT
+                        Insiders</a>
+                    <a href="#" class="nav-link nav-link-support caption-medium-12 rounded-md uppercase px-4">Support
+                        HUB</a>
+
+                    <div class="flex gap-2">
+                        <a href="#" class="nav-link-right flex items-center justify-center rounded-md bg-off-white">
+                            <img src="./Assets/Header-search.svg" alt="">
+                        </a>
+                        <a href="#" class="nav-link-right flex items-center justify-center rounded-md bg-off-white">
+                            <img src="./Assets/Header-profile.svg" alt="">
+                        </a>
+                        <a href="#" class="nav-link-right flex items-center justify-center rounded-md bg-off-white">
+                            <img src="./Assets/Header-cart.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+        class="relative h-[500px] md:h-[700px] bg-[url('./Assets/pressure-washer-hero.png')] bg-cover bg-[center_top] md:bg-center">
+        <!-- Overlay for better text readability on mobile if needed -->
+        <!-- <div class="absolute inset-0 bg-black/10 md:bg-transparent"></div> -->
+
+        <div class="container h-full relative">
+            <div
+                class="absolute bottom-16 left-4 right-4 md:bottom-[130px] md:left-[160px] md:right-auto flex flex-col gap-6 items-start">
+                <h1
+                    class="lg:text-display text-[32px] md:text-[48px]  leading-[1.1] md:text-display font-bold text-[#fff] uppercase drop-shadow-md">
+                    Pressure <br>Washer
+                </h1>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="py-12 bg-off-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-7">
+
+                <!-- ========== FILTERS ========== -->
+                <aside class="lg:col-span-1 hidden lg:block">
+                    <h6 class="heading-h6 mb-8 border-b border-[#E5E5E5] pb-5 ">Filters</h6>
+
+                    <!-- Categories -->
+                    <div class="mb-12 border-b border-[#E5E5E5] pb-6">
+                        <p class=" text-[#535559] body-1-regular mb-3">CATEGORIES</p>
+                        <p class="body-2 mb-2 text-[#1D1D1F]">Pressure Washer</p>
+
+                        <label class="flex items-center gap-2 text-sm text-[#7F7F7F] mb-2 cursor-pointer">
+                            <input type="checkbox" value="domestic" class="category-checkbox-sidebar accent-black">
+                            Domestic Pressure Washer
+                        </label>
+
+                        <label class="flex items-center gap-2 text-sm text-[#7F7F7F] cursor-pointer">
+                            <input type="checkbox" value="commercial" class="category-checkbox-sidebar accent-black">
+                            Commercial Pressure Washer
+                        </label>
+                    </div>
+
+                    <!-- Price Range -->
+                    <div class=" border-b border-[#E5E5E5] pb-6">
+                        <p class="body-2-regular text-[#535559] mb-6">PRICE RANGE</p>
+                        <div class="price-slider-container" id="sidebarPriceSlider">
+                            <div class="price-slider-track-bg"></div>
+                            <div class="price-slider-track-active" style="left: 0%; right: 60%;"></div>
+                            <div class="price-slider-handle handle-min" style="left: 0%;"></div>
+                            <div class="price-slider-handle handle-max" style="left: 40%;"></div>
+                        </div>
+                        <p class="body-2 text-[#535559] mt-5 price-label">Rs. 3000 - Rs. 6000</p>
+                    </div>
+                </aside>
+
+                <!-- ========== PRODUCTS ========== -->
+                <div class="lg:col-span-3">
+                    <!-- Mobile Filter Button -->
+                    <div class="mobile-filter-btn lg:hidden" id="mobileFilterOpen">
+                        <h6 class="heading-h6 text-black">Filters</h6>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2">
+                            <path d="M6 9l6 6 6-6" />
+                        </svg>
+                    </div>
+
+                    <h6 id="resultsCount"
+                        class="text-[#535559] lg:block hidden    body-1-regular border-b border-[#E5E5E5] pb-6  mb-8">
+                        Showing 1 - 4 of 4 Results for
+                        <span class="font-semibold text-black">Pressure Washers</span>
+                    </h6>
+
+                    <!-- Product Grid -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-7">
+
+                        <!-- Card -->
+                        <!-- Card 1 -->
+                        <div data-category="domestic"
+                            class="product-card card flex flex-col justify-between rounded-2xl bg-white  hover:scale-[1.02] transition-all duration-300 snap-center">
+                            <div class="card-header flex justify-center relative p-6">
+                                <img src="./Assets/Product-1.png" alt="Product-1"
+                                    class="w-full h-auto object-contain max-h-[250px]" />
+                                <div class="card-badges absolute top-4 right-4">
+                                    <div class="card-badge bg-red px-3 py-1 rounded-md body-4 font-bold text-white">
+                                        Trending
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body py-4 px-6 flex flex-col gap-4">
+
+                                <div class="card-rating flex items-center justify-start gap-2">
+                                    <span
+                                        class="bg-green px-2.5 py-1 rounded-md body-3 font-bold flex items-center text-black">
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="black"
+                                            xmlns="http://www.w3.org/2000/svg" class="mr-1">
+                                            <path
+                                                d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
+                                        </svg>4.6
+                                    </span>
+                                    <p class="body-3 font-medium text-[#7f7f7f]">(36)</p>
+                                </div>
+                                <h4 class="card-heading text-xl md:text-h4 font-bold">Pressure Washer</h4>
+                                <p class="card-description body-2 font-medium text-[#7f7f7f] line-clamp-2">
+                                    JPT Combo Domestic F10 Pressure Washer With Heavy-Duty Snow Foam Cannon
+                                </p>
+                            </div>
+                            <div class="card-footer flex items-center justify-between flex-wrap gap-2 p-6 pt-0">
+                                <span class="flex flex-col whitespace-nowrap">
+                                    <p class="original-price body-5 line-through font-medium text-[#7f7f7f]">Rs. 3,600
+                                    </p>
+                                    <h5 class="discount-price text-xl md:text-h5 font-black text-black">Rs. 3,500</h5>
+                                </span>
+                                <button
+                                    class="bg-black text-white px-6 py-2 rounded-xl font-bold hover:bg-black/80 transition-colors">Add
+                                    to Cart</button>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div data-category="commercial"
+                            class="product-card card flex flex-col justify-between rounded-2xl bg-white hover:scale-[1.02] transition-all duration-300 snap-center">
+                            <div class="card-header flex justify-center relative p-6">
+                                <img src="./Assets/Product-1.png" alt="Product-1"
+                                    class="w-full h-auto object-contain max-h-[250px]" />
+                                <div class="card-badges absolute top-4 right-4">
+                                    <div class="card-badge bg-red px-3 py-1 rounded-md body-4 font-bold text-white">
+                                        Trending
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body py-4 px-6 flex flex-col gap-4">
+
+                                <div class="card-rating flex items-center justify-start gap-2">
+                                    <span
+                                        class="bg-green px-2.5 py-1 rounded-md body-3 font-bold flex items-center text-black">
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="black"
+                                            xmlns="http://www.w3.org/2000/svg" class="mr-1">
+                                            <path
+                                                d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
+                                        </svg>4.6
+                                    </span>
+                                    <p class="body-3 font-medium text-[#7f7f7f]">(36)</p>
+                                </div>
+                                <h4 class="card-heading text-xl md:text-h4 font-bold">Pressure Washer</h4>
+                                <p class="card-description body-2 font-medium text-[#7f7f7f] line-clamp-2">
+                                    JPT Combo Domestic F10 Pressure Washer With Heavy-Duty Snow Foam Cannon
+                                </p>
+                            </div>
+                            <div class="card-footer flex items-center justify-between flex-wrap gap-2 p-6 pt-0">
+                                <span class="flex flex-col whitespace-nowrap">
+                                    <p class="original-price body-5 line-through font-medium text-[#7f7f7f]">Rs. 3,600
+                                    </p>
+                                    <h5 class="discount-price text-xl md:text-h5 font-black text-black">Rs. 7200</h5>
+                                </span>
+                                <button
+                                    class="bg-black text-white px-6 py-2 rounded-xl font-bold hover:bg-black/80 transition-colors">Add
+                                    to Cart</button>
+                            </div>
+                        </div>
+
+                        <!-- Card 1 -->
+                        <div data-category="domestic"
+                            class="product-card card flex flex-col justify-between rounded-2xl bg-white  hover:scale-[1.02] transition-all duration-300 snap-center">
+                            <div class="card-header flex justify-center relative p-6">
+                                <img src="./Assets/Product-1.png" alt="Product-1"
+                                    class="w-full h-auto object-contain max-h-[250px]" />
+                                <div class="card-badges absolute top-4 right-4">
+                                    <div class="card-badge bg-red px-3 py-1 rounded-md body-4 font-bold text-white">
+                                        Trending
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body py-4 px-6 flex flex-col gap-4">
+
+                                <div class="card-rating flex items-center justify-start gap-2">
+                                    <span
+                                        class="bg-green px-2.5 py-1 rounded-md body-3 font-bold flex items-center text-black">
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="black"
+                                            xmlns="http://www.w3.org/2000/svg" class="mr-1">
+                                            <path
+                                                d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
+                                        </svg>4.6
+                                    </span>
+                                    <p class="body-3 font-medium text-[#7f7f7f]">(36)</p>
+                                </div>
+                                <h4 class="card-heading text-xl md:text-h4 font-bold">Pressure Washer</h4>
+                                <p class="card-description body-2 font-medium text-[#7f7f7f] line-clamp-2">
+                                    JPT Combo Domestic F10 Pressure Washer With Heavy-Duty Snow Foam Cannon
+                                </p>
+                            </div>
+                            <div class="card-footer flex items-center justify-between flex-wrap gap-2 p-6 pt-0">
+                                <span class="flex flex-col whitespace-nowrap">
+                                    <p class="original-price body-5 line-through font-medium text-[#7f7f7f]">Rs. 3,600
+                                    </p>
+                                    <h5 class="discount-price text-xl md:text-h5 font-black text-black">Rs. 3,500</h5>
+                                </span>
+                                <button
+                                    class="bg-black text-white px-6 py-2 rounded-xl font-bold hover:bg-black/80 transition-colors">Add
+                                    to Cart</button>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div data-category="commercial"
+                            class="product-card card flex flex-col justify-between rounded-2xl bg-white hover:scale-[1.02] transition-all duration-300 snap-center">
+                            <div class="card-header flex justify-center relative p-6">
+                                <img src="./Assets/Product-1.png" alt="Product-1"
+                                    class="w-full h-auto object-contain max-h-[250px]" />
+                                <div class="card-badges absolute top-4 right-4">
+                                    <div class="card-badge bg-red px-3 py-1 rounded-md body-4 font-bold text-white">
+                                        Trending
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body py-4 px-6 flex flex-col gap-4">
+
+                                <div class="card-rating flex items-center justify-start gap-2">
+                                    <span
+                                        class="bg-green px-2.5 py-1 rounded-md body-3 font-bold flex items-center text-black">
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="black"
+                                            xmlns="http://www.w3.org/2000/svg" class="mr-1">
+                                            <path
+                                                d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
+                                        </svg>4.6
+                                    </span>
+                                    <p class="body-3 font-medium text-[#7f7f7f]">(36)</p>
+                                </div>
+                                <h4 class="card-heading text-xl md:text-h4 font-bold">Pressure Washer</h4>
+                                <p class="card-description body-2 font-medium text-[#7f7f7f] line-clamp-2">
+                                    JPT Combo Domestic F10 Pressure Washer With Heavy-Duty Snow Foam Cannon
+                                </p>
+                            </div>
+                            <div class="card-footer flex items-center justify-between flex-wrap gap-2 p-6 pt-0">
+                                <span class="flex flex-col whitespace-nowrap">
+                                    <p class="original-price body-5 line-through font-medium text-[#7f7f7f]">Rs. 3,600
+                                    </p>
+                                    <h5 class="discount-price text-xl md:text-h5 font-black text-black">Rs. 3,500</h5>
+                                </span>
+                                <button
+                                    class="bg-black text-white px-6 py-2 rounded-xl font-bold hover:bg-black/80 transition-colors">Add
+                                    to Cart</button>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div data-category="domestic"
+                            class="product-card card flex flex-col justify-between rounded-2xl bg-white hover:scale-[1.02] transition-all duration-300 snap-center">
+                            <div class="card-header flex justify-center relative p-6">
+                                <img src="./Assets/Product-1.png" alt="Product-1"
+                                    class="w-full h-auto object-contain max-h-[250px]" />
+                                <div class="card-badges absolute top-4 right-4">
+                                    <div class="card-badge bg-red px-3 py-1 rounded-md body-4 font-bold text-white">
+                                        Trending
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body py-4 px-6 flex flex-col gap-4">
+
+                                <div class="card-rating flex items-center justify-start gap-2">
+                                    <span
+                                        class="bg-green px-2.5 py-1 rounded-md body-3 font-bold flex items-center text-black">
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="black"
+                                            xmlns="http://www.w3.org/2000/svg" class="mr-1">
+                                            <path
+                                                d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
+                                        </svg>4.6
+                                    </span>
+                                    <p class="body-3 font-medium text-[#7f7f7f]">(36)</p>
+                                </div>
+                                <h4 class="card-heading text-xl md:text-h4 font-bold">Pressure Washer</h4>
+                                <p class="card-description body-2 font-medium text-[#7f7f7f] line-clamp-2">
+                                    JPT Combo Domestic F10 Pressure Washer With Heavy-Duty Snow Foam Cannon
+                                </p>
+                            </div>
+                            <div class="card-footer flex items-center justify-between flex-wrap gap-2 p-6 pt-0">
+                                <span class="flex flex-col whitespace-nowrap">
+                                    <p class="original-price body-5 line-through font-medium text-[#7f7f7f]">Rs. 3,600
+                                    </p>
+                                    <h5 class="discount-price text-xl md:text-h5 font-black text-black">Rs. 3,500</h5>
+                                </span>
+                                <button
+                                    class="bg-black text-white px-6 py-2 rounded-xl font-bold hover:bg-black/80 transition-colors">Add
+                                    to Cart</button>
+                            </div>
+                        </div>
+
+                        <!-- Card 4 -->
+                        <div data-category="commercial"
+                            class="product-card card flex flex-col justify-between rounded-2xl bg-white hover:scale-[1.02] transition-all duration-300 snap-center">
+                            <div class="card-header flex justify-center relative p-6">
+                                <img src="./Assets/Product-1.png" alt="Product-1"
+                                    class="w-full h-auto object-contain max-h-[250px]" />
+                                <div class="card-badges absolute top-4 right-4">
+                                    <div class="card-badge bg-red px-3 py-1 rounded-md body-4 font-bold text-white">
+                                        Trending
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body py-4 px-6 flex flex-col gap-4">
+
+                                <div class="card-rating flex items-center justify-start gap-2">
+                                    <span
+                                        class="bg-green px-2.5 py-1 rounded-md body-3 font-bold flex items-center text-black">
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="black"
+                                            xmlns="http://www.w3.org/2000/svg" class="mr-1">
+                                            <path
+                                                d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
+                                        </svg>4.6
+                                    </span>
+                                    <p class="body-3 font-medium text-[#7f7f7f]">(36)</p>
+                                </div>
+                                <h4 class="card-heading text-xl md:text-h4 font-bold">Pressure Washer</h4>
+                                <p class="card-description body-2 font-medium text-[#7f7f7f] line-clamp-2">
+                                    JPT Combo Domestic F10 Pressure Washer With Heavy-Duty Snow Foam Cannon
+                                </p>
+                            </div>
+                            <div class="card-footer flex items-center justify-between flex-wrap gap-2 p-6 pt-0">
+                                <span class="flex flex-col whitespace-nowrap">
+                                    <p class="original-price body-5 line-through font-medium text-[#7f7f7f]">Rs. 3,600
+                                    </p>
+                                    <h5 class="discount-price text-xl md:text-h5 font-black text-black">Rs. 3,500</h5>
+                                </span>
+                                <button
+                                    class="bg-black text-white px-6 py-2 rounded-xl font-bold hover:bg-black/80 transition-colors">Add
+                                    to Cart</button>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div data-category="domestic"
+                            class="product-card card flex flex-col justify-between rounded-2xl bg-white hover:scale-[1.02] transition-all duration-300 snap-center">
+                            <div class="card-header flex justify-center relative p-6">
+                                <img src="./Assets/Product-1.png" alt="Product-1"
+                                    class="w-full h-auto object-contain max-h-[250px]" />
+                                <div class="card-badges absolute top-4 right-4">
+                                    <div class="card-badge bg-red px-3 py-1 rounded-md body-4 font-bold text-white">
+                                        Trending
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body py-4 px-6 flex flex-col gap-4">
+
+                                <div class="card-rating flex items-center justify-start gap-2">
+                                    <span
+                                        class="bg-green px-2.5 py-1 rounded-md body-3 font-bold flex items-center text-black">
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="black"
+                                            xmlns="http://www.w3.org/2000/svg" class="mr-1">
+                                            <path
+                                                d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
+                                        </svg>4.6
+                                    </span>
+                                    <p class="body-3 font-medium text-[#7f7f7f]">(36)</p>
+                                </div>
+                                <h4 class="card-heading text-xl md:text-h4 font-bold">Pressure Washer 2</h4>
+                                <p class="card-description body-2 font-medium text-[#7f7f7f] line-clamp-2">
+                                    JPT Combo Domestic F10 Pressure Washer With Heavy-Duty Snow Foam Cannon
+                                </p>
+                            </div>
+                            <div class="card-footer flex items-center justify-between flex-wrap gap-2 p-6 pt-0">
+                                <span class="flex flex-col whitespace-nowrap">
+                                    <p class="original-price body-5 line-through font-medium text-[#7f7f7f]">Rs. 3,600
+                                    </p>
+                                    <h5 class="discount-price text-xl md:text-h5 font-black text-black">Rs. 3,500</h5>
+                                </span>
+                                <button
+                                    class="bg-black text-white px-6 py-2 rounded-xl font-bold hover:bg-black/80 transition-colors">Add
+                                    to Cart</button>
+                            </div>
+                        </div>
+
+                        <!-- Card 4 -->
+                        <div data-category="commercial"
+                            class="product-card card flex flex-col justify-between rounded-2xl bg-white hover:scale-[1.02] transition-all duration-300 snap-center">
+                            <div class="card-header flex justify-center relative p-6">
+                                <img src="./Assets/Product-1.png" alt="Product-1"
+                                    class="w-full h-auto object-contain max-h-[250px]" />
+                                <div class="card-badges absolute top-4 right-4">
+                                    <div class="card-badge bg-red px-3 py-1 rounded-md body-4 font-bold text-white">
+                                        Trending
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body py-4 px-6 flex flex-col gap-4">
+
+                                <div class="card-rating flex items-center justify-start gap-2">
+                                    <span
+                                        class="bg-green px-2.5 py-1 rounded-md body-3 font-bold flex items-center text-black">
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="black"
+                                            xmlns="http://www.w3.org/2000/svg" class="mr-1">
+                                            <path
+                                                d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
+                                        </svg>4.6
+                                    </span>
+                                    <p class="body-3 font-medium text-[#7f7f7f]">(36)</p>
+                                </div>
+                                <h4 class="card-heading text-xl md:text-h4 font-bold">Pressure Washer 3</h4>
+                                <p class="card-description body-2 font-medium text-[#7f7f7f] line-clamp-2">
+                                    JPT Combo Domestic F10 Pressure Washer With Heavy-Duty Snow Foam Cannon
+                                </p>
+                            </div>
+                            <div class="card-footer flex items-center justify-between flex-wrap gap-2 p-6 pt-0">
+                                <span class="flex flex-col whitespace-nowrap">
+                                    <p class="original-price body-5 line-through font-medium text-[#7f7f7f]">Rs. 3,600
+                                    </p>
+                                    <h5 class="discount-price text-xl md:text-h5 font-black text-black">Rs. 3,500</h5>
+                                </span>
+                                <button
+                                    class="bg-black text-white px-6 py-2 rounded-xl font-bold hover:bg-black/80 transition-colors">Add
+                                    to Cart</button>
+                            </div>
+                        </div>
+                        <!-- Copy this card as many times as needed -->
+
+                    </div>
+
+                    <!-- Pagination -->
+                    <div id="paginationContainer" class="flex justify-center items-center gap-4 mt-8 text-sm">
+                        <button id="prevPage"
+                            class="text-[#7F7F7F] body-1-regular cursor-pointer disabled:opacity-50">Previous</button>
+                        <div id="pageNumbers" class="flex gap-2">
+                            <!-- Page buttons will be injected here -->
+                        </div>
+                        <button id="nextPage"
+                            class="text-[#1D1D1F] body-1-regular cursor-pointer disabled:opacity-50">Next</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black text-white lg:py-16 py-10">
+        <div class=" lg:px-40 px-5 flex flex-col lg:gap-12 gap-8 ">
+            <div class=" ">
+                <img src="./Assets/Logo.svg" alt="JPT Logo" class="w-32 h-auto" />
+            </div>
+            <div class="flex flex-col lg:flex-row justify-between lg:gap-12 gap-10  ">
+                <!-- Brand Column -->
+                <div class="flex flex-col gap-8">
+
+                    <div class="flex flex-col gap-9">
+                        <div>
+                            <p class="body-semibold caption-medium-14 text-[#F5F5F5] leading-relaxed max-w-[320px]">
+                                38, Jain Colony, Behind Mann Mandir Hotel,<br>
+                                Rau, Indore, Madhya Pradesh 453331 - India
+                            </p>
+                        </div>
+                        <div class="flex flex-col ">
+                            <p class="text-h7 font-bold text-white">For help, reach out to our community care</p>
+                            <div class="flex flex-col ">
+                                <a href="mailto:support@jpttools.com"
+                                    class="text-sm text-[#F5F5F5]  w-fit">support@jpttools.com</a>
+                                <a href="tel:+919821551009" class="text-sm text-[#F5F5F5] transition-colors w-fit">+91
+                                    9821551009</a>
+                                <div class="flex flex-wrap items-center gap-2">
+                                    <a href="#"
+                                        class="text-h7 font-bold text-[#F5F5F5] border-b border-white w-fit hover:text-red hover:border-red transition-all pb-0.5">
+                                        Whatsapp Us
+                                    </a>
+                                    <span class="text-[#F5F5F5] text-sm">(11am to 6pm • Mon to Sat)</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Links Sections -->
+                <div class="flex flex-col md:flex-row lg:gap-12 gap-8 md:gap-20 ">
+                    <!-- Terms and Policies -->
+                    <div class="flex flex-col gap-6">
+                        <h6 class="text-white text-lg font-bold! uppercase caption-medium-14">Terms and Policies</h6>
+                        <ul class="flex flex-col gap-6">
+                            <li><a href="#" class="body-3 text-white/90 hover:text-white transition-colors">Terms of
+                                    Services</a></li>
+                            <li><a href="#" class="body-3 text-white/90 hover:text-white transition-colors">Return &
+                                    Refund Policy</a></li>
+                            <li><a href="#" class="body-3 text-white/90 hover:text-white transition-colors">Privacy
+                                    Policy</a></li>
+                            <li><a href="#" class="body-3 text-white/90 hover:text-white transition-colors">Shipping
+                                    Policy</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Report an Issue -->
+                    <div class="flex flex-col gap-6">
+                        <h6 class="text-white text-lg font-bold! uppercase caption-medium-14 ">Report an Issue</h6>
+                        <ul class="flex flex-col gap-6">
+                            <li><a href="#" class="body-3 text-white/90 hover:text-white transition-colors">Return a
+                                    Product</a></li>
+                            <li><a href="#" class="body-3 text-white/90 hover:text-white transition-colors">Report a
+                                    Problem Issue</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Customer Support -->
+                    <div class="flex flex-col gap-6">
+                        <h6 class="text-white text-lg font-bold! uppercase caption-medium-14 ">Customer Support</h6>
+                        <ul class="flex flex-col gap-6">
+                            <li><a href="#" class="body-3 text-white/90 hover:text-white transition-colors">Track My
+                                    Order</a></li>
+                            <li><a href="#" class="body-3 text-white/90 hover:text-white transition-colors">Warranty
+                                    Claim</a></li>
+                            <li><a href="#" class="body-3 text-white/90 hover:text-white transition-colors">Blog /
+                                    Resources</a></li>
+                            <li><a href="#" class="body-3 text-white/90 hover:text-white transition-colors">Contact
+                                    Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col   gap-12 ">
+                <div class="flex gap-4 items-center">
+                    <a href="#"
+                        class="w-6 h-6 flex items-center justify-center opacity-90 hover:opacity-100 transition-opacity">
+                        <img src="./Assets/Instagram-footer.svg" alt="Instagram" class="w-full h-full" />
+                    </a>
+                    <a href="#"
+                        class="w-6 h-6 flex items-center justify-center opacity-90 hover:opacity-100 transition-opacity">
+                        <img src="./Assets/Facebook-footer.svg" alt="Facebook" class="w-full h-full" />
+                    </a>
+                    <a href="#"
+                        class="w-6 h-6 flex items-center justify-center opacity-90 hover:opacity-100 transition-opacity">
+                        <img src="./Assets/Youtube-footer.svg" alt="Youtube" class="w-full h-full" />
+                    </a>
+                </div>
+
+                <!-- Bottom Footer -->
+                <div class="">
+                    <div class="">
+                        <p class="body-3 text-white/60">© 2026, JPT</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
+
+
+
+
+
+
+    <!-- Filter Modal Popup -->
+    <div class="filter-modal-overlay" id="filterModalOverlay">
+        <div class="filter-modal-container">
+            <!-- Categories -->
+            <div class="mb-10 border-b border-[#E5E5E5] pb-6">
+                <p class="text-[#535559] body-1-regular mb-4 uppercase tracking-wider">CATEGORIES</p>
+                <div class="flex items-center gap-2 mb-4">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="3">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg>
+                    <p class="body-1-semibold text-[#1D1D1F]">Pressure Washer</p>
+                </div>
+
+                <label class="flex items-center gap-3 text-lg text-[#7F7F7F] mb-4 cursor-pointer">
+                    <input type="checkbox" value="domestic"
+                        class="category-checkbox-modal w-5 h-5 accent-black rounded border-grey-light">
+                    Domestic Pressure Washer
+                </label>
+
+                <label class="flex items-center gap-3 text-lg text-[#7F7F7F] cursor-pointer">
+                    <input type="checkbox" value="commercial"
+                        class="category-checkbox-modal w-5 h-5 accent-black rounded border-grey-light">
+                    Commercial Pressure Washer
+                </label>
+            </div>
+
+            <!-- Price Range -->
+            <div class="mb-6">
+                <p class="body-1-regular text-[#535559] mb-8 uppercase tracking-wider">PRICE RANGE</p>
+                <div class="price-slider-container" id="modalPriceSlider">
+                    <div class="price-slider-track-bg"></div>
+                    <div class="price-slider-track-active" style="left: 0%; right: 60%;"></div>
+                    <div class="price-slider-handle handle-min" style="left: 0%;"></div>
+                    <div class="price-slider-handle handle-max" style="left: 40%;"></div>
+                </div>
+                <p class="body-2 text-[#535559] mt-6 font-medium price-label">Rs. 0 - Rs. 4000</p>
+            </div>
+
+            <div class="filter-modal-footer">
+                <button class="btn-filter-clear">Clear Filter</button>
+                <button class="btn-filter-apply">Apply Filter</button>
+            </div>
+
+            <!-- Close Button Outer -->
+            <div class="filter-modal-close-outer" id="filterModalClose">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2">
+                    <path d="M18 6L6 18M6 6l12 12" />
+                </svg>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Filter Modal Logic
+        const overlay = document.getElementById('filterModalOverlay');
+        const openBtn = document.getElementById('mobileFilterOpen');
+        const closeBtn = document.getElementById('filterModalClose');
+
+        if (openBtn && overlay) {
+            openBtn.addEventListener('click', () => {
+                overlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            });
+        }
+
+        if (closeBtn && overlay) {
+            closeBtn.addEventListener('click', () => {
+                overlay.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+        }
+
+        if (overlay) {
+            overlay.addEventListener('click', (e) => {
+                if (e.target === overlay) {
+                    overlay.classList.remove('active');
+                    document.body.style.overflow = '';
+                }
+            });
+        }
+
+        // Price Slider Logic
+        function initPriceSlider(containerId) {
+            const container = document.getElementById(containerId);
+            if (!container) return;
+
+            const handleMin = container.querySelector('.handle-min');
+            const handleMax = container.querySelector('.handle-max');
+            const activeTrack = container.querySelector('.price-slider-track-active');
+            const label = container.parentElement.querySelector('.price-label');
+
+            let maxBound = 10000;
+            let currentMinPercent = parseFloat(handleMin.style.left) || 0;
+            let currentMaxPercent = parseFloat(handleMax.style.left) || 100;
+
+            function updateDisplay() {
+                const minVal = Math.round((currentMinPercent / 100) * maxBound);
+                const maxVal = Math.round((currentMaxPercent / 100) * maxBound);
+
+                handleMin.style.left = currentMinPercent + '%';
+                handleMax.style.left = currentMaxPercent + '%';
+                activeTrack.style.left = currentMinPercent + '%';
+                activeTrack.style.right = (100 - currentMaxPercent) + '%';
+
+                if (label) {
+                    label.textContent = `Rs. ${minVal.toLocaleString()} - Rs. ${maxVal.toLocaleString()}`;
+                }
+            }
+
+            function onMove(e, handleType) {
+                const rect = container.getBoundingClientRect();
+                const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+                let percent = ((clientX - rect.left) / rect.width) * 100;
+                percent = Math.max(0, Math.min(100, percent));
+
+                if (handleType === 'min') {
+                    if (percent < currentMaxPercent - 5) {
+                        currentMinPercent = percent;
+                    }
+                } else {
+                    if (percent > currentMinPercent + 5) {
+                        currentMaxPercent = percent;
+                    }
+                }
+                updateDisplay();
+            }
+
+            function setupHandle(handle, type) {
+                const moveHandler = (e) => onMove(e, type);
+                const upHandler = () => {
+                    document.removeEventListener('mousemove', moveHandler);
+                    document.removeEventListener('mouseup', upHandler);
+                    document.removeEventListener('touchmove', moveHandler);
+                    document.removeEventListener('touchend', upHandler);
+                };
+
+                handle.addEventListener('mousedown', (e) => {
+                    e.preventDefault();
+                    document.addEventListener('mousemove', moveHandler);
+                    document.addEventListener('mouseup', upHandler);
+                });
+
+                handle.addEventListener('touchstart', (e) => {
+                    e.preventDefault();
+                    document.addEventListener('touchmove', moveHandler, { passive: false });
+                    document.addEventListener('touchend', upHandler);
+                }, { passive: false });
+            }
+
+            setupHandle(handleMin, 'min');
+            setupHandle(handleMax, 'max');
+            updateDisplay();
+        }
+
+        initPriceSlider('sidebarPriceSlider');
+        initPriceSlider('modalPriceSlider');
+
+        // --- Category Filtering & Pagination Logic ---
+        const sidebarCheckboxes = document.querySelectorAll('.category-checkbox-sidebar');
+        const modalCheckboxes = document.querySelectorAll('.category-checkbox-modal');
+        const productCards = document.querySelectorAll('.product-card');
+        const resultsCountLabel = document.getElementById('resultsCount');
+
+        const prevBtn = document.getElementById('prevPage');
+        const nextBtn = document.getElementById('nextPage');
+        const pageNumbersContainer = document.getElementById('pageNumbers');
+
+        let currentPage = 1;
+        const itemsPerPage = 4; // Max 4 cards on desktop (and generally)
+        let filteredCards = [];
+
+        function updatePagination() {
+            const totalPages = Math.ceil(filteredCards.length / itemsPerPage);
+
+            // Boundary checks
+            if (currentPage < 1) currentPage = 1;
+            if (currentPage > totalPages) currentPage = totalPages;
+
+            // Hide/Show cards based on current page
+            productCards.forEach(card => card.style.display = 'none');
+
+            const start = (currentPage - 1) * itemsPerPage;
+            const end = start + itemsPerPage;
+            const currentItems = filteredCards.slice(start, end);
+
+            currentItems.forEach(card => card.style.display = 'flex');
+
+            // Generate Page Numbers
+            pageNumbersContainer.innerHTML = '';
+            for (let i = 1; i <= totalPages; i++) {
+                const span = document.createElement('span');
+                span.className = `w-8 h-8 flex items-center justify-center rounded-full cursor-pointer transition-all ${i === currentPage ? 'bg-black text-white' : 'border border-[#E5E5E5] text-[#1D1D1F] hover:bg-gray-100'}`;
+                span.textContent = i;
+                span.addEventListener('click', () => {
+                    currentPage = i;
+                    updatePagination();
+                });
+                pageNumbersContainer.appendChild(span);
+            }
+
+            // Update Previous/Next Buttons
+            prevBtn.disabled = currentPage === 1;
+            nextBtn.disabled = currentPage === totalPages || totalPages === 0;
+
+            // Visual style for disabled buttons
+            prevBtn.style.opacity = prevBtn.disabled ? '0.5' : '1';
+            nextBtn.style.opacity = nextBtn.disabled ? '0.5' : '1';
+
+            // Update results count label
+            if (resultsCountLabel) {
+                const totalCount = filteredCards.length;
+                const startItem = totalCount > 0 ? (currentPage - 1) * itemsPerPage + 1 : 0;
+                const endItem = Math.min(currentPage * itemsPerPage, totalCount);
+                resultsCountLabel.innerHTML = `Showing ${startItem} - ${endItem} of ${totalCount} Results for <span class="font-semibold text-black">Pressure Washers</span>`;
+            }
+        }
+
+        function filterProducts() {
+            const checkedCategories = Array.from(sidebarCheckboxes)
+                .filter(cb => cb.checked)
+                .map(cb => cb.value);
+
+            // First, filter by category
+            filteredCards = Array.from(productCards).filter(card => {
+                const cardCategory = card.dataset.category;
+                return (checkedCategories.length === 0 || checkedCategories.includes(cardCategory));
+            });
+
+            // Reset to page 1 when filter changes
+            currentPage = 1;
+            updatePagination();
+        }
+
+        // Pagination Button Listeners
+        prevBtn.addEventListener('click', () => {
+            if (currentPage > 1) {
+                currentPage--;
+                updatePagination();
+            }
+        });
+
+        nextBtn.addEventListener('click', () => {
+            const totalPages = Math.ceil(filteredCards.length / itemsPerPage);
+            if (currentPage < totalPages) {
+                currentPage++;
+                updatePagination();
+            }
+        });
+
+        // Sync and Filter Handlers
+        sidebarCheckboxes.forEach(cb => {
+            cb.addEventListener('change', (e) => {
+                const modalCb = Array.from(modalCheckboxes).find(mcb => mcb.value === e.target.value);
+                if (modalCb) modalCb.checked = e.target.checked;
+                filterProducts();
+            });
+        });
+
+        modalCheckboxes.forEach(cb => {
+            cb.addEventListener('change', (e) => {
+                const sidebarCb = Array.from(sidebarCheckboxes).find(scb => scb.value === e.target.value);
+                if (sidebarCb) sidebarCb.checked = e.target.checked;
+                filterProducts();
+            });
+        });
+
+        // --- Modal Filter Buttons ---
+        const clearFilterBtn = document.querySelector('.btn-filter-clear');
+        const applyFilterBtn = document.querySelector('.btn-filter-apply');
+
+        if (clearFilterBtn) {
+            clearFilterBtn.addEventListener('click', () => {
+                // Clear all checkboxes
+                sidebarCheckboxes.forEach(cb => cb.checked = false);
+                modalCheckboxes.forEach(cb => cb.checked = false);
+
+                // Apply the cleared filters
+                filterProducts();
+            });
+        }
+
+        if (applyFilterBtn) {
+            applyFilterBtn.addEventListener('click', () => {
+                // Close the modal
+                overlay.classList.remove('active');
+                document.body.style.overflow = '';
+
+                // Filters are already applied through the change events
+                // But we can call it again to ensure consistency
+                filterProducts();
+            });
+        }
+
+        // Initialize display
+        filterProducts();
+    </script>
+</body>
+
+</html>
