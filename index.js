@@ -25,86 +25,86 @@ document.addEventListener('DOMContentLoaded', () => {
     const comboCards = document.querySelectorAll('.combo-card');
     const combosSwiperElement = document.querySelector('#combos-swiper');
 
-  if (combosSwiperElement && comboTabButtons.length > 0 && comboCards.length > 0) {
-    // Initialize Swiper
-    const combosSwiper = new Swiper("#combos-swiper", {
-        spaceBetween: 28,
-        grabCursor: true,
-        watchOverflow: false,
-        navigation: {
-            nextEl: "#combos-scroll-right",
-            prevEl: "#combos-scroll-left",
-        },
+    if (combosSwiperElement && comboTabButtons.length > 0 && comboCards.length > 0) {
+        // Initialize Swiper
+        const combosSwiper = new Swiper("#combos-swiper", {
+            spaceBetween: 28,
+            grabCursor: true,
+            watchOverflow: false,
+            navigation: {
+                nextEl: "#combos-scroll-right",
+                prevEl: "#combos-scroll-left",
+            },
 
-        // ✅ RESPONSIVE BREAKPOINTS
-        breakpoints: {
-            0: {
-                slidesPerView: 1.2,
-                spaceBetween: 16,
+            // ✅ RESPONSIVE BREAKPOINTS
+            breakpoints: {
+                0: {
+                    slidesPerView: 1.2,
+                    spaceBetween: 16,
+                },
+                480: {
+                    slidesPerView: 1.8,
+                    spaceBetween: 16,
+                },
+                640: {
+                    slidesPerView: 2.5,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 24,
+                },
+                1024: {
+                    slidesPerView: 4,
+                    spaceBetween: 28,
+                },
+                1280: {
+                    slidesPerView: 5,
+                    spaceBetween: 28,
+                },
             },
-            480: {
-                slidesPerView: 1.8,
-                spaceBetween: 16,
-            },
-            640: {
-                slidesPerView: 2.5,
-                spaceBetween: 20,
-            },
-            768: {
-                slidesPerView: 3,
-                spaceBetween: 24,
-            },
-            1024: {
-                slidesPerView: 4,
-                spaceBetween: 28,
-            },
-            1280: {
-                slidesPerView: 5,
-                spaceBetween: 28,
-            },
-        },
-    });
+        });
 
-    // --- Helper: Update Tab Styling ---
-    const updateComboTabStyle = (activeCategory) => {
+        // --- Helper: Update Tab Styling ---
+        const updateComboTabStyle = (activeCategory) => {
+            comboTabButtons.forEach(btn => {
+                if (btn.dataset.category === activeCategory) {
+                    btn.classList.add('border-white', 'text-white');
+                    btn.classList.remove('text-white/70', 'border-transparent');
+                } else {
+                    btn.classList.remove('border-white', 'text-white');
+                    btn.classList.add('text-white/70', 'border-transparent');
+                }
+            });
+        };
+
+        // --- Helper: Filter Cards ---
+        const filterComboCards = (category) => {
+            comboCards.forEach(card => {
+                card.style.display =
+                    card.dataset.category === category ? 'flex' : 'none';
+            });
+
+            // 🔁 Update Swiper after DOM changes
+            combosSwiper.update();
+            combosSwiper.slideTo(0, 0);
+        };
+
+        // --- Tab Click Event ---
         comboTabButtons.forEach(btn => {
-            if (btn.dataset.category === activeCategory) {
-                btn.classList.add('border-white', 'text-white');
-                btn.classList.remove('text-white/70', 'border-transparent');
-            } else {
-                btn.classList.remove('border-white', 'text-white');
-                btn.classList.add('text-white/70', 'border-transparent');
-            }
-        });
-    };
-
-    // --- Helper: Filter Cards ---
-    const filterComboCards = (category) => {
-        comboCards.forEach(card => {
-            card.style.display =
-                card.dataset.category === category ? 'flex' : 'none';
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                const category = btn.dataset.category;
+                updateComboTabStyle(category);
+                filterComboCards(category);
+            });
         });
 
-        // 🔁 Update Swiper after DOM changes
-        combosSwiper.update();
-        combosSwiper.slideTo(0, 0);
-    };
-
-    // --- Tab Click Event ---
-    comboTabButtons.forEach(btn => {
-        btn.addEventListener('click', (e) => {
-            e.preventDefault();
-            const category = btn.dataset.category;
-            updateComboTabStyle(category);
-            filterComboCards(category);
-        });
-    });
-
-    // --- Initial State ---
-    const initialCategory = comboTabButtons[0].dataset.category || 'Combo 1';
-    updateComboTabStyle(initialCategory);
-    filterComboCards(initialCategory);
-}
+        // --- Initial State ---
+        const initialCategory = comboTabButtons[0].dataset.category || 'Combo 1';
+        updateComboTabStyle(initialCategory);
+        filterComboCards(initialCategory);
+    }
 
 
     // ---------------------------------------------------------
@@ -114,81 +114,81 @@ document.addEventListener('DOMContentLoaded', () => {
     const addonCards = document.querySelectorAll('.addon-card');
     const addOnsSwiperElement = document.querySelector('#add-ons-swiper');
 
-  if (addOnsSwiperElement && addonTabButtons.length > 0 && addonCards.length > 0) {
-    // Initialize Swiper
-    const addonSwiper = new Swiper("#add-ons-swiper", {
-        grabCursor: true,
-        watchOverflow: false,
-        navigation: {
-            nextEl: "#add-ons-scroll-right",
-            prevEl: "#add-ons-scroll-left",
-        },
+    if (addOnsSwiperElement && addonTabButtons.length > 0 && addonCards.length > 0) {
+        // Initialize Swiper
+        const addonSwiper = new Swiper("#add-ons-swiper", {
+            grabCursor: true,
+            watchOverflow: false,
+            navigation: {
+                nextEl: "#add-ons-scroll-right",
+                prevEl: "#add-ons-scroll-left",
+            },
 
-        // ✅ RESPONSIVE BREAKPOINTS
-        breakpoints: {
-            0: {
-                slidesPerView: 1,
-                spaceBetween: 16,
+            // ✅ RESPONSIVE BREAKPOINTS
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                    spaceBetween: 16,
+                },
+                480: {
+                    slidesPerView: 1.8,
+                    spaceBetween: 16,
+                },
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 2.5,
+                    spaceBetween: 20,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 24,
+                },
             },
-            480: {
-                slidesPerView: 1.8,
-                spaceBetween: 16,
-            },
-            640: {
-                slidesPerView: 2,
-                spaceBetween: 20,
-            },
-            768: {
-                slidesPerView: 2.5,
-                spaceBetween: 20,
-            },
-            1024: {
-                slidesPerView: 3,
-                spaceBetween: 24,
-            },
-        },
-    });
+        });
 
-    // --- Helper: Update Tab Styling ---
-    const updateAddonTabStyle = (activeCategory) => {
+        // --- Helper: Update Tab Styling ---
+        const updateAddonTabStyle = (activeCategory) => {
+            addonTabButtons.forEach(btn => {
+                if (btn.dataset.category === activeCategory) {
+                    btn.classList.remove('text-[#7F7F7F]');
+                    btn.classList.add('border-b-2', 'border-[#ea0029]', 'text-[#ea0029]');
+                } else {
+                    btn.classList.remove('border-b-2', 'border-[#ea0029]', 'text-[#ea0029]');
+                    btn.classList.add('text-[#7F7F7F]');
+                }
+            });
+        };
+
+        // --- Helper: Filter Cards ---
+        const filterAddonCards = (category) => {
+            addonCards.forEach(card => {
+                card.style.display =
+                    card.dataset.category === category ? 'flex' : 'none';
+            });
+
+            // 🔁 Update Swiper after DOM change
+            addonSwiper.update();
+            addonSwiper.slideTo(0, 0);
+        };
+
+        // --- Tab Click Event ---
         addonTabButtons.forEach(btn => {
-            if (btn.dataset.category === activeCategory) {
-                btn.classList.remove('text-[#7F7F7F]');
-                btn.classList.add('border-b-2', 'border-[#ea0029]', 'text-[#ea0029]');
-            } else {
-                btn.classList.remove('border-b-2', 'border-[#ea0029]', 'text-[#ea0029]');
-                btn.classList.add('text-[#7F7F7F]');
-            }
-        });
-    };
-
-    // --- Helper: Filter Cards ---
-    const filterAddonCards = (category) => {
-        addonCards.forEach(card => {
-            card.style.display =
-                card.dataset.category === category ? 'flex' : 'none';
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                const category = btn.dataset.category;
+                updateAddonTabStyle(category);
+                filterAddonCards(category);
+            });
         });
 
-        // 🔁 Update Swiper after DOM change
-        addonSwiper.update();
-        addonSwiper.slideTo(0, 0);
-    };
-
-    // --- Tab Click Event ---
-    addonTabButtons.forEach(btn => {
-        btn.addEventListener('click', (e) => {
-            e.preventDefault();
-            const category = btn.dataset.category;
-            updateAddonTabStyle(category);
-            filterAddonCards(category);
-        });
-    });
-
-    // --- Initial State ---
-    const initialAddonCategory = addonTabButtons[0].dataset.category;
-    updateAddonTabStyle(initialAddonCategory);
-    filterAddonCards(initialAddonCategory);
-}
+        // --- Initial State ---
+        const initialAddonCategory = addonTabButtons[0].dataset.category;
+        updateAddonTabStyle(initialAddonCategory);
+        filterAddonCards(initialAddonCategory);
+    }
 
 
     // ---------------------------------------------------------
@@ -248,44 +248,44 @@ document.addEventListener('DOMContentLoaded', () => {
     const dealsSwiperElement = document.querySelector('#deals-swiper');
     const dealsProgressBar = document.getElementById('deals-progress-bar');
 
-  if (dealsSwiperElement && dealsProgressBar) {
-    const dealsSwiper = new Swiper("#deals-swiper", {
-        grabCursor: true,
-        watchOverflow: false,
+    if (dealsSwiperElement && dealsProgressBar) {
+        const dealsSwiper = new Swiper("#deals-swiper", {
+            grabCursor: true,
+            watchOverflow: false,
 
-        // ✅ RESPONSIVE SETTINGS
-        breakpoints: {
-            0: {
-                slidesPerView: 1.2,
-                spaceBetween: 16,
+            // ✅ RESPONSIVE SETTINGS
+            breakpoints: {
+                0: {
+                    slidesPerView: 1.2,
+                    spaceBetween: 16,
+                },
+                480: {
+                    slidesPerView: 1.5,
+                    spaceBetween: 18,
+                },
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 2.5,
+                    spaceBetween: 24,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 28,
+                }
             },
-            480: {
-                slidesPerView: 1.5,
-                spaceBetween: 18,
-            },
-            640: {
-                slidesPerView: 2,
-                spaceBetween: 20,
-            },
-            768: {
-                slidesPerView: 2.5,
-                spaceBetween: 24,
-            },
-            1024: {
-                slidesPerView: 3,
-                spaceBetween: 28,
-            }
-        },
 
-        on: {
-            progress: function (swiper) {
-                const progress = swiper.progress;
-                const clampedProgress = Math.max(0, Math.min(1, progress));
-                dealsProgressBar.style.width = `${clampedProgress * 100}%`;
+            on: {
+                progress: function (swiper) {
+                    const progress = swiper.progress;
+                    const clampedProgress = Math.max(0, Math.min(1, progress));
+                    dealsProgressBar.style.width = `${clampedProgress * 100}%`;
+                }
             }
-        }
-    });
-}
+        });
+    }
 
 
     // ---------------------------------------------------------
@@ -296,7 +296,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (washersSwiperElement && washersProgressBar) {
         const washersSwiper = new Swiper("#washers-swiper", {
-            slidesPerView: "auto", 
+            slidesPerView: "auto",
             spaceBetween: 28,
             grabCursor: true,
             breakpoints: {
@@ -435,6 +435,154 @@ document.addEventListener('DOMContentLoaded', () => {
                     mayProgressBar.style.width = (clampedProgress * 100) + '%';
                 }
             }
+        });
+    }
+
+    // ---------------------------------------------------------
+    // 13. Blog Pagination Logic
+    // ---------------------------------------------------------
+    const blogCards = document.querySelectorAll('.blog-card');
+    const blogPrevBtn = document.getElementById('prevPage');
+    const blogNextBtn = document.getElementById('nextPage');
+    const blogPageNumbers = document.getElementById('pageNumbers');
+
+    if (blogCards.length > 0 && blogPrevBtn && blogNextBtn && blogPageNumbers) {
+        let currentPage = 1;
+        const itemsPerPage = 6; // Standard for blogs grid (3 columns)
+
+        const updateBlogPagination = () => {
+            const totalItems = blogCards.length;
+            const totalPages = Math.ceil(totalItems / itemsPerPage);
+
+            // Validate page
+            if (currentPage < 1) currentPage = 1;
+            if (currentPage > totalPages) currentPage = totalPages;
+
+            // Show/Hide cards
+            blogCards.forEach((card, index) => {
+                const start = (currentPage - 1) * itemsPerPage;
+                const end = start + itemsPerPage;
+
+                if (index >= start && index < end) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+
+            // Update Page Numbers
+            blogPageNumbers.innerHTML = '';
+            for (let i = 1; i <= totalPages; i++) {
+                const span = document.createElement('span');
+                const isActive = i === currentPage;
+
+                span.className = `w-8 h-8 flex items-center justify-center rounded-full cursor-pointer transition-all ${isActive
+                    ? 'bg-black text-white'
+                    : 'border border-[#E5E5E5] text-[#1D1D1F] hover:bg-gray-100'
+                    }`;
+
+                span.textContent = i;
+                span.addEventListener('click', () => {
+                    currentPage = i;
+                    updateBlogPagination();
+                });
+                blogPageNumbers.appendChild(span);
+            }
+
+            // Update Buttons
+            blogPrevBtn.disabled = currentPage === 1;
+            blogNextBtn.disabled = currentPage === totalPages || totalPages === 0;
+
+            blogPrevBtn.style.opacity = blogPrevBtn.disabled ? '0.5' : '1';
+            blogNextBtn.style.opacity = blogNextBtn.disabled ? '0.5' : '1';
+        };
+
+        // Event Listeners
+        blogPrevBtn.addEventListener('click', () => {
+            if (currentPage > 1) {
+                currentPage--;
+                updateBlogPagination();
+            }
+        });
+
+        blogNextBtn.addEventListener('click', () => {
+            const totalPages = Math.ceil(blogCards.length / itemsPerPage);
+            if (currentPage < totalPages) {
+                currentPage++;
+                updateBlogPagination();
+            }
+        });
+
+        // Initialize
+        updateBlogPagination();
+    }
+
+    // ---------------------------------------------------------
+    // 14. TOC Modal Logic (Blog Details)
+    // ---------------------------------------------------------
+    const tocTrigger = document.getElementById('tocTrigger');
+    const tocModal = document.getElementById('tocModal');
+    const tocOverlay = document.getElementById('tocOverlay');
+    const tocCloseBtn = document.getElementById('tocCloseBtn');
+    const tocContent = document.getElementById('tocContent');
+
+    if (tocTrigger && tocModal && tocOverlay && tocCloseBtn && tocContent) {
+
+        function openTocModal() {
+            // Check if it's mobile view (optional check, but good for safety)
+            // The trigger is hidden on desktop via CSS, so this click only happens if visible
+            tocModal.classList.remove('opacity-0', 'pointer-events-none');
+            tocModal.classList.add('opacity-100', 'pointer-events-auto');
+
+            tocContent.classList.remove('scale-95');
+            tocContent.classList.add('scale-100');
+
+            document.body.style.overflow = 'hidden'; // Prevent background scrolling
+        }
+
+        function closeTocModal() {
+            tocModal.classList.remove('opacity-100', 'pointer-events-auto');
+            tocModal.classList.add('opacity-0', 'pointer-events-none');
+
+            tocContent.classList.remove('scale-100');
+            tocContent.classList.add('scale-95');
+
+            document.body.style.overflow = '';
+        }
+
+        tocTrigger.addEventListener('click', openTocModal);
+        tocCloseBtn.addEventListener('click', closeTocModal);
+        tocOverlay.addEventListener('click', closeTocModal);
+    }
+
+    // ---------------------------------------------------------
+    // 15. FAQ Tab Switching Logic
+    // ---------------------------------------------------------
+    const faqTabButtons = document.querySelectorAll('.faq-tab-btn');
+    const faqContentPanes = document.querySelectorAll('.faq-content-pane');
+
+    if (faqTabButtons.length > 0 && faqContentPanes.length > 0) {
+        faqTabButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const targetId = btn.getAttribute('data-target');
+
+                // Update Button Styles
+                faqTabButtons.forEach(b => {
+                    b.classList.remove('text-[#EA0029]', 'border-[#EA0029]');
+                    b.classList.add('text-[#7F7F7F]', 'border-transparent');
+                });
+                btn.classList.add('text-[#EA0029]', 'border-[#EA0029]');
+                btn.classList.remove('text-[#7F7F7F]', 'border-transparent');
+
+                // Show/Hide Content Panes
+                faqContentPanes.forEach(pane => {
+                    if (pane.id === targetId) {
+                        pane.classList.remove('hidden');
+                    } else {
+                        pane.classList.add('hidden');
+                    }
+                });
+            });
         });
     }
 });
