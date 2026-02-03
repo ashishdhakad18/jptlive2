@@ -11,15 +11,15 @@
 </head>
 
 <body>
-    <nav class="bg-white flex flex-col">
+       <nav class="bg-white flex flex-col lg:px-0  ">
         <!-- Badge -->
-        <div class="nav-badge body-4 bg-red text-white text-center py-3">
+        <div class="lg:block hidden nav-badge body-4 bg-red text-white text-center py-3">
             Delivery within INDIA in time for Christmas if you order by December 19,
             2025!
         </div>
 
         <!-- Navbar -->
-        <div class="container w-full">
+        <div class="lg:px-40 px-4 w-full">
             <div class="flex items-center justify-between h-16">
 
                 <!-- LEFT (Mobile: Menu + Search) -->
@@ -33,7 +33,10 @@
                 </div>
 
                 <!-- LOGO (Center always) -->
-                <img src="./Assets/Logo.svg" alt="Logo" class="nav-logo mx-auto lg:mx-0 " />
+                <div class="mx-auto lg:mx-0 w-[82px] sm:w-[150px] lg:w-[152px] flex-shrink-0">
+                    <img src="./Assets/Logo.svg" alt="Logo" class="w-full h-auto object-contain" />
+                </div>
+
 
                 <!-- RIGHT (Mobile: Profile + Cart) -->
                 <div class="flex items-center gap-2 lg:hidden   w-20 h-20">

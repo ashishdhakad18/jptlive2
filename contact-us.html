@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <nav class="bg-white flex flex-col lg:px-0  ">
+        <!-- Badge -->
+        <div class="lg:block hidden nav-badge body-4 bg-red text-white text-center py-3">
+            Delivery within INDIA in time for Christmas if you order by December 19,
+            2025!
+        </div>
+
+        <!-- Navbar -->
+        <div class="lg:px-40 px-4 w-full">
+            <div class="flex items-center justify-between h-16">
+
+                <!-- LEFT (Mobile: Menu + Search) -->
+                <div class="flex items-center gap-2 lg:hidden   w-20 h-20">
+                    <a href="#" class="nav-link-right flex items-center justify-center rounded-md bg-off-white ">
+                        <img src="./Assets/Header-menu.svg" alt="">
+                    </a>
+                    <a href="#" class="nav-link-right flex items-center justify-center rounded-md bg-off-white ">
+                        <img src="./Assets/Header-search.svg" alt="">
+                    </a>
+                </div>
+
+                <!-- LOGO (Center always) -->
+                <div class="mx-auto lg:mx-0 w-[82px] sm:w-[150px] lg:w-[152px] flex-shrink-0">
+                    <img src="./Assets/Logo.svg" alt="Logo" class="w-full h-auto object-contain" />
+                </div>
+
+
+                <!-- RIGHT (Mobile: Profile + Cart) -->
+                <div class="flex items-center gap-2 lg:hidden   w-20 h-20">
+                    <a href="#" class="nav-link-right flex items-center justify-center rounded-md bg-off-white">
+                        <img src="./Assets/Header-profile.svg" alt="">
+                    </a>
+                    <a href="#" class="nav-link-right flex items-center justify-center rounded-md bg-off-white ">
+                        <img src="./Assets/Header-cart.svg" alt="">
+                    </a>
+                </div>
+
+                <!-- DESKTOP NAV LINKS -->
+                <div class="hidden lg:flex items-center gap-6">
+                    <a href="#"
+                        class="nav-link nav-link-shop active caption-medium-12 rounded-md uppercase px-4">Shop</a>
+                    <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4">JPT
+                        Insiders</a>
+                    <a href="#" class="nav-link nav-link-support caption-medium-12 rounded-md uppercase px-4">Support
+                        HUB</a>
+
+                    <div class="flex gap-2">
+                        <a href="#" class="nav-link-right flex items-center justify-center rounded-md bg-off-white">
+                            <img src="./Assets/Header-search.svg" alt="">
+                        </a>
+                        <a href="#" class="nav-link-right flex items-center justify-center rounded-md bg-off-white">
+                            <img src="./Assets/Header-profile.svg" alt="">
+                        </a>
+                        <a href="#" class="nav-link-right flex items-center justify-center rounded-md bg-off-white">
+                            <img src="./Assets/Header-cart.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="bg-[#f5f5f5] py-4 lg:block hidden">
+        <div class="lg:px-40 px-5">
+            <nav class="flex items-center gap-2 body-3 font-medium text-grey-medium">
+                <a href="index.html" class="text-[#1D1D1F] font-bold hover:underline transition-all">Home</a>
+                <span class="text-grey-light">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </span>
+                <span>Contact Us</span>
+
+
+            </nav>
+        </div>
+    </div>
+
+
+    <!-- Contact-Us -->
+
+    <section class="lg:pt-30 pt-10 lg:pb-20 pb-10">
+        <div class="lg:px-40 px-5 flex flex-col lg:gap-15 gap-8 items-center justify-center ">
+            <div class="flex flex-col lg:gap-8 gap-6 items-center justify-center">
+                <h4 class="text-h4 ">Contact Us</h4>
+                <p class="body-2 text-[#535559] flex justify-center text-center">Need help with your order or products?
+                    Contact our support team anytime
+                </p>
+            </div>
+
+            <div class="flex flex-col-reverse lg:flex-row lg:gap-7 gap-8 ">
+                <!-- Left Side -->
+                <div class="flex flex-col lg:gap-5 gap-8 lg:w-[50%] w-full  ">
+                    <div class="w-full h-full rounded-2xl">
+                        <img src="./Assets/map.png" alt="" class="rounded-2xl h-full">
+                    </div>
+                    <div class="flex flex-col lg:flex-row  lg:gap-5 gap-4 text-[#1D1D1F] body-4 ">
+                        <div class="flex flex-col bg-[#F5F5F5] p-5 rounded-2xl items-center gap-8 lg:py-8 py-6 px-5 w-full ">
+                            <div class="h-9 w-9 flex items-center justify-center rounded-full ">
+                                <img src="./Assets/phone.svg" alt="" class="w-full  h-full">
+                            </div>
+                            <p>+91 90745 08686</p>
+                        </div>
+                        <div class="flex flex-col bg-[#F5F5F5] p-5 rounded-2xl items-center gap-8 lg:py-8 py-6 px-5 w-full ">
+                            <div class="h-9 w-9 flex items-center justify-center rounded-full ">
+                                <img src="./Assets/email.svg" alt="" class="w-full  h-full">
+                            </div>
+                            <p>support@jpttools.com</p>
+                        </div>
+                        <div class="flex flex-col bg-[#F5F5F5] p-5 rounded-2xl items-center gap-8 lg:py-8 py-6 px-5 w-full ">
+                            <div class="h-9 w-9 flex items-center justify-center rounded-full ">
+                                <img src="./Assets/Whatsapp-icon.svg" alt="" class="w-full  h-full">
+                            </div>
+                            <p>+91 90745 08686</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side -->
+                <div class="flex-1 lg:w-[50%] w-full">
+                    <form class="flex flex-col gap-4">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="flex flex-col gap-2">
+                                <label for="name" class="caption-medium-14 text-[#535559] font-bold ">Name</label>
+                                <input type="text" id="name" placeholder="Your Name"
+                                    class="w-full px-4 py-3 rounded-lg border border-[#E5E5E5] focus:border-red outline-none transition-all body-2">
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <label for="email" class="caption-medium-14 text-[#535559] font-bold ">Email</label>
+                                <input type="email" id="email" placeholder="Your Email"
+                                    class="w-full px-4 py-3 rounded-lg border border-[#E5E5E5] focus:border-red outline-none transition-all body-2">
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col gap-2">
+                            <label for="phone" class="caption-medium-14 text-[#535559] font-bold ">Phone number</label>
+                            <div
+                                class="flex items-center border border-[#E5E5E5] rounded-lg overflow-hidden focus-within:border-red transition-all">
+                                <div
+                                    class="flex items-center gap-2 px-4 py-3 bg-white border-r border-[#E5E5E5] cursor-pointer">
+                                    <span class="body-2 font-bold text-[#535559]">IN</span>
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M6 9l6 6 6-6" />
+                                    </svg>
+                                    <span class="body-2 text-[#535559]">+91</span>
+                                </div>
+                                <input type="tel" id="phone" placeholder=""
+                                    class="flex-1 px-4 py-3 outline-none body-2">
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col gap-2">
+                            <label for="topic" class="caption-medium-14 text-[#535559] font-bold ">Topic</label>
+                            <div class="relative">
+                                <select id="topic"
+                                    class="w-full px-4 py-3 rounded-lg border border-[#E5E5E5] focus:border-red outline-none transition-all body-2 appearance-none bg-white text-[#535559]">
+                                    <option value="" disabled selected>Select a topic</option>
+                                    <option value="order">Order Support</option>
+                                    <option value="technical">Technical Query</option>
+                                    <option value="warranty">Warranty Claim</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <div class="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#535559"
+                                        stroke-width="2">
+                                        <path d="M6 9l6 6 6-6" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col gap-2">
+                            <label for="message" class="caption-medium-14 text-[#535559] font-bold ">Message</label>
+                            <textarea id="message" rows="4" placeholder=""
+                                class="w-full px-4.5 py-2.5 rounded-lg border border-[#E5E5E5] focus:border-red outline-none transition-all body-2 resize-none"></textarea>
+                        </div>
+
+                        <button type="submit"
+                            class="w-full btn btn-secondary btn-h-48 flex text-center justify-center lg:mt-4 mt-2">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Feedback -->
+    <div class="bg-black">
+        <section class="lg:pt-30 pt-10 lg:pb-20 pb-10 bg-[#F5F5F5] rounded-b-4xl ">
+            <div class="lg:px-40 px-5 flex flex-col gap-8 items-center justify-center ">
+                <div class="flex flex-col lg:gap-8 gap-6 items-center justify-center ">
+                    <h4 class="text-h4 ">Your Feedback Matters</h4>
+                    <p class="body-2 text-[#535559] flex justify-center text-center">Have you purchased from JPT Tools?
+                    Share your experience — it helps us improve and helps others choose better!
+                </p>
+                <button class="btn btn-secondary btn-h-48 flex text-center justify-center ">
+                  Write a Review on Google
+                </button>
+
+                <div class="flex gap-4">
+                      <img src="./Assets/insta.svg" alt="" class="h-6 w-6">
+                    <img src="./Assets/facebook.svg" alt="" class="h-6 w-6">
+                    <img src="./Assets/youtube-grey.svg" alt="" class="h-6 w-6">
+               
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+
+
+
+
+    <!-- Footer -->
+    <footer class="bg-black text-white lg:py-16 py-10">
+        <div class=" lg:px-40 px-5 flex flex-col lg:gap-12 gap-8 ">
+            <div class=" ">
+                <img src="./Assets/Logo.svg" alt="JPT Logo" class="w-32 h-auto" />
+            </div>
+            <div class="flex flex-col lg:flex-row justify-between lg:gap-12 gap-10  ">
+                <!-- Brand Column -->
+                <div class="flex flex-col gap-8">
+
+                    <div class="flex flex-col gap-9">
+                        <div>
+                            <p class="body-semibold caption-medium-14 text-[#F5F5F5] leading-relaxed max-w-[320px]">
+                                38, Jain Colony, Behind Mann Mandir Hotel,<br>
+                                Rau, Indore, Madhya Pradesh 453331 - India
+                            </p>
+                        </div>
+                        <div class="flex flex-col ">
+                            <p class="text-h7 font-bold text-white">For help, reach out to our community care</p>
+                            <div class="flex flex-col ">
+                                <a href="mailto:support@jpttools.com"
+                                    class="text-sm text-[#F5F5F5]  w-fit">support@jpttools.com</a>
+                                <a href="tel:+919821551009" class="text-sm text-[#F5F5F5] transition-colors w-fit">+91
+                                    9821551009</a>
+                                <div class="flex flex-wrap items-center gap-2">
+                                    <a href="#"
+                                        class="text-h7 font-bold text-[#F5F5F5] border-b border-white w-fit hover:text-red hover:border-red transition-all pb-0.5">
+                                        Whatsapp Us
+                                    </a>
+                                    <span class="text-[#F5F5F5] text-sm">(11am to 6pm • Mon to Sat)</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Links Sections -->
+                <div class="flex flex-col md:flex-row lg:gap-12 gap-8 md:gap-20 ">
+                    <!-- Terms and Policies -->
+                    <div class="flex flex-col gap-6">
+                        <h6 class="text-white text-lg font-bold! uppercase caption-medium-14">Terms and Policies</h6>
+                        <ul class="flex flex-col gap-6">
+                            <li><a href="#" class="body-3 text-white/90 hover:text-white transition-colors">Terms of
+                                    Services</a></li>
+                            <li><a href="#" class="body-3 text-white/90 hover:text-white transition-colors">Return &
+                                    Refund Policy</a></li>
+                            <li><a href="#" class="body-3 text-white/90 hover:text-white transition-colors">Privacy
+                                    Policy</a></li>
+                            <li><a href="#" class="body-3 text-white/90 hover:text-white transition-colors">Shipping
+                                    Policy</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Report an Issue -->
+                    <div class="flex flex-col gap-6">
+                        <h6 class="text-white text-lg font-bold! uppercase caption-medium-14 ">Report an Issue</h6>
+                        <ul class="flex flex-col gap-6">
+                            <li><a href="#" class="body-3 text-white/90 hover:text-white transition-colors">Return a
+                                    Product</a></li>
+                            <li><a href="#" class="body-3 text-white/90 hover:text-white transition-colors">Report a
+                                    Problem Issue</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Customer Support -->
+                    <div class="flex flex-col gap-6">
+                        <h6 class="text-white text-lg font-bold! uppercase caption-medium-14 ">Customer Support</h6>
+                        <ul class="flex flex-col gap-6">
+                            <li><a href="#" class="body-3 text-white/90 hover:text-white transition-colors">Track My
+                                    Order</a></li>
+                            <li><a href="#" class="body-3 text-white/90 hover:text-white transition-colors">Warranty
+                                    Claim</a></li>
+                            <li><a href="#" class="body-3 text-white/90 hover:text-white transition-colors">Blog /
+                                    Resources</a></li>
+                            <li><a href="#" class="body-3 text-white/90 hover:text-white transition-colors">Contact
+                                    Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col   gap-12 ">
+                <div class="flex gap-4 items-center">
+                    <a href="#"
+                        class="w-6 h-6 flex items-center justify-center opacity-90 hover:opacity-100 transition-opacity">
+                        <img src="./Assets/Instagram-footer.svg" alt="Instagram" class="w-full h-full" />
+                    </a>
+                    <a href="#"
+                        class="w-6 h-6 flex items-center justify-center opacity-90 hover:opacity-100 transition-opacity">
+                        <img src="./Assets/Facebook-footer.svg" alt="Facebook" class="w-full h-full" />
+                    </a>
+                    <a href="#"
+                        class="w-6 h-6 flex items-center justify-center opacity-90 hover:opacity-100 transition-opacity">
+                        <img src="./Assets/Youtube-footer.svg" alt="Youtube" class="w-full h-full" />
+                    </a>
+                </div>
+
+                <!-- Bottom Footer -->
+                <div class="">
+                    <div class="">
+                        <p class="body-3 text-white/60">© 2026, JPT</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
