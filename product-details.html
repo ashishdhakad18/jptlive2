@@ -75,7 +75,7 @@
     </nav>
 
     <!-- Breadcrumb -->
-    <div class="bg-[#f5f5f5] py-4">
+    <div class="bg-[#f5f5f5] py-4 lg:block hidden">
         <div class="lg:px-40 px-5">
             <nav class="flex items-center gap-2 body-3 font-medium text-grey-medium">
                 <a href="index.html" class="text-[#1D1D1F] font-bold hover:underline transition-all">Home</a>
@@ -98,10 +98,31 @@
     </div>
 
     <!-- Product Details -->
-    <section class="lg:px-40 px-5 py-10 lg:py-12">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+    <section class="lg:px-40 px-5 py-4 lg:py-12 flex flex-col  gap-12 ">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <!-- Gallery Section -->
-            <div class="flex flex-col gap-6">
+            <div class="flex flex-col lg:gap-6 gap-3">
+                  <div class="flex justify-between lg:!hidden  ">
+                        <div class="w-9 h-9 bg-off-white rounded-full flex items-center justify-center">
+                            <img src="./Assets/share-icon-grey.svg" alt="Product Main"
+                                class="w-4.5 h-4.5 object-cover">
+                        </div>
+                        <div class="flex gap-4">
+                            <button class="bg-[#F5F5F5] lg:text-[#EA0029] text-black btn  btn-h-36">
+                                In Stock
+                            </button>
+                            <!-- Mobile -->
+                            <button class="btn btn-secondary btn-h-36 lg:hidden! ">
+                                Trending
+                            </button>
+
+                            <!-- Desktop -->
+                            <button class="btn btn-primary btn-h-36 hidden! lg:inline-flex!">
+                                Trending
+                            </button>
+
+                        </div>
+                    </div>
                 <!-- Main Image -->
                 <div
                     class="relative w-full aspect-square bg-white rounded-[16px] border border-[#E5E5E5] flex items-center justify-center p-8 overflow-hidden group">
@@ -109,23 +130,40 @@
                         class="w-full h-full object-contain hover:scale-105 transition-transform duration-500">
 
                     <button
-                        class="absolute bottom-6 right-6 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center border border-[#E5E5E5] cursor-pointer hover:bg-gray-50 transition-colors opacity-0 group-hover:opacity-100 duration-300">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="text-black/80">
-                            <path
-                                d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
-                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M21 21L16.65 16.65" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                            <path d="M11 8V14" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                            <path d="M8 11H14" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" />
+                        class="absolute bottom-6 right-6 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center border border-[#E5E5E5] cursor-pointer duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46" fill="none">
+                            <g filter="url(#filter0_d_1232_23328)">
+                                <rect x="1" y="1" width="44" height="44" rx="22" fill="white" />
+                                <path
+                                    d="M28.4286 22.087C28.4286 25.4487 25.8702 28.1739 22.7143 28.1739C19.5584 28.1739 17 25.4487 17 22.087C17 18.7252 19.5584 16 22.7143 16C25.8702 16 28.4286 18.7252 28.4286 22.087Z"
+                                    fill="#7F7F7F" />
+                                <path
+                                    d="M27.5 28.4444L29 30M28.4286 22.087C28.4286 25.4487 25.8702 28.1739 22.7143 28.1739C19.5584 28.1739 17 25.4487 17 22.087C17 18.7252 19.5584 16 22.7143 16C25.8702 16 28.4286 18.7252 28.4286 22.087Z"
+                                    stroke="#7F7F7F" stroke-width="1.5" stroke-linecap="round" />
+                            </g>
+                            <defs>
+                                <filter id="filter0_d_1232_23328" x="0" y="0" width="46" height="46"
+                                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                    <feColorMatrix in="SourceAlpha" type="matrix"
+                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                    <feMorphology radius="1" operator="dilate" in="SourceAlpha"
+                                        result="effect1_dropShadow_1232_23328" />
+                                    <feOffset />
+                                    <feComposite in2="hardAlpha" operator="out" />
+                                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.12 0" />
+                                    <feBlend mode="normal" in2="BackgroundImageFix"
+                                        result="effect1_dropShadow_1232_23328" />
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1232_23328"
+                                        result="shape" />
+                                </filter>
+                            </defs>
                         </svg>
                     </button>
                 </div>
 
                 <!-- Thumbnails -->
-                <div class="flex gap-1.5 overflow-x-auto hide-scrollbar pb-2">
+                <div class="flex gap-1.5 overflow-x-auto hide-scrollbar ">
                     <!-- Active Thumb -->
                     <div
                         class="w-24 h-24 flex-shrink-0 border border-[#E5E5E5] rounded-md bg-white p-2 cursor-pointer flex items-center justify-center">
@@ -152,23 +190,30 @@
             </div>
 
             <!-- Placeholder for Right Side data (Product Info) -->
-            <div class="flex flex-col gap-8">
+            <div class="flex flex-col lg:gap-8 gap-6">
 
                 <!-- Header -->
 
-                <div class="flex flex-col gap-6">
-                    <div class="flex justify-between">
+                <div class="flex flex-col lg:gap-6 gap-4">
+                    <div class="flex justify-between lg:!inline-flex !hidden">
                         <div class="w-6 h-6">
                             <img src="./Assets/share-icon-grey.svg" alt="Product Main"
                                 class="w-full h-full object-cover">
                         </div>
                         <div class="flex gap-4">
-                            <button class="bg-[#F5F5F5] text-[#EA0029] btn  btn-h-36">
+                            <button class="bg-[#F5F5F5] lg:text-[#EA0029] text-black btn  btn-h-36">
                                 In Stock
                             </button>
-                            <button class="btn btn-primary btn-h-36">
+                            <!-- Mobile -->
+                            <button class="btn btn-secondary btn-h-36 lg:hidden! ">
                                 Trending
                             </button>
+
+                            <!-- Desktop -->
+                            <button class="btn btn-primary btn-h-36 hidden! lg:inline-flex!">
+                                Trending
+                            </button>
+
                         </div>
                     </div>
                     <div class="flex flex-col">
@@ -188,36 +233,38 @@
                 </div>
 
                 <!-- Features Tags -->
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-fit">
-                    <div class="px-6 py-4 rounded-xl bg-[#F5F5F5] text-h7 text-[#535559] flex items-center">
+                <div class="flex flex-wrap gap-4 ">
+                    <div
+                        class="lg:px-6 lg:py-4 p-2 lg:rounded-xl rounded-[4px] bg-[#F5F5F5] text-h7 text-[#535559] flex items-center ">
                         Max. 26 Bar Pressure
                     </div>
 
-                    <div class="px-6 py-4 rounded-xl bg-[#F5F5F5] text-h7 text-[#535559] flex items-center">
-                        Up To 8 Meter Spray Distance
-                    </div>
-
-                    <div class="px-6 py-4 rounded-xl bg-[#F5F5F5] text-h7 text-[#535559] flex items-center">
+                    <div
+                        class="lg:px-6 lg:py-4 p-2 lg:rounded-xl rounded-[4px] bg-[#F5F5F5] text-h7 text-[#535559] flex items-center whitespace-nowrap">
                         4 L/Min Water Flow
                     </div>
 
-                    <div class="px-6 py-4 rounded-xl bg-[#F5F5F5] text-h7 text-[#535559] flex items-center">
+                    <div
+                        class="lg:px-6 lg:py-4 p-2  lg:rounded-xl rounded-[4px] bg-[#F5F5F5] text-h7 text-[#535559] flex items-center whitespace-nowrap">
+                        Up To 8 Meter Spray Distance
+                    </div>
+
+                    <div
+                        class="lg:px-6 lg:py-4 p-2 lg:rounded-xl rounded-[4px] bg-[#F5F5F5] text-h7 text-[#535559] flex items-center whitespace-nowrap">
                         Battery And Charger Not Included
                     </div>
                 </div>
 
 
-
-                <div class="flex flex-col gap-8 p-4 rounded-md">
-
-                    <!-- Price & Quantity -->
-                    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+                <!-- Price & Quantity -->
+                <div class="flex flex-col gap-8 p-4 rounded-md lg:mt-6 mt-4">
+                    <div class="flex flex-row items-center justify-between gap-4">
 
                         <!-- Price -->
                         <div class="flex flex-col gap-2">
                             <div class="flex items-center gap-3">
-                                <h2 class="text-h2 text-[#1D1D1F]">Rs. 3,500</h2>
-                                <span class="text-h7 text-[#7F7F7F] line-through font-normal">
+                                <h4 class="text-h4 text-[#1D1D1F]">Rs. 3,500</h4>
+                                <span class="body-2 text-[#7F7F7F] line-through font-normal">
                                     Rs. 3,600
                                 </span>
                             </div>
@@ -240,9 +287,6 @@
                         </div>
 
                     </div>
-
-
-
                 </div>
 
                 <!-- Special Offer -->
@@ -264,22 +308,23 @@
                             </div>
                         </div>
 
-                        <img src="./Assets/button.svg" alt="Arrow" class="w-8 h-8 shrink-0">
+                        <img src="./Assets/button.svg" alt="Arrow" class="w-8 h-8 shrink-0 lg:mt-5 mt-8">
                     </div>
 
-                    <!-- Progress Bar (optional) -->
-                    <div class="hidden w-full h-[6px] bg-white rounded-full overflow-hidden">
-                        <div id="deals-progress-bar" class="h-full bg-red-500 rounded-full" style="width: 0%">
-                        </div>
+                    <!-- Progress Bar -->
+                    <div class="flex gap-2 w-full h-[6px]">
+                        <div class="flex-1 bg-[#EA0029] rounded-full"></div>
+                        <div class="flex-1 bg-white rounded-full"></div>
+
                     </div>
 
                 </div>
                 <!-- Add to Cart Button -->
 
-                <div class="flex flex-col gap-4">
-                    <div class="flex gap-5">
+                <div class="flex flex-col gap-4 ">
+                    <div class="flex lg:gap-5 gap-1  ">
                         <button
-                            class="btn btn-secondary btn-h-48 w-full flex items-center justify-center text-center ">Add
+                            class="btn btn-secondary btn-h-48 w-full flex items-center justify-center text-center whitespace-nowrap ">Add
                             to Cart</button>
                         <button class="btn btn-outline btn-h-48 whitespace-nowrap">Buy Now</button>
                     </div>
@@ -289,7 +334,7 @@
                 </div>
 
                 <!-- Bundle Offer Ticket -->
-                <div class="flex w-full overflow-hidden h-24">
+                <div class="w-full overflow-hidden h-24 lg:inline-flex hidden">
                     <!-- Left Side (Red) -->
                     <div class="bg-[#EA0029] text-white pl-8 pr-4 w-[60%] flex flex-col justify-center relative">
                         <!-- Cutout Left -->
@@ -300,64 +345,892 @@
                     </div>
 
                     <!-- Right Side (Gray) -->
-                    <div class="bg-[#F5F5F5] w-[40%] flex items-center justify-center relative cursor-pointer group">
+                    <div class="bg-[#F5F5F5] w-[40%] flex items-center justify-center relative ">
                         <!-- Cutout Right -->
                         <div class="absolute right-[-20px] top-1/2 -translate-y-1/2 w-10 h-10 bg-white rounded-full">
                         </div>
 
-                        <p class=" text-[#EA0029] text-h5 text-center group-hover:scale-105 transition-transform">
+                        <p class=" text-[#EA0029] text-h5 text-center transition-transform">
                             Tap to Unlock</p>
                     </div>
                 </div>
 
 
                 <!-- Add-on Product Card -->
-                <div
-                    class="bg-[#F5F5F5] rounded-2xl p-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 border border-[#E5E5E5]">
-                    <!-- Left: Image + Content -->
-                    <div class="flex items-start gap-4 flex-1">
+                <div class="flex flex-col lg:gap-4 gap-2">
+                    <!-- Card 1 -->
+                    <div
+                        class="bg-[#F5F5F5] rounded-2xl lg:p-4 p-2 flex flex-row items-center justify-between lg:gap-4 gap-2 border border-[#E5E5E5]">
+                        <!-- Left: Image + Content -->
+                        <div class="flex items-start lg:gap-4 gap-2 flex-1">
 
-                        <!-- Image -->
-                        <div
-                            class="w-20 h-20 sm:w-24 sm:h-24 bg-white rounded-md flex-shrink-0 p-2 border border-[#E5E5E5] flex items-center justify-center">
-                            <img src="./Assets/Product-1.png" alt="Add-on product"
-                                class="w-full h-full object-contain" />
+                            <!-- Image -->
+                            <div
+                                class="w-20 h-20 sm:w-24 sm:h-24 bg-white rounded-md flex-shrink-0 p-2 border border-[#E5E5E5] flex items-center justify-center">
+                                <img src="./Assets/Product-1.png" alt="Add-on product"
+                                    class="w-full h-full object-contain" />
+                            </div>
+
+                            <!-- Text Content -->
+                            <div class="flex flex-col gap-6">
+                                <h6 class="body-3 text-[#000000] leading-snug max-w-[420px]">
+                                    JPT Heavy-Duty 2IV Domestic Portable Cordless Pressure Washer
+                                </h6>
+
+                                <!-- Rating -->
+                                <div class="flex  justify-between">
+                                    <div class="flex items-center gap-2">
+                                        <div class="bg-[#4CE279] px-2 py-0.5 rounded-sm flex items-center gap-1">
+                                            <svg width="10" height="10" viewBox="0 0 24 24" fill="black">
+                                                <path
+                                                    d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
+                                            </svg>
+                                            <span class="text-xs font-bold text-black">4.6</span>
+                                        </div>
+                                        <span class="text-[#7F7F7F] text-xs font-medium">(36)</span>
+                                    </div>
+                                    <div class="flex items-center  ">
+                                        <button class="btn btn-secondary btn-h-36">
+                                            Add Rs. 1,300
+                                        </button>
+
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
-                        <!-- Text Content -->
-                        <div class="flex flex-col gap-6">
-                            <h6 class="body-3 text-[#000000] leading-snug max-w-[420px]">
-                                JPT Heavy-Duty 2IV Domestic Portable Cordless Pressure Washer
-                            </h6>
 
-                            <!-- Rating -->
-                            <div class="flex items-center gap-2">
-                                <div class="bg-[#4CE279] px-2 py-0.5 rounded-sm flex items-center gap-1">
-                                    <svg width="10" height="10" viewBox="0 0 24 24" fill="black">
-                                        <path
-                                            d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
-                                    </svg>
-                                    <span class="text-xs font-bold text-black">4.6</span>
-                                </div>
-                                <span class="text-[#7F7F7F] text-xs font-medium">(36)</span>
+
+                    </div>
+
+
+
+                    <!-- Card2 -->
+                    <div
+                        class="bg-[#F5F5F5] rounded-2xl lg:p-4 p-2 flex flex-row items-center justify-between lg:gap-4 gap-2 border border-[#E5E5E5]">
+                        <!-- Left: Image + Content -->
+                        <div class="flex items-start lg:gap-4 gap-2 flex-1">
+
+                            <!-- Image -->
+                            <div
+                                class="w-20 h-20 sm:w-24 sm:h-24 bg-white rounded-md flex-shrink-0 p-2 border border-[#E5E5E5] flex items-center justify-center">
+                                <img src="./Assets/Product-1.png" alt="Add-on product"
+                                    class="w-full h-full object-contain" />
                             </div>
+
+                            <!-- Text Content -->
+                            <div class="flex flex-col gap-6">
+                                <h6 class="body-3 text-[#000000] leading-snug max-w-[420px]">
+                                    JPT Heavy-Duty 2IV Domestic Portable Cordless Pressure Washer
+                                </h6>
+
+                                <!-- Rating -->
+                                <div class="flex  justify-between">
+                                    <div class="flex items-center gap-2">
+                                        <div class="bg-[#4CE279] px-2 py-0.5 rounded-sm flex items-center gap-1">
+                                            <svg width="10" height="10" viewBox="0 0 24 24" fill="black">
+                                                <path
+                                                    d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
+                                            </svg>
+                                            <span class="text-xs font-bold text-black">4.6</span>
+                                        </div>
+                                        <span class="text-[#7F7F7F] text-xs font-medium">(36)</span>
+                                    </div>
+                                    <div class="flex items-center  ">
+                                        <button class="btn btn-secondary btn-h-36">
+                                            Add Rs. 1,300
+                                        </button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+                <!-- Customer Review Card -->
+                <div class="bg-[#F5F5F5] rounded-2xl lg:py-3 py-2 lg:px-4 px-2 flex  gap-2 relative group">
+                    <!-- Reviewer Image/Product -->
+                    <div
+                        class="w-16 h-16 sm:w-20 sm:h-20 bg-white rounded-md flex-shrink-0 p-2 flex items-center justify-center border border-[#E5E5E5]">
+                        <img src="./Assets/Product-1.png" alt="Reviewed Product" class="w-full h-full object-contain">
+                    </div>
+
+                    <!-- Review Content -->
+                    <div class="flex flex-col gap-3 pr-12">
+                        <h4 class="text-h6 font-bold text-black mb-0">Ajay K.</h4>
+                        <p class="body-3 text-[#1D1D1F] leading-tight">
+                            "Product is good but you send me damage products "
+                        </p>
+
+                        <!-- Star Rating -->
+                        <div class="flex items-center gap-1">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="#F9A01B">
+                                <path
+                                    d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
+                            </svg>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="#F9A01B">
+                                <path
+                                    d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
+                            </svg>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="#F9A01B">
+                                <path
+                                    d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
+                            </svg>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="#F9A01B">
+                                <path
+                                    d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
+                            </svg>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F9A01B"
+                                stroke-width="2">
+                                <path
+                                    d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
+                            </svg>
                         </div>
                     </div>
 
-                    <!-- Right: Button -->
+                    <!-- Next Arrow Button -->
                     <button
-                        class="bg-black text-white rounded-xl px-6 py-3 text-sm font-semibold whitespace-nowrap self-start sm:self-center">
-                        Add Rs. 1,300
+                        class="absolute right-[-10px] top-1/2 -translate-y-1/2 w-6 h-6 bg-white rounded-full shadow-md flex items-center justify-center cursor-pointer hover:bg-gray-50 transition-colors">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
                     </button>
                 </div>
 
+                <!-- Trust Badges -->
+                <div class="grid grid-cols-2 lg:grid-cols-4 lg:gap-6 gap-4">
+                    <div class="flex flex-col items-center text-center gap-4">
+                        <div class="w-12 h-12 flex items-center justify-center">
+                            <img src="./Assets/Delivery-icon-grey.svg" alt="Delivery"
+                                class="w-full h-full object-contain">
+                        </div>
+                        <p class="text-h7 font-bold text-[#7F7F7F] uppercase leading-tight">Fast & Free <br>
+                            Delivery</p>
+                    </div>
+
+                    <div class="flex flex-col items-center text-center gap-4">
+                        <div class="w-12 h-12 flex items-center justify-center">
+                            <img src="./Assets/Star-icon-grey.svg" alt="Quality" class="w-full h-full object-contain">
+                        </div>
+                        <p class="text-h7 font-bold text-[#7F7F7F] uppercase leading-tight">100% Assured <br>
+                            Quality</p>
+                    </div>
+
+                    <div class="flex flex-col items-center text-center gap-4">
+                        <div class="w-12 h-12 flex items-center justify-center">
+                            <img src="./Assets/Return-icon-grey.svg" alt="Returns" class="w-full h-full object-contain">
+                        </div>
+                        <p class="text-h7 font-bold text-[#7F7F7F] uppercase leading-tight">Quick & Easy <br>
+                            Returns</p>
+                    </div>
+
+                    <div class="flex flex-col items-center text-center gap-4">
+                        <div class="w-12 h-12 flex items-center justify-center">
+                            <img src="./Assets/Pay-icon-grey.svg" alt="Pay" class="w-full h-full object-contain">
+                        </div>
+                        <p class="text-h7 font-bold text-[#7F7F7F] uppercase leading-tight">Pay on <br>
+                            Delivery</p>
+                    </div>
+                </div>
+
+                <!-- Product Information Accordion -->
+                <div class="flex flex-col gap-4 ">
+                    <!-- Product Description -->
+                    <details class="group bg-[#F5F5F7] rounded-xl border border-[#E5E5E5]/50 overflow-hidden">
+                        <summary
+                            class="flex items-center justify-between p-5 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                            <span class="body-2 font-bold text-[#1D1D1F]">Product Description</span>
+                            <div
+                                class="w-6 h-6 bg-[#1D1D1F] rounded-full flex items-center justify-center text-white transition-transform duration-300 group-open:rotate-45">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                </svg>
+                            </div>
+                        </summary>
+                        <div class="px-5 pb-5 body-3 text-[#535559] border-t border-[#E5E5E5]/30 pt-4">
+                            <p>High-efficiency portable pressure washer designed for versatile home cleaning. Its
+                                cordless design allows for freedom of movement without the need for a direct power
+                                source, making it ideal for car washing, patio cleaning, and garden maintenance.</p>
+                        </div>
+                    </details>
+
+                    <!-- Key Features -->
+                    <details class="group bg-[#F5F5F7] rounded-xl border border-[#E5E5E5]/50 overflow-hidden">
+                        <summary
+                            class="flex items-center justify-between p-5 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                            <span class="body-2 font-bold text-[#1D1D1F]">Key Features</span>
+                            <div
+                                class="w-6 h-6 bg-[#1D1D1F] rounded-full flex items-center justify-center text-white transition-transform duration-300 group-open:rotate-45">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                </svg>
+                            </div>
+                        </summary>
+                        <div class="px-5 pb-5 body-3 text-[#535559] border-t border-[#E5E5E5]/30 pt-4">
+                            <ul class="list-disc pl-5 flex flex-col gap-2">
+                                <li>Portable cordless design for cleaning anywhere</li>
+                                <li>High-pressure output of 26 Bar for stubborn dirt</li>
+                                <li>Multiple spray modes with adjustable nozzle</li>
+                                <li>Self-priming feature for drawing water from any source</li>
+                                <li>Ergonomic handle for comfortable extended use</li>
+                            </ul>
+                        </div>
+                    </details>
+
+                    <!-- Technical Details -->
+                    <details class="group bg-[#F5F5F7] rounded-xl border border-[#E5E5E5]/50 overflow-hidden">
+                        <summary
+                            class="flex items-center justify-between p-5 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                            <span class="body-2 font-bold text-[#1D1D1F]">Technical Details</span>
+                            <div
+                                class="w-6 h-6 bg-[#1D1D1F] rounded-full flex items-center justify-center text-white transition-transform duration-300 group-open:rotate-45">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                </svg>
+                            </div>
+                        </summary>
+                        <div class="px-5 pb-5 body-3 text-[#535559] border-t border-[#E5E5E5]/30 pt-4">
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="flex flex-col"><span class="font-bold">Voltage:</span> 21V</div>
+                                <div class="flex flex-col"><span class="font-bold">Pressure:</span> 26 Bar</div>
+                                <div class="flex flex-col"><span class="font-bold">Water Flow:</span> 4L/min</div>
+                                <div class="flex flex-col"><span class="font-bold">Distance:</span> Up to 8m</div>
+                            </div>
+                        </div>
+                    </details>
+
+                    <!-- What’s in the box? -->
+                    <details class="group bg-[#F5F5F7] rounded-xl border border-[#E5E5E5]/50 overflow-hidden">
+                        <summary
+                            class="flex items-center justify-between p-5 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                            <span class="body-2 font-bold text-[#1D1D1F]">What’s in the box?</span>
+                            <div
+                                class="w-6 h-6 bg-[#1D1D1F] rounded-full flex items-center justify-center text-white transition-transform duration-300 group-open:rotate-45">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                </svg>
+                            </div>
+                        </summary>
+                        <div class="px-5 pb-5 body-3 text-[#535559] border-t border-[#E5E5E5]/30 pt-4">
+                            <ul class="list-disc pl-5 flex flex-col gap-2">
+                                <li>1x Pressure Washer Unit</li>
+                                <li>1x Pressure Hose (5m)</li>
+                                <li>1x 6-in-1 Multi Nozzle</li>
+                                <li>1x Foam Pot</li>
+                                <li>1x Inlet Filter</li>
+                                <li>1x Quick Connector</li>
+                                <li>1x Carrying Case</li>
+                            </ul>
+                        </div>
+                    </details>
+                </div>
+
+
+
+
+            </div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 gap-4 lg:gap-7 ">
+            <img src="./Assets/pressure-washer.png" alt="Pressure Washer"
+                class="w-full h-auto object-contain rounded-md" />
+            <img src="./Assets/power-tool.png" alt="Power Tool" class="w-full h-auto object-contain rounded-md" />
+            <img src="./Assets/washer-accesories.png" alt="Washer Accessories"
+                class="w-full h-auto object-contain rounded-md" />
+        </div>
+
+    </section>
+
+    <!-- FAQs Section -->
+    <section class="lg:px-40 px-5 lg:py-20 py-10 bg-white ">
+        <div class="flex flex-col items-center gap-6">
+            <!-- Section Header -->
+            <h2 class="text-h2 font-bold text-[#EA0029] uppercase">FAQs</h2>
+
+            <!-- FAQ Tabs -->
+            <div class="flex gap-8  w-full justify-center">
+                <button
+                    class="faq-tab-btn pb-3 caption-medium-18 font-bold text-[#EA0029] border-b-2 border-[#EA0029] cursor-pointer"
+                    data-target="product-faqs">Product</button>
+                <button
+                    class="faq-tab-btn pb-3 caption-medium-18 font-bold text-[#7F7F7F] border-b-2 border-transparent hover:text-black cursor-pointer"
+                    data-target="technical-faqs">Technical</button>
+                <button
+                    class="faq-tab-btn pb-3 caption-medium-18 font-bold text-[#7F7F7F] border-b-2 border-transparent hover:text-black cursor-pointer"
+                    data-target="troubleshooting-faqs">Troubleshooting</button>
+            </div>
+
+            <!-- FAQ Content Containers -->
+            <div
+                class="w-full max-w-4xl border border-[#E5E5E5] rounded-3xl overflow-hidden bg-[#FBFBFB] lg:mt-6 mt-0 ">
+
+                <!-- Product FAQs -->
+                <div id="product-faqs" class="faq-content-pane flex flex-col lg:gap-6 gap-4 lg:p-12 p-6">
+                    <details class="group border-b border-[#E5E5E5] pb-6 last:border-0">
+                        <summary
+                            class="flex items-center justify-between cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                            <span class="caption-medium-18 font-bold text-[#1D1D1F]">What's in the Box?</span>
+                            <div
+                                class="w-6 h-6 bg-[#1D1D1F] rounded-full flex items-center justify-center text-white transition-transform duration-300 group-open:rotate-45">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                </svg>
+                            </div>
+                        </summary>
+                        <div class="px-6 pb-6 body-3 text-[#535559]">
+                            The package includes the pressure washer unit, a 21V battery, a charger, a 5m hose, a
+                            multi-spray nozzle, a foam pot, and a user manual.
+                        </div>
+                    </details>
+
+                    <details class="group border-b border-[#E5E5E5] pb-6   last:border-0">
+                        <summary
+                            class="flex items-center justify-between cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                            <span class="caption-medium-18 font-bold text-[#1D1D1F]">How does it work?</span>
+                            <div
+                                class="w-6 h-6 bg-[#1D1D1F] rounded-full flex items-center justify-center text-white transition-transform duration-300 group-open:rotate-45">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                </svg>
+                            </div>
+                        </summary>
+                        <div class="px-6 pb-6 body-3 text-[#535559]">
+                            Simply connect the hose to a water source (like a bucket or tap), attach the nozzle, and
+                            pull the trigger. The motor pumps water at high pressure for effective cleaning.
+                        </div>
+                    </details>
+
+                    <details class="group border-b border-[#E5E5E5] pb-6  last:border-0">
+                        <summary
+                            class="flex items-center justify-between  cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                            <span class="caption-medium-18 font-bold text-[#1D1D1F]">What is the warranty?</span>
+                            <div
+                                class="w-6 h-6 bg-[#1D1D1F] rounded-full flex items-center justify-center text-white transition-transform duration-300 group-open:rotate-45">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                </svg>
+                            </div>
+                        </summary>
+                        <div class="px-6 pb-6 body-3 text-[#535559]">
+                            This product comes with a 1-year limited warranty covering manufacturing defects.
+                        </div>
+                    </details>
+
+                    <details class="group border-b border-[#E5E5E5] pb-6  last:border-0">
+                        <summary
+                            class="flex items-center justify-between cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                            <span class="caption-medium-18 font-bold text-[#1D1D1F]">How to use?</span>
+                            <div
+                                class="w-6 h-6 bg-[#1D1D1F] rounded-full flex items-center justify-center text-white transition-transform duration-300 group-open:rotate-45">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                </svg>
+                            </div>
+                        </summary>
+                        <div class="px-6 pb-6 body-3 text-[#535559]">
+                            Assemble according to the manual, ensure the battery is charged, and you're ready to clean!
+                        </div>
+                    </details>
+                </div>
+
+                <!-- Technical FAQs -->
+                <div id="technical-faqs" class="faq-content-pane flex flex-col lg:gap-6 gap-4 gap-6 p-6 hidden">
+                    <details class="group border-b border-[#E5E5E5] pb-6 last:border-0">
+                        <summary
+                            class="flex items-center justify-between cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                            <span class="caption-medium-18 font-bold text-[#1D1D1F]">What is the maximum pressure (PSI)?</span>
+                            <div
+                                class="w-6 h-6 bg-[#1D1D1F] rounded-full flex items-center justify-center text-white transition-transform duration-300 group-open:rotate-45">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                </svg>
+                            </div>
+                        </summary>
+                        <div class="px-6 pt-4 body-3 text-[#535559]">
+                            Our cordless pressure washer delivers a peak pressure of up to 450 PSI, perfect for cars,
+                            decks, and outdoor furniture.
+                        </div>
+                    </details>
+
+                    <details class="group border-b border-[#E5E5E5] pb-6 last:border-0">
+                        <summary
+                            class="flex items-center justify-between cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                            <span class="caption-medium-18 font-bold text-[#1D1D1F]">Battery capacity and runtime?</span>
+                            <div
+                                class="w-6 h-6 bg-[#1D1D1F] rounded-full flex items-center justify-center text-white transition-transform duration-300 group-open:rotate-45">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                </svg>
+                            </div>
+                        </summary>
+                        <div class="px-6 pt-4 body-3 text-[#535559]">
+                            It features a 21V 4.0Ah Lithium-ion battery that provides approximately 30-40 minutes of
+                            continuous runtime on a full charge.
+                        </div>
+                    </details>
+
+                    <details class="group border-b border-[#E5E5E5] pb-6 last:border-0">
+                        <summary
+                            class="flex items-center justify-between  cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                            <span class="caption-medium-18 font-bold text-[#1D1D1F]">Is the motor brushless?</span>
+                            <div
+                                class="w-6 h-6 bg-[#1D1D1F] rounded-full flex items-center justify-center text-white transition-transform duration-300 group-open:rotate-45">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                </svg>
+                            </div>
+                        </summary>
+                        <div class="px-6 pt-4 body-3 text-[#535559]">
+                            Yes, it uses an advanced high-efficiency brushless motor that offers longer life and 50%
+                            more runtime compared to brushed motors.
+                        </div>
+                    </details>
+
+                    <details class="group border-b border-[#E5E5E5] pb-6 last:border-0">
+                        <summary
+                            class="flex items-center justify-between cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                            <span class="caption-medium-18 font-bold text-[#1D1D1F]">What is the flow rate?</span>
+                            <div
+                                class="w-6 h-6 bg-[#1D1D1F] rounded-full flex items-center justify-center text-white transition-transform duration-300 group-open:rotate-45">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                </svg>
+                            </div>
+                        </summary>
+                        <div class="px-6 pt-4 body-3 text-[#535559]">
+                            The maximum flow rate is 4.0 Liters per minute (LPM), ensuring efficient water usage while
+                            maintaining cleaning power.
+                        </div>
+                    </details>
+                </div>
+
+                <!-- Troubleshooting FAQs -->
+                <div id="troubleshooting-faqs" class="faq-content-pane flex lg:gap-6 gap-4 flex-col gap-6 p-6 hidden">
+                    <details class="group border-b border-[#E5E5E5] pb-6 last:border-0">
+                        <summary
+                            class="flex items-center justify-between cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                            <span class="caption-medium-18 font-bold text-[#1D1D1F]">Low water pressure?</span>
+                            <div
+                                class="w-6 h-6 bg-[#1D1D1F] rounded-full flex items-center justify-center text-white transition-transform duration-300 group-open:rotate-45">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                </svg>
+                            </div>
+                        </summary>
+                        <div class="px-6 pt-4 body-3 text-[#535559]">
+                            Check if the hose is kinked or if the filter in the intake is clogged. Ensure the water
+                            source is sufficient and the battery is fully charged.
+                        </div>
+                    </details>
+
+                    <details class="group border-b border-[#E5E5E5] pb-6 last:border-0">
+                        <summary
+                            class="flex items-center justify-between cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                            <span class="caption-medium-18 font-bold text-[#1D1D1F]">Machine won't start?</span>
+                            <div
+                                class="w-6 h-6 bg-[#1D1D1F] rounded-full flex items-center justify-center text-white transition-transform duration-300 group-open:rotate-45">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                </svg>
+                            </div>
+                        </summary>
+                        <div class="px-6 pt-4 body-3 text-[#535559]">
+                            Ensure the battery is firmly inserted and charged. Check the trigger lock and make sure the
+                            safety switch is engaged.
+                        </div>
+                    </details>
+
+                    <details class="group border-b border-[#E5E5E5] pb-6 last:border-0">
+                        <summary
+                            class="flex items-center justify-between  cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                            <span class="caption-medium-18 font-bold text-[#1D1D1F]">Battery won't charge?</span>
+                            <div
+                                class="w-6 h-6 bg-[#1D1D1F] rounded-full flex items-center justify-center text-white transition-transform duration-300 group-open:rotate-45">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                </svg>
+                            </div>
+                        </summary>
+                        <div class="px-6 pt-4 body-3 text-[#535559]">
+                            Verify that the charger is connected to a working power outlet and that the charging pins
+                            are clean and free from debris.
+                        </div>
+                    </details>
+
+                    <details class="group border-b border-[#E5E5E5] pb-6 last:border-0">
+                        <summary
+                            class="flex items-center justify-between cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                            <span class="caption-medium-18 font-bold text-[#1D1D1F]">Water leaking from the hose?</span>
+                            <div
+                                class="w-6 h-6 bg-[#1D1D1F] rounded-full flex items-center justify-center text-white transition-transform duration-300 group-open:rotate-45">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                </svg>
+                            </div>
+                        </summary>
+                        <div class="px-6 pt-4 body-3 text-[#535559]">
+                            Check the O-rings and quick-connect fittings. Ensure they are pushed in securely and not
+                            damaged. Tighten all connections.
+                        </div>
+                    </details>
+                </div>
 
             </div>
         </div>
     </section>
 
+    
+     <div class="bg-black lg:block hidden">
+        <section class="bg-[#f5f5f5] lg:py-20 py-10 overflow-hidden border-b-2  lg:rounded-b-[40px] rounded-b-[24px] ">
+            <div class=" flex flex-col item-center lg:gap-12 gap-6 ">
+                <div class=" container flex items-center justify-between">
+                    <div class="flex flex-row items-center justify-center text-center 
+            lg:flex-col lg:items-start lg:text-left lg:gap-0 gap-2 lg:pl-0! pl-5!">
+                        <h3 class="text-h3 font-bold">YOU MAY</h3>
+                        <h3 class="text-h3 font-bold">ALSO LIKE</h3>
+                    </div>
+                 
+                </div>
 
+                <!-- Scrollable Card Container -->
+                <!-- Swiper Container -->
+                <div class="relative container">
+                    <div id="may-swiper" class="swiper w-full overflow-visible ">
+                        <div class="swiper-wrapper ">
+                            <style>
+                                #may-swiper .swiper-slide {
+                                    width: 20rem;
+                                }
 
+                                @media (min-width: 768px) {
+                                    #may-swiper .swiper-slide {
+                                        width: 22rem;
+                                    }
+                                }
+                            </style>
+                            <!-- Card 1 -->
+                            <div
+                                class="card flex flex-col justify-between rounded-3xl bg-white  hover:scale-[1.02] transition-all duration-300 snap-center swiper-slide">
+                                <div class="card-header flex justify-center relative p-6">
+                                    <img src="./Assets/Product-1.png" alt="Product-1"
+                                        class="w-full h-auto object-contain max-h-[250px]" />
+                                    <div class="card-badges absolute top-4 right-4">
+                                        <div class="card-badge bg-red px-3 py-1 rounded-md body-4 font-bold text-white">
+                                            Trending
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body py-4 px-6 flex flex-col gap-4">
+
+                                    <div class="card-rating flex items-center justify-start gap-2">
+                                        <span
+                                            class="bg-green px-2.5 py-1 rounded-md body-3 font-bold flex items-center text-black">
+                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="black"
+                                                xmlns="http://www.w3.org/2000/svg" class="mr-1">
+                                                <path
+                                                    d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
+                                            </svg>4.6
+                                        </span>
+                                        <p class="body-3 font-medium text-[#7f7f7f]">(36)</p>
+                                    </div>
+                                    <h4 class="card-heading text-xl md:text-h4 font-bold">Pressure Washer</h4>
+                                    <p class="card-description body-2 font-medium text-[#7f7f7f] line-clamp-2">
+                                        JPT Combo Domestic F10 Pressure Washer With Heavy-Duty Snow Foam Cannon
+                                    </p>
+                                </div>
+                                <div class="card-footer flex items-center justify-between flex-wrap gap-2 p-6 pt-0">
+                                    <span class="flex flex-col whitespace-nowrap">
+                                        <p class="original-price body-5 line-through font-medium text-[#7f7f7f]">Rs.
+                                            3,600
+                                        </p>
+                                        <h5 class="discount-price text-xl md:text-h5 font-black text-black">Rs. 3,500
+                                        </h5>
+                                    </span>
+                                    <button
+                                        class="bg-black text-white px-6 py-2 rounded-xl font-bold hover:bg-black/80 transition-colors">Add
+                                        to Cart</button>
+                                </div>
+                            </div>
+
+                            <!-- Card 2 -->
+                            <div
+                                class="card flex flex-col justify-between rounded-3xl bg-white  hover:scale-[1.02] transition-all duration-300 snap-center swiper-slide">
+                                <div class="card-header flex justify-center relative p-6">
+                                    <img src="./Assets/Product-2.png" alt="Product-2"
+                                        class="w-full h-auto object-contain max-h-[250px]" />
+                                    <div class="card-badges absolute top-4 right-4">
+                                        <div class="card-badge bg-red px-3 py-1 rounded-md body-4 font-bold text-white">
+                                            Trending
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body py-4 px-6 flex flex-col gap-4">
+
+                                    <div class="card-rating flex items-center justify-start gap-2">
+                                        <span
+                                            class="bg-green px-2.5 py-1 rounded-md body-3 font-bold flex items-center text-black">
+                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="black"
+                                                xmlns="http://www.w3.org/2000/svg" class="mr-1">
+                                                <path
+                                                    d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
+                                            </svg>4.8
+                                        </span>
+                                        <p class="body-3 font-medium text-[#7f7f7f]">(124)</p>
+                                    </div>
+                                    <h4 class="card-heading text-xl md:text-h4 font-bold">Cordless Drill</h4>
+                                    <p class="card-description body-2 font-medium text-[#7f7f7f] line-clamp-2">
+                                        JPT Heavy Duty 21V Cordless Drill with fast charger and bit set.
+                                    </p>
+                                </div>
+                                <div class="card-footer flex items-center justify-between flex-wrap gap-2 p-6 pt-0">
+                                    <span class="flex flex-col whitespace-nowrap">
+                                        <p class="original-price body-5 line-through font-medium text-[#7f7f7f]">Rs.
+                                            4,200
+                                        </p>
+                                        <h5 class="discount-price text-xl md:text-h5 font-black text-black">Rs. 3,800
+                                        </h5>
+                                    </span>
+                                    <button
+                                        class="bg-black text-white px-6 py-2 rounded-xl font-bold hover:bg-black/80 transition-colors">Add
+                                        to Cart</button>
+                                </div>
+                            </div>
+
+                            <!-- Card 3 -->
+                            <div
+                                class="card flex flex-col justify-between rounded-3xl bg-white min-w-[20rem] md:min-w-[22rem] hover:scale-[1.02] transition-all duration-300 snap-center swiper-slide">
+                                <div class="card-header flex justify-center relative p-6">
+                                    <img src="./Assets/Product-3.png" alt="Product-3"
+                                        class="w-full h-auto object-contain max-h-[250px]" />
+                                    <div class="card-badges absolute top-4 right-4">
+                                        <div class="card-badge bg-red px-3 py-1 rounded-md body-4 font-bold text-white">
+                                            Sale
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body py-4 px-6 flex flex-col gap-4">
+
+                                    <div class="card-rating flex items-center justify-start gap-2">
+                                        <span
+                                            class="bg-green px-2.5 py-1 rounded-md body-3 font-bold flex items-center text-black">
+                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="black"
+                                                xmlns="http://www.w3.org/2000/svg" class="mr-1">
+                                                <path
+                                                    d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
+                                            </svg>4.5
+                                        </span>
+                                        <p class="body-3 font-medium text-[#7f7f7f]">(89)</p>
+                                    </div>
+                                    <h4 class="card-heading text-xl md:text-h4 font-bold">Angle Grinder</h4>
+                                    <p class="card-description body-2 font-medium text-[#7f7f7f] line-clamp-2">
+                                        Professional Grade 4-inch Angle Grinder for cutting and grinding.
+                                    </p>
+                                </div>
+                                <div class="card-footer flex items-center justify-between flex-wrap gap-2 p-6 pt-0">
+                                    <span class="flex flex-col whitespace-nowrap">
+                                        <p class="original-price body-5 line-through font-medium text-[#7f7f7f]">Rs.
+                                            2,800
+                                        </p>
+                                        <h5 class="discount-price text-xl md:text-h5 font-black text-black">Rs. 2,200
+                                        </h5>
+                                    </span>
+                                    <button
+                                        class="bg-black text-white px-6 py-2 rounded-xl font-bold hover:bg-black/80 transition-colors">Add
+                                        to Cart</button>
+                                </div>
+                            </div>
+
+                            <!-- Card 4 -->
+                            <div
+                                class="card flex flex-col justify-between rounded-3xl bg-white min-w-[20rem] md:min-w-[22rem] hover:scale-[1.02] transition-all duration-300 snap-center swiper-slide">
+                                <div class="card-header flex justify-center relative p-6">
+                                    <img src="./Assets/Product-1.png" alt="Product-1"
+                                        class="w-full h-auto object-contain max-h-[250px]" />
+                                    <div class="card-badges absolute top-4 right-4">
+                                        <div class="card-badge bg-red px-3 py-1 rounded-md body-4 font-bold text-white">
+                                            Trending
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body py-4 px-6 flex flex-col gap-4">
+
+                                    <div class="card-rating flex items-center justify-start gap-2">
+                                        <span
+                                            class="bg-green px-2.5 py-1 rounded-md body-3 font-bold flex items-center text-black">
+                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="black"
+                                                xmlns="http://www.w3.org/2000/svg" class="mr-1">
+                                                <path
+                                                    d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
+                                            </svg>4.9
+                                        </span>
+                                        <p class="body-3 font-medium text-[#7f7f7f]">(210)</p>
+                                    </div>
+                                    <h4 class="card-heading text-xl md:text-h4 font-bold">Impact Wrench</h4>
+                                    <p class="card-description body-2 font-medium text-[#7f7f7f] line-clamp-2">
+                                        High Torque Impact Wrench for automotive and construction use.
+                                    </p>
+                                </div>
+                                <div class="card-footer flex items-center justify-between flex-wrap gap-2 p-6 pt-0">
+                                    <span class="flex flex-col whitespace-nowrap">
+                                        <p class="original-price body-5 line-through font-medium text-[#7f7f7f]">Rs.
+                                            5,500
+                                        </p>
+                                        <h5 class="discount-price text-xl md:text-h5 font-black text-black">Rs. 4,999
+                                        </h5>
+                                    </span>
+                                    <button
+                                        class="bg-black text-white px-6 py-2 rounded-xl font-bold hover:bg-black/80 transition-colors">Add
+                                        to Cart</button>
+                                </div>
+                            </div>
+                            <!-- Card 5 -->
+                            <div
+                                class="card flex flex-col justify-between rounded-3xl bg-white min-w-[20rem] md:min-w-[22rem] hover:scale-[1.02] transition-all duration-300 snap-center swiper-slide">
+                                <div class="card-header flex justify-center relative p-6">
+                                    <img src="./Assets/Product-2.png" alt="Product-2"
+                                        class="w-full h-auto object-contain max-h-[250px]" />
+                                    <div class="card-badges absolute top-4 right-4">
+                                        <div class="card-badge bg-red px-3 py-1 rounded-md body-4 font-bold text-white">
+                                            Trending
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body py-4 px-6 flex flex-col gap-4">
+
+                                    <div class="card-rating flex items-center justify-start gap-2">
+                                        <span
+                                            class="bg-green px-2.5 py-1 rounded-md body-3 font-bold flex items-center text-black">
+                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="black"
+                                                xmlns="http://www.w3.org/2000/svg" class="mr-1">
+                                                <path
+                                                    d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
+                                            </svg>4.9
+                                        </span>
+                                        <p class="body-3 font-medium text-[#7f7f7f]">(210)</p>
+                                    </div>
+                                    <h4 class="card-heading text-xl md:text-h4 font-bold">Impact Wrench</h4>
+                                    <p class="card-description body-2 font-medium text-[#7f7f7f] line-clamp-2">
+                                        High Torque Impact Wrench for automotive and construction use.
+                                    </p>
+                                </div>
+                                <div class="card-footer flex items-center justify-between flex-wrap gap-2 p-6 pt-0">
+                                    <span class="flex flex-col whitespace-nowrap">
+                                        <p class="original-price body-5 line-through font-medium text-[#7f7f7f]">Rs.
+                                            5,500
+                                        </p>
+                                        <h5 class="discount-price text-xl md:text-h5 font-black text-black">Rs. 4,999
+                                        </h5>
+                                    </span>
+                                    <button
+                                        class="bg-black text-white px-6 py-2 rounded-xl font-bold hover:bg-black/80 transition-colors">Add
+                                        to Cart</button>
+                                </div>
+                            </div>
+                            <!-- Card 6 -->
+                            <div
+                                class="card flex flex-col justify-between rounded-3xl bg-white min-w-[20rem] md:min-w-[22rem] hover:scale-[1.02] transition-all duration-300 snap-center swiper-slide">
+                                <div class="card-header flex justify-center relative p-6">
+                                    <img src="./Assets/Product-3.png" alt="Product-3"
+                                        class="w-full h-auto object-contain max-h-[250px]" />
+                                    <div class="card-badges absolute top-4 right-4">
+                                        <div class="card-badge bg-red px-3 py-1 rounded-md body-4 font-bold text-white">
+                                            Hot
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body py-4 px-6 flex flex-col gap-4">
+
+                                    <div class="card-rating flex items-center justify-start gap-2">
+                                        <span
+                                            class="bg-green px-2.5 py-1 rounded-md body-3 font-bold flex items-center text-black">
+                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="black"
+                                                xmlns="http://www.w3.org/2000/svg" class="mr-1">
+                                                <path
+                                                    d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
+                                            </svg>4.9
+                                        </span>
+                                        <p class="body-3 font-medium text-[#7f7f7f]">(210)</p>
+                                    </div>
+                                    <h4 class="card-heading text-xl md:text-h4 font-bold">Impact Wrench</h4>
+                                    <p class="card-description body-2 font-medium text-[#7f7f7f] line-clamp-2">
+                                        High Torque Impact Wrench for automotive and construction use.
+                                    </p>
+                                </div>
+                                <div class="card-footer flex items-center justify-between flex-wrap gap-2 p-6 pt-0">
+                                    <span class="flex flex-col whitespace-nowrap">
+                                        <p class="original-price body-5 line-through font-medium text-[#7f7f7f]">Rs.
+                                            5,500
+                                        </p>
+                                        <h5 class="discount-price text-xl md:text-h5 font-black text-black">Rs. 4,999
+                                        </h5>
+                                    </span>
+                                    <button
+                                        class="bg-black text-white px-6 py-2 rounded-xl font-bold hover:bg-black/80 transition-colors">Add
+                                        to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Progress Bar -->
+                <div class="hidden lg:block">
+                    <div class=" container">
+                        <div class="">
+                            <div class="w-full h-[6px] bg-white rounded-[6px] overflow-hidden relative">
+                                <div id="may-progress-bar"
+                                    class="h-full absolute top-0 left-0 rounded-[6px] container"
+                                    style="background-color: var(--color-red-primary); width: 0%">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center ">
+                <button
+                    class="block! lg:hidden! mt-6 bg-black text-white px-10 py-3 rounded-xl font-bold hover:bg-black/90 transition-all ">View
+                    All</button>
+            </div>
+        </section>
+    </div>
+    
 
 
 
@@ -471,6 +1344,7 @@
 
 
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="index.js"></script>
 </body>
 
