@@ -340,9 +340,25 @@ h7,
 
 
 .body-1-medium {
-  font-size: 24px;
-  font-weight: 500; 
+  font-size: 14px;      /* Mobile */
+  font-weight: 540;
+  line-height: 1.6;
 }
+
+/* Tablet */
+@media (min-width: 640px) {
+  .body-1-medium {
+    font-size: 20px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .body-1-medium {
+    font-size: 24px;
+  }
+}
+
 
 .body-1-semibold {
   font-size: 18px;
@@ -392,19 +408,39 @@ h7,
 
 .body-4 {
   font-size: 12px;
-  font-weight: 400;
+  font-weight: 550;
 }
 
 /* Captions and Buttons */
 .caption-medium-14 {
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 550;
 }
 
 .caption-medium-12 {
   font-size: 12px;
   font-weight: 550;
 }
+.caption-medium-20 {
+  font-size: 14px;      /* Mobile */
+  font-weight: 550;
+  line-height: 1.4;
+}
+
+/* Tablet */
+@media (min-width: 640px) {
+  .caption-medium-20 {
+    font-size: 17px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .caption-medium-20 {
+    font-size: 20px;
+  }
+}
+
 
 .caption-medium-18 {
   font-size: 16px;      /* Mobile */

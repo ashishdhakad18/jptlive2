@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <title>About Us</title>
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -74,8 +74,6 @@
             </div>
         </div>
     </nav>
-
-
     <!-- Sub Navbar -->
     <nav id="shopMenu" class="bg-white flex flex-col lg:px-0
          overflow-hidden
@@ -102,7 +100,6 @@
         </div>
     </nav>
 
-
     <!-- Breadcrumb -->
     <div class="bg-[#f5f5f5] py-4 lg:block hidden">
         <div class="lg:px-40 px-5">
@@ -114,158 +111,184 @@
                             stroke-linejoin="round" />
                     </svg>
                 </span>
-                <span>Contact Us</span>
-
+                <span>About Us</span>
 
             </nav>
+
+
         </div>
     </div>
 
+    <!-- Hero Section -->
 
-    <!-- Contact-Us -->
-
-    <section class="lg:pt-30 pt-10 lg:pb-20 pb-10">
-        <div class="lg:px-40 px-5 flex flex-col lg:gap-15 gap-8 items-center justify-center ">
-            <div class="flex flex-col lg:gap-8 gap-6 items-center justify-center">
-                <h4 class="text-h4 ">Contact Us</h4>
-                <p class="body-2 text-[#535559] flex justify-center text-center">Need help with your order or products?
-                    Contact our support team anytime
-                </p>
+    <section class="bg-white">
+        <div class="lg:px-40 px-5 pt-10 lg:pb-20 pb-10 flex flex-col lg;gap-10 gap-6">
+            <div class="flex flex-col lg:flex-row lg:gap-10 gap-8">
+                <h1 class="text-display ">Precision Machine Tools Built on Trust Since 1995</h1>
+                <div class="w-full rounded-2xl overflow-hidden">
+                    <img src="./Assets/about-hero.png" alt="" class="w-full h-full object-cover">
+                </div>
+            </div>
+            <div class="flex lg:flex-row flex-col lg:gap-10 gap-6">
+                <p class="body-2">JPT Tools is a trusted name in machine tools and equipment, delivering reliable hand
+                    tools, power tools, and cordless solutions to professionals across India. With decades of
+                    experience, we understand the demands of modern workshops and industrial environments.</p>
+                <p class="body-2">Our products are built to meet international standards of quality, safety, and
+                    performance. Every tool is designed with precision engineering and tested for durability, ensuring
+                    consistent results across every project.</p>
             </div>
 
-            <div class="flex flex-col-reverse lg:flex-row lg:gap-7 gap-8 ">
-                <!-- Left Side -->
-                <div class="flex flex-col lg:gap-5 gap-8 lg:w-[50%] w-full  ">
-                    <div class="w-full h-[275px] lg:h-[333px] overflow-hidden rounded-2xl">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.280158077972!2d76.30441417475586!3d12.29583008795096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b4d8b7a0a1b2c3d%3A0x1234567890abcdef!2sJPT%20Tools!5e0!3m2!1sen!2sin!4v1707123456789!5m2!1sen!2sin"
-                            class="w-full h-full border-0" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
-                    </div>
+        </div>
 
-                    <div class="flex flex-col lg:flex-row  lg:gap-5 gap-4 text-[#1D1D1F] body-4 ">
-                        <div
-                            class="flex flex-col bg-[#F5F5F5] p-5 rounded-2xl items-center gap-8 lg:py-8 py-6 px-5 w-full ">
-                            <div class="h-9 w-9 flex items-center justify-center rounded-full ">
-                                <img src="./Assets/phone.svg" alt="" class="w-full  h-full">
-                            </div>
-                            <p>+91 90745 08686</p>
-                        </div>
-                        <div
-                            class="flex flex-col bg-[#F5F5F5] p-5 rounded-2xl items-center gap-8 lg:py-8 py-6 px-5 w-full ">
-                            <div class="h-9 w-9 flex items-center justify-center rounded-full ">
-                                <img src="./Assets/email.svg" alt="" class="w-full  h-full">
-                            </div>
-                            <p>support@jpttools.com</p>
-                        </div>
-                        <div
-                            class="flex flex-col bg-[#F5F5F5] p-5 rounded-2xl items-center gap-8 lg:py-8 py-6 px-5 w-full ">
-                            <div class="h-9 w-9 flex items-center justify-center rounded-full ">
-                                <img src="./Assets/Whatsapp-icon.svg" alt="" class="w-full  h-full">
-                            </div>
-                            <p>+91 90745 08686</p>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- Right Side -->
-                <div class="flex-1 lg:w-[50%] w-full">
-                    <form class="flex flex-col gap-4">
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <div class="flex flex-col gap-2">
-                                <label for="name" class="caption-medium-14 text-[#535559] font-bold ">Name</label>
-                                <input type="text" id="name" placeholder="Your Name"
-                                    class="w-full px-4 py-3 rounded-lg border border-[#E5E5E5] focus:border-red outline-none transition-all body-2">
-                            </div>
-                            <div class="flex flex-col gap-2">
-                                <label for="email" class="caption-medium-14 text-[#535559] font-bold ">Email</label>
-                                <input type="email" id="email" placeholder="Your Email"
-                                    class="w-full px-4 py-3 rounded-lg border border-[#E5E5E5] focus:border-red outline-none transition-all body-2">
-                            </div>
-                        </div>
+    </section>
+  
 
-                        <div class="flex flex-col gap-2">
-                            <label for="phone" class="caption-medium-14 text-[#535559] font-bold ">Phone number</label>
-                            <div
-                                class="flex items-center border border-[#E5E5E5] rounded-lg overflow-hidden focus-within:border-red transition-all">
-                                <div
-                                    class="flex items-center gap-2 px-4 py-3 bg-white border-r border-[#E5E5E5] cursor-pointer">
-                                    <span class="body-2 font-bold text-[#535559]">IN</span>
-                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                        stroke-width="2">
-                                        <path d="M6 9l6 6 6-6" />
-                                    </svg>
-                                    <span class="body-2 text-[#535559]">+91</span>
-                                </div>
-                                <input type="tel" id="phone" placeholder=""
-                                    class="flex-1 px-4 py-3 outline-none body-2">
-                            </div>
-                        </div>
-
-                        <div class="flex flex-col gap-2">
-                            <label for="topic" class="caption-medium-14 text-[#535559] font-bold ">Topic</label>
-                            <div class="relative">
-                                <select id="topic"
-                                    class="w-full px-4 py-3 rounded-lg border border-[#E5E5E5] focus:border-red outline-none transition-all body-2 appearance-none bg-white text-[#535559]">
-                                    <option value="" disabled selected>Select a topic</option>
-                                    <option value="order">Order Support</option>
-                                    <option value="technical">Technical Query</option>
-                                    <option value="warranty">Warranty Claim</option>
-                                    <option value="other">Other</option>
-                                </select>
-                                <div class="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#535559"
-                                        stroke-width="2">
-                                        <path d="M6 9l6 6 6-6" />
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="flex flex-col gap-2">
-                            <label for="message" class="caption-medium-14 text-[#535559] font-bold ">Message</label>
-                            <textarea id="message" rows="4" placeholder=""
-                                class="w-full px-4.5 py-2.5 rounded-lg border border-[#E5E5E5] focus:border-red outline-none transition-all body-2 resize-none"></textarea>
-                        </div>
-
-                        <button type="submit"
-                            class="w-full btn btn-secondary btn-h-48 flex text-center justify-center lg:mt-4 mt-2">
-                            Send Message
-                        </button>
-                    </form>
-                </div>
-
-            </div>
-
+    <!-- Promise Section -->
+    <section class="lg:px-40 px-5 lg:py-20 py-10 bg-off-white ">
+        <div class="flex  lg:gap-12 gap-8  lg:flex-row flex-col justify-center lg:px-12  ">
+            <h3 class="whitespace-nowrap">Our Promise</h3>
+            <p class="body-2 text-[#535559] flex justify-center">To empower professionals with reliable,
+                high-performance tools that simplify complex tasks and deliver consistent results. We believe in
+                building long-term relationships with our customers through quality products, dependable service, and
+                continuous innovation.</p>
         </div>
     </section>
 
 
-    <!-- Feedback -->
-    <div class="bg-black">
-        <section class="lg:pt-30 pt-10 lg:pb-20 pb-10 bg-[#F5F5F5] rounded-b-4xl ">
-            <div class="lg:px-40 px-5 flex flex-col gap-8 items-center justify-center ">
-                <div class="flex flex-col lg:gap-8 gap-6 items-center justify-center ">
-                    <h4 class="text-h4 ">Your Feedback Matters</h4>
-                    <p class="body-2 text-[#535559] flex justify-center text-center">Have you purchased from JPT Tools?
-                        Share your experience — it helps us improve and helps others choose better!
-                    </p>
-                    <button class="btn btn-secondary btn-h-48 flex text-center justify-center ">
-                        Write a Review on Google
-                    </button>
-
-                    <div class="flex gap-4">
-                        <img src="./Assets/insta.svg" alt="" class="h-6 w-6">
-                        <img src="./Assets/facebook.svg" alt="" class="h-6 w-6">
-                        <img src="./Assets/youtube-grey.svg" alt="" class="h-6 w-6">
-
+    <!-- Core Values -->
+    <section class=" lg:py-20 py-10 ">
+        <div class="lg:px-40 px-5 flex flex-col lg:gap-12 gap-8">
+            <h3 class=" text-center">Our Core Values</h3>
+            <div class="flex lg:flex-row flex-col lg:gap-7 gap-6 lg:py-6 py-0">
+                <div class="flex gap-3">
+                    <div class="w-7 h-7 rounded-full flex items-center justify-center">
+                        <img src="./Assets/quality.svg" alt="">
+                    </div>
+                    <div>
+                        <p class="caption-medium-18  text-[#1D1D1F] font-bold!">Quality First</p>
+                        <p class="caption-medium-14 text-[#535559]">International standards in every product we deliver</p>
                     </div>
                 </div>
+                <div class="flex gap-3">
+                      <div class="w-7 h-7 rounded-full flex items-center justify-center">
+                        <img src="./Assets/heart.svg" alt="">
+                    </div>
+                    <div>
+                        <p class="caption-medium-18  text-[#1D1D1F] font-bold!">Customer Focus</p>
+                        <p class="caption-medium-14 text-[#535559]">Satisfaction through reliability, safety, and service</p>
+                    </div>
+                </div>
+                <div class="flex gap-3">
+                      <div class="w-7 h-7 rounded-full flex items-center justify-center">
+                        <img src="./Assets/perfomance.svg" alt="">
+                    </div>
+                    <div>
+                        <p class="caption-medium-18  text-[#1D1D1F] font-bold!">Precision & Performance</p>
+                        <p class="caption-medium-14 text-[#535559]">Engineered for accuracy and durability</p>
+                    </div>
+                </div>
+                <div class="flex gap-3">
+                         <div class="w-7 h-7 rounded-full flex items-center justify-center">
+                        <img src="./Assets/promise.svg" alt="">
+                    </div>
+                    <div>
+                        <p class="caption-medium-18  text-[#1D1D1F] font-bold!">Integrity</p>
+                        <p class="caption-medium-14 text-[#535559]">Honest business practices and transparent relationships</p>
+                    </div>
+                </div>
+
             </div>
+
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Our Story -->
+    <section class="lg:py-20 py-10">
+        <div class="lg:px-40 px-5 flex flex-col lg:gap-12 gap-8 justify-center">
+            <h3 class="text-center">Our Story</h3>
+            <div class="flex flex-col lg:gap-7 gap-6">
+                <p class="body-2 text-[#535559] text-center max-w-[800px] mx-auto">JPT Tools began its journey in 1995
+                    as a small machine tools shop with a clear vision—to provide reliable tools that professionals could
+                    depend on. Through consistent quality and dedication, we earned the trust of customers across
+                    industries.</p>
+                <p class="body-2 text-[#535559] text-center max-w-[800px] mx-auto">As demand grew, so did our range. We
+                    expanded from traditional hand tools to advanced power and cordless tools, aligning with global
+                    manufacturing standards and modern engineering practices.</p>
+                <p class="body-2 text-[#535559] text-center max-w-[800px] mx-auto">Today, JPT Tools stands as one of
+                    India’s leading suppliers, supported by a strong online platform that brings our complete catalog
+                    closer to customers. Our journey continues with the same passion—empowering every project with
+                    precision, pride, and performance.</p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Our Journey -->
+    <div class="bg-black">
+        <section class="lg:py-20 py-10 bg-white rounded-b-4xl">
+            <div class="lg:px-40 px-5 flex flex-col lg:gap-12 gap-6 justify-center">
+                <h3 class="  text-center">Our Journey</h3>
+                <div class="w-full h-[1px] bg-[#E5E5E5] relative "></div>
+
+
+                <div class="flex justify-between  z-10">
+                    <div class="flex flex-col lg:gap-10 gap-4 lg:mt-[-58px] mt-[-36px] cursor-pointer">
+                        <div class="w-full h-5 rounded-full flex items-center justify-center text-center ">
+                            <img src="./Assets/Ellipse.svg" alt="" class=" w-5 h-5">
+                        </div>
+                        <div class="flex flex-col lg:gap-6 gap-4">
+                        <h1 class="text-display text-[#ea0029]">1996</h1>
+                        <p class="caption-medium-20 text-[#1D1D1F] text-center">Malganj shop</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col lg:gap-10 gap-4 lg:mt-[-58px] mt-[-36px] cursor-pointer">
+                        <div class="w-full h-5 rounded-full flex items-center justify-center text-center ">
+                            <img src="./Assets/Ellipse.svg" alt="" class=" w-5 h-5">
+                        </div>
+                        <div class="flex flex-col lg:gap-6 gap-4">
+                        <h1 class="text-display text-[#7F7F7F]">1998</h1>
+                        <p class="caption-medium-20 text-[#7F7F7F]">Siyaganj shop</p>
+                        </div>
+                    </div>
+                         <div class="flex flex-col lg:gap-10 gap-4 lg:mt-[-58px] mt-[-36px] cursor-pointer">
+                        <div class="w-full h-5 rounded-full flex items-center justify-center text-center ">
+                            <img src="./Assets/Ellipse.svg" alt="" class=" w-5 h-5">
+                        </div>
+                        <div class="flex flex-col lg:gap-6 gap-4">
+                        <h1 class="text-display text-[#7F7F7F]">2021</h1>
+                        <p class="caption-medium-20 text-[#7F7F7F]">Warehouse</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div> 
+                    <div class="flex lg:flex-row flex-col lg:gap-7 gap-4 relative">
+                        <div class="lg:w-[50%] w-full">
+                            <img src="./Assets/journey-image.png" alt="">
+                        </div>
+                        <div class="lg:w-[40%] w-full flex flex-col gap-11 ">
+                            <div class="h-[50%] lg:block hidden"></div>
+                            <div class="flex flex-col gap-6 lg:h-[50%] h-full ">
+                            <p class="body-1-medium text-[#1d1d1f] ">JPT Tools began its journey in 1995 as a small
+                                machine tools shop with a clear vision—to provide reliable tools that professionals
+                                could depend on. Through consistent quality and dedication, we earned the trust of
+                                customers across industries.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
         </section>
     </div>
-
-
 
 
     <!-- Footer -->
@@ -377,7 +400,6 @@
 
 
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="index.js"></script>
 </body>
 

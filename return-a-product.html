@@ -1,11 +1,12 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Return a Product</title>
     <link rel="stylesheet" href="index.css" />
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
@@ -33,10 +34,9 @@
                 </div>
 
                 <!-- LOGO (Center always) -->
-                <a href="index.html"
-                    class="mx-auto lg:mx-0 w-[82px] sm:w-[150px] lg:w-[152px] flex-shrink-0 cursor-pointer block">
+                <div class="mx-auto lg:mx-0 w-[82px] sm:w-[150px] lg:w-[152px] flex-shrink-0">
                     <img src="./Assets/Logo.svg" alt="Logo" class="w-full h-auto object-contain" />
-                </a>
+                </div>
 
 
                 <!-- RIGHT (Mobile: Profile + Cart) -->
@@ -102,8 +102,8 @@
         </div>
     </nav>
 
-
     <!-- Breadcrumb -->
+
     <div class="bg-[#f5f5f5] py-4 lg:block hidden">
         <div class="lg:px-40 px-5">
             <nav class="flex items-center gap-2 body-3 font-medium text-grey-medium">
@@ -114,161 +114,65 @@
                             stroke-linejoin="round" />
                     </svg>
                 </span>
-                <span>Contact Us</span>
-
+                <span>Return a Product</span>
 
             </nav>
         </div>
     </div>
 
 
-    <!-- Contact-Us -->
-
-    <section class="lg:pt-30 pt-10 lg:pb-20 pb-10">
-        <div class="lg:px-40 px-5 flex flex-col lg:gap-15 gap-8 items-center justify-center ">
-            <div class="flex flex-col lg:gap-8 gap-6 items-center justify-center">
-                <h4 class="text-h4 ">Contact Us</h4>
-                <p class="body-2 text-[#535559] flex justify-center text-center">Need help with your order or products?
-                    Contact our support team anytime
-                </p>
+    <section class="lg:px-40 px-5 lg:py-20 py-10 bg-off-white">
+        <div class="flex flex-col gap-10 items-center   ">
+            <div class="flex flex-col gap-5 justify-center items-center">
+                <h4 class="text-h4">Return a Product</h4>
+                <p class="body-3 text-[#7F7F7F] flex items-center text-center ">Enter your order number and Email to
+                    find your order</p>
             </div>
-
-            <div class="flex flex-col-reverse lg:flex-row lg:gap-7 gap-8 ">
-                <!-- Left Side -->
-                <div class="flex flex-col lg:gap-5 gap-8 lg:w-[50%] w-full  ">
-                    <div class="w-full h-[275px] lg:h-[333px] overflow-hidden rounded-2xl">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.280158077972!2d76.30441417475586!3d12.29583008795096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b4d8b7a0a1b2c3d%3A0x1234567890abcdef!2sJPT%20Tools!5e0!3m2!1sen!2sin!4v1707123456789!5m2!1sen!2sin"
-                            class="w-full h-full border-0" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
-                    </div>
-
-                    <div class="flex flex-col lg:flex-row  lg:gap-5 gap-4 text-[#1D1D1F] body-4 ">
-                        <div
-                            class="flex flex-col bg-[#F5F5F5] p-5 rounded-2xl items-center gap-8 lg:py-8 py-6 px-5 w-full ">
-                            <div class="h-9 w-9 flex items-center justify-center rounded-full ">
-                                <img src="./Assets/phone.svg" alt="" class="w-full  h-full">
-                            </div>
-                            <p>+91 90745 08686</p>
-                        </div>
-                        <div
-                            class="flex flex-col bg-[#F5F5F5] p-5 rounded-2xl items-center gap-8 lg:py-8 py-6 px-5 w-full ">
-                            <div class="h-9 w-9 flex items-center justify-center rounded-full ">
-                                <img src="./Assets/email.svg" alt="" class="w-full  h-full">
-                            </div>
-                            <p>support@jpttools.com</p>
-                        </div>
-                        <div
-                            class="flex flex-col bg-[#F5F5F5] p-5 rounded-2xl items-center gap-8 lg:py-8 py-6 px-5 w-full ">
-                            <div class="h-9 w-9 flex items-center justify-center rounded-full ">
-                                <img src="./Assets/Whatsapp-icon.svg" alt="" class="w-full  h-full">
-                            </div>
-                            <p>+91 90745 08686</p>
+           
+                <form class="flex flex-col gap-4 justify-center  bg-white p-6 rounded-lg lg:w-[50%] w-full">
+                    <div class="flex flex-col gap-2">
+                        <label for="topic" class="caption-medium-14 text-[#535559] font-bold ">Order Number</label>
+                        <div class="relative">
+                            <input type="text" id="topic"
+                                class="w-full px-4 py-3 rounded-lg border border-[#E5E5E5] focus:border-red outline-none transition-all body-2 appearance-none bg-white text-[#535559]" placeholder="Your Order Number/ID"> 
                         </div>
                     </div>
-                </div>
-
-                <!-- Right Side -->
-                <div class="flex-1 lg:w-[50%] w-full">
-                    <form class="flex flex-col gap-4">
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <div class="flex flex-col gap-2">
-                                <label for="name" class="caption-medium-14 text-[#535559] font-bold ">Name</label>
-                                <input type="text" id="name" placeholder="Your Name"
-                                    class="w-full px-4 py-3 rounded-lg border border-[#E5E5E5] focus:border-red outline-none transition-all body-2">
-                            </div>
-                            <div class="flex flex-col gap-2">
-                                <label for="email" class="caption-medium-14 text-[#535559] font-bold ">Email</label>
-                                <input type="email" id="email" placeholder="Your Email"
-                                    class="w-full px-4 py-3 rounded-lg border border-[#E5E5E5] focus:border-red outline-none transition-all body-2">
-                            </div>
+                     <div class="flex flex-col gap-2">
+                        <label for="topic" class="caption-medium-14 text-[#535559] font-bold ">Email</label>
+                        <div class="relative">
+                            <input type="email" id="topic"
+                                class="w-full px-4 py-3 rounded-lg border border-[#E5E5E5] focus:border-red outline-none transition-all body-2 appearance-none bg-white text-[#535559]" placeholder="you@company.com"> 
                         </div>
+                    </div>
 
-                        <div class="flex flex-col gap-2">
-                            <label for="phone" class="caption-medium-14 text-[#535559] font-bold ">Phone number</label>
-                            <div
-                                class="flex items-center border border-[#E5E5E5] rounded-lg overflow-hidden focus-within:border-red transition-all">
-                                <div
-                                    class="flex items-center gap-2 px-4 py-3 bg-white border-r border-[#E5E5E5] cursor-pointer">
-                                    <span class="body-2 font-bold text-[#535559]">IN</span>
-                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                        stroke-width="2">
-                                        <path d="M6 9l6 6 6-6" />
-                                    </svg>
-                                    <span class="body-2 text-[#535559]">+91</span>
-                                </div>
-                                <input type="tel" id="phone" placeholder=""
-                                    class="flex-1 px-4 py-3 outline-none body-2">
-                            </div>
-                        </div>
+                    <div class="flex flex-col gap-2">
+                        <label for="message" class="caption-medium-14 text-[#535559] font-bold ">Reason</label>
+                        <textarea id="message" rows="4" placeholder=""
+                            class="w-full px-4.5 py-2.5 rounded-lg border border-[#E5E5E5] focus:border-red outline-none transition-all body-2 resize-none"></textarea>
+                    </div>
+                    <div class="flex  gap-2 items-center">
+                        <input type="checkbox" id="message" rows="4" placeholder=""
+                            class="h-5 w-5 px-4.5 py-2.5 rounded-lg border border-[#E5E5E5] focus:border-red outline-none transition-all body-2 resize-none">
+                            <span for="message" class="text-h7 text-[#535559] font-bold ">You agree to our Return and Refund Policy.</span>
+                    </div>
 
-                        <div class="flex flex-col gap-2">
-                            <label for="topic" class="caption-medium-14 text-[#535559] font-bold ">Topic</label>
-                            <div class="relative">
-                                <select id="topic"
-                                    class="w-full px-4 py-3 rounded-lg border border-[#E5E5E5] focus:border-red outline-none transition-all body-2 appearance-none bg-white text-[#535559]">
-                                    <option value="" disabled selected>Select a topic</option>
-                                    <option value="order">Order Support</option>
-                                    <option value="technical">Technical Query</option>
-                                    <option value="warranty">Warranty Claim</option>
-                                    <option value="other">Other</option>
-                                </select>
-                                <div class="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#535559"
-                                        stroke-width="2">
-                                        <path d="M6 9l6 6 6-6" />
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="flex flex-col gap-2">
-                            <label for="message" class="caption-medium-14 text-[#535559] font-bold ">Message</label>
-                            <textarea id="message" rows="4" placeholder=""
-                                class="w-full px-4.5 py-2.5 rounded-lg border border-[#E5E5E5] focus:border-red outline-none transition-all body-2 resize-none"></textarea>
-                        </div>
-
-                        <button type="submit"
-                            class="w-full btn btn-secondary btn-h-48 flex text-center justify-center lg:mt-4 mt-2">
-                            Send Message
-                        </button>
-                    </form>
-                </div>
-
-            </div>
+                    <button type="submit"
+                        class="w-full btn btn-secondary btn-h-48 flex text-center justify-center lg:mt-4 mt-2">
+                        Send Message
+                    </button>
+                </form>
+          
 
         </div>
+
     </section>
 
 
-    <!-- Feedback -->
-    <div class="bg-black">
-        <section class="lg:pt-30 pt-10 lg:pb-20 pb-10 bg-[#F5F5F5] rounded-b-4xl ">
-            <div class="lg:px-40 px-5 flex flex-col gap-8 items-center justify-center ">
-                <div class="flex flex-col lg:gap-8 gap-6 items-center justify-center ">
-                    <h4 class="text-h4 ">Your Feedback Matters</h4>
-                    <p class="body-2 text-[#535559] flex justify-center text-center">Have you purchased from JPT Tools?
-                        Share your experience — it helps us improve and helps others choose better!
-                    </p>
-                    <button class="btn btn-secondary btn-h-48 flex text-center justify-center ">
-                        Write a Review on Google
-                    </button>
-
-                    <div class="flex gap-4">
-                        <img src="./Assets/insta.svg" alt="" class="h-6 w-6">
-                        <img src="./Assets/facebook.svg" alt="" class="h-6 w-6">
-                        <img src="./Assets/youtube-grey.svg" alt="" class="h-6 w-6">
-
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
 
 
 
 
-    <!-- Footer -->
+    <!-- Footer Section -->
     <footer class="bg-black text-white lg:py-16 py-10">
         <div class=" lg:px-40 px-5 flex flex-col lg:gap-12 gap-8 ">
             <div class=" ">
@@ -377,7 +281,88 @@
 
 
     </footer>
+
+
+
+    <script src="index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".card-section-swiper-2", {
+            slidesPerView: "auto",
+            spaceBetween: 16,
+            centeredSlides: false,
+            grabCursor: true,
+            breakpoints: {
+                320: {
+                    slidesPerView: 1.2,
+                    spaceBetween: 16,
+                    slidesOffsetBefore: 20,
+                    slidesOffsetAfter: 20,
+                },
+                640: {
+                    slidesPerView: 2.2,
+                    spaceBetween: 20,
+                    slidesOffsetBefore: 24,
+                    slidesOffsetAfter: 24,
+                },
+                1024: {
+                    slidesPerView: "auto",
+                    spaceBetween: 24,
+                    slidesOffsetBefore: 0,
+                    slidesOffsetAfter: 0,
+                }
+            },
+            on: {
+                progress: function () {
+                    const bar = document.getElementById('card-progress-bar');
+                    if (bar) {
+                        bar.style.width = Math.max(0, Math.min(100, this.progress * 100)) + '%';
+                    }
+                }
+            }
+        });
+    </script>
+
+    <script>
+        // Progress bar logic for multiple sections
+        const sections = [
+            { containerId: "trending-scroll-container", barId: "trending-progress-bar" },
+            { containerId: "bestsellers-scroll-container", barId: "bestsellers-progress-bar" },
+            { containerId: "deals-scroll-container", barId: "deals-progress-bar" },
+
+        ];
+
+        sections.forEach(section => {
+            const container = document.getElementById(section.containerId);
+            const bar = document.getElementById(section.barId);
+
+            if (!container || !bar) return;
+
+            const update = () => {
+                const scrollLeft = container.scrollLeft;
+                const scrollWidth = container.scrollWidth;
+                const clientWidth = container.clientWidth;
+                const scrollableDistance = scrollWidth - clientWidth;
+
+                if (scrollableDistance > 0) {
+                    const percentage = (scrollLeft / scrollableDistance) * 100;
+                    bar.style.width = percentage + "%";
+                } else {
+                    bar.style.width = "100%";
+                }
+            };
+
+            container.addEventListener("scroll", update);
+            window.addEventListener("resize", update);
+            update(); // Initial call
+        });
+    </script>
+
+
+
+
+
+
     <script src="index.js"></script>
 </body>
 

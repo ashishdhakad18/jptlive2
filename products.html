@@ -11,7 +11,7 @@
 </head>
 
 <body>
-       <nav class="bg-white flex flex-col lg:px-0  ">
+     <nav class="bg-white flex flex-col lg:px-0  ">
         <!-- Badge -->
         <div class="lg:block hidden nav-badge body-4 bg-red text-white text-center py-3">
             Delivery within INDIA in time for Christmas if you order by December 19,
@@ -51,7 +51,7 @@
 
                 <!-- DESKTOP NAV LINKS -->
                 <div class="hidden lg:flex items-center gap-6">
-                    <a href="#"
+                    <a href="#" id="shopToggle"
                         class="nav-link nav-link-shop active caption-medium-12 rounded-md uppercase px-4">Shop</a>
                     <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4">JPT
                         Insiders</a>
@@ -74,6 +74,30 @@
             </div>
         </div>
     </nav>
+
+       <!-- Sub Navbar --> 
+     <nav id="shopMenu" class="bg-white flex flex-col lg:px-0
+         overflow-hidden
+         max-h-0 opacity-0
+         transition-all duration-1000 ease-in-out">
+    <div class="lg:px-40 px-4 w-full">
+
+        <!-- DESKTOP NAV LINKS -->
+        <div class="hidden lg:flex items-center justify-center gap-8 py-4">
+          <a href="#" class="nav-link nav-link-shop active caption-medium-12 rounded-md uppercase px-4">new</a>
+          <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4"> pressure washer</a>
+          <a href="#" class="nav-link nav-link-support caption-medium-12 rounded-md uppercase px-4">power tools</a>
+                 <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4">Hand Tools</a>
+                 <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4">ACCESSORIES</a>
+                 <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4">SPARE PARTS</a>
+                 <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4">Automobile</a>
+                    <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4">View all</a>
+
+
+        </div>
+
+    </div>
+  </nav>
 
     <!-- Breadcrumb -->
     <div class="bg-[#f5f5f5] py-4 lg:block hidden">
@@ -1436,19 +1460,18 @@
             </div>
 
             <!-- Progress Bar -->
-              <div class="hidden lg:block">
-  <div class="lg:px-40! px-5!">
-    <div class="">
-      <div class="w-full h-[6px] bg-white rounded-[6px] overflow-hidden relative">
-        <div
-          id="washers-progress-bar"
-          class="h-full absolute top-0 left-0 rounded-[6px] lg:px-40! px-5!"
-          style="background-color: var(--color-red-primary); width: 0%">
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+            <div class="hidden lg:block">
+                <div class="lg:px-40! px-5!">
+                    <div class="">
+                        <div class="w-full h-[6px] bg-white rounded-[6px] overflow-hidden relative">
+                            <div id="washers-progress-bar"
+                                class="h-full absolute top-0 left-0 rounded-[6px] lg:px-40! px-5!"
+                                style="background-color: var(--color-red-primary); width: 0%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="flex justify-center">
             <button
@@ -1742,19 +1765,18 @@
             </div>
 
             <!-- Progress Bar -->
-              <div class="hidden lg:block">
-  <div class="lg:px-40! px-5!">
-    <div class="">
-      <div class="w-full h-[6px] bg-white rounded-[6px] overflow-hidden relative">
-        <div
-          id="power-progress-bar"
-          class="h-full absolute top-0 left-0 rounded-[6px] lg:px-40! px-5!"
-          style="background-color: var(--color-red-primary); width: 0%">
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+            <div class="hidden lg:block">
+                <div class="lg:px-40! px-5!">
+                    <div class="">
+                        <div class="w-full h-[6px] bg-white rounded-[6px] overflow-hidden relative">
+                            <div id="power-progress-bar"
+                                class="h-full absolute top-0 left-0 rounded-[6px] lg:px-40! px-5!"
+                                style="background-color: var(--color-red-primary); width: 0%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="flex justify-center ">
             <button
@@ -2049,19 +2071,18 @@
             </div>
 
             <!-- Progress Bar -->
-                     <div class="hidden lg:block">
-  <div class="lg:px-40! px-5!">
-    <div class="">
-      <div class="w-full h-[6px] bg-white rounded-[6px] overflow-hidden relative">
-        <div
-          id="hands-progress-bar"
-          class="h-full absolute top-0 left-0 rounded-[6px] lg:px-40! px-5!"
-          style="background-color: var(--color-red-primary); width: 0%">
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+            <div class="hidden lg:block">
+                <div class="lg:px-40! px-5!">
+                    <div class="">
+                        <div class="w-full h-[6px] bg-white rounded-[6px] overflow-hidden relative">
+                            <div id="hands-progress-bar"
+                                class="h-full absolute top-0 left-0 rounded-[6px] lg:px-40! px-5!"
+                                style="background-color: var(--color-red-primary); width: 0%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="flex justify-center ">
             <button
@@ -2353,19 +2374,18 @@
             </div>
 
             <!-- Progress Bar -->
-                       <div class="hidden lg:block">
-  <div class="lg:px-40! px-5!">
-    <div class="">
-      <div class="w-full h-[6px] bg-white rounded-[6px] overflow-hidden relative">
-        <div
-          id="bosch-progress-bar"
-          class="h-full absolute top-0 left-0 rounded-[6px] lg:px-40! px-5!"
-          style="background-color: var(--color-red-primary); width: 0%">
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+            <div class="hidden lg:block">
+                <div class="lg:px-40! px-5!">
+                    <div class="">
+                        <div class="w-full h-[6px] bg-white rounded-[6px] overflow-hidden relative">
+                            <div id="bosch-progress-bar"
+                                class="h-full absolute top-0 left-0 rounded-[6px] lg:px-40! px-5!"
+                                style="background-color: var(--color-red-primary); width: 0%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="flex justify-center ">
             <button
@@ -2658,19 +2678,18 @@
             </div>
 
             <!-- Progress Bar -->
-                       <div class="hidden lg:block">
-  <div class="lg:px-40! px-5!">
-    <div class="">
-      <div class="w-full h-[6px] bg-white rounded-[6px] overflow-hidden relative">
-        <div
-          id="refurbished-progress-bar"
-          class="h-full absolute top-0 left-0 rounded-[6px] lg:px-40! px-5!"
-          style="background-color: var(--color-red-primary); width: 0%">
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+            <div class="hidden lg:block">
+                <div class="lg:px-40! px-5!">
+                    <div class="">
+                        <div class="w-full h-[6px] bg-white rounded-[6px] overflow-hidden relative">
+                            <div id="refurbished-progress-bar"
+                                class="h-full absolute top-0 left-0 rounded-[6px] lg:px-40! px-5!"
+                                style="background-color: var(--color-red-primary); width: 0%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="flex justify-center ">
             <button
@@ -2768,7 +2787,7 @@
                                 <button class="btn btn-secondary btn-h-36">Add to Cart</button>
                             </div>
                         </div>
-                           <div class="swiper-slide combo-card card flex flex-col justify-between rounded-md max-w-[20rem] bg-white hover:scale-[1.02] transition-all duration-300"
+                        <div class="swiper-slide combo-card card flex flex-col justify-between rounded-md max-w-[20rem] bg-white hover:scale-[1.02] transition-all duration-300"
                             data-category="Combo 1">
                             <!-- Header -->
                             <div class="card-header flex justify-center relative">
@@ -4598,309 +4617,322 @@
         </div>
     </section>
 
-<div class="bg-black">
-    <section class="bg-[#f5f5f5] lg:py-20 py-10 overflow-hidden border-b-2  lg:rounded-b-[40px] rounded-b-[24px] ">
-        <div class=" flex flex-col item-center lg:gap-12 gap-6 ">
-            <div class=" lg:pl-40! pl-5! flex items-center justify-between">
-                <div class="flex flex-row items-center justify-center text-center 
+    <div class="bg-black">
+        <section class="bg-[#f5f5f5] lg:py-20 py-10 overflow-hidden border-b-2  lg:rounded-b-[40px] rounded-b-[24px] ">
+            <div class=" flex flex-col item-center lg:gap-12 gap-6 ">
+                <div class=" lg:pl-40! pl-5! flex items-center justify-between">
+                    <div class="flex flex-row items-center justify-center text-center 
             lg:flex-col lg:items-start lg:text-left lg:gap-0 gap-2 lg:pl-0! pl-5!">
-                    <h3 class="text-h3 font-bold">YOU MAY</h3>
-                    <h3 class="text-h3 font-bold">ALSO LIKE</h3>
+                        <h3 class="text-h3 font-bold">YOU MAY</h3>
+                        <h3 class="text-h3 font-bold">ALSO LIKE</h3>
+                    </div>
+                    <button
+                        class="hidden! lg:block! bg-black text-white px-8 py-3 rounded-xl font-bold transition-all hover:bg-black/90 ">
+                        View All
+                    </button>
                 </div>
-                <button
-                    class="hidden! lg:block! bg-black text-white px-8 py-3 rounded-xl font-bold transition-all hover:bg-black/90 ">
-                    View All
-                </button>
-            </div>
 
-            <!-- Scrollable Card Container -->
-            <!-- Swiper Container -->
-            <div class="relative">
-                <div id="may-swiper" class="swiper w-full overflow-visible lg:pl-40! pl-5!">
-                    <div class="swiper-wrapper">
-                        <style>
-                            #may-swiper .swiper-slide {
-                                width: 20rem;
-                            }
-
-                            @media (min-width: 768px) {
+                <!-- Scrollable Card Container -->
+                <!-- Swiper Container -->
+                <div class="relative">
+                    <div id="may-swiper" class="swiper w-full overflow-visible lg:pl-40! pl-5!">
+                        <div class="swiper-wrapper">
+                            <style>
                                 #may-swiper .swiper-slide {
-                                    width: 22rem;
+                                    width: 20rem;
                                 }
-                            }
-                        </style>
-                        <!-- Card 1 -->
-                        <div
-                            class="card flex flex-col justify-between rounded-3xl bg-white min-w-[20rem] md:min-w-[22rem] hover:scale-[1.02] transition-all duration-300 snap-center swiper-slide">
-                            <div class="card-header flex justify-center relative p-6">
-                                <img src="./Assets/Product-1.png" alt="Product-1"
-                                    class="w-full h-auto object-contain max-h-[250px]" />
-                                <div class="card-badges absolute top-4 right-4">
-                                    <div class="card-badge bg-red px-3 py-1 rounded-md body-4 font-bold text-white">
-                                        Trending
+
+                                @media (min-width: 768px) {
+                                    #may-swiper .swiper-slide {
+                                        width: 22rem;
+                                    }
+                                }
+                            </style>
+                            <!-- Card 1 -->
+                            <div
+                                class="card flex flex-col justify-between rounded-3xl bg-white min-w-[20rem] md:min-w-[22rem] hover:scale-[1.02] transition-all duration-300 snap-center swiper-slide">
+                                <div class="card-header flex justify-center relative p-6">
+                                    <img src="./Assets/Product-1.png" alt="Product-1"
+                                        class="w-full h-auto object-contain max-h-[250px]" />
+                                    <div class="card-badges absolute top-4 right-4">
+                                        <div class="card-badge bg-red px-3 py-1 rounded-md body-4 font-bold text-white">
+                                            Trending
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="card-body py-4 px-6 flex flex-col gap-4">
+                                <div class="card-body py-4 px-6 flex flex-col gap-4">
 
-                                <div class="card-rating flex items-center justify-start gap-2">
-                                    <span
-                                        class="bg-green px-2.5 py-1 rounded-md body-3 font-bold flex items-center text-black">
-                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="black"
-                                            xmlns="http://www.w3.org/2000/svg" class="mr-1">
-                                            <path
-                                                d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
-                                        </svg>4.6
-                                    </span>
-                                    <p class="body-3 font-medium text-[#7f7f7f]">(36)</p>
-                                </div>
-                                <h4 class="card-heading text-xl md:text-h4 font-bold">Pressure Washer</h4>
-                                <p class="card-description body-2 font-medium text-[#7f7f7f] line-clamp-2">
-                                    JPT Combo Domestic F10 Pressure Washer With Heavy-Duty Snow Foam Cannon
-                                </p>
-                            </div>
-                            <div class="card-footer flex items-center justify-between flex-wrap gap-2 p-6 pt-0">
-                                <span class="flex flex-col whitespace-nowrap">
-                                    <p class="original-price body-5 line-through font-medium text-[#7f7f7f]">Rs. 3,600
+                                    <div class="card-rating flex items-center justify-start gap-2">
+                                        <span
+                                            class="bg-green px-2.5 py-1 rounded-md body-3 font-bold flex items-center text-black">
+                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="black"
+                                                xmlns="http://www.w3.org/2000/svg" class="mr-1">
+                                                <path
+                                                    d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
+                                            </svg>4.6
+                                        </span>
+                                        <p class="body-3 font-medium text-[#7f7f7f]">(36)</p>
+                                    </div>
+                                    <h4 class="card-heading text-xl md:text-h4 font-bold">Pressure Washer</h4>
+                                    <p class="card-description body-2 font-medium text-[#7f7f7f] line-clamp-2">
+                                        JPT Combo Domestic F10 Pressure Washer With Heavy-Duty Snow Foam Cannon
                                     </p>
-                                    <h5 class="discount-price text-xl md:text-h5 font-black text-black">Rs. 3,500</h5>
-                                </span>
-                                <button
-                                    class="bg-black text-white px-6 py-2 rounded-xl font-bold hover:bg-black/80 transition-colors">Add
-                                    to Cart</button>
+                                </div>
+                                <div class="card-footer flex items-center justify-between flex-wrap gap-2 p-6 pt-0">
+                                    <span class="flex flex-col whitespace-nowrap">
+                                        <p class="original-price body-5 line-through font-medium text-[#7f7f7f]">Rs.
+                                            3,600
+                                        </p>
+                                        <h5 class="discount-price text-xl md:text-h5 font-black text-black">Rs. 3,500
+                                        </h5>
+                                    </span>
+                                    <button
+                                        class="bg-black text-white px-6 py-2 rounded-xl font-bold hover:bg-black/80 transition-colors">Add
+                                        to Cart</button>
+                                </div>
+                            </div>
+
+                            <!-- Card 2 -->
+                            <div
+                                class="card flex flex-col justify-between rounded-3xl bg-white min-w-[20rem] md:min-w-[22rem] hover:scale-[1.02] transition-all duration-300 snap-center swiper-slide">
+                                <div class="card-header flex justify-center relative p-6">
+                                    <img src="./Assets/Product-2.png" alt="Product-2"
+                                        class="w-full h-auto object-contain max-h-[250px]" />
+                                    <div class="card-badges absolute top-4 right-4">
+                                        <div class="card-badge bg-red px-3 py-1 rounded-md body-4 font-bold text-white">
+                                            Trending
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body py-4 px-6 flex flex-col gap-4">
+
+                                    <div class="card-rating flex items-center justify-start gap-2">
+                                        <span
+                                            class="bg-green px-2.5 py-1 rounded-md body-3 font-bold flex items-center text-black">
+                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="black"
+                                                xmlns="http://www.w3.org/2000/svg" class="mr-1">
+                                                <path
+                                                    d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
+                                            </svg>4.8
+                                        </span>
+                                        <p class="body-3 font-medium text-[#7f7f7f]">(124)</p>
+                                    </div>
+                                    <h4 class="card-heading text-xl md:text-h4 font-bold">Cordless Drill</h4>
+                                    <p class="card-description body-2 font-medium text-[#7f7f7f] line-clamp-2">
+                                        JPT Heavy Duty 21V Cordless Drill with fast charger and bit set.
+                                    </p>
+                                </div>
+                                <div class="card-footer flex items-center justify-between flex-wrap gap-2 p-6 pt-0">
+                                    <span class="flex flex-col whitespace-nowrap">
+                                        <p class="original-price body-5 line-through font-medium text-[#7f7f7f]">Rs.
+                                            4,200
+                                        </p>
+                                        <h5 class="discount-price text-xl md:text-h5 font-black text-black">Rs. 3,800
+                                        </h5>
+                                    </span>
+                                    <button
+                                        class="bg-black text-white px-6 py-2 rounded-xl font-bold hover:bg-black/80 transition-colors">Add
+                                        to Cart</button>
+                                </div>
+                            </div>
+
+                            <!-- Card 3 -->
+                            <div
+                                class="card flex flex-col justify-between rounded-3xl bg-white min-w-[20rem] md:min-w-[22rem] hover:scale-[1.02] transition-all duration-300 snap-center swiper-slide">
+                                <div class="card-header flex justify-center relative p-6">
+                                    <img src="./Assets/Product-3.png" alt="Product-3"
+                                        class="w-full h-auto object-contain max-h-[250px]" />
+                                    <div class="card-badges absolute top-4 right-4">
+                                        <div class="card-badge bg-red px-3 py-1 rounded-md body-4 font-bold text-white">
+                                            Sale
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body py-4 px-6 flex flex-col gap-4">
+
+                                    <div class="card-rating flex items-center justify-start gap-2">
+                                        <span
+                                            class="bg-green px-2.5 py-1 rounded-md body-3 font-bold flex items-center text-black">
+                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="black"
+                                                xmlns="http://www.w3.org/2000/svg" class="mr-1">
+                                                <path
+                                                    d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
+                                            </svg>4.5
+                                        </span>
+                                        <p class="body-3 font-medium text-[#7f7f7f]">(89)</p>
+                                    </div>
+                                    <h4 class="card-heading text-xl md:text-h4 font-bold">Angle Grinder</h4>
+                                    <p class="card-description body-2 font-medium text-[#7f7f7f] line-clamp-2">
+                                        Professional Grade 4-inch Angle Grinder for cutting and grinding.
+                                    </p>
+                                </div>
+                                <div class="card-footer flex items-center justify-between flex-wrap gap-2 p-6 pt-0">
+                                    <span class="flex flex-col whitespace-nowrap">
+                                        <p class="original-price body-5 line-through font-medium text-[#7f7f7f]">Rs.
+                                            2,800
+                                        </p>
+                                        <h5 class="discount-price text-xl md:text-h5 font-black text-black">Rs. 2,200
+                                        </h5>
+                                    </span>
+                                    <button
+                                        class="bg-black text-white px-6 py-2 rounded-xl font-bold hover:bg-black/80 transition-colors">Add
+                                        to Cart</button>
+                                </div>
+                            </div>
+
+                            <!-- Card 4 -->
+                            <div
+                                class="card flex flex-col justify-between rounded-3xl bg-white min-w-[20rem] md:min-w-[22rem] hover:scale-[1.02] transition-all duration-300 snap-center swiper-slide">
+                                <div class="card-header flex justify-center relative p-6">
+                                    <img src="./Assets/Product-1.png" alt="Product-1"
+                                        class="w-full h-auto object-contain max-h-[250px]" />
+                                    <div class="card-badges absolute top-4 right-4">
+                                        <div class="card-badge bg-red px-3 py-1 rounded-md body-4 font-bold text-white">
+                                            Trending
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body py-4 px-6 flex flex-col gap-4">
+
+                                    <div class="card-rating flex items-center justify-start gap-2">
+                                        <span
+                                            class="bg-green px-2.5 py-1 rounded-md body-3 font-bold flex items-center text-black">
+                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="black"
+                                                xmlns="http://www.w3.org/2000/svg" class="mr-1">
+                                                <path
+                                                    d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
+                                            </svg>4.9
+                                        </span>
+                                        <p class="body-3 font-medium text-[#7f7f7f]">(210)</p>
+                                    </div>
+                                    <h4 class="card-heading text-xl md:text-h4 font-bold">Impact Wrench</h4>
+                                    <p class="card-description body-2 font-medium text-[#7f7f7f] line-clamp-2">
+                                        High Torque Impact Wrench for automotive and construction use.
+                                    </p>
+                                </div>
+                                <div class="card-footer flex items-center justify-between flex-wrap gap-2 p-6 pt-0">
+                                    <span class="flex flex-col whitespace-nowrap">
+                                        <p class="original-price body-5 line-through font-medium text-[#7f7f7f]">Rs.
+                                            5,500
+                                        </p>
+                                        <h5 class="discount-price text-xl md:text-h5 font-black text-black">Rs. 4,999
+                                        </h5>
+                                    </span>
+                                    <button
+                                        class="bg-black text-white px-6 py-2 rounded-xl font-bold hover:bg-black/80 transition-colors">Add
+                                        to Cart</button>
+                                </div>
+                            </div>
+                            <!-- Card 5 -->
+                            <div
+                                class="card flex flex-col justify-between rounded-3xl bg-white min-w-[20rem] md:min-w-[22rem] hover:scale-[1.02] transition-all duration-300 snap-center swiper-slide">
+                                <div class="card-header flex justify-center relative p-6">
+                                    <img src="./Assets/Product-2.png" alt="Product-2"
+                                        class="w-full h-auto object-contain max-h-[250px]" />
+                                    <div class="card-badges absolute top-4 right-4">
+                                        <div class="card-badge bg-red px-3 py-1 rounded-md body-4 font-bold text-white">
+                                            Trending
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body py-4 px-6 flex flex-col gap-4">
+
+                                    <div class="card-rating flex items-center justify-start gap-2">
+                                        <span
+                                            class="bg-green px-2.5 py-1 rounded-md body-3 font-bold flex items-center text-black">
+                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="black"
+                                                xmlns="http://www.w3.org/2000/svg" class="mr-1">
+                                                <path
+                                                    d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
+                                            </svg>4.9
+                                        </span>
+                                        <p class="body-3 font-medium text-[#7f7f7f]">(210)</p>
+                                    </div>
+                                    <h4 class="card-heading text-xl md:text-h4 font-bold">Impact Wrench</h4>
+                                    <p class="card-description body-2 font-medium text-[#7f7f7f] line-clamp-2">
+                                        High Torque Impact Wrench for automotive and construction use.
+                                    </p>
+                                </div>
+                                <div class="card-footer flex items-center justify-between flex-wrap gap-2 p-6 pt-0">
+                                    <span class="flex flex-col whitespace-nowrap">
+                                        <p class="original-price body-5 line-through font-medium text-[#7f7f7f]">Rs.
+                                            5,500
+                                        </p>
+                                        <h5 class="discount-price text-xl md:text-h5 font-black text-black">Rs. 4,999
+                                        </h5>
+                                    </span>
+                                    <button
+                                        class="bg-black text-white px-6 py-2 rounded-xl font-bold hover:bg-black/80 transition-colors">Add
+                                        to Cart</button>
+                                </div>
+                            </div>
+                            <!-- Card 6 -->
+                            <div
+                                class="card flex flex-col justify-between rounded-3xl bg-white min-w-[20rem] md:min-w-[22rem] hover:scale-[1.02] transition-all duration-300 snap-center swiper-slide">
+                                <div class="card-header flex justify-center relative p-6">
+                                    <img src="./Assets/Product-3.png" alt="Product-3"
+                                        class="w-full h-auto object-contain max-h-[250px]" />
+                                    <div class="card-badges absolute top-4 right-4">
+                                        <div class="card-badge bg-red px-3 py-1 rounded-md body-4 font-bold text-white">
+                                            Hot
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body py-4 px-6 flex flex-col gap-4">
+
+                                    <div class="card-rating flex items-center justify-start gap-2">
+                                        <span
+                                            class="bg-green px-2.5 py-1 rounded-md body-3 font-bold flex items-center text-black">
+                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="black"
+                                                xmlns="http://www.w3.org/2000/svg" class="mr-1">
+                                                <path
+                                                    d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
+                                            </svg>4.9
+                                        </span>
+                                        <p class="body-3 font-medium text-[#7f7f7f]">(210)</p>
+                                    </div>
+                                    <h4 class="card-heading text-xl md:text-h4 font-bold">Impact Wrench</h4>
+                                    <p class="card-description body-2 font-medium text-[#7f7f7f] line-clamp-2">
+                                        High Torque Impact Wrench for automotive and construction use.
+                                    </p>
+                                </div>
+                                <div class="card-footer flex items-center justify-between flex-wrap gap-2 p-6 pt-0">
+                                    <span class="flex flex-col whitespace-nowrap">
+                                        <p class="original-price body-5 line-through font-medium text-[#7f7f7f]">Rs.
+                                            5,500
+                                        </p>
+                                        <h5 class="discount-price text-xl md:text-h5 font-black text-black">Rs. 4,999
+                                        </h5>
+                                    </span>
+                                    <button
+                                        class="bg-black text-white px-6 py-2 rounded-xl font-bold hover:bg-black/80 transition-colors">Add
+                                        to Cart</button>
+                                </div>
                             </div>
                         </div>
+                    </div>
+                </div>
 
-                        <!-- Card 2 -->
-                        <div
-                            class="card flex flex-col justify-between rounded-3xl bg-white min-w-[20rem] md:min-w-[22rem] hover:scale-[1.02] transition-all duration-300 snap-center swiper-slide">
-                            <div class="card-header flex justify-center relative p-6">
-                                <img src="./Assets/Product-2.png" alt="Product-2"
-                                    class="w-full h-auto object-contain max-h-[250px]" />
-                                <div class="card-badges absolute top-4 right-4">
-                                    <div class="card-badge bg-red px-3 py-1 rounded-md body-4 font-bold text-white">
-                                        Trending
-                                    </div>
+                <!-- Progress Bar -->
+                <div class="hidden lg:block">
+                    <div class="lg:px-40! px-5!">
+                        <div class="">
+                            <div class="w-full h-[6px] bg-white rounded-[6px] overflow-hidden relative">
+                                <div id="may-progress-bar"
+                                    class="h-full absolute top-0 left-0 rounded-[6px] lg:px-40! px-5!"
+                                    style="background-color: var(--color-red-primary); width: 0%">
                                 </div>
-                            </div>
-                            <div class="card-body py-4 px-6 flex flex-col gap-4">
-
-                                <div class="card-rating flex items-center justify-start gap-2">
-                                    <span
-                                        class="bg-green px-2.5 py-1 rounded-md body-3 font-bold flex items-center text-black">
-                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="black"
-                                            xmlns="http://www.w3.org/2000/svg" class="mr-1">
-                                            <path
-                                                d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
-                                        </svg>4.8
-                                    </span>
-                                    <p class="body-3 font-medium text-[#7f7f7f]">(124)</p>
-                                </div>
-                                <h4 class="card-heading text-xl md:text-h4 font-bold">Cordless Drill</h4>
-                                <p class="card-description body-2 font-medium text-[#7f7f7f] line-clamp-2">
-                                    JPT Heavy Duty 21V Cordless Drill with fast charger and bit set.
-                                </p>
-                            </div>
-                            <div class="card-footer flex items-center justify-between flex-wrap gap-2 p-6 pt-0">
-                                <span class="flex flex-col whitespace-nowrap">
-                                    <p class="original-price body-5 line-through font-medium text-[#7f7f7f]">Rs. 4,200
-                                    </p>
-                                    <h5 class="discount-price text-xl md:text-h5 font-black text-black">Rs. 3,800</h5>
-                                </span>
-                                <button
-                                    class="bg-black text-white px-6 py-2 rounded-xl font-bold hover:bg-black/80 transition-colors">Add
-                                    to Cart</button>
-                            </div>
-                        </div>
-
-                        <!-- Card 3 -->
-                        <div
-                            class="card flex flex-col justify-between rounded-3xl bg-white min-w-[20rem] md:min-w-[22rem] hover:scale-[1.02] transition-all duration-300 snap-center swiper-slide">
-                            <div class="card-header flex justify-center relative p-6">
-                                <img src="./Assets/Product-3.png" alt="Product-3"
-                                    class="w-full h-auto object-contain max-h-[250px]" />
-                                <div class="card-badges absolute top-4 right-4">
-                                    <div class="card-badge bg-red px-3 py-1 rounded-md body-4 font-bold text-white">Sale
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-body py-4 px-6 flex flex-col gap-4">
-
-                                <div class="card-rating flex items-center justify-start gap-2">
-                                    <span
-                                        class="bg-green px-2.5 py-1 rounded-md body-3 font-bold flex items-center text-black">
-                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="black"
-                                            xmlns="http://www.w3.org/2000/svg" class="mr-1">
-                                            <path
-                                                d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
-                                        </svg>4.5
-                                    </span>
-                                    <p class="body-3 font-medium text-[#7f7f7f]">(89)</p>
-                                </div>
-                                <h4 class="card-heading text-xl md:text-h4 font-bold">Angle Grinder</h4>
-                                <p class="card-description body-2 font-medium text-[#7f7f7f] line-clamp-2">
-                                    Professional Grade 4-inch Angle Grinder for cutting and grinding.
-                                </p>
-                            </div>
-                            <div class="card-footer flex items-center justify-between flex-wrap gap-2 p-6 pt-0">
-                                <span class="flex flex-col whitespace-nowrap">
-                                    <p class="original-price body-5 line-through font-medium text-[#7f7f7f]">Rs. 2,800
-                                    </p>
-                                    <h5 class="discount-price text-xl md:text-h5 font-black text-black">Rs. 2,200</h5>
-                                </span>
-                                <button
-                                    class="bg-black text-white px-6 py-2 rounded-xl font-bold hover:bg-black/80 transition-colors">Add
-                                    to Cart</button>
-                            </div>
-                        </div>
-
-                        <!-- Card 4 -->
-                        <div
-                            class="card flex flex-col justify-between rounded-3xl bg-white min-w-[20rem] md:min-w-[22rem] hover:scale-[1.02] transition-all duration-300 snap-center swiper-slide">
-                            <div class="card-header flex justify-center relative p-6">
-                                <img src="./Assets/Product-1.png" alt="Product-1"
-                                    class="w-full h-auto object-contain max-h-[250px]" />
-                                <div class="card-badges absolute top-4 right-4">
-                                    <div class="card-badge bg-red px-3 py-1 rounded-md body-4 font-bold text-white">
-                                        Trending
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-body py-4 px-6 flex flex-col gap-4">
-
-                                <div class="card-rating flex items-center justify-start gap-2">
-                                    <span
-                                        class="bg-green px-2.5 py-1 rounded-md body-3 font-bold flex items-center text-black">
-                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="black"
-                                            xmlns="http://www.w3.org/2000/svg" class="mr-1">
-                                            <path
-                                                d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
-                                        </svg>4.9
-                                    </span>
-                                    <p class="body-3 font-medium text-[#7f7f7f]">(210)</p>
-                                </div>
-                                <h4 class="card-heading text-xl md:text-h4 font-bold">Impact Wrench</h4>
-                                <p class="card-description body-2 font-medium text-[#7f7f7f] line-clamp-2">
-                                    High Torque Impact Wrench for automotive and construction use.
-                                </p>
-                            </div>
-                            <div class="card-footer flex items-center justify-between flex-wrap gap-2 p-6 pt-0">
-                                <span class="flex flex-col whitespace-nowrap">
-                                    <p class="original-price body-5 line-through font-medium text-[#7f7f7f]">Rs. 5,500
-                                    </p>
-                                    <h5 class="discount-price text-xl md:text-h5 font-black text-black">Rs. 4,999</h5>
-                                </span>
-                                <button
-                                    class="bg-black text-white px-6 py-2 rounded-xl font-bold hover:bg-black/80 transition-colors">Add
-                                    to Cart</button>
-                            </div>
-                        </div>
-                        <!-- Card 5 -->
-                        <div
-                            class="card flex flex-col justify-between rounded-3xl bg-white min-w-[20rem] md:min-w-[22rem] hover:scale-[1.02] transition-all duration-300 snap-center swiper-slide">
-                            <div class="card-header flex justify-center relative p-6">
-                                <img src="./Assets/Product-2.png" alt="Product-2"
-                                    class="w-full h-auto object-contain max-h-[250px]" />
-                                <div class="card-badges absolute top-4 right-4">
-                                    <div class="card-badge bg-red px-3 py-1 rounded-md body-4 font-bold text-white">
-                                        Trending
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-body py-4 px-6 flex flex-col gap-4">
-
-                                <div class="card-rating flex items-center justify-start gap-2">
-                                    <span
-                                        class="bg-green px-2.5 py-1 rounded-md body-3 font-bold flex items-center text-black">
-                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="black"
-                                            xmlns="http://www.w3.org/2000/svg" class="mr-1">
-                                            <path
-                                                d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
-                                        </svg>4.9
-                                    </span>
-                                    <p class="body-3 font-medium text-[#7f7f7f]">(210)</p>
-                                </div>
-                                <h4 class="card-heading text-xl md:text-h4 font-bold">Impact Wrench</h4>
-                                <p class="card-description body-2 font-medium text-[#7f7f7f] line-clamp-2">
-                                    High Torque Impact Wrench for automotive and construction use.
-                                </p>
-                            </div>
-                            <div class="card-footer flex items-center justify-between flex-wrap gap-2 p-6 pt-0">
-                                <span class="flex flex-col whitespace-nowrap">
-                                    <p class="original-price body-5 line-through font-medium text-[#7f7f7f]">Rs. 5,500
-                                    </p>
-                                    <h5 class="discount-price text-xl md:text-h5 font-black text-black">Rs. 4,999</h5>
-                                </span>
-                                <button
-                                    class="bg-black text-white px-6 py-2 rounded-xl font-bold hover:bg-black/80 transition-colors">Add
-                                    to Cart</button>
-                            </div>
-                        </div>
-                        <!-- Card 6 -->
-                        <div
-                            class="card flex flex-col justify-between rounded-3xl bg-white min-w-[20rem] md:min-w-[22rem] hover:scale-[1.02] transition-all duration-300 snap-center swiper-slide">
-                            <div class="card-header flex justify-center relative p-6">
-                                <img src="./Assets/Product-3.png" alt="Product-3"
-                                    class="w-full h-auto object-contain max-h-[250px]" />
-                                <div class="card-badges absolute top-4 right-4">
-                                    <div class="card-badge bg-red px-3 py-1 rounded-md body-4 font-bold text-white">Hot
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-body py-4 px-6 flex flex-col gap-4">
-
-                                <div class="card-rating flex items-center justify-start gap-2">
-                                    <span
-                                        class="bg-green px-2.5 py-1 rounded-md body-3 font-bold flex items-center text-black">
-                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="black"
-                                            xmlns="http://www.w3.org/2000/svg" class="mr-1">
-                                            <path
-                                                d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
-                                        </svg>4.9
-                                    </span>
-                                    <p class="body-3 font-medium text-[#7f7f7f]">(210)</p>
-                                </div>
-                                <h4 class="card-heading text-xl md:text-h4 font-bold">Impact Wrench</h4>
-                                <p class="card-description body-2 font-medium text-[#7f7f7f] line-clamp-2">
-                                    High Torque Impact Wrench for automotive and construction use.
-                                </p>
-                            </div>
-                            <div class="card-footer flex items-center justify-between flex-wrap gap-2 p-6 pt-0">
-                                <span class="flex flex-col whitespace-nowrap">
-                                    <p class="original-price body-5 line-through font-medium text-[#7f7f7f]">Rs. 5,500
-                                    </p>
-                                    <h5 class="discount-price text-xl md:text-h5 font-black text-black">Rs. 4,999</h5>
-                                </span>
-                                <button
-                                    class="bg-black text-white px-6 py-2 rounded-xl font-bold hover:bg-black/80 transition-colors">Add
-                                    to Cart</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <!-- Progress Bar -->
-                              <div class="hidden lg:block">
-  <div class="lg:px-40! px-5!">
-    <div class="">
-      <div class="w-full h-[6px] bg-white rounded-[6px] overflow-hidden relative">
-        <div
-          id="may-progress-bar"
-          class="h-full absolute top-0 left-0 rounded-[6px] lg:px-40! px-5!"
-          style="background-color: var(--color-red-primary); width: 0%">
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-        </div>
-        <div class="flex justify-center ">
-            <button
-                class="block! lg:hidden! mt-6 bg-black text-white px-10 py-3 rounded-xl font-bold hover:bg-black/90 transition-all ">View
-                All</button>
-        </div>
-    </section>
+            <div class="flex justify-center ">
+                <button
+                    class="block! lg:hidden! mt-6 bg-black text-white px-10 py-3 rounded-xl font-bold hover:bg-black/90 transition-all ">View
+                    All</button>
+            </div>
+        </section>
     </div>
 
     <footer class="bg-black text-white lg:py-16 py-10">

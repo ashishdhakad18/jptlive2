@@ -11,7 +11,7 @@
 </head>
 
 <body>
-       <nav class="bg-white flex flex-col lg:px-0  ">
+    <nav class="bg-white flex flex-col lg:px-0  ">
         <!-- Badge -->
         <div class="lg:block hidden nav-badge body-4 bg-red text-white text-center py-3">
             Delivery within INDIA in time for Christmas if you order by December 19,
@@ -51,7 +51,7 @@
 
                 <!-- DESKTOP NAV LINKS -->
                 <div class="hidden lg:flex items-center gap-6">
-                    <a href="#"
+                    <a href="#" id="shopToggle"
                         class="nav-link nav-link-shop active caption-medium-12 rounded-md uppercase px-4">Shop</a>
                     <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4">JPT
                         Insiders</a>
@@ -74,6 +74,30 @@
             </div>
         </div>
     </nav>
+
+       <!-- Sub Navbar --> 
+     <nav id="shopMenu" class="bg-white flex flex-col lg:px-0
+         overflow-hidden
+         max-h-0 opacity-0
+         transition-all duration-1000 ease-in-out">
+    <div class="lg:px-40 px-4 w-full">
+
+        <!-- DESKTOP NAV LINKS -->
+        <div class="hidden lg:flex items-center justify-center gap-8 py-4">
+          <a href="#" class="nav-link nav-link-shop active caption-medium-12 rounded-md uppercase px-4">new</a>
+          <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4"> pressure washer</a>
+          <a href="#" class="nav-link nav-link-support caption-medium-12 rounded-md uppercase px-4">power tools</a>
+                 <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4">Hand Tools</a>
+                 <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4">ACCESSORIES</a>
+                 <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4">SPARE PARTS</a>
+                 <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4">Automobile</a>
+                    <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4">View all</a>
+
+
+        </div>
+
+    </div>
+  </nav>
 
     <!-- Hero Section -->
     <section
@@ -915,6 +939,7 @@
         // Initialize display
         filterProducts();
     </script>
+    <script src="index.js"></script>
 </body>
 
 </html>

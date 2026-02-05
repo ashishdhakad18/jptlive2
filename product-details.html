@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blogs</title>
+    <title>Product Details</title>
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
 <body>
-     <nav class="bg-white flex flex-col lg:px-0  ">
+    <nav class="bg-white flex flex-col lg:px-0  ">
         <!-- Badge -->
         <div class="lg:block hidden nav-badge body-4 bg-red text-white text-center py-3">
             Delivery within INDIA in time for Christmas if you order by December 19,
@@ -33,10 +33,12 @@
                 </div>
 
                 <!-- LOGO (Center always) -->
-                  <a href="index.html"
+
+                <a href="index.html"
                     class="mx-auto lg:mx-0 w-[82px] sm:w-[150px] lg:w-[152px] flex-shrink-0 cursor-pointer block">
                     <img src="./Assets/Logo.svg" alt="Logo" class="w-full h-auto object-contain" />
                 </a>
+
 
 
                 <!-- RIGHT (Mobile: Profile + Cart) -->
@@ -51,7 +53,7 @@
 
                 <!-- DESKTOP NAV LINKS -->
                 <div class="hidden lg:flex items-center gap-6">
-                    <a href="#"
+                    <a href="#" id="shopToggle"
                         class="nav-link nav-link-shop active caption-medium-12 rounded-md uppercase px-4">Shop</a>
                     <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4">JPT
                         Insiders</a>
@@ -72,6 +74,32 @@
                 </div>
 
             </div>
+        </div>
+    </nav>
+
+    <!-- Sub Navbar -->
+    <nav id="shopMenu" class="bg-white flex flex-col lg:px-0
+         overflow-hidden
+         max-h-0 opacity-0
+         transition-all duration-1000 ease-in-out">
+        <div class="lg:px-40 px-4 w-full">
+
+            <!-- DESKTOP NAV LINKS -->
+            <div class="hidden lg:flex items-center justify-center gap-8 py-4">
+                <a href="#" class="nav-link nav-link-shop active caption-medium-12 rounded-md uppercase px-4">new</a>
+                <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4"> pressure
+                    washer</a>
+                <a href="#" class="nav-link nav-link-support caption-medium-12 rounded-md uppercase px-4">power
+                    tools</a>
+                <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4">Hand Tools</a>
+                <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4">ACCESSORIES</a>
+                <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4">SPARE PARTS</a>
+                <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4">Automobile</a>
+                <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4">View all</a>
+
+
+            </div>
+
         </div>
     </nav>
 
@@ -102,33 +130,32 @@
     <section class="lg:px-40 px-5 py-4 lg:py-12 flex flex-col  gap-12 ">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <!-- Gallery Section -->
-            <div class="flex flex-col lg:gap-6 gap-3">
-                  <div class="flex justify-between lg:!hidden  ">
-                        <div class="w-9 h-9 bg-off-white rounded-full flex items-center justify-center">
-                            <img src="./Assets/share-icon-grey.svg" alt="Product Main"
-                                class="w-4.5 h-4.5 object-cover">
-                        </div>
-                        <div class="flex gap-4">
-                            <button class="bg-[#F5F5F5] lg:text-[#EA0029] text-black btn  btn-h-36">
-                                In Stock
-                            </button>
-                            <!-- Mobile -->
-                            <button class="btn btn-secondary btn-h-36 lg:hidden! ">
-                                Trending
-                            </button>
-
-                            <!-- Desktop -->
-                            <button class="btn btn-primary btn-h-36 hidden! lg:inline-flex!">
-                                Trending
-                            </button>
-
-                        </div>
+            <div class="flex flex-col lg:gap-6 gap-3 ">
+                <div class="flex justify-between lg:!hidden  ">
+                    <div class="w-9 h-9 bg-off-white rounded-full flex items-center justify-center">
+                        <img src="./Assets/share-icon-grey.svg" alt="Product Main" class="w-4.5 h-4.5 object-cover">
                     </div>
+                    <div class="flex gap-4">
+                        <button class="bg-[#F5F5F5] lg:text-[#EA0029] text-black btn  btn-h-36">
+                            In Stock
+                        </button>
+                        <!-- Mobile -->
+                        <button class="btn btn-secondary btn-h-36 lg:hidden! ">
+                            Trending
+                        </button>
+
+                        <!-- Desktop -->
+                        <button class="btn btn-primary btn-h-36 hidden! lg:inline-flex!">
+                            Trending
+                        </button>
+
+                    </div>
+                </div>
                 <!-- Main Image -->
                 <div
-                    class="relative w-full aspect-square bg-white rounded-[16px] border border-[#E5E5E5] flex items-center justify-center p-8 overflow-hidden group">
+                    class="relative w-full  aspect-square bg-white rounded-[40px] border border-[#E5E5E5] flex items-center justify-center p-8 overflow-hidden group">
                     <img src="./Assets/Product-1.png" alt="Product Main"
-                        class="w-full h-full object-contain hover:scale-105 transition-transform duration-500">
+                        class="w-full h-full object-contain transition-transform duration-500">
 
                     <button
                         class="absolute bottom-6 right-6 lg:w-11 lg:h-11 w-6 h-6 bg-white rounded-full shadow-lg flex items-center justify-center border border-[#E5E5E5] cursor-pointer duration-300">
@@ -197,11 +224,10 @@
 
                 <div class="flex flex-col lg:gap-6 gap-4">
                     <div class="flex justify-between lg:!inline-flex !hidden">
-                        <div class="w-6 h-6">
-                            <img src="./Assets/share-icon-grey.svg" alt="Product Main"
-                                class="w-full h-full object-cover">
+                        <div class="w-9 h-9 bg-[#F5F5F5] rounded-full flex items-center justify-center">
+                            <img src="./Assets/share-icon-grey.svg" alt="Product Main" class="w-4.5 h-4.5 object-cover">
                         </div>
-                        <div class="flex gap-4">
+                        <div class="flex gap-3">
                             <button class="bg-[#F5F5F5] lg:text-[#EA0029] text-black btn  btn-h-36">
                                 In Stock
                             </button>
@@ -221,7 +247,7 @@
                         <h1 class="text-h1">JPT Heavy-Duty 21V</h1>
                         <h1 class="text-h1 text-[#CECECE]">Domestic Portable Cordless Pressure Washer</h1>
                     </div>
-                    <div class="card-rating flex items-center justify-start gap-2">
+                    <div class="card-rating flex items-center justify-start gap-2 ">
                         <span class="bg-green px-2 py-0.5 rounded-sm body-3 font-bold h-6 flex items-center text-black">
                             <svg width="12" height="12" viewBox="0 0 24 24" fill="#000000"
                                 xmlns="http://www.w3.org/2000/svg" class="mr-1">
@@ -234,35 +260,35 @@
                 </div>
 
                 <!-- Features Tags -->
-                <div class="flex flex-wrap gap-4 ">
+                <div class="flex flex-wrap lg:max-w-[550px] gap-3 ">
                     <div
-                        class="lg:px-6 lg:py-4 p-2 lg:rounded-xl rounded-[4px] bg-[#F5F5F5] text-h7 text-[#535559] flex items-center ">
+                        class="lg:px-4 lg:py-3 p-2 lg:rounded-xl rounded-[4px] bg-[#F5F5F5] text-h7 text-[#535559] flex  ">
                         Max. 26 Bar Pressure
                     </div>
 
                     <div
-                        class="lg:px-6 lg:py-4 p-2 lg:rounded-xl rounded-[4px] bg-[#F5F5F5] text-h7 text-[#535559] flex items-center whitespace-nowrap">
-                        4 L/Min Water Flow
-                    </div>
-
-                    <div
-                        class="lg:px-6 lg:py-4 p-2  lg:rounded-xl rounded-[4px] bg-[#F5F5F5] text-h7 text-[#535559] flex items-center whitespace-nowrap">
+                        class="lg:px-4 lg:py-3 p-2 lg:rounded-xl rounded-[4px] bg-[#F5F5F5] text-h7 text-[#535559] flex  ">
                         Up To 8 Meter Spray Distance
                     </div>
 
                     <div
-                        class="lg:px-6 lg:py-4 p-2 lg:rounded-xl rounded-[4px] bg-[#F5F5F5] text-h7 text-[#535559] flex items-center whitespace-nowrap">
+                        class="lg:px-4 lg:py-3 p-2  lg:rounded-xl rounded-[4px] bg-[#F5F5F5] text-h7 text-[#535559] flex">
+                        4 L/Min Water Flow
+                    </div>
+
+                    <div
+                        class="lg:px-4 lg:py-3 p-2 lg:rounded-xl rounded-[4px] bg-[#F5F5F5] text-h7 text-[#535559] flex  ">
                         Battery And Charger Not Included
                     </div>
                 </div>
 
 
                 <!-- Price & Quantity -->
-                <div class="flex flex-col gap-8 p-4 rounded-md lg:mt-6 mt-4">
+                <div class="flex flex-col gap-8  rounded-md lg:mt-6 mt-4">
                     <div class="flex flex-row items-center justify-between gap-4">
 
                         <!-- Price -->
-                        <div class="flex flex-col gap-2">
+                        <div class="flex flex-col gap-4">
                             <div class="flex items-center gap-3">
                                 <h4 class="text-h4 text-[#1D1D1F]">Rs. 3,500</h4>
                                 <span class="body-2 text-[#7F7F7F] line-through font-normal">
@@ -273,15 +299,16 @@
                         </div>
 
                         <!-- Quantity Selector -->
-                        <div class="flex items-center border border-black rounded-md h-8 px-3 bg-white w-fit">
+                        <div
+                            class="flex items-center justify-between border border-black rounded-md h-8  px-3 py-2 bg-white w-fit">
                             <button
-                                class="w-8 h-full flex items-center justify-center text-xl font-medium hover:bg-gray-50 rounded-l-md"
+                                class="w-3 h-2 flex items-center justify-center text-xl font-medium hover:bg-gray-50 rounded-l-md"
                                 onclick="if(this.nextElementSibling.innerText > 1) this.nextElementSibling.innerText--">
                                 −
                             </button>
                             <span class="font-bold text-sm w-6 text-center" id="quantityDisplay">1</span>
                             <button
-                                class="w-8 h-full flex items-center justify-center text-xl font-medium hover:bg-gray-50 rounded-r-md"
+                                class="w-3 h-3 flex items-center justify-center text-xl font-medium hover:bg-gray-50 rounded-r-md"
                                 onclick="this.previousElementSibling.innerText++">
                                 +
                             </button>
@@ -291,15 +318,20 @@
                 </div>
 
                 <!-- Special Offer -->
-                <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-md">
+                <div class="flex flex-col gap-3 bg-[#F5F5F5] p-4 rounded-2xl w-full">
 
-                    <div class="flex items-start justify-between gap-4">
-                        <div class="flex flex-col gap-2">
-                            <p class="caption-medium-12 font-bold text-[#1D1D1F]">
-                                Special Offer
-                            </p>
+                    <!-- CONTENT ROW -->
+                    <div class="flex flex-col gap-3 w-full">
 
-                            <div class="flex flex-col gap-2 max-w-full sm:max-w-[520px]">
+                        <p class="caption-medium-12 font-bold text-[#1D1D1F]">
+                            Special Offer
+                        </p>
+
+                        <!-- TEXT + BUTTON -->
+                        <div class="flex items-center justify-between w-full gap-4">
+
+                            <!-- LEFT TEXT -->
+                            <div class="flex flex-col gap-3 max-w-[85%] py-3">
                                 <p class="caption-medium-12 text-[#535559]">
                                     Online payment benefit
                                 </p>
@@ -307,19 +339,23 @@
                                     Save Rs. 100 with code SAVE100 on prepaid orders. + Get Free Shipping
                                 </p>
                             </div>
-                        </div>
 
-                        <img src="./Assets/button.svg" alt="Arrow" class="w-8 h-8 shrink-0 lg:mt-5 mt-8">
+                            <!-- RIGHT BUTTON -->
+                            <div class="shrink-0">
+                                <img src="./Assets/button.svg" alt="Arrow" class="w-8 h-8">
+                            </div>
+
+                        </div>
                     </div>
 
-                    <!-- Progress Bar -->
+                    <!-- PROGRESS BAR -->
                     <div class="flex gap-2 w-full h-[6px]">
                         <div class="flex-1 bg-[#EA0029] rounded-full"></div>
                         <div class="flex-1 bg-white rounded-full"></div>
-
                     </div>
 
                 </div>
+
                 <!-- Add to Cart Button -->
 
                 <div class="flex flex-col gap-4 ">
@@ -339,7 +375,8 @@
                     <!-- Left Side (Red) -->
                     <div class="bg-[#EA0029] text-white pl-8 pr-4 w-[50%] flex flex-col justify-center relative">
                         <!-- Cutout Left -->
-                        <div class="absolute left-[-20px] top-1/2 -translate-y-1/2 lg:w-10 lg:h-10 w-8 h-8  bg-white rounded-full">
+                        <div
+                            class="absolute left-[-20px] top-1/2 -translate-y-1/2 lg:w-10 lg:h-10 w-8 h-8  bg-white rounded-full">
                         </div>
 
                         <p class=" text-h7 leading-snug">Bundle with Wet Mop and Get <br> Rs. 2000 OFF</p>
@@ -348,7 +385,8 @@
                     <!-- Right Side (Gray) -->
                     <div class="bg-[#F5F5F5] w-[50%] flex items-center lg:justify-center  relative ">
                         <!-- Cutout Right -->
-                        <div class="absolute right-[-20px] top-1/2 -translate-y-1/2 lg:h-10 lg:w-10 w-8 h-8 bg-white rounded-full">
+                        <div
+                            class="absolute right-[-20px] top-1/2 -translate-y-1/2 lg:h-10 lg:w-10 w-8 h-8 bg-white rounded-full">
                         </div>
 
                         <p class=" text-[#EA0029] text-h5 text-center transition-transform ml-4">
@@ -363,7 +401,7 @@
                     <div
                         class="bg-[#F5F5F5] rounded-2xl lg:p-4 p-2 flex flex-row items-center justify-between lg:gap-4 gap-2 border border-[#E5E5E5]">
                         <!-- Left: Image + Content -->
-                        <div class="flex items-start lg:gap-4 gap-2 flex-1">
+                        <div class="flex items-start lg:gap-3 gap-2 flex-1">
 
                             <!-- Image -->
                             <div
@@ -373,13 +411,13 @@
                             </div>
 
                             <!-- Text Content -->
-                            <div class="flex flex-col gap-6">
+                            <div class="flex flex-col gap-6 ">
                                 <h6 class="body-3 text-[#000000] leading-snug max-w-[420px]">
                                     JPT Heavy-Duty 2IV Domestic Portable Cordless Pressure Washer
                                 </h6>
 
                                 <!-- Rating -->
-                                <div class="flex  justify-between">
+                                <div class="flex  justify-between  ">
                                     <div class="flex items-center gap-2">
                                         <div class="bg-[#4CE279] px-2 py-0.5 rounded-sm flex items-center gap-1">
                                             <svg width="10" height="10" viewBox="0 0 24 24" fill="black">
@@ -390,7 +428,7 @@
                                         </div>
                                         <span class="text-[#7F7F7F] text-xs font-medium">(36)</span>
                                     </div>
-                                    <div class="flex items-center  ">
+                                    <div class="flex items-center ">
                                         <button class="btn btn-secondary btn-h-36">
                                             Add Rs. 1,300
                                         </button>
@@ -410,7 +448,7 @@
                     <div
                         class="bg-[#F5F5F5] rounded-2xl lg:p-4 p-2 flex flex-row items-center justify-between lg:gap-4 gap-2 border border-[#E5E5E5]">
                         <!-- Left: Image + Content -->
-                        <div class="flex items-start lg:gap-4 gap-2 flex-1">
+                        <div class="flex items-start lg:gap-3 gap-2 flex-1">
 
                             <!-- Image -->
                             <div
@@ -759,7 +797,8 @@
                     <details class="group border-b border-[#E5E5E5] pb-6 last:border-0">
                         <summary
                             class="flex items-center justify-between cursor-pointer list-none [&::-webkit-details-marker]:hidden">
-                            <span class="caption-medium-18 font-bold text-[#1D1D1F]">What is the maximum pressure (PSI)?</span>
+                            <span class="caption-medium-18 font-bold text-[#1D1D1F]">What is the maximum pressure
+                                (PSI)?</span>
                             <div
                                 class="w-6 h-6 bg-[#1D1D1F] rounded-full flex items-center justify-center text-white transition-transform duration-300 group-open:rotate-45">
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -778,7 +817,8 @@
                     <details class="group border-b border-[#E5E5E5] pb-6 last:border-0">
                         <summary
                             class="flex items-center justify-between cursor-pointer list-none [&::-webkit-details-marker]:hidden">
-                            <span class="caption-medium-18 font-bold text-[#1D1D1F]">Battery capacity and runtime?</span>
+                            <span class="caption-medium-18 font-bold text-[#1D1D1F]">Battery capacity and
+                                runtime?</span>
                             <div
                                 class="w-6 h-6 bg-[#1D1D1F] rounded-full flex items-center justify-center text-white transition-transform duration-300 group-open:rotate-45">
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -916,8 +956,8 @@
         </div>
     </section>
 
-    
-     <div class="bg-black lg:block hidden">
+
+    <div class="bg-black lg:block hidden">
         <section class="bg-[#f5f5f5] lg:py-20 py-10 overflow-hidden border-b-2  lg:rounded-b-[40px] rounded-b-[24px] ">
             <div class=" flex flex-col item-center lg:gap-12 gap-6 ">
                 <div class=" container flex items-center justify-between">
@@ -926,7 +966,7 @@
                         <h3 class="text-h3 font-bold">YOU MAY</h3>
                         <h3 class="text-h3 font-bold">ALSO LIKE</h3>
                     </div>
-                 
+
                 </div>
 
                 <!-- Scrollable Card Container -->
@@ -1215,8 +1255,7 @@
                     <div class=" container">
                         <div class="">
                             <div class="w-full h-[6px] bg-white rounded-[6px] overflow-hidden relative">
-                                <div id="may-progress-bar"
-                                    class="h-full absolute top-0 left-0 rounded-[6px] container"
+                                <div id="may-progress-bar" class="h-full absolute top-0 left-0 rounded-[6px] container"
                                     style="background-color: var(--color-red-primary); width: 0%">
                                 </div>
                             </div>
@@ -1231,7 +1270,7 @@
             </div>
         </section>
     </div>
-    
+
 
 
 

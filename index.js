@@ -18,6 +18,30 @@ document.addEventListener('DOMContentLoaded', () => {
     //     }
     // });
 
+
+// Navbar Shop Toggle
+
+  const shopToggle = document.getElementById("shopToggle");
+  const shopMenu = document.getElementById("shopMenu");
+
+  let isOpen = false;
+
+  shopToggle.addEventListener("click", function (e) {
+    e.preventDefault();
+
+    isOpen = !isOpen;
+
+    if (isOpen) {
+      shopMenu.classList.remove("max-h-0", "opacity-0");
+      shopMenu.classList.add("max-h-[300px]", "opacity-100");
+    } else {
+      shopMenu.classList.add("max-h-0", "opacity-0");
+      shopMenu.classList.remove("max-h-[300px]", "opacity-100");
+    }
+  });
+
+
+
     // ---------------------------------------------------------
     // 2. Combo Tabs Logic (Swiper + Tab Filtering)
     // ---------------------------------------------------------
@@ -585,6 +609,9 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
+
+
+    
 });
 
 

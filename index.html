@@ -12,69 +12,92 @@
 </head>
 
 <body>
-       <nav class="bg-white flex flex-col lg:px-0  ">
-        <!-- Badge -->
-        <div class="lg:block hidden nav-badge body-4 bg-red text-white text-center py-3">
-            Delivery within INDIA in time for Christmas if you order by December 19,
-            2025!
+  <nav class="bg-white flex flex-col lg:px-0  ">
+    <!-- Badge -->
+    <div class="lg:block hidden nav-badge body-4 bg-red text-white text-center py-3">
+      Delivery within INDIA in time for Christmas if you order by December 19,
+      2025!
+    </div>
+
+    <!-- Navbar -->
+    <div class="lg:px-40 px-4 w-full">
+      <div class="flex items-center justify-between h-16">
+
+        <!-- LEFT (Mobile: Menu + Search) -->
+        <div class="flex items-center gap-2 lg:hidden   w-20 h-20">
+          <a href="#" class="nav-link-right flex items-center justify-center rounded-md bg-off-white ">
+            <img src="./Assets/Header-menu.svg" alt="">
+          </a>
+          <a href="#" class="nav-link-right flex items-center justify-center rounded-md bg-off-white ">
+            <img src="./Assets/Header-search.svg" alt="">
+          </a>
         </div>
 
-        <!-- Navbar -->
-        <div class="lg:px-40 px-4 w-full">
-            <div class="flex items-center justify-between h-16">
-
-                <!-- LEFT (Mobile: Menu + Search) -->
-                <div class="flex items-center gap-2 lg:hidden   w-20 h-20">
-                    <a href="#" class="nav-link-right flex items-center justify-center rounded-md bg-off-white ">
-                        <img src="./Assets/Header-menu.svg" alt="">
-                    </a>
-                    <a href="#" class="nav-link-right flex items-center justify-center rounded-md bg-off-white ">
-                        <img src="./Assets/Header-search.svg" alt="">
-                    </a>
-                </div>
-
-                <!-- LOGO (Center always) -->
-                <div class="mx-auto lg:mx-0 w-[82px] sm:w-[150px] lg:w-[152px] flex-shrink-0">
-                    <img src="./Assets/Logo.svg" alt="Logo" class="w-full h-auto object-contain" />
-                </div>
-
-
-                <!-- RIGHT (Mobile: Profile + Cart) -->
-                <div class="flex items-center gap-2 lg:hidden   w-20 h-20">
-                    <a href="#" class="nav-link-right flex items-center justify-center rounded-md bg-off-white">
-                        <img src="./Assets/Header-profile.svg" alt="">
-                    </a>
-                    <a href="#" class="nav-link-right flex items-center justify-center rounded-md bg-off-white ">
-                        <img src="./Assets/Header-cart.svg" alt="">
-                    </a>
-                </div>
-
-                <!-- DESKTOP NAV LINKS -->
-                <div class="hidden lg:flex items-center gap-6">
-                    <a href="#"
-                        class="nav-link nav-link-shop active caption-medium-12 rounded-md uppercase px-4">Shop</a>
-                    <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4">JPT
-                        Insiders</a>
-                    <a href="#" class="nav-link nav-link-support caption-medium-12 rounded-md uppercase px-4">Support
-                        HUB</a>
-
-                    <div class="flex gap-2">
-                        <a href="#" class="nav-link-right flex items-center justify-center rounded-md bg-off-white">
-                            <img src="./Assets/Header-search.svg" alt="">
-                        </a>
-                        <a href="#" class="nav-link-right flex items-center justify-center rounded-md bg-off-white">
-                            <img src="./Assets/Header-profile.svg" alt="">
-                        </a>
-                        <a href="#" class="nav-link-right flex items-center justify-center rounded-md bg-off-white">
-                            <img src="./Assets/Header-cart.svg" alt="">
-                        </a>
-                    </div>
-                </div>
-
-            </div>
+        <!-- LOGO (Center always) -->
+        <div class="mx-auto lg:mx-0 w-[82px] sm:w-[150px] lg:w-[152px] flex-shrink-0">
+          <img src="./Assets/Logo.svg" alt="Logo" class="w-full h-auto object-contain" />
         </div>
-    </nav>
 
+
+        <!-- RIGHT (Mobile: Profile + Cart) -->
+        <div class="flex items-center gap-2 lg:hidden   w-20 h-20">
+          <a href="#" class="nav-link-right flex items-center justify-center rounded-md bg-off-white">
+            <img src="./Assets/Header-profile.svg" alt="">
+          </a>
+          <a href="#" class="nav-link-right flex items-center justify-center rounded-md bg-off-white ">
+            <img src="./Assets/Header-cart.svg" alt="">
+          </a>
+        </div>
+
+        <!-- DESKTOP NAV LINKS -->
+        <div class="hidden lg:flex items-center gap-6">
+          <a href="#" id="shopToggle" class="nav-link nav-link-shop active caption-medium-12 rounded-md uppercase px-4">Shop</a>
+          <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4">JPT
+            Insiders</a>
+          <a href="#" class="nav-link nav-link-support caption-medium-12 rounded-md uppercase px-4">Support
+            HUB</a>
+
+          <div class="flex gap-2">
+            <a href="#" class="nav-link-right flex items-center justify-center rounded-md bg-off-white">
+              <img src="./Assets/Header-search.svg" alt="">
+            </a>
+            <a href="#" class="nav-link-right flex items-center justify-center rounded-md bg-off-white">
+              <img src="./Assets/Header-profile.svg" alt="">
+            </a>
+            <a href="#" class="nav-link-right flex items-center justify-center rounded-md bg-off-white">
+              <img src="./Assets/Header-cart.svg" alt="">
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </nav>
+
+
+    <!-- Sub Navbar -->
+  <nav id="shopMenu" class="bg-white flex flex-col lg:px-0
+         overflow-hidden
+         max-h-0 opacity-0
+         transition-all duration-1000 ease-in-out">
+    <div class="lg:px-40 px-4 w-full">
+
+        <!-- DESKTOP NAV LINKS -->
+        <div class="hidden lg:flex items-center justify-center gap-8 py-4">
+          <a href="#" class="nav-link nav-link-shop active caption-medium-12 rounded-md uppercase px-4">new</a>
+          <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4"> pressure washer</a>
+          <a href="#" class="nav-link nav-link-support caption-medium-12 rounded-md uppercase px-4">power tools</a>
+                 <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4">Hand Tools</a>
+                 <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4">ACCESSORIES</a>
+                 <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4">SPARE PARTS</a>
+                 <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4">Automobile</a>
+                    <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4">View all</a>
+
+
+        </div>
+
+    </div>
+  </nav>
 
   <!-- Bestsellers Section -->
   <section
@@ -461,7 +484,8 @@
         <div class="lg:px-40! px-5!">
           <div class="">
             <div class="w-full h-[6px] bg-off-white rounded-[6px] overflow-hidden relative">
-              <div id="trending-progress-bar" class="h-full absolute top-0 left-0 rounded-[6px] container lg:px-40! px-5!"
+              <div id="trending-progress-bar"
+                class="h-full absolute top-0 left-0 rounded-[6px] container lg:px-40! px-5!"
                 style="background-color: var(--color-red-primary); width: 0%">
               </div>
             </div>
@@ -4155,30 +4179,30 @@
 
 
   <!-- Meet the Insiders Section -->
-   <div class="bg-black">
-  <section class=" bg-white lg:py-20 py-10 overflow-hidden lg:rounded-b-[40px] rounded-b-[24px]">
-    <div class="grid grid-cols-1 md:grid-cols-2 justify-between gap-6 items-center lg:px-40 px-5">
-      <!-- Text Content -->
-      <div class="flex flex-col gap-4">
-        <div class="flex flex-col gap-0.5">
-          <h3 class=" type-h3 text-black leading-tight flex items-start">
-            Meet the </h3>
-          <img src="./Assets/Logo.svg" alt="JPT Logo" class=" w-[140px] h-12 flex ">
-        </div>
+  <div class="bg-black">
+    <section class=" bg-white lg:py-20 py-10 overflow-hidden lg:rounded-b-[40px] rounded-b-[24px]">
+      <div class="grid grid-cols-1 md:grid-cols-2 justify-between gap-6 items-center lg:px-40 px-5">
+        <!-- Text Content -->
         <div class="flex flex-col gap-4">
-          <h3 class=" type-h3 text-black leading-tight flex items-start">Insiders</h3>
+          <div class="flex flex-col gap-0.5">
+            <h3 class=" type-h3 text-black leading-tight flex items-start">
+              Meet the </h3>
+            <img src="./Assets/Logo.svg" alt="JPT Logo" class=" w-[140px] h-12 flex ">
+          </div>
+          <div class="flex flex-col gap-4">
+            <h3 class=" type-h3 text-black leading-tight flex items-start">Insiders</h3>
 
-          <p class="body-1-regular text-[#535559] flex items-start">Real people, real Tools</p>
+            <p class="body-1-regular text-[#535559] flex items-start">Real people, real Tools</p>
+          </div>
+        </div>
+
+        <!-- Image Grid -->
+        <div class="w-full flex justify-end">
+          <img src="./Assets/grid.png" alt="Insiders Grid" class="w-full max-w-xl h-auto object-contain">
         </div>
       </div>
-
-      <!-- Image Grid -->
-      <div class="w-full flex justify-end">
-        <img src="./Assets/grid.png" alt="Insiders Grid" class="w-full max-w-xl h-auto object-contain">
-      </div>
-    </div>
-  </section>
-</div>
+    </section>
+  </div>
   <!-- Footer Section -->
   <footer class="bg-black text-white lg:py-16 py-10">
     <div class=" lg:px-40 px-5 flex flex-col lg:gap-12 gap-8 ">
@@ -4360,6 +4384,9 @@
       update(); // Initial call
     });
   </script>
+
+
+
 
 
 
