@@ -19,26 +19,26 @@ document.addEventListener('DOMContentLoaded', () => {
     // });
 
 
-// Navbar Shop Toggle
+    // Navbar Shop Toggle
 
-  const shopToggle = document.getElementById("shopToggle");
-  const shopMenu = document.getElementById("shopMenu");
+    const shopToggle = document.getElementById("shopToggle");
+    const shopMenu = document.getElementById("shopMenu");
 
-  let isOpen = false;
+    let isOpen = false;
 
-  shopToggle.addEventListener("click", function (e) {
-    e.preventDefault();
+    shopToggle.addEventListener("click", function (e) {
+        e.preventDefault();
 
-    isOpen = !isOpen;
+        isOpen = !isOpen;
 
-    if (isOpen) {
-      shopMenu.classList.remove("max-h-0", "opacity-0");
-      shopMenu.classList.add("max-h-[300px]", "opacity-100");
-    } else {
-      shopMenu.classList.add("max-h-0", "opacity-0");
-      shopMenu.classList.remove("max-h-[300px]", "opacity-100");
-    }
-  });
+        if (isOpen) {
+            shopMenu.classList.remove("max-h-0", "opacity-0");
+            shopMenu.classList.add("max-h-[300px]", "opacity-100");
+        } else {
+            shopMenu.classList.add("max-h-0", "opacity-0");
+            shopMenu.classList.remove("max-h-[300px]", "opacity-100");
+        }
+    });
 
 
 
@@ -611,7 +611,68 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 
-    
+    // ---------------------------------------------------------
+    // 16. Special Offer Auto-run logic
+    // ---------------------------------------------------------
+    const offerCards = document.querySelectorAll('.offer-card');
+    const offerFills = document.querySelectorAll('.offer-progress-fill');
+    let currentOfferIndex = 0;
+    const offerDuration = 6000; // 6 seconds per offer
+    let offerInterval;
+    let startTime;
+    let animationFrame;
+
+    if (offerCards.length > 0 && offerFills.length > 0) {
+        const updateOffer = (index) => {
+            offerCards.forEach((card, i) => {
+                if (i === index) {
+                    card.classList.remove('hidden');
+                    card.classList.add('flex');
+                } else {
+                    card.classList.add('hidden');
+                    card.classList.remove('flex');
+                }
+            });
+        };
+
+        const animateProgress = (timestamp) => {
+            if (!startTime) startTime = timestamp;
+            const elapsed = timestamp - startTime;
+            const progress = Math.min(elapsed / offerDuration, 1);
+
+            // Clear all fills first if we just started a new index
+            offerFills.forEach((fill, i) => {
+                if (i < currentOfferIndex) {
+                    fill.style.width = '100%';
+                } else if (i === currentOfferIndex) {
+                    fill.style.width = `${progress * 100}%`;
+                } else {
+                    fill.style.width = '0%';
+                }
+            });
+
+            if (progress < 1) {
+                animationFrame = requestAnimationFrame(animateProgress);
+            } else {
+                // Time's up! Switch to next
+                currentOfferIndex = (currentOfferIndex + 1) % offerCards.length;
+
+                // If we wrap around, reset all fills
+                if (currentOfferIndex === 0) {
+                    offerFills.forEach(fill => fill.style.width = '0%');
+                }
+
+                startTime = null;
+                updateOffer(currentOfferIndex);
+                animationFrame = requestAnimationFrame(animateProgress);
+            }
+        };
+
+        // Start the cycle
+        updateOffer(currentOfferIndex);
+        animationFrame = requestAnimationFrame(animateProgress);
+    }
+
 });
 
 
