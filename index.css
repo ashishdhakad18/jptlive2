@@ -555,39 +555,21 @@ h7,
 
 /* Container */
 .container {
-  max-width: 1600px;
+  max-width: 1280px;
   margin-inline: auto;
-  /*padding-inline: 16px;*/
+  padding-inline: 24px; /* mobile: left + right 24px */
   box-sizing: border-box;
+ 
 }
 
-/* Tablet */
-@media (min-width: 640px) {
+/* Tablet & up */
+@media (min-width: 768px) {
   .container {
-    padding-inline: 24px;
+    padding-inline: 0; /* or 32px / 40px if you want */
+     
   }
 }
 
-/* Small Desktop */
-@media (min-width: 1024px) {
-  .container {
-    padding-inline: 64px;
-  }
-}
-
-/* Large Desktop */
-@media (min-width: 1280px) {
-  .container {
-    padding-inline: 120px;
-  }
-}
-
-/* Extra Large Screens */
-@media (min-width: 1536px) {
-  .container {
-    padding-inline: 160px;
-  }
-}
 
 /* Navbar Styles */
 
@@ -608,6 +590,15 @@ h7,
   text-decoration: none;
   padding-block: 10px;
 }
+.nav-link {
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.nav-link:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
 
 .nav-link.active {
   color: var(--color-white);

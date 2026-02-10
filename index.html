@@ -12,6 +12,8 @@
 </head>
 
 <body>
+
+
   <nav class="bg-white flex flex-col lg:px-0  ">
     <!-- Badge -->
     <div class="lg:block hidden nav-badge body-4 bg-red text-white text-center py-3">
@@ -20,7 +22,7 @@
     </div>
 
     <!-- Navbar -->
-    <div class="lg:px-40 px-4 w-full">
+    <div class="container    w-full">
       <div class="flex items-center justify-between h-16">
 
         <!-- LEFT (Mobile: Menu + Search) -->
@@ -35,9 +37,8 @@
 
         <!-- LOGO (Center always) -->
         <div class="mx-auto lg:mx-0 w-[82px] sm:w-[150px] lg:w-[152px] flex-shrink-0">
-          <img src="./Assets/Logo.svg" alt="Logo" class="w-full h-auto object-contain" />
+          <img src="./Assets/Logo.svg" alt="Logo" class="w-full h-auto object-contain"/>
         </div>
-
 
         <!-- RIGHT (Mobile: Profile + Cart) -->
         <div class="flex items-center gap-2 lg:hidden   w-20 h-20">
@@ -51,7 +52,8 @@
 
         <!-- DESKTOP NAV LINKS -->
         <div class="hidden lg:flex items-center gap-6">
-          <a href="#" id="shopToggle" class="nav-link nav-link-shop active caption-medium-12 rounded-md uppercase px-4">Shop</a>
+          <a href="#" id="shopToggle"
+            class="nav-link nav-link-shop active caption-medium-12 rounded-md uppercase px-4">Shop</a>
           <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4">JPT
             Insiders</a>
           <a href="#" class="nav-link nav-link-support caption-medium-12 rounded-md uppercase px-4">Support
@@ -75,29 +77,492 @@
   </nav>
 
 
-    <!-- Sub Navbar -->
-  <nav id="shopMenu" class="bg-white flex flex-col lg:px-0
-         overflow-hidden
-         max-h-0 opacity-0
-         transition-all duration-1000 ease-in-out">
-    <div class="lg:px-40 px-4 w-full">
+  <!-- Sub Navbar -->
+ <nav id="shopMenu" class="bg-white relative z-50   overflow-hidden  max-h-0 opacity-0
+         transition-all duration-1000 ease-in-out" >
+  <div class="hidden lg:flex items-center justify-center gap-8 py-4 ">
 
-        <!-- DESKTOP NAV LINKS -->
-        <div class="hidden lg:flex items-center justify-center gap-8 py-4">
-          <a href="#" class="nav-link nav-link-shop active caption-medium-12 rounded-md uppercase px-4">new</a>
-          <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4"> pressure washer</a>
-          <a href="#" class="nav-link nav-link-support caption-medium-12 rounded-md uppercase px-4">power tools</a>
-                 <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4">Hand Tools</a>
-                 <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4">ACCESSORIES</a>
-                 <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4">SPARE PARTS</a>
-                 <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4">Automobile</a>
-                    <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4">View all</a>
+    <!-- NAV ITEM -->
+    <div class="relative group  ">
+      <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4 ">new</a>
 
+      <!-- FULL WIDTH DROPDOWN -->
+      <div
+        class="    fixed left-0 right-0 top-[160px]
+    bg-white px-10 py-10 mx-2
+    h-[400px] z-[9999] rounded-b-2xl
 
-        </div>  
+    opacity-0 invisible
+    translate-y-4 scale-95
 
+    transition-all duration-100 ease-in
+
+    group-hover:opacity-100
+    group-hover:visible
+    group-hover:translate-y-0
+    group-hover:scale-100 ">
+
+        <!-- CENTER CONTAINER -->
+        <div class="w-full max-w-[1600px] mx-auto flex gap-4 justify-center">
+
+          <!-- CARD -->
+          <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+            <div class="flex items-center justify-between">
+              <h4 class="w-[50%]">Polishing Machines</h4>
+              <div class="w-[50%] flex justify-center">
+               <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 30 30" fill="none">
+  <path d="M23.2595 16.7052H4.88892C4.54526 16.7052 4.25757 16.5893 4.02586 16.3573C3.79388 16.1256 3.67789 15.8379 3.67789 15.4942C3.67789 15.1505 3.79388 14.8629 4.02586 14.6311C4.25757 14.3992 4.54526 14.2832 4.88892 14.2832H23.2595L14.9127 5.93631C14.6726 5.69626 14.5541 5.4153 14.557 5.09343C14.5603 4.77156 14.687 4.48536 14.9373 4.23481C15.1878 4.00094 15.4715 3.87984 15.7882 3.8715C16.105 3.86315 16.3886 3.98426 16.6392 4.23481L26.8769 14.4725C27.0281 14.6237 27.1347 14.7832 27.1966 14.9509C27.2588 15.1185 27.2899 15.2996 27.2899 15.4942C27.2899 15.6888 27.2588 15.8699 27.1966 16.0376C27.1347 16.2052 27.0281 16.3647 26.8769 16.5159L16.6392 26.7536C16.4156 26.9772 16.1386 27.0916 15.8084 27.0967C15.4782 27.1019 15.1878 26.9875 14.9373 26.7536C14.687 26.5031 14.5619 26.2154 14.5619 25.8905C14.5619 25.5655 14.687 25.2776 14.9373 25.0271L23.2595 16.7052Z" fill="#1A1818"/>
+</svg>
+              </div>
+            </div>
+            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+          </div>
+
+          <!-- CARD -->
+          <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+            <div class="flex items-center justify-between">
+              <h4 class="w-[50%]">Pressure Washer</h4>
+              <div class="w-[50%] flex justify-center">
+                       <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 30 30" fill="none">
+  <path d="M23.2595 16.7052H4.88892C4.54526 16.7052 4.25757 16.5893 4.02586 16.3573C3.79388 16.1256 3.67789 15.8379 3.67789 15.4942C3.67789 15.1505 3.79388 14.8629 4.02586 14.6311C4.25757 14.3992 4.54526 14.2832 4.88892 14.2832H23.2595L14.9127 5.93631C14.6726 5.69626 14.5541 5.4153 14.557 5.09343C14.5603 4.77156 14.687 4.48536 14.9373 4.23481C15.1878 4.00094 15.4715 3.87984 15.7882 3.8715C16.105 3.86315 16.3886 3.98426 16.6392 4.23481L26.8769 14.4725C27.0281 14.6237 27.1347 14.7832 27.1966 14.9509C27.2588 15.1185 27.2899 15.2996 27.2899 15.4942C27.2899 15.6888 27.2588 15.8699 27.1966 16.0376C27.1347 16.2052 27.0281 16.3647 26.8769 16.5159L16.6392 26.7536C16.4156 26.9772 16.1386 27.0916 15.8084 27.0967C15.4782 27.1019 15.1878 26.9875 14.9373 26.7536C14.687 26.5031 14.5619 26.2154 14.5619 25.8905C14.5619 25.5655 14.687 25.2776 14.9373 25.0271L23.2595 16.7052Z" fill="#1A1818"/>
+</svg>
+              </div>
+            </div>
+            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+          </div>
+
+          <!-- CARD -->
+          <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+            <div class="flex items-center justify-between">
+              <h4 class="w-[50%]">Power Tools</h4>
+              <div class="w-[50%] flex justify-center">
+                       <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 30 30" fill="none">
+  <path d="M23.2595 16.7052H4.88892C4.54526 16.7052 4.25757 16.5893 4.02586 16.3573C3.79388 16.1256 3.67789 15.8379 3.67789 15.4942C3.67789 15.1505 3.79388 14.8629 4.02586 14.6311C4.25757 14.3992 4.54526 14.2832 4.88892 14.2832H23.2595L14.9127 5.93631C14.6726 5.69626 14.5541 5.4153 14.557 5.09343C14.5603 4.77156 14.687 4.48536 14.9373 4.23481C15.1878 4.00094 15.4715 3.87984 15.7882 3.8715C16.105 3.86315 16.3886 3.98426 16.6392 4.23481L26.8769 14.4725C27.0281 14.6237 27.1347 14.7832 27.1966 14.9509C27.2588 15.1185 27.2899 15.2996 27.2899 15.4942C27.2899 15.6888 27.2588 15.8699 27.1966 16.0376C27.1347 16.2052 27.0281 16.3647 26.8769 16.5159L16.6392 26.7536C16.4156 26.9772 16.1386 27.0916 15.8084 27.0967C15.4782 27.1019 15.1878 26.9875 14.9373 26.7536C14.687 26.5031 14.5619 26.2154 14.5619 25.8905C14.5619 25.5655 14.687 25.2776 14.9373 25.0271L23.2595 16.7052Z" fill="#1A1818"/>
+</svg>
+              </div>
+            </div>
+            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+          </div>
+
+        </div>
+      </div>
     </div>
-  </nav>
+
+   
+   <div class="relative group">
+      <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4">pressure washer</a>
+
+      <!-- FULL WIDTH DROPDOWN -->
+      <div
+      class="    fixed left-0 right-0 top-[160px]
+    bg-white px-10 py-10 mx-2
+    h-[400px] z-[9999] rounded-b-2xl
+
+    opacity-0 invisible
+    translate-y-4 scale-95
+
+    transition-all duration-100 ease-in
+
+    group-hover:opacity-100
+    group-hover:visible
+    group-hover:translate-y-0
+    group-hover:scale-100 ">
+
+        <!-- CENTER CONTAINER -->
+        <div class="w-full max-w-[1600px] mx-auto flex gap-4 justify-center">
+
+          <!-- CARD -->
+          <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+            <div class="flex items-center justify-between">
+              <h4 class="w-[50%]">Polishing Machines</h4>
+              <div class="w-[50%] flex justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 30 30" fill="none">
+  <path d="M23.2595 16.7052H4.88892C4.54526 16.7052 4.25757 16.5893 4.02586 16.3573C3.79388 16.1256 3.67789 15.8379 3.67789 15.4942C3.67789 15.1505 3.79388 14.8629 4.02586 14.6311C4.25757 14.3992 4.54526 14.2832 4.88892 14.2832H23.2595L14.9127 5.93631C14.6726 5.69626 14.5541 5.4153 14.557 5.09343C14.5603 4.77156 14.687 4.48536 14.9373 4.23481C15.1878 4.00094 15.4715 3.87984 15.7882 3.8715C16.105 3.86315 16.3886 3.98426 16.6392 4.23481L26.8769 14.4725C27.0281 14.6237 27.1347 14.7832 27.1966 14.9509C27.2588 15.1185 27.2899 15.2996 27.2899 15.4942C27.2899 15.6888 27.2588 15.8699 27.1966 16.0376C27.1347 16.2052 27.0281 16.3647 26.8769 16.5159L16.6392 26.7536C16.4156 26.9772 16.1386 27.0916 15.8084 27.0967C15.4782 27.1019 15.1878 26.9875 14.9373 26.7536C14.687 26.5031 14.5619 26.2154 14.5619 25.8905C14.5619 25.5655 14.687 25.2776 14.9373 25.0271L23.2595 16.7052Z" fill="#1A1818"/>
+</svg>
+              </div>
+            </div>
+            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+          </div>
+
+          <!-- CARD -->
+          <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+            <div class="flex items-center justify-between">
+              <h4 class="w-[50%]">Pressure Washer</h4>
+              <div class="w-[50%] flex justify-center">
+                ➜
+              </div>
+            </div>
+            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+          </div>
+
+          <!-- CARD -->
+          <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+            <div class="flex items-center justify-between">
+              <h4 class="w-[50%]">Power Tools</h4>
+              <div class="w-[50%] flex justify-center">
+                ➜
+              </div>
+            </div>
+            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+     <div class="relative group">
+      <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4">power tools</a>
+
+      <!-- FULL WIDTH DROPDOWN -->
+      <div
+        class="    fixed left-0 right-0 top-[160px]
+    bg-white px-10 py-10 mx-2
+    h-[400px] z-[9999] rounded-b-2xl
+
+    opacity-0 invisible
+    translate-y-4 scale-95
+
+    transition-all duration-100 ease-in
+
+    group-hover:opacity-100
+    group-hover:visible
+    group-hover:translate-y-0
+    group-hover:scale-100 ">
+
+        <!-- CENTER CONTAINER -->
+        <div class="w-full max-w-[1600px] mx-auto flex gap-4 justify-center">
+
+          <!-- CARD -->
+          <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+            <div class="flex items-center justify-between">
+              <h4 class="w-[50%]">Polishing Machines</h4>
+              <div class="w-[50%] flex justify-center">
+                ➜
+              </div>
+            </div>
+            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+          </div>
+
+          <!-- CARD -->
+          <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+            <div class="flex items-center justify-between">
+              <h4 class="w-[50%]">Pressure Washer</h4>
+              <div class="w-[50%] flex justify-center">
+                ➜
+              </div>
+            </div>
+            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+          </div>
+
+          <!-- CARD -->
+          <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+            <div class="flex items-center justify-between">
+              <h4 class="w-[50%]">Power Tools</h4>
+              <div class="w-[50%] flex justify-center">
+                ➜
+              </div>
+            </div>
+            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+          </div>
+
+        </div>
+      </div>
+    </div>
+     <div class="relative group">
+      <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4">hand tools</a>
+
+      <!-- FULL WIDTH DROPDOWN -->
+      <div
+        class="    fixed left-0 right-0 top-[160px]
+    bg-white px-10 py-10 mx-2
+    h-[400px] z-[9999] rounded-b-2xl
+
+    opacity-0 invisible
+    translate-y-4 scale-95
+
+    transition-all duration-100 ease-in
+
+    group-hover:opacity-100
+    group-hover:visible
+    group-hover:translate-y-0
+    group-hover:scale-100 ">
+
+        <!-- CENTER CONTAINER -->
+        <div class="w-full max-w-[1600px] mx-auto flex gap-4 justify-center">
+
+          <!-- CARD -->
+          <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+            <div class="flex items-center justify-between">
+              <h4 class="w-[50%]">Polishing Machines</h4>
+              <div class="w-[50%] flex justify-center">
+                ➜
+              </div>
+            </div>
+            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+          </div>
+
+          <!-- CARD -->
+          <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+            <div class="flex items-center justify-between">
+              <h4 class="w-[50%]">Pressure Washer</h4>
+              <div class="w-[50%] flex justify-center">
+                ➜
+              </div>
+            </div>
+            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+          </div>
+
+          <!-- CARD -->
+          <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+            <div class="flex items-center justify-between">
+              <h4 class="w-[50%]">Power Tools</h4>
+              <div class="w-[50%] flex justify-center">
+                ➜
+              </div>
+            </div>
+            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+          </div>
+
+        </div>
+      </div>
+    </div>
+     <div class="relative group">
+      <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4">accessories</a>
+
+      <!-- FULL WIDTH DROPDOWN -->
+      <div
+    class="    fixed left-0 right-0 top-[160px]
+    bg-white px-10 py-10 mx-2
+    h-[400px] z-[9999] rounded-b-2xl
+
+    opacity-0 invisible
+    translate-y-4 scale-95
+
+    transition-all duration-100 ease-in
+
+    group-hover:opacity-100
+    group-hover:visible
+    group-hover:translate-y-0
+    group-hover:scale-100 ">
+
+        <!-- CENTER CONTAINER -->
+        <div class="w-full max-w-[1600px] mx-auto flex gap-4 justify-center">
+
+          <!-- CARD -->
+          <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+            <div class="flex items-center justify-between">
+              <h4 class="w-[50%]">Polishing Machines</h4>
+              <div class="w-[50%] flex justify-center">
+                ➜
+              </div>
+            </div>
+            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+          </div>
+
+          <!-- CARD -->
+          <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+            <div class="flex items-center justify-between">
+              <h4 class="w-[50%]">Pressure Washer</h4>
+              <div class="w-[50%] flex justify-center">
+                ➜
+              </div>
+            </div>
+            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+          </div>
+
+          <!-- CARD -->
+          <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+            <div class="flex items-center justify-between">
+              <h4 class="w-[50%]">Power Tools</h4>
+              <div class="w-[50%] flex justify-center">
+                ➜
+              </div>
+            </div>
+            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="relative group">
+      <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4">spare parts</a>
+
+      <!-- FULL WIDTH DROPDOWN -->
+      <div
+       class="    fixed left-0 right-0 top-[160px]
+    bg-white px-10 py-10 mx-2
+    h-[400px] z-[9999] rounded-b-2xl
+
+    opacity-0 invisible
+    translate-y-4 scale-95
+
+    transition-all duration-100 ease-in
+
+    group-hover:opacity-100
+    group-hover:visible
+    group-hover:translate-y-0
+    group-hover:scale-100 ">
+
+        <!-- CENTER CONTAINER -->
+        <div class="w-full max-w-[1600px] mx-auto flex gap-4 justify-center">
+
+          <!-- CARD -->
+          <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+            <div class="flex items-center justify-between">
+              <h4 class="w-[50%]">Polishing Machines</h4>
+              <div class="w-[50%] flex justify-center">
+                ➜
+              </div>
+            </div>
+            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+          </div>
+
+          <!-- CARD -->
+          <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+            <div class="flex items-center justify-between">
+              <h4 class="w-[50%]">Pressure Washer</h4>
+              <div class="w-[50%] flex justify-center">
+                ➜
+              </div>
+            </div>
+            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+          </div>
+
+          <!-- CARD -->
+          <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+            <div class="flex items-center justify-between">
+              <h4 class="w-[50%]">Power Tools</h4>
+              <div class="w-[50%] flex justify-center">
+                ➜
+              </div>
+            </div>
+            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+          </div>
+
+        </div>
+      </div>
+    </div>
+   <div class="relative group">
+      <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4">automobiles</a>
+
+      <!-- FULL WIDTH DROPDOWN -->
+      <div
+       class="    fixed left-0 right-0 top-[160px]
+    bg-white px-10 py-10 mx-2
+    h-[400px] z-[9999] rounded-b-2xl
+
+    opacity-0 invisible
+    translate-y-4 scale-95
+
+    transition-all duration-100 ease-in
+
+    group-hover:opacity-100
+    group-hover:visible
+    group-hover:translate-y-0
+    group-hover:scale-100 ">
+
+        <!-- CENTER CONTAINER -->
+        <div class="w-full max-w-[1600px] mx-auto flex gap-4 justify-center">
+
+          <!-- CARD -->
+          <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+            <div class="flex items-center justify-between">
+              <h4 class="w-[50%]">Polishing Machines</h4>
+              <div class="w-[50%] flex justify-center">
+                ➜
+              </div>
+            </div>
+            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+          </div>
+
+          <!-- CARD -->
+          <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+            <div class="flex items-center justify-between">
+              <h4 class="w-[50%]">Pressure Washer</h4>
+              <div class="w-[50%] flex justify-center">
+                ➜
+              </div>
+            </div>
+            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+          </div>
+
+          <!-- CARD -->
+          <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+            <div class="flex items-center justify-between">
+              <h4 class="w-[50%]">Power Tools</h4>
+              <div class="w-[50%] flex justify-center">
+                ➜
+              </div>
+            </div>
+            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+          </div>
+
+        </div>
+      </div>
+    </div>
+  <div class="relative group">
+      <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4">view all</a>
+
+      <!-- FULL WIDTH DROPDOWN -->
+      <div
+     class="    fixed left-0 right-0 top-[160px]
+    bg-white px-10 py-10 mx-2
+    h-[400px] z-[9999] rounded-b-2xl
+
+    opacity-0 invisible
+    translate-y-4 scale-95
+
+    transition-all duration-100 ease-in
+
+    group-hover:opacity-100
+    group-hover:visible
+    group-hover:translate-y-0
+    group-hover:scale-100 ">
+
+        <!-- CENTER CONTAINER -->
+        <div class="w-full max-w-[1600px] mx-auto flex gap-4 justify-center">
+
+          <!-- CARD -->
+          <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+            <div class="flex items-center justify-between">
+              <h4 class="w-[50%]">Polishing Machines</h4>
+              <div class="w-[50%] flex justify-center">
+                ➜
+              </div>
+            </div>
+            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+          </div>
+
+          <!-- CARD -->
+          <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+            <div class="flex items-center justify-between">
+              <h4 class="w-[50%]">Pressure Washer</h4>
+              <div class="w-[50%] flex justify-center">
+                ➜
+              </div>
+            </div>
+            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+          </div>
+
+          <!-- CARD -->
+          <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+            <div class="flex items-center justify-between">
+              <h4 class="w-[50%]">Power Tools</h4>
+              <div class="w-[50%] flex justify-center">
+                ➜
+              </div>
+            </div>
+            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
 
   <!-- Bestsellers Section -->
   <section
@@ -107,12 +572,18 @@
 
     <div class="container h-full relative">
       <div
-        class="absolute bottom-16 left-4 right-4 md:bottom-[130px] md:left-[160px] md:right-auto flex flex-col gap-6 items-start">
+        class="flex flex-col justify-between h-full">
+        <div class="w-full h-[50%] ">
+
+        </div>
+
+        <div class="flex flex-col gap-6  justify-center  h-[50%] ">
         <h1 class="text-[40px] leading-[1.1] md:text-display font-bold text-[#fff] uppercase drop-shadow-md">
           EMPOWERING <br>
           YOUR WORK
         </h1>
-        <a href="products.html" class="btn btn-secondary btn-h-48  md:w-auto">VIEW PRODUCTS</a>
+        <a href="products.html" class="btn btn-secondary btn-h-48  w-[200px]">VIEW PRODUCTS</a>
+      </div>
       </div>
     </div>
   </section>
@@ -121,12 +592,12 @@
   <section class="lg:py-20 py-10">
     <div class="flex flex-col lg:gap-12 gap-6">
       <div class="flex  
-           flex-col lg:items-start lg:text-left lg:pl-40! pl-5!">
+           flex-col lg:items-start lg:text-left container">
         <h3 class="text-h3 font-bold">Trending on socials </h3>
         <h3 class="text-h3 font-bold">right now</h3>
       </div>
       <!-- Swiper Container -->
-      <div id="trending-swiper" class="swiper w-full lg:pl-40! pl-5! ">
+      <div id="trending-swiper" class="swiper w-full lg:pl-0! pl-5! ">
         <div class="swiper-wrapper">
           <!-- Card 1 -->
           <div
@@ -500,14 +971,14 @@
   <!-- Card Section -->
   <section class="bg-[#f5f5f5] lg:py-20 py-10 overflow-hidden">
     <div class="flex flex-col lg:gap-12 gap-6">
-      <div class="lg:pl-40! pl-5! flex flex-row items-center justify-center text-center gap-2
+      <div class="container flex flex-row items-center justify-center text-center gap-2
             lg:flex-col lg:items-start lg:text-left lg:gap-0 ">
         <h3 class="text-h3">Bestsellers</h3>
         <h3 class="text-h3">this Season</h3>
       </div>
 
       <!-- Swiper Container -->
-      <div id="bestsellers-swiper" class="swiper w-full lg:pl-40! pl-5!">
+      <div id="bestsellers-swiper" class="swiper w-full lg:pl-0 pl-5!">
         <div class="swiper-wrapper">
           <!-- Card 1 -->
           <div
@@ -596,7 +1067,49 @@
               </div>
             </div>
           </div>
-
+  <!-- Card 2 -->
+          <div
+            class="swiper-slide card flex flex-col rounded-2xl bg-white hover:scale-[1.02] max-w-[20rem] transition-all duration-300">
+            <div class="card-header flex justify-center relative">
+              <img src="./Assets/Product-2.png" alt="Product-1" class="w-64 mt-5" />
+              <div class="card-badges absolute top-2 right-2 flex gap-2">
+                <div class="card-badge bg-red p-2 rounded-sm body-4 h-6 flex items-center text-white">
+                  New
+                </div>
+              </div>
+            </div>
+            <!-- Added an extra div container to fix the body and footer not aligning bcoz of inconsistent content length -->
+            <div class="flex flex-col justify-between h-full">
+              <div class="card-body py-4 px-6 flex flex-col gap-4">
+                <div class="card-rating flex items-center justify-start gap-2">
+                  <span class="bg-green p-2 rounded-sm body-2 font-medium h-7 flex items-center text-black">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="#000000" xmlns="http://www.w3.org/2000/svg"
+                      class="mr-1">
+                      <path
+                        d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
+                    </svg>4.8
+                  </span>
+                  <p class="body-3 font-medium text-[#7f7f7f]">(124)</p>
+                </div>
+                <h4 class="card-heading text-h4 font-medium">Cordless Drill</h4>
+                <p class="card-description body-2 font-medium text-[#7f7f7f]">
+                  JPT Heavy Duty 21V Cordless Drill with fast charger and bit
+                  set.
+                </p>
+              </div>
+              <div class="card-footer flex items-center justify-between flex-wrap gap-2 p-6 pt-0">
+                <span class="flex flex-col whitespace-nowrap">
+                  <p class="original-price body-4 line-through font-medium text-[#7f7f7f]">
+                    Rs. 4,200
+                  </p>
+                  <h5 class="discount-price text-h5 font-medium text-black">
+                    Rs. 3,800
+                  </h5>
+                </span>
+                <button class="btn btn-secondary btn-h-36">Add to Cart</button>
+              </div>
+            </div>
+          </div>
           <!-- Card 3 -->
           <div
             class="swiper-slide card flex flex-col justify-between rounded-2xl bg-white max-w-[20rem] hover:scale-[1.02] transition-all duration-300">
@@ -639,7 +1152,48 @@
               </div>
             </div>
           </div>
-
+   <!-- Card 3 -->
+          <div
+            class="swiper-slide card flex flex-col justify-between rounded-2xl bg-white max-w-[20rem] hover:scale-[1.02] transition-all duration-300">
+            <div class="card-header flex justify-center relative">
+              <img src="./Assets/Product-3.png" alt="Product-1" class="w-64 mt-5" />
+              <div class="card-badges absolute top-2 right-2 flex gap-2">
+                <div class="card-badge bg-red p-2 rounded-sm body-4 h-6 flex items-center text-white">
+                  Sale
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col justify-between h-full">
+              <div class="card-body py-4 px-6 flex flex-col gap-4">
+                <div class="card-rating flex items-center justify-start gap-2">
+                  <span class="bg-green p-2 rounded-sm body-2 font-medium h-7 flex items-center text-black">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="#000000" xmlns="http://www.w3.org/2000/svg"
+                      class="mr-1">
+                      <path
+                        d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
+                    </svg>4.5
+                  </span>
+                  <p class="body-3 font-medium text-[#7f7f7f]">(89)</p>
+                </div>
+                <h4 class="card-heading text-h4 font-medium">Angle Grinder</h4>
+                <p class="card-description body-2 font-medium text-[#7f7f7f]">
+                  Professional Grade 4-inch Angle Grinder for cutting and
+                  grinding.
+                </p>
+              </div>
+              <div class="card-footer flex items-center justify-between flex-wrap gap-2 p-6 pt-0">
+                <span class="flex flex-col whitespace-nowrap">
+                  <p class="original-price body-4 line-through font-medium text-[#7f7f7f]">
+                    Rs. 2,800
+                  </p>
+                  <h5 class="discount-price text-h5 font-medium text-black">
+                    Rs. 2,200
+                  </h5>
+                </span>
+                <button class="btn btn-secondary btn-h-36">Add to Cart</button>
+              </div>
+            </div>
+          </div>
           <!-- Card 4 -->
           <div
             class="swiper-slide card flex flex-col justify-between rounded-2xl bg-white max-w-[20rem] hover:scale-[1.02] transition-all duration-300">
@@ -770,11 +1324,11 @@
 
       <!-- Progress Bar -->
       <div class="hidden lg:block">
-        <div class="lg:px-40! px-5!">
+        <div class="container">
           <div class="">
             <div class="w-full h-[6px] bg-white rounded-[6px] overflow-hidden relative">
-              <div id="bestsellers-progress-bar" class="h-full absolute top-0 left-0 rounded-[6px] lg:px-40! px-5!"
-                style="background-color: var(--color-red-primary); width: 0%">
+              <div id="bestsellers-progress-bar" class="h-full absolute top-0 left-0 rounded-[6px]"
+                style="background-color: var(--color-red-primary); width: 10%">
               </div>
             </div>
           </div>
@@ -812,19 +1366,19 @@
           width: 100% !important;
         }
 
-        .mobile-grid-wrapper .swiper-slide img {
+        /* .mobile-grid-wrapper .swiper-slide img {
           width: 100% !important;
           right: -5% !important;
           bottom: 5px !important;
-        }
+        }  */
       }
     </style>
     <div class="flex flex-col lg:gap-12 gap-6">
-      <div class="flex flex-col items-center text-center lg:pl-40! px-3!">
+      <div class="flex flex-col items-center text-center container">
         <h3 class="text-center">Shop by Function and </h3>
         <h3 class="text-center">Category</h3>
       </div>
-      <div id="card-swiper-container" class="swiper card-section-swiper-2 w-full lg:pl-40! px-3!">
+      <div id="card-swiper-container" class="swiper card-section-swiper-2 w-full lg:px-0 px-5!">
         <div class="swiper-wrapper mobile-grid-wrapper">
           <!-- Card 1 -->
           <div
@@ -834,7 +1388,7 @@
               2 <span class="body-2 font-medium">Products</span>
             </p>
             <img src="./Assets/Product-4.png" alt="Polishing Machine"
-              class="absolute bottom-[10px] right-[-10%] w-[95%] lg:w-[90%] object-cover" />
+              class="absolute bottom-[10px] right-[-10%] w-[95%] md:w-[75%]! lg:w-[90%]! object-cover" />
           </div>
           <!-- Card 2 -->
           <div
@@ -844,7 +1398,7 @@
               2 <span class="body-2 font-medium">Products</span>
             </p>
             <img src="./Assets/Product-5.png" alt="Angle Grinder"
-              class="absolute bottom-[10px] right-[-10%] w-[95%] lg:w-[90%] object-cover" />
+              class="absolute bottom-[10px] right-[-10%] w-[100%] md:w-[75%] lg:w-[90%] object-cover" />
           </div>
           <!-- Card 3 -->
           <div
@@ -854,7 +1408,7 @@
               2 <span class="body-2 font-medium">Products</span>
             </p>
             <img src="./Assets/Product-6.png" alt="Hydraulic Jack"
-              class="absolute bottom-[10px] right-[-10%] w-[95%] lg:w-[90%] object-cover" />
+              class="absolute bottom-[10px] right-[-10%] w-[95%] md:w-[75%]  lg:w-[90%] object-cover" />
           </div>
           <!-- Card 4 -->
           <div
@@ -864,7 +1418,7 @@
               2 <span class="body-2 font-medium">Products</span>
             </p>
             <img src="./Assets/Product-6.png" alt="Hydraulic Jack"
-              class="absolute bottom-[10px] right-[-10%] w-[95%] lg:w-[90%] object-cover" />
+              class="absolute bottom-[10px] right-[-10%] w-[95%] md:w-[75%] lg:w-[90%] object-cover" />
           </div>
           <!-- Card 5 -->
           <div
@@ -874,7 +1428,7 @@
               2 <span class="body-2 font-medium">Products</span>
             </p>
             <img src="./Assets/Product-6.png" alt="Hydraulic Jack"
-              class="absolute bottom-[10px] right-[-10%] w-[95%] lg:w-[90%] object-cover" />
+              class="absolute bottom-[10px] right-[-10%] w-[95%] md:w-[75%] lg:w-[90%] object-cover" />
           </div>
         </div>
       </div>
@@ -900,7 +1454,7 @@
 
   <section style="background-color: var(--color-red-primary)">
     <div
-      class=" flex flex-col md:flex-row items-start md:items-center justify-between py-10  px-5 md:px-40 lg:px-40 gap-10 md:gap-4">
+      class=" flex flex-col md:flex-row items-start md:items-center justify-between py-10  container gap-10 md:gap-4">
       <div class="flex items-center">
         <h3 class="text-white text-[32px] md:text-h3 font-bold leading-tight uppercase">Our<br>Accomplishments</h3>
       </div>
@@ -954,7 +1508,7 @@
 
   <section class="bg-[#f5f5f5] lg:py-20 py-10 overflow-hidden ">
     <div class=" flex flex-col item-center lg:gap-12 gap-6 container">
-      <div class="  px-5 lg:px-0 flex items-center justify-between">
+      <div class=" flex items-center justify-between">
         <div class=" flex flex-row items-center justify-center text-center gap-2
             lg:flex-col lg:items-start lg:text-left lg:gap-0 ">
           <h3 class="text-h3">Limited </h3>
@@ -1268,7 +1822,7 @@
         <h3 class="text-center">Buy with </h3>
         <h3 class="text-center">Confidence</h3>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full lg:px-40 px-5">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full container">
         <!-- Card 1 -->
         <div class="flex flex-col gap-6 bg-off-white p-6 rounded-xl">
           <img src="./Assets/Delivery-icon.svg" alt="Delivery Icon" class="w-12 h-12">
@@ -1304,11 +1858,11 @@
     <div class=" flex flex-col lg:gap-12 gap-6">
 
       <!-- Heading -->
-      <div class="flex justify-center">
+      <div class="flex justify-center container">
         <h3 class="text-h3  text-center text-white">All in one Combos</h3>
       </div>
 
-      <div class="flex flex-col lg:gap-8 items-center justify-center gap-6">
+      <div class="flex flex-col lg:gap-8 items-center justify-center gap-6 ">
         <!-- Tabs -->
         <div class="border-b-2 border-white/20 lg:w-fit lg:mx-auto w-full flex justify-center">
           <div class="overflow-x-auto hide-scrollbar px-5 lg:px-0">
@@ -3169,10 +3723,10 @@
     <div class="container flex flex-col items-center lg:gap-12 gap-6">
 
       <!-- Header -->
-      <div class="flex justify-center">
+      <div class="flex justify-center container">
         <h3 class="text-h3  text-center ">Add-Ons</h3>
       </div>
-      <div class="flex flex-col gap-8">
+      <div class="flex flex-col gap-8 container">
         <!-- Tabs -->
         <div class=" flex gap-10 border-b border-[#e5e5e5] justify-center items-center w-fit mx-auto">
           <button
@@ -3185,7 +3739,7 @@
       </div>
 
       <!-- Carousel Container -->
-      <div class="w-full relative">
+      <div class="w-full relative container">
 
         <!-- Swiper Container -->
         <div id="add-ons-swiper" class="swiper w-full overflow-hidden  lg:pl-0!  pl-5!">
@@ -3652,11 +4206,11 @@
     <div class="flex flex-col items-center lg:gap-12 gap-6 ">
       <!-- Header -->
       <div class="flex flex-col items-center gap-6">
-        <div class=" container flex flex-col item-center ">
-          <h3 class="flex text-center lg:pl-10 pl-35">Happy </h3>
-          <h3 class="text-center">Customers</h3>
-        </div>
-        <div class="flex flex-wrap justify-center items-center gap-4">
+       <div class="flex flex-col items-center text-center container">
+        <h3 class="text-center">Happy </h3>
+        <h3 class="text-center">Customers</h3>
+      </div>
+        <div class="flex flex-wrap justify-center items-center gap-4 container">
           <span class="bg-green text-black font-bold px-3 py-1 rounded-sm text-sm flex items-center gap-1">
             <svg width="12" height="12" viewBox="0 0 24 24" fill="black" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -4181,7 +4735,7 @@
   <!-- Meet the Insiders Section -->
   <div class="bg-black">
     <section class=" bg-white lg:py-20 py-10 overflow-hidden lg:rounded-b-[40px] rounded-b-[24px]">
-      <div class="grid grid-cols-1 md:grid-cols-2 justify-between gap-6 items-center lg:px-40 px-5">
+      <div class="grid grid-cols-1 md:grid-cols-2 justify-between gap-6 items-center container ">
         <!-- Text Content -->
         <div class="flex flex-col gap-4">
           <div class="flex flex-col gap-0.5">
@@ -4204,24 +4758,18 @@
     </section>
   </div>
   <!-- Footer Section -->
-   <footer class="bg-black text-white lg:py-16 py-10 relative">
-   <a
- href="https://wa.me/919821551009"
-  target="_blank"
-  rel="noopener noreferrer"
-  class="fixed bottom-[120px] cursor-pointer right-8 bg-[#4FCA5D] rounded-lg p-2 z-50 h-13 w-13 flex items-center justify-center"
->
-  <img
-    src="./Assets/whatsapp-icon-green.svg"
-    alt="WhatsApp Chat"
-    class="w-12 h-12"
-  />
-</a>
+  <footer class="bg-black text-white lg:py-16 py-10 relative">
+    <a href="https://wa.me/919821551009" target="_blank" rel="noopener noreferrer"
+      class="fixed lg:bottom-[120px] bottom-[88px] cursor-pointer lg:right-8 right-[22px] bg-[#4FCA5D] rounded-lg p-2 z-50 lg:h-13 lg:w-13 h-10 w-10 flex items-center justify-center">
+      <img src="./Assets/whatsapp-icon-green.svg" alt="WhatsApp Chat" class="lg:w-12 lg:h-12 w-10 h-10" />
+    </a>
 
-    <div class=" lg:px-40 px-5 flex flex-col lg:gap-12 gap-8 ">
-      <div class=" ">
-        <img src="./Assets/Logo.svg" alt="JPT Logo" class="w-32 h-auto" />
-      </div>
+    <div class="container flex flex-col lg:gap-12 gap-8 ">
+
+      <a href="index.html"
+        class="lg:mx-0 w-[82px] sm:w-[150px] lg:w-[152px] flex-shrink-0 cursor-pointer block">
+        <img src="./Assets/Logo.svg" alt="Logo" class="w-full h-auto object-contain" />
+      </a>
       <div class="flex flex-col lg:flex-row justify-between lg:gap-12 gap-10  ">
         <!-- Brand Column -->
         <div class="flex flex-col gap-8">
@@ -4258,9 +4806,9 @@
           <div class="flex flex-col gap-6">
             <h6 class="text-white text-lg font-bold! uppercase caption-medium-14">Terms and Policies</h6>
             <ul class="flex flex-col gap-6">
-              <li><a href="#" class="body-3 text-white/90 hover:text-white transition-colors">Terms of
+              <li><a href="term-of-service.html" class="body-3 text-white/90 hover:text-white transition-colors">Terms of
                   Services</a></li>
-              <li><a href="#" class="body-3 text-white/90 hover:text-white transition-colors">Return &
+              <li><a href="return-a-product.html" class="body-3 text-white/90 hover:text-white transition-colors">Return &
                   Refund Policy</a></li>
               <li><a href="#" class="body-3 text-white/90 hover:text-white transition-colors">Privacy
                   Policy</a></li>
@@ -4273,9 +4821,9 @@
           <div class="flex flex-col gap-6">
             <h6 class="text-white text-lg font-bold! uppercase caption-medium-14 ">Report an Issue</h6>
             <ul class="flex flex-col gap-6">
-              <li><a href="#" class="body-3 text-white/90 hover:text-white transition-colors">Return a
+              <li><a href="return-a-product.html" class="body-3 text-white/90 hover:text-white transition-colors">Return a
                   Product</a></li>
-              <li><a href="#" class="body-3 text-white/90 hover:text-white transition-colors">Report a
+              <li><a href="report-a-product-issue.html" class="body-3 text-white/90 hover:text-white transition-colors">Report a
                   Problem Issue</a></li>
             </ul>
           </div>
@@ -4286,11 +4834,11 @@
             <ul class="flex flex-col gap-6">
               <li><a href="#" class="body-3 text-white/90 hover:text-white transition-colors">Track My
                   Order</a></li>
-              <li><a href="#" class="body-3 text-white/90 hover:text-white transition-colors">Warranty
+              <li><a href="warranty-claim.html" class="body-3 text-white/90 hover:text-white transition-colors">Warranty
                   Claim</a></li>
-              <li><a href="#" class="body-3 text-white/90 hover:text-white transition-colors">Blog /
+              <li><a href="blogs.html" class="body-3 text-white/90 hover:text-white transition-colors">Blog /
                   Resources</a></li>
-              <li><a href="#" class="body-3 text-white/90 hover:text-white transition-colors">Contact
+              <li><a href="contact-us.html" class="body-3 text-white/90 hover:text-white transition-colors">Contact
                   Us</a></li>
             </ul>
           </div>

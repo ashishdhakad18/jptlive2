@@ -1,22 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // ---------------------------------------------------------
-    // 1. Autoplay Video Logic
-    // ---------------------------------------------------------
-    // const videos = document.querySelectorAll('.js-autoplay-video');
-    // videos.forEach(video => {
-    //     if (video) {
-    //         video.muted = true;
-    //         video.loop = true;
-    //         video.playsInline = true;
 
-    //         const playPromise = video.play();
-    //         if (playPromise !== undefined) {
-    //             playPromise.catch(error => {
-    //                 console.log("Autoplay was prevented. User interaction may be required.", error);
-    //             });
-    //         }
-    //     }
-    // });
 
 
     // Navbar Shop Toggle
@@ -223,12 +206,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (trendingSwiperElement && trendingProgressBar) {
         const trendingSwiper = new Swiper("#trending-swiper", {
-            slidesPerView: "auto",
-            spaceBetween: 32,
+            slidesPerView: 5.6,
+            spaceBetween: 0,
+            initialSlide: 3,
+            centeredSlides: true,
+            loop: false,
+            rewind: true,
             grabCursor: true,
+
             breakpoints: {
-                320: { spaceBetween: 16 },
-                1024: { spaceBetween: 32 }
+                360: {slidesPerView: 1.6, spaceBetween: 16 },
+                1024: { spaceBetween: 28 }
             },
             on: {
                 // Update progress bar width based on swiper progress
@@ -249,11 +237,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (bestsellersSwiperElement && bestsellersProgressBar) {
         const bestsellersSwiper = new Swiper("#bestsellers-swiper", {
-            slidesPerView: "auto",
-            spaceBetween: 28,
+           slidesPerView: 5.8,
+            spaceBetween: 0,
+            initialSlide: 3,
+            centeredSlides: true,
+            loop: false,
+            rewind: true,
             grabCursor: true,
             breakpoints: {
-                320: { spaceBetween: 20 },
+                320: { slidesPerView: 1.6, spaceBetween: 20 },
                 1024: { spaceBetween: 28 }
             },
             on: {
@@ -577,10 +569,31 @@ document.addEventListener('DOMContentLoaded', () => {
         tocTrigger.addEventListener('click', openTocModal);
         tocCloseBtn.addEventListener('click', closeTocModal);
         tocOverlay.addEventListener('click', closeTocModal);
+
     }
 
+
     // ---------------------------------------------------------
-    // 15. FAQ Tab Switching Logic
+    // 15. product description Logic
+    // ---------------------------------------------------------
+
+    const allDetails = document.querySelectorAll("details");
+
+    allDetails.forEach((detail) => {
+        detail.addEventListener("toggle", () => {
+            if (detail.open) {
+                allDetails.forEach((otherDetail) => {
+                    if (otherDetail !== detail) {
+                        otherDetail.removeAttribute("open");
+                    }
+                });
+            }
+        });
+    });
+
+
+    // ---------------------------------------------------------
+    // 16. FAQ Tab Switching Logic
     // ---------------------------------------------------------
     const faqTabButtons = document.querySelectorAll('.faq-tab-btn');
     const faqContentPanes = document.querySelectorAll('.faq-content-pane');
@@ -612,7 +625,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     // ---------------------------------------------------------
-    // 16. Special Offer Auto-run logic
+    // 17. Special Offer Auto-run logic
     // ---------------------------------------------------------
     const offerCards = document.querySelectorAll('.offer-card');
     const offerFills = document.querySelectorAll('.offer-progress-fill');
