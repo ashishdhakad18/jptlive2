@@ -11,15 +11,17 @@
 </head>
 
 <body>
-    <nav class="bg-white flex flex-col lg:px-0  ">
+ <nav class="bg-white flex flex-col lg:px-0  ">
         <!-- Badge -->
         <div class="lg:block hidden nav-badge body-4 bg-red text-white text-center py-3">
-            Delivery within INDIA in time for Christmas if you order by December 19,
-            2025!
+            <div class="container mx-auto">
+                Delivery within INDIA in time for Christmas if you order by December 19,
+                2025!
+            </div>
         </div>
 
         <!-- Navbar -->
-        <div class="lg:px-40 px-4 w-full">
+        <div class="container    w-full">
             <div class="flex items-center justify-between h-16">
 
                 <!-- LEFT (Mobile: Menu + Search) -->
@@ -33,13 +35,10 @@
                 </div>
 
                 <!-- LOGO (Center always) -->
-
                 <a href="index.html"
                     class="mx-auto lg:mx-0 w-[82px] sm:w-[150px] lg:w-[152px] flex-shrink-0 cursor-pointer block">
                     <img src="./Assets/Logo.svg" alt="Logo" class="w-full h-auto object-contain" />
                 </a>
-
-
 
                 <!-- RIGHT (Mobile: Profile + Cart) -->
                 <div class="flex items-center gap-2 lg:hidden   w-20 h-20">
@@ -54,20 +53,25 @@
                 <!-- DESKTOP NAV LINKS -->
                 <div class="hidden lg:flex items-center gap-6">
                     <a href="#" id="shopToggle"
-                        class="nav-link nav-link-shop active caption-medium-12 rounded-md uppercase px-4">Shop</a>
-                    <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4">JPT
+                        class="nav-link nav-link-shop active caption-medium-12 rounded-md uppercase px-4 cursor-pointer">Shop</a>
+                    <a href="#"
+                        class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4 cursor-pointer">JPT
                         Insiders</a>
-                    <a href="#" class="nav-link nav-link-support caption-medium-12 rounded-md uppercase px-4">Support
+                    <a href="#"
+                        class="nav-link nav-link-support caption-medium-12 rounded-md uppercase px-4 cursor-pointer">Support
                         HUB</a>
 
                     <div class="flex gap-2">
-                        <a href="#" class="nav-link-right flex items-center justify-center rounded-md bg-off-white">
+                        <a href="#"
+                            class="nav-link-right flex items-center justify-center rounded-md bg-off-white cursor-pointer">
                             <img src="./Assets/Header-search.svg" alt="">
                         </a>
-                        <a href="#" class="nav-link-right flex items-center justify-center rounded-md bg-off-white">
+                        <a href="#"
+                            class="nav-link-right flex items-center justify-center rounded-md bg-off-white cursor-pointer">
                             <img src="./Assets/Header-profile.svg" alt="">
                         </a>
-                        <a href="#" class="nav-link-right flex items-center justify-center rounded-md bg-off-white">
+                        <a href="#"
+                            class="nav-link-right flex items-center justify-center rounded-md bg-off-white cursor-pointer">
                             <img src="./Assets/Header-cart.svg" alt="">
                         </a>
                     </div>
@@ -105,7 +109,7 @@
 
     <!-- Breadcrumb -->
     <div class="bg-[#f5f5f5] py-4 lg:block hidden">
-        <div class="lg:px-40 px-5">
+        <div class="container">
             <nav class="flex items-center gap-2 body-3 font-medium text-grey-medium">
                 <a href="index.html" class="text-[#1D1D1F] font-bold hover:underline transition-all">Home</a>
                 <span class="text-grey-light">
@@ -127,7 +131,7 @@
     </div>
 
     <!-- Product Details -->
-    <section class="lg:px-40 px-5 py-4 lg:py-12 flex flex-col  gap-12 ">
+    <section class="container py-4 lg:py-12 flex flex-col  gap-12 ">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <!-- Gallery Section -->
             <div class="flex flex-col lg:gap-6 gap-3 ">
@@ -714,7 +718,7 @@
     </section>
 
     <!-- FAQs Section -->
-    <section class="lg:px-40 px-5 lg:py-20 py-10 bg-white ">
+    <section class="container lg:py-20 py-10 bg-white ">
         <div class="flex flex-col items-center gap-6">
             <!-- Section Header -->
             <h2 class="text-h2 font-bold text-[#EA0029] uppercase">FAQs</h2>
@@ -981,8 +985,8 @@
     <div class="bg-black lg:block hidden">
         <section class="bg-[#f5f5f5] lg:py-20 py-10 overflow-hidden border-b-2  lg:rounded-b-[40px] rounded-b-[24px] ">
             <div class=" flex flex-col item-center lg:gap-12 gap-6 ">
-                <div class=" container flex items-center justify-between">
-                    <div class="flex flex-row items-center justify-center text-center 
+                <div class="  flex items-center justify-between">
+                    <div class=" container flex flex-row items-center justify-center text-center 
             lg:flex-col lg:items-start lg:text-left lg:gap-0 gap-2 lg:pl-0! pl-5!">
                         <h3 class="text-h3 font-bold">YOU MAY</h3>
                         <h3 class="text-h3 font-bold">ALSO LIKE</h3>
@@ -1008,7 +1012,7 @@
                             </style>
                             <!-- Card 1 -->
                             <div
-                                class="card flex flex-col justify-between rounded-3xl bg-white  hover:scale-[1.02] transition-all duration-300 snap-center swiper-slide">
+                                class="card flex flex-col justify-between rounded-3xl bg-white  hover:scale-[1.02] transition-all duration-300 snap-center swiper-slide cursor-pointer">
                                 <div class="card-header flex justify-center relative p-6">
                                     <img src="./Assets/Product-1.png" alt="Product-1"
                                         class="w-full h-auto object-contain max-h-[250px]" />
@@ -1052,7 +1056,7 @@
 
                             <!-- Card 2 -->
                             <div
-                                class="card flex flex-col justify-between rounded-3xl bg-white  hover:scale-[1.02] transition-all duration-300 snap-center swiper-slide">
+                                class="card flex flex-col justify-between rounded-3xl bg-white  hover:scale-[1.02] transition-all duration-300 snap-center swiper-slide cursor-pointer">
                                 <div class="card-header flex justify-center relative p-6">
                                     <img src="./Assets/Product-2.png" alt="Product-2"
                                         class="w-full h-auto object-contain max-h-[250px]" />
@@ -1096,7 +1100,7 @@
 
                             <!-- Card 3 -->
                             <div
-                                class="card flex flex-col justify-between rounded-3xl bg-white min-w-[20rem] md:min-w-[22rem] hover:scale-[1.02] transition-all duration-300 snap-center swiper-slide">
+                                class="card flex flex-col justify-between rounded-3xl bg-white min-w-[20rem] md:min-w-[22rem] hover:scale-[1.02] transition-all duration-300 snap-center swiper-slide cursor-pointer">
                                 <div class="card-header flex justify-center relative p-6">
                                     <img src="./Assets/Product-3.png" alt="Product-3"
                                         class="w-full h-auto object-contain max-h-[250px]" />
@@ -1140,7 +1144,7 @@
 
                             <!-- Card 4 -->
                             <div
-                                class="card flex flex-col justify-between rounded-3xl bg-white min-w-[20rem] md:min-w-[22rem] hover:scale-[1.02] transition-all duration-300 snap-center swiper-slide">
+                                class="card flex flex-col justify-between rounded-3xl bg-white min-w-[20rem] md:min-w-[22rem] hover:scale-[1.02] transition-all duration-300 snap-center swiper-slide cursor-pointer">
                                 <div class="card-header flex justify-center relative p-6">
                                     <img src="./Assets/Product-1.png" alt="Product-1"
                                         class="w-full h-auto object-contain max-h-[250px]" />
@@ -1183,7 +1187,7 @@
                             </div>
                             <!-- Card 5 -->
                             <div
-                                class="card flex flex-col justify-between rounded-3xl bg-white min-w-[20rem] md:min-w-[22rem] hover:scale-[1.02] transition-all duration-300 snap-center swiper-slide">
+                                class="card flex flex-col justify-between rounded-3xl bg-white min-w-[20rem] md:min-w-[22rem] hover:scale-[1.02] transition-all duration-300 snap-center swiper-slide cursor-pointer">
                                 <div class="card-header flex justify-center relative p-6">
                                     <img src="./Assets/Product-2.png" alt="Product-2"
                                         class="w-full h-auto object-contain max-h-[250px]" />
@@ -1226,7 +1230,7 @@
                             </div>
                             <!-- Card 6 -->
                             <div
-                                class="card flex flex-col justify-between rounded-3xl bg-white min-w-[20rem] md:min-w-[22rem] hover:scale-[1.02] transition-all duration-300 snap-center swiper-slide">
+                                class="card flex flex-col justify-between rounded-3xl bg-white min-w-[20rem] md:min-w-[22rem] hover:scale-[1.02] transition-all duration-300 snap-center swiper-slide cursor-pointer">
                                 <div class="card-header flex justify-center relative p-6">
                                     <img src="./Assets/Product-3.png" alt="Product-3"
                                         class="w-full h-auto object-contain max-h-[250px]" />
@@ -1276,7 +1280,7 @@
                     <div class=" container">
                         <div class="">
                             <div class="w-full h-[6px] bg-white rounded-[6px] overflow-hidden relative">
-                                <div id="may-progress-bar" class="h-full absolute top-0 left-0 rounded-[6px] container"
+                                <div id="may-progress-bar" class="h-full absolute top-0 left-0 rounded-[6px] lg:pl-40!"
                                     style="background-color: var(--color-red-primary); width: 0%">
                                 </div>
                             </div>
@@ -1302,7 +1306,7 @@
             class="fixed lg:bottom-[120px] bottom-[88px] cursor-pointer lg:right-8 right-[22px] bg-[#4FCA5D] rounded-lg p-2 z-50 lg:h-13 lg:w-13 h-11 w-11 flex items-center justify-center">
             <img src="./Assets/whatsapp-icon-green.svg" alt="WhatsApp Chat" class="lg:w-12 lg:h-12 w-10 h-10" />
         </a>
-        <div class=" lg:px-40 px-5 flex flex-col lg:gap-12 gap-8 ">
+        <div class="container flex flex-col lg:gap-12 gap-8 ">
             <div class=" ">
                 <img src="./Assets/Logo.svg" alt="JPT Logo" class="w-32 h-auto" />
             </div>

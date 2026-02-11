@@ -11,15 +11,17 @@
 </head>
 
 <body>
-    <nav class="bg-white flex flex-col lg:px-0  ">
+ <nav class="bg-white flex flex-col lg:px-0  ">
         <!-- Badge -->
         <div class="lg:block hidden nav-badge body-4 bg-red text-white text-center py-3">
-            Delivery within INDIA in time for Christmas if you order by December 19,
-            2025!
+            <div class="container mx-auto">
+                Delivery within INDIA in time for Christmas if you order by December 19,
+                2025!
+            </div>
         </div>
 
         <!-- Navbar -->
-        <div class="lg:px-40 px-4 w-full">
+        <div class="container    w-full">
             <div class="flex items-center justify-between h-16">
 
                 <!-- LEFT (Mobile: Menu + Search) -->
@@ -38,7 +40,6 @@
                     <img src="./Assets/Logo.svg" alt="Logo" class="w-full h-auto object-contain" />
                 </a>
 
-
                 <!-- RIGHT (Mobile: Profile + Cart) -->
                 <div class="flex items-center gap-2 lg:hidden   w-20 h-20">
                     <a href="#" class="nav-link-right flex items-center justify-center rounded-md bg-off-white">
@@ -52,20 +53,25 @@
                 <!-- DESKTOP NAV LINKS -->
                 <div class="hidden lg:flex items-center gap-6">
                     <a href="#" id="shopToggle"
-                        class="nav-link nav-link-shop active caption-medium-12 rounded-md uppercase px-4">Shop</a>
-                    <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4">JPT
+                        class="nav-link nav-link-shop active caption-medium-12 rounded-md uppercase px-4 cursor-pointer">Shop</a>
+                    <a href="#"
+                        class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4 cursor-pointer">JPT
                         Insiders</a>
-                    <a href="#" class="nav-link nav-link-support caption-medium-12 rounded-md uppercase px-4">Support
+                    <a href="#"
+                        class="nav-link nav-link-support caption-medium-12 rounded-md uppercase px-4 cursor-pointer">Support
                         HUB</a>
 
                     <div class="flex gap-2">
-                        <a href="#" class="nav-link-right flex items-center justify-center rounded-md bg-off-white">
+                        <a href="#"
+                            class="nav-link-right flex items-center justify-center rounded-md bg-off-white cursor-pointer">
                             <img src="./Assets/Header-search.svg" alt="">
                         </a>
-                        <a href="#" class="nav-link-right flex items-center justify-center rounded-md bg-off-white">
+                        <a href="#"
+                            class="nav-link-right flex items-center justify-center rounded-md bg-off-white cursor-pointer">
                             <img src="./Assets/Header-profile.svg" alt="">
                         </a>
-                        <a href="#" class="nav-link-right flex items-center justify-center rounded-md bg-off-white">
+                        <a href="#"
+                            class="nav-link-right flex items-center justify-center rounded-md bg-off-white cursor-pointer">
                             <img src="./Assets/Header-cart.svg" alt="">
                         </a>
                     </div>
@@ -102,7 +108,7 @@
 
     <!-- Breadcrumb -->
     <div class="bg-[#f5f5f5] py-4 lg:block hidden">
-        <div class="lg:px-40 px-5">
+        <div class="container">
             <nav class="flex items-center gap-2 body-3 font-medium text-grey-medium">
                 <a href="index.html" class="text-[#1D1D1F] font-bold hover:underline transition-all">Home</a>
                 <span class="text-grey-light">
@@ -127,7 +133,7 @@
     <section class=" bg-white lg:py-20 py-10  ">
 
 
-        <div class="lg:px-40 px-5 flex lg:flex-row flex-col-reverse  gap-7 ">
+        <div class="container flex lg:flex-row flex-col-reverse  gap-7 ">
 
 
 
@@ -352,7 +358,7 @@
   />
 </a>
 
-    <div class=" lg:px-40 px-5 flex flex-col lg:gap-12 gap-8 ">
+    <div class="container flex flex-col lg:gap-12 gap-8 ">
       <div class=" ">
         <img src="./Assets/Logo.svg" alt="JPT Logo" class="w-32 h-auto" />
       </div>

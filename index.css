@@ -29,6 +29,9 @@
   /* Typography variables */
   --font-main: "Obviously Demo", sans-serif;
 
+
+
+
   /*--- Font sizes ---*/
   --fs-h1: 48px;
   --fs-h2: 44px;
@@ -67,6 +70,35 @@
   --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.08);
   --shadow-md: 0 8px 20px rgba(0, 0, 0, 0.12);
 }
+
+
+ @font-face{
+  font-family: "Obviously Demo1";
+  src: url("fonts/ObviouslyDemo-Bold.otf") format("opentype");
+  font-weight: 570;
+  font-style: bold;
+}
+
+  @font-face {
+  font-family: "Obviously Demo2";
+  src: url("fonts/ObviouslyDemo-Regular.otf") format("opentype");
+  font-weight: 560;
+  font-style: normal;
+}
+
+  @font-face {
+  font-family: "Obviously Demo3";
+  src: url("fonts/ObviouslyDemo-Medium.otf") format("opentype");
+  font-weight: 560;
+  font-style: normal;
+}
+  @font-face {
+  font-family: "Obviously Demo4";
+  src: url("fonts/ObviouslyDemo-Semibold.otf") format("opentype");
+  font-weight: 560;
+  font-style: normal;
+}
+
 
 *,
 *::before,
@@ -109,7 +141,7 @@ body {
 /* Headings from Design (Left Column - Desktop Scale) */
 .text-display {
   font-size: 32px;      /* Mobile */
-  font-weight: 700;
+  font-weight: 560;
   line-height: 1.2;
 }
 
@@ -132,8 +164,9 @@ body {
 h1,
 .text-h1 {
   font-size: 32px;      /* Mobile */
-  font-weight: 700;
+
   line-height: 1.2;
+  font-family: "Obviously Demo1";
 }
 
 /* Tablet */
@@ -567,7 +600,6 @@ h7,
   .container {
     padding-inline: 0; /* or 32px / 40px if you want */
 
-     
   }
 }
 
