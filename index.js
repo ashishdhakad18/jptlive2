@@ -302,6 +302,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const dealsProgressBar = document.getElementById('deals-progress-bar');
 
     if (dealsSwiperElement && dealsProgressBar) {
+        
         const dealsSwiper = new Swiper("#deals-swiper", {
             grabCursor: true,
             watchOverflow: false,
@@ -348,8 +349,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const washersProgressBar = document.getElementById('washers-progress-bar');
 
     if (washersSwiperElement && washersProgressBar) {
+        
         const washersSwiper = new Swiper("#washers-swiper", {
-            slidesPerView: "auto",
+            slidesPerView: 3,
             spaceBetween: 28,
             grabCursor: true,
             breakpoints: {
