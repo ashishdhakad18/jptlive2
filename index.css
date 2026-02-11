@@ -668,111 +668,58 @@ h7,
 }
 
 /* Marquee Styles */
-.marquee-wrapper {
-  overflow: hidden;
-  width: 100%;
-  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
-  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
-}
-
-.marquee-content {
-  display: flex;
-  gap: 28px;
-  /* gap-7 equivalent */
-  width: max-content;
-}
-
-.marquee-card-item {
-  width: 380px;
-  flex-shrink: 0;
-}
-
-/* Animations */
-.animate-scroll-left {
-  animation: scrollLeft 40s linear infinite;
-}
-
-.animate-scroll-right {
-  animation: scrollRight 40s linear infinite;
-}
-
-.marquee-wrapper:hover .animate-scroll-left,
-.marquee-wrapper:hover .animate-scroll-right {
-  animation-play-state: paused;
-}
-
-@keyframes scrollLeft {
-  0% {
-    transform: translateX(0);
-  }
-
-  100% {
-    transform: translateX(-50%);
-  }
-}
-
-@keyframes scrollRight {
-  0% {
-    transform: translateX(-50%);
-  }
-
-  100% {
-    transform: translateX(0);
-  }
-}
-
-/* Mobile responsiveness adjustments */
-@media (max-width: 640px) {
-  .marquee-card-item {
-    width: 300px;
-  }
-
-  .marquee-content {
-    gap: 16px;
-  }
-}
-
 .marquee {
-  width: 100%;
   overflow: hidden;
+  width: 100%;
   position: relative;
 }
 
 .marquee-track {
   display: flex;
   gap: 28px;
+  padding-right: 28px; /* Offset for seamless loop */
   width: max-content;
-  animation: marquee 30s linear infinite;
+  animation: marquee 40s linear infinite;
+  will-change: transform;
 }
 
-.marquee:hover .marquee-track {
-  animation-play-state: paused;
-}
-
-.marquee-card {
-  cursor: pointer;
-  pointer-events: auto;
-}
-
+/* Reverse row */
 .marquee.reverse .marquee-track {
   animation-direction: reverse;
 }
 
-.marquee-card-wrapper {
-  min-width: 320px;
-  /* keeps card size consistent */
+/* Hover pause */
+.marquee:hover .marquee-track {
+  animation-play-state: paused;
 }
 
-/* Animation */
+/* Seamless Infinite Animation */
 @keyframes marquee {
-  from {
+  0% {
     transform: translateX(0);
   }
-
-  to {
+  100% {
     transform: translateX(-50%);
   }
 }
+
+/* Keep card size stable */
+.marquee-card-wrapper {
+  min-width: 320px;
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .marquee-card-wrapper {
+    min-width: 260px;
+  }
+
+  .marquee-track {
+    gap: 16px;
+    padding-right: 16px; /* Offset for seamless loop */
+  }
+}
+
 
 /* Price Range Slider */
 .price-slider-container {

@@ -205,25 +205,48 @@ document.addEventListener('DOMContentLoaded', () => {
     const trendingProgressBar = document.getElementById('trending-progress-bar');
 
     if (trendingSwiperElement && trendingProgressBar) {
+        const getTrendingOffset = () => {
+            const section = trendingSwiperElement.closest('section');
+            if (!section) return 20;
+            const container = section.querySelector('.container');
+            if (container) {
+                const style = window.getComputedStyle(container);
+                const paddingLeft = parseFloat(style.paddingLeft) || 0;
+                const rect = container.getBoundingClientRect();
+                return rect.left + paddingLeft;
+            }
+            return 20;
+        };
+
         const trendingSwiper = new Swiper("#trending-swiper", {
-            slidesPerView: 5.6,
-            spaceBetween: 0,
-            initialSlide: 3,
-            centeredSlides: true,
+            slidesPerView: "auto",
+            spaceBetween: 16,
+            initialSlide: 0,
+            centeredSlides: false,
             loop: false,
-            rewind: true,
+            rewind: false,
             grabCursor: true,
+            slidesOffsetBefore: getTrendingOffset(),
 
             breakpoints: {
-                360: {slidesPerView: 1.6, spaceBetween: 16 },
+                360: { spaceBetween: 16 },
                 1024: { spaceBetween: 28 }
             },
             on: {
-                // Update progress bar width based on swiper progress
                 progress: function (swiper) {
                     const progress = swiper.progress;
                     const clampedProgress = Math.max(0, Math.min(1, progress));
                     trendingProgressBar.style.width = (clampedProgress * 100) + '%';
+                },
+                resize: function (swiper) {
+                    swiper.params.slidesOffsetBefore = getTrendingOffset();
+                    swiper.update();
+                },
+                init: function (swiper) {
+                     setTimeout(() => {
+                        swiper.params.slidesOffsetBefore = getTrendingOffset();
+                        swiper.update();
+                     }, 100);
                 }
             }
         });
@@ -234,18 +257,32 @@ document.addEventListener('DOMContentLoaded', () => {
     // ---------------------------------------------------------
     const bestsellersSwiperElement = document.querySelector('#bestsellers-swiper');
     const bestsellersProgressBar = document.getElementById('bestsellers-progress-bar');
+    
 
     if (bestsellersSwiperElement && bestsellersProgressBar) {
+            const getTrendingOffset = () => {
+            const section = trendingSwiperElement.closest('section');
+            if (!section) return 20;
+            const container = section.querySelector('.container');
+            if (container) {
+                const style = window.getComputedStyle(container);
+                const paddingLeft = parseFloat(style.paddingLeft) || 0;
+                const rect = container.getBoundingClientRect();
+                return rect.left + paddingLeft;
+            }
+            return 20;
+        };
         const bestsellersSwiper = new Swiper("#bestsellers-swiper", {
-           slidesPerView: 5.8,
-            spaceBetween: 0,
-            initialSlide: 3,
-            centeredSlides: true,
+              slidesPerView: "auto",
+            spaceBetween: 16,
+            initialSlide: 0,
+            centeredSlides: false,
             loop: false,
-            rewind: true,
+            rewind: false,
             grabCursor: true,
+            slidesOffsetBefore: getTrendingOffset(),
             breakpoints: {
-                320: { slidesPerView: 1.6, spaceBetween: 20 },
+                320: {  spaceBetween: 20 },
                 1024: { spaceBetween: 28 }
             },
             on: {
@@ -684,6 +721,58 @@ document.addEventListener('DOMContentLoaded', () => {
         // Start the cycle
         updateOffer(currentOfferIndex);
         animationFrame = requestAnimationFrame(animateProgress);
+    }
+
+    // ---------------------------------------------------------
+    // 18. Card Section Swiper (Shop by Function and Category)
+    // ---------------------------------------------------------
+    const cardSwiperElement = document.querySelector('#card-swiper-container');
+    const cardProgressBar = document.getElementById('card-progress-bar');
+
+    if (cardSwiperElement) {
+         const getCardSectionOffset = () => {
+            const section = cardSwiperElement.closest('section');
+            if (!section) return 20;
+            const container = section.querySelector('.container');
+            if (container) {
+                const style = window.getComputedStyle(container);
+                const paddingLeft = parseFloat(style.paddingLeft) || 0;
+                const rect = container.getBoundingClientRect();
+                return rect.left + paddingLeft;
+            }
+            return 20;
+        };
+
+        const cardSwiper = new Swiper("#card-swiper-container", {
+            slidesPerView: "auto",
+            spaceBetween: 16,
+            grabCursor: true,
+            slidesOffsetBefore: getCardSectionOffset(),
+            breakpoints: {
+                 1024: {
+                     spaceBetween: 28,
+                 }
+            },
+            on: {
+                 progress: function (swiper) {
+                    if (cardProgressBar) {
+                        const progress = swiper.progress;
+                        const clampedProgress = Math.max(0, Math.min(1, progress));
+                        cardProgressBar.style.width = (clampedProgress * 100) + '%';
+                    }
+                },
+                resize: function (swiper) {
+                    swiper.params.slidesOffsetBefore = getCardSectionOffset();
+                    swiper.update();
+                },
+                init: function (swiper) {
+                     setTimeout(() => {
+                        swiper.params.slidesOffsetBefore = getCardSectionOffset();
+                        swiper.update();
+                     }, 100);
+                }
+            }
+        });
     }
 
 });
