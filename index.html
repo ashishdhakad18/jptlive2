@@ -952,11 +952,11 @@
       </div>
 
       <div class="hidden lg:block">
-        <div class="lg:px-40! px-5!">
+        <div class="container">
           <div class="">
             <div class="w-full h-[6px] bg-off-white rounded-[6px] overflow-hidden relative">
               <div id="trending-progress-bar"
-                class="h-full absolute top-0 left-0 rounded-[6px] container lg:px-40! px-5!"
+                class="h-full absolute top-0 left-0 rounded-[6px]  "
                 style="background-color: var(--color-red-primary); width: 0%">
               </div>
             </div>
@@ -1195,16 +1195,17 @@
             </div>
           </div>
           <!-- Card 4 -->
-          <div
-            class="swiper-slide card flex flex-col justify-between rounded-2xl bg-white max-w-[20rem] hover:scale-[1.02] transition-all duration-300">
+            <div
+            class="swiper-slide card flex flex-col rounded-2xl bg-white hover:scale-[1.02] max-w-[20rem] transition-all duration-300">
             <div class="card-header flex justify-center relative">
-              <img src="./Assets/Product-1.png" alt="Product-1" class="w-64 mt-5" />
+              <img src="./Assets/Product-2.png" alt="Product-1" class="w-64 mt-5" />
               <div class="card-badges absolute top-2 right-2 flex gap-2">
                 <div class="card-badge bg-red p-2 rounded-sm body-4 h-6 flex items-center text-white">
-                  Hot
+                  New
                 </div>
               </div>
             </div>
+            <!-- Added an extra div container to fix the body and footer not aligning bcoz of inconsistent content length -->
             <div class="flex flex-col justify-between h-full">
               <div class="card-body py-4 px-6 flex flex-col gap-4">
                 <div class="card-rating flex items-center justify-start gap-2">
@@ -1213,22 +1214,23 @@
                       class="mr-1">
                       <path
                         d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
-                    </svg>4.9
+                    </svg>4.8
                   </span>
-                  <p class="body-3 font-medium text-[#7f7f7f]">(210)</p>
+                  <p class="body-3 font-medium text-[#7f7f7f]">(124)</p>
                 </div>
-                <h4 class="card-heading text-h4 font-medium">Impact Wrench</h4>
+                <h4 class="card-heading text-h4 font-medium">Cordless Drill</h4>
                 <p class="card-description body-2 font-medium text-[#7f7f7f]">
-                  High Torque Impact Wrench for automotive and construction use.
+                  JPT Heavy Duty 21V Cordless Drill with fast charger and bit
+                  set.
                 </p>
               </div>
-              <div class="card-footer flex items-center justify-between p-6 pt-0">
-                <span class="flex flex-col">
+              <div class="card-footer flex items-center justify-between flex-wrap gap-2 p-6 pt-0">
+                <span class="flex flex-col whitespace-nowrap">
                   <p class="original-price body-4 line-through font-medium text-[#7f7f7f]">
-                    Rs. 5,500
+                    Rs. 4,200
                   </p>
                   <h5 class="discount-price text-h5 font-medium text-black">
-                    Rs. 4,999
+                    Rs. 3,800
                   </h5>
                 </span>
                 <button class="btn btn-secondary btn-h-36">Add to Cart</button>
@@ -1236,16 +1238,17 @@
             </div>
           </div>
           <!-- Card 5 -->
-          <div
-            class="swiper-slide card flex flex-col justify-between rounded-2xl bg-white max-w-[20rem] hover:scale-[1.02] transition-all duration-300">
+            <div
+            class="swiper-slide card flex flex-col rounded-2xl bg-white hover:scale-[1.02] max-w-[20rem] transition-all duration-300">
             <div class="card-header flex justify-center relative">
               <img src="./Assets/Product-2.png" alt="Product-1" class="w-64 mt-5" />
               <div class="card-badges absolute top-2 right-2 flex gap-2">
                 <div class="card-badge bg-red p-2 rounded-sm body-4 h-6 flex items-center text-white">
-                  Hot
+                  New
                 </div>
               </div>
             </div>
+            <!-- Added an extra div container to fix the body and footer not aligning bcoz of inconsistent content length -->
             <div class="flex flex-col justify-between h-full">
               <div class="card-body py-4 px-6 flex flex-col gap-4">
                 <div class="card-rating flex items-center justify-start gap-2">
@@ -1254,22 +1257,23 @@
                       class="mr-1">
                       <path
                         d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
-                    </svg>4.9
+                    </svg>4.8
                   </span>
-                  <p class="body-3 font-medium text-[#7f7f7f]">(210)</p>
+                  <p class="body-3 font-medium text-[#7f7f7f]">(124)</p>
                 </div>
-                <h4 class="card-heading text-h4 font-medium">Impact Wrench</h4>
+                <h4 class="card-heading text-h4 font-medium">Cordless Drill</h4>
                 <p class="card-description body-2 font-medium text-[#7f7f7f]">
-                  High Torque Impact Wrench for automotive and construction use.
+                  JPT Heavy Duty 21V Cordless Drill with fast charger and bit
+                  set.
                 </p>
               </div>
-              <div class="card-footer flex items-center justify-between p-6 pt-0">
-                <span class="flex flex-col">
+              <div class="card-footer flex items-center justify-between flex-wrap gap-2 p-6 pt-0">
+                <span class="flex flex-col whitespace-nowrap">
                   <p class="original-price body-4 line-through font-medium text-[#7f7f7f]">
-                    Rs. 5,500
+                    Rs. 4,200
                   </p>
                   <h5 class="discount-price text-h5 font-medium text-black">
-                    Rs. 4,999
+                    Rs. 3,800
                   </h5>
                 </span>
                 <button class="btn btn-secondary btn-h-36">Add to Cart</button>
@@ -1434,7 +1438,7 @@
       </div>
       <!-- Progress Bar (Visible on desktop only) -->
       <div class="hidden lg:block">
-        <div class="lg:px-40! px-5!">
+        <div class="container">
           <div class="">
             <div class="w-full h-[6px] bg-off-white rounded-[6px] overflow-hidden relative">
               <div id="card-progress-bar" class="h-full absolute top-0 left-0 rounded-[6px] lg:px-40! px-5!"
