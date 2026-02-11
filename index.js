@@ -355,8 +355,18 @@ document.addEventListener('DOMContentLoaded', () => {
             spaceBetween: 28,
             grabCursor: true,
             breakpoints: {
-                320: { spaceBetween: 20 },
-                1024: { spaceBetween: 28 }
+                320: { 
+                    slidesPerView: 1.2,
+                    spaceBetween: 16 
+                },
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                },
+                1024: { 
+                    slidesPerView: 3,
+                    spaceBetween: 28 
+                }
             },
             on: {
                 progress: function (swiper) {
