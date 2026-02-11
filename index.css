@@ -73,29 +73,29 @@
 
 
  @font-face{
-  font-family: "Obviously Demo1";
+  font-family: "Obviously DemoB";
   src: url("fonts/ObviouslyDemo-Bold.otf") format("opentype");
   font-weight: 570;
   font-style: bold;
 }
 
   @font-face {
-  font-family: "Obviously Demo2";
+  font-family: "Obviously DemoR";
   src: url("fonts/ObviouslyDemo-Regular.otf") format("opentype");
   font-weight: 560;
   font-style: normal;
 }
 
   @font-face {
-  font-family: "Obviously Demo3";
+  font-family: "Obviously DemoM";
   src: url("fonts/ObviouslyDemo-Medium.otf") format("opentype");
   font-weight: 560;
   font-style: normal;
 }
   @font-face {
-  font-family: "Obviously Demo4";
+  font-family: "Obviously DemoS";
   src: url("fonts/ObviouslyDemo-Semibold.otf") format("opentype");
-  font-weight: 560;
+  font-weight: 550;
   font-style: normal;
 }
 
@@ -143,6 +143,7 @@ body {
   font-size: 32px;      /* Mobile */
   font-weight: 560;
   line-height: 1.2;
+   font-family: "Obviously DemoB";
 }
 
 /* Tablet */
@@ -166,7 +167,7 @@ h1,
   font-size: 32px;      /* Mobile */
 
   line-height: 1.2;
-  font-family: "Obviously Demo1";
+ 
 }
 
 /* Tablet */
@@ -189,7 +190,8 @@ h1,
 h2,
 .text-h2 {
   font-size: 22px;
-  font-weight: 600;
+  font-weight: 570;
+   font-family: "Obviously DemoS";
   /* Semibold */
 }
 
@@ -212,8 +214,9 @@ h2,
 h3,
 .text-h3 {
   font-size: 24px;
-  font-weight: 700;
+  font-weight:570;
   line-height: 32px;
+   font-family: "Obviously DemoB";
 }
 
 /* Tablet */
@@ -252,6 +255,7 @@ h4,
   font-size: 20px;      /* Mobile */
   font-weight: 550;
   line-height: 1.3;
+   font-family: "Obviously DemoS";
 }
 
 /* Tablet */
@@ -277,6 +281,7 @@ h5,
   font-size: 18px;      /* Mobile */
   font-weight: 600;
   line-height: 1.3;
+   font-family: "Obviously DemoM";
 }
 
 /* Tablet */
@@ -302,6 +307,7 @@ h6,
   font-size: 16px;      /* Mobile */
   font-weight: 600;
   line-height: 1.35;
+   font-family: "Obviously DemoS";
 }
 
 /* Tablet */
@@ -347,9 +353,23 @@ h7,
 
 /* Body Text Styles */
 .body-1-regular {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
+  font-family: "Obviously DemoR";
 }
+
+@media (min-width: 640px) {
+  .body-1-regular {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .body-1-regular {
+    font-size: 20px;
+  }
+}
+
 
 .body-2-regular {
   font-size: 14px;      /* Mobile */
@@ -376,6 +396,7 @@ h7,
   font-size: 14px;      /* Mobile */
   font-weight: 540;
   line-height: 1.6;
+  font-family: "Obviously DemoS";
 }
 
 /* Tablet */
@@ -402,6 +423,7 @@ h7,
   font-size: 14px;      /* Mobile */
   font-weight: 550;
   line-height: 1.6;
+   font-family: "Obviously DemoR";
 }
 
 /* Tablet */
@@ -422,6 +444,7 @@ h7,
   font-size: 12px;      /* Mobile */
   font-weight: 550;
   line-height: 1.5;
+  font-family: "Obviously DemoS";
 }
 
 /* Tablet */
@@ -442,17 +465,20 @@ h7,
 .body-4 {
   font-size: 12px;
   font-weight: 550;
+   font-family: "Obviously DemoM";
 }
 
 /* Captions and Buttons */
 .caption-medium-14 {
   font-size: 14px;
   font-weight: 550;
+  font-family: "Obviously DemoM";
 }
 
 .caption-medium-12 {
   font-size: 12px;
   font-weight: 550;
+  font-family: "Obviously DemoM";
 }
 .caption-medium-20 {
   font-size: 14px;      /* Mobile */
@@ -501,6 +527,7 @@ h7,
   font-weight: 700;
   /* Bold */
   text-transform: uppercase;
+  font-family: "Obviously DemoB";
 }
 
 .button-text-small {
@@ -521,16 +548,18 @@ h7,
 
 .btn-h-48 {
   height: 48px;
-  font-size: 16px;
-  font-weight: 700;
+  font-size: 18px;
+  
   text-transform: uppercase;
   padding: 12px 32px;
+  font-family: "Obviously DemoM";
 }
 
 .btn-h-36 {
   height: 32px;
   padding: 8px 12px;
   font-size: 14px;
+   font-family: "Obviously DemoB";
 }
 
 /* Tablet */
