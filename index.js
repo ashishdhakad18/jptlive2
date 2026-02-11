@@ -376,7 +376,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (powerSwiperElement && powerProgressBar) {
         const powerSwiper = new Swiper("#power-swiper", {
-            slidesPerView: "auto",
+            slidesPerView: 3,
             spaceBetween: 28,
             grabCursor: true,
             breakpoints: {
@@ -401,7 +401,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (handsSwiperElement && handsProgressBar) {
         const handsSwiper = new Swiper("#hands-swiper", {
-            slidesPerView: "auto",
+            slidesPerView: 3,
             spaceBetween: 28,
             grabCursor: true,
             breakpoints: {
@@ -426,7 +426,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (boschSwiperElement && boschProgressBar) {
         const boschSwiper = new Swiper("#bosch-swiper", {
-            slidesPerView: "auto",
+            slidesPerView: 3,
             spaceBetween: 28,
             grabCursor: true,
             breakpoints: {
@@ -451,7 +451,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (refurbishedSwiperElement && refurbishedProgressBar) {
         const refurbishedSwiper = new Swiper("#refurbished-swiper", {
-            slidesPerView: "auto",
+            slidesPerView: 3,
             spaceBetween: 28,
             grabCursor: true,
             breakpoints: {
@@ -476,7 +476,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (maySwiperElement && mayProgressBar) {
         const maySwiper = new Swiper("#may-swiper", {
-            slidesPerView: "auto",
+            slidesPerView: 3,
             spaceBetween: 28,
             grabCursor: true,
             breakpoints: {

@@ -566,6 +566,7 @@ h7,
 @media (min-width: 768px) {
   .container {
     padding-inline: 0; /* or 32px / 40px if you want */
+
      
   }
 }
