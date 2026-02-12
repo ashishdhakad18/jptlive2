@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const combosSwiper = new Swiper("#combos-swiper", {
           slidesPerView: 4.5,
             spaceBetween: 28,
-         
+       
             grabCursor: true,
             watchOverflow: false,
             navigation: {
@@ -70,6 +70,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 1280: {
                     slidesPerView: 4.5,
                     spaceBetween: 28,
+                 
+                    grid: { rows: 1 },
                 },
             },
         });
@@ -126,8 +128,9 @@ document.addEventListener('DOMContentLoaded', () => {
     if (addOnsSwiperElement && addonTabButtons.length > 0 && addonCards.length > 0) {
         // Initialize Swiper
         const addonSwiper = new Swiper("#add-ons-swiper", {
+            loop: true,
             grabCursor: true,
-            watchOverflow: false,
+     
             navigation: {
                 nextEl: "#add-ons-scroll-right",
                 prevEl: "#add-ons-scroll-left",
@@ -154,6 +157,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 1024: {
                     slidesPerView: 3,
                     spaceBetween: 24,
+                },
+                1280: {
+                    slidesPerView: 4.5,
+                    spaceBetween: 20,
                 },
             },
         });
