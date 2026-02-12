@@ -66,6 +66,12 @@ document.addEventListener('DOMContentLoaded', () => {
                     spaceBetween: 24,
                 },
                 1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 28,
+                 
+                     initialSlide: 1,
+                },
+                1280: {
                     slidesPerView: 4.5,
                     spaceBetween: 28,
                  
@@ -127,6 +133,8 @@ document.addEventListener('DOMContentLoaded', () => {
     if (addOnsSwiperElement && addonTabButtons.length > 0 && addonCards.length > 0) {
         // Initialize Swiper
         const addonSwiper = new Swiper("#add-ons-swiper", {
+            slidesPerView: 3,
+            spaceBetween: 20,
             loop: true,
             grabCursor: true,
      
@@ -154,11 +162,11 @@ document.addEventListener('DOMContentLoaded', () => {
                     spaceBetween: 20,
                 },
                 1024: {
-                    slidesPerView: 3,
+                    slidesPerView: 2.5,
                     spaceBetween: 24,
                 },
                 1280: {
-                    slidesPerView: 4.5,
+                    slidesPerView: 3,
                     spaceBetween: 20,
                 },
             },
