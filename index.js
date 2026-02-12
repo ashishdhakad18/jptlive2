@@ -35,11 +35,13 @@ document.addEventListener('DOMContentLoaded', () => {
     if (combosSwiperElement && comboTabButtons.length > 0 && comboCards.length > 0) {
         // Initialize Swiper
         const combosSwiper = new Swiper("#combos-swiper", {
-          slidesPerView: 4.5,
-            spaceBetween: 28,
-       
-            grabCursor: true,
-            watchOverflow: false,
+       slidesPerView:4.5,      // 3 full + 0.6 visible (0.3 each side approx)
+  spaceBetween: 28,
+ 
+   initialSlide: 1,
+     // IMPORTANT
+  loop: false,
+  grabCursor: true,
             navigation: {
                 nextEl: "#combos-scroll-right",
                 prevEl: "#combos-scroll-left",
@@ -64,15 +66,12 @@ document.addEventListener('DOMContentLoaded', () => {
                     spaceBetween: 24,
                 },
                 1024: {
-                    slidesPerView: 4,
-                    spaceBetween: 28,
-                },
-                1280: {
                     slidesPerView: 4.5,
                     spaceBetween: 28,
                  
-                    grid: { rows: 1 },
+                     initialSlide: 1,
                 },
+          
             },
         });
 
