@@ -744,7 +744,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const cardProgressBar = document.getElementById('card-progress-bar');
 
     if (cardSwiperElement) {
-         const getCardSectionOffset = () => {
+        const getCardSectionOffset = () => {
             const section = cardSwiperElement.closest('section');
             if (!section) return 20;
             const container = section.querySelector('.container');
@@ -758,18 +758,20 @@ document.addEventListener('DOMContentLoaded', () => {
         };
 
         const cardSwiper = new Swiper("#card-swiper-container", {
-            slidesPerView: 4,
-            spaceBetween: 28,
+            slidesPerView: 3.3,
+            spaceBetween: 16,
             grabCursor: true,
+            watchSlidesProgress: true,
             slidesOffsetBefore: getCardSectionOffset(),
             breakpoints: {
-                 1024: {
-                    slidesPerView: 4,
+                1024: {
+                    slidesPerView: 3.3,
                     spaceBetween: 28,
-                 }
+                    slidesOffsetBefore: getCardSectionOffset(),
+                }
             },
             on: {
-                 progress: function (swiper) {
+                progress: function (swiper) {
                     if (cardProgressBar) {
                         const progress = swiper.progress;
                         const clampedProgress = Math.max(0, Math.min(1, progress));
@@ -781,10 +783,10 @@ document.addEventListener('DOMContentLoaded', () => {
                     swiper.update();
                 },
                 init: function (swiper) {
-                     setTimeout(() => {
+                    setTimeout(() => {
                         swiper.params.slidesOffsetBefore = getCardSectionOffset();
                         swiper.update();
-                     }, 100);
+                    }, 100);
                 }
             }
         });
