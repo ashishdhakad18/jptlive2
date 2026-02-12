@@ -397,7 +397,7 @@ h7,
   font-size: 14px;      /* Mobile */
   font-weight: 540;
   line-height: 1.6;
-  font-family: "Obviously DemoS";
+  font-family: "Obviously DemoR";
 }
 
 /* Tablet */
@@ -546,12 +546,13 @@ h7,
   display: inline-flex;
   align-items: center;
   transition: all 0.3s ease;
+ 
 }
 
 .btn-h-48 {
   height: 48px;
   font-size: 18px;
-  
+
   text-transform: uppercase;
   padding: 12px 32px;
   font-family: "Obviously DemoM";

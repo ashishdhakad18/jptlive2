@@ -35,9 +35,9 @@ document.addEventListener('DOMContentLoaded', () => {
     if (combosSwiperElement && comboTabButtons.length > 0 && comboCards.length > 0) {
         // Initialize Swiper
         const combosSwiper = new Swiper("#combos-swiper", {
-            slidesPerView: 4.5,
+          slidesPerView: 4.5,
             spaceBetween: 28,
-        
+         
             grabCursor: true,
             watchOverflow: false,
             navigation: {
@@ -758,13 +758,14 @@ document.addEventListener('DOMContentLoaded', () => {
         };
 
         const cardSwiper = new Swiper("#card-swiper-container", {
-            slidesPerView: "auto",
-            spaceBetween: 16,
+            slidesPerView: 4,
+            spaceBetween: 28,
             grabCursor: true,
             slidesOffsetBefore: getCardSectionOffset(),
             breakpoints: {
                  1024: {
-                     spaceBetween: 28,
+                    slidesPerView: 4,
+                    spaceBetween: 28,
                  }
             },
             on: {
