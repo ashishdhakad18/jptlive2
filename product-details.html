@@ -11,17 +11,15 @@
 </head>
 
 <body>
- <nav class="bg-white flex flex-col lg:px-0  ">
+    <nav class="bg-white flex flex-col lg:px-0  ">
         <!-- Badge -->
         <div class="lg:block hidden nav-badge body-4 bg-red text-white text-center py-3">
-            <div class="container mx-auto">
-                Delivery within INDIA in time for Christmas if you order by December 19,
-                2025!
-            </div>
+            Delivery within INDIA in time for Christmas if you order by December 19,
+            2025!
         </div>
 
         <!-- Navbar -->
-        <div class="container    w-full">
+        <div class="container w-full">
             <div class="flex items-center justify-between h-16">
 
                 <!-- LEFT (Mobile: Menu + Search) -->
@@ -35,10 +33,13 @@
                 </div>
 
                 <!-- LOGO (Center always) -->
+
                 <a href="index.html"
                     class="mx-auto lg:mx-0 w-[82px] sm:w-[150px] lg:w-[152px] flex-shrink-0 cursor-pointer block">
                     <img src="./Assets/Logo.svg" alt="Logo" class="w-full h-auto object-contain" />
                 </a>
+
+
 
                 <!-- RIGHT (Mobile: Profile + Cart) -->
                 <div class="flex items-center gap-2 lg:hidden   w-20 h-20">
@@ -53,25 +54,20 @@
                 <!-- DESKTOP NAV LINKS -->
                 <div class="hidden lg:flex items-center gap-6">
                     <a href="#" id="shopToggle"
-                        class="nav-link nav-link-shop active caption-medium-12 rounded-md uppercase px-4 cursor-pointer">Shop</a>
-                    <a href="#"
-                        class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4 cursor-pointer">JPT
+                        class="nav-link nav-link-shop active caption-medium-12 rounded-md uppercase px-4">Shop</a>
+                    <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4">JPT
                         Insiders</a>
-                    <a href="#"
-                        class="nav-link nav-link-support caption-medium-12 rounded-md uppercase px-4 cursor-pointer">Support
+                    <a href="#" class="nav-link nav-link-support caption-medium-12 rounded-md uppercase px-4">Support
                         HUB</a>
 
                     <div class="flex gap-2">
-                        <a href="#"
-                            class="nav-link-right flex items-center justify-center rounded-md bg-off-white cursor-pointer">
+                        <a href="#" class="nav-link-right flex items-center justify-center rounded-md bg-off-white">
                             <img src="./Assets/Header-search.svg" alt="">
                         </a>
-                        <a href="#"
-                            class="nav-link-right flex items-center justify-center rounded-md bg-off-white cursor-pointer">
+                        <a href="#" class="nav-link-right flex items-center justify-center rounded-md bg-off-white">
                             <img src="./Assets/Header-profile.svg" alt="">
                         </a>
-                        <a href="#"
-                            class="nav-link-right flex items-center justify-center rounded-md bg-off-white cursor-pointer">
+                        <a href="#" class="nav-link-right flex items-center justify-center rounded-md bg-off-white">
                             <img src="./Assets/Header-cart.svg" alt="">
                         </a>
                     </div>
@@ -82,26 +78,470 @@
     </nav>
 
     <!-- Sub Navbar -->
-    <nav id="shopMenu" class="bg-white flex flex-col lg:px-0
-         overflow-hidden
-         max-h-0 opacity-0
+    <nav id="shopMenu" class="bg-white relative z-50   overflow-hidden  max-h-0 opacity-0
          transition-all duration-1000 ease-in-out">
-        <div class="lg:px-40 px-4 w-full">
+        <div class="hidden lg:flex items-center justify-center gap-8 py-4 ">
 
-            <!-- DESKTOP NAV LINKS -->
-            <div class="hidden lg:flex items-center justify-center gap-8 py-4">
-                <a href="#" class="nav-link nav-link-shop active caption-medium-12 rounded-md uppercase px-4">new</a>
-                <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4"> pressure
+            <!-- NAV ITEM -->
+            <div class="relative group  ">
+                <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4 ">new</a>
+
+                <!-- FULL WIDTH DROPDOWN -->
+                <div class="    fixed left-0 right-0 top-[160px]
+    bg-white px-10 py-10 mx-2
+    h-[400px] z-[9999] rounded-b-2xl
+
+    opacity-0 invisible
+    translate-y-4 scale-95
+
+    transition-all duration-100 ease-in
+
+    group-hover:opacity-100
+    group-hover:visible
+    group-hover:translate-y-0
+    group-hover:scale-100 ">
+
+                    <!-- CENTER CONTAINER -->
+                    <div class="w-full max-w-[1600px] mx-auto flex gap-4 justify-center">
+
+                        <!-- CARD -->
+                        <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+                            <div class="flex items-center justify-between">
+                                <h4 class="w-[50%]">Polishing Machines</h4>
+                                <div class="w-[50%] flex justify-center">
+                                    ➜
+                                </div>
+                            </div>
+                            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+                        </div>
+
+                        <!-- CARD -->
+                        <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+                            <div class="flex items-center justify-between">
+                                <h4 class="w-[50%]">Pressure Washer</h4>
+                                <div class="w-[50%] flex justify-center">
+                                    ➜
+                                </div>
+                            </div>
+                            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+                        </div>
+
+                        <!-- CARD -->
+                        <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+                            <div class="flex items-center justify-between">
+                                <h4 class="w-[50%]">Power Tools</h4>
+                                <div class="w-[50%] flex justify-center">
+                                    ➜
+                                </div>
+                            </div>
+                            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="relative group">
+                <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4">pressure
                     washer</a>
-                <a href="#" class="nav-link nav-link-support caption-medium-12 rounded-md uppercase px-4">power
-                    tools</a>
-                <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4">Hand Tools</a>
-                <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4">ACCESSORIES</a>
-                <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4">SPARE PARTS</a>
-                <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4">Automobile</a>
-                <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4">View all</a>
 
+                <!-- FULL WIDTH DROPDOWN -->
+                <div class="    fixed left-0 right-0 top-[160px]
+    bg-white px-10 py-10 mx-2
+    h-[400px] z-[9999] rounded-b-2xl
 
+    opacity-0 invisible
+    translate-y-4 scale-95
+
+    transition-all duration-100 ease-in
+
+    group-hover:opacity-100
+    group-hover:visible
+    group-hover:translate-y-0
+    group-hover:scale-100 ">
+
+                    <!-- CENTER CONTAINER -->
+                    <div class="w-full max-w-[1600px] mx-auto flex gap-4 justify-center">
+
+                        <!-- CARD -->
+                        <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+                            <div class="flex items-center justify-between">
+                                <h4 class="w-[50%]">Polishing Machines</h4>
+                                <div class="w-[50%] flex justify-center">
+                                    ➜
+                                </div>
+                            </div>
+                            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+                        </div>
+
+                        <!-- CARD -->
+                        <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+                            <div class="flex items-center justify-between">
+                                <h4 class="w-[50%]">Pressure Washer</h4>
+                                <div class="w-[50%] flex justify-center">
+                                    ➜
+                                </div>
+                            </div>
+                            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+                        </div>
+
+                        <!-- CARD -->
+                        <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+                            <div class="flex items-center justify-between">
+                                <h4 class="w-[50%]">Power Tools</h4>
+                                <div class="w-[50%] flex justify-center">
+                                    ➜
+                                </div>
+                            </div>
+                            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative group">
+                <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4">power tools</a>
+
+                <!-- FULL WIDTH DROPDOWN -->
+                <div class="    fixed left-0 right-0 top-[160px]
+    bg-white px-10 py-10 mx-2
+    h-[400px] z-[9999] rounded-b-2xl
+
+    opacity-0 invisible
+    translate-y-4 scale-95
+
+    transition-all duration-100 ease-in
+
+    group-hover:opacity-100
+    group-hover:visible
+    group-hover:translate-y-0
+    group-hover:scale-100 ">
+
+                    <!-- CENTER CONTAINER -->
+                    <div class="w-full max-w-[1600px] mx-auto flex gap-4 justify-center">
+
+                        <!-- CARD -->
+                        <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+                            <div class="flex items-center justify-between">
+                                <h4 class="w-[50%]">Polishing Machines</h4>
+                                <div class="w-[50%] flex justify-center">
+                                    ➜
+                                </div>
+                            </div>
+                            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+                        </div>
+
+                        <!-- CARD -->
+                        <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+                            <div class="flex items-center justify-between">
+                                <h4 class="w-[50%]">Pressure Washer</h4>
+                                <div class="w-[50%] flex justify-center">
+                                    ➜
+                                </div>
+                            </div>
+                            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+                        </div>
+
+                        <!-- CARD -->
+                        <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+                            <div class="flex items-center justify-between">
+                                <h4 class="w-[50%]">Power Tools</h4>
+                                <div class="w-[50%] flex justify-center">
+                                    ➜
+                                </div>
+                            </div>
+                            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="relative group">
+                <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4">hand tools</a>
+
+                <!-- FULL WIDTH DROPDOWN -->
+                <div class="    fixed left-0 right-0 top-[160px]
+    bg-white px-10 py-10 mx-2
+    h-[400px] z-[9999] rounded-b-2xl
+
+    opacity-0 invisible
+    translate-y-4 scale-95
+
+    transition-all duration-100 ease-in
+
+    group-hover:opacity-100
+    group-hover:visible
+    group-hover:translate-y-0
+    group-hover:scale-100 ">
+
+                    <!-- CENTER CONTAINER -->
+                    <div class="w-full max-w-[1600px] mx-auto flex gap-4 justify-center">
+
+                        <!-- CARD -->
+                        <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+                            <div class="flex items-center justify-between">
+                                <h4 class="w-[50%]">Polishing Machines</h4>
+                                <div class="w-[50%] flex justify-center">
+                                    ➜
+                                </div>
+                            </div>
+                            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+                        </div>
+
+                        <!-- CARD -->
+                        <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+                            <div class="flex items-center justify-between">
+                                <h4 class="w-[50%]">Pressure Washer</h4>
+                                <div class="w-[50%] flex justify-center">
+                                    ➜
+                                </div>
+                            </div>
+                            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+                        </div>
+
+                        <!-- CARD -->
+                        <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+                            <div class="flex items-center justify-between">
+                                <h4 class="w-[50%]">Power Tools</h4>
+                                <div class="w-[50%] flex justify-center">
+                                    ➜
+                                </div>
+                            </div>
+                            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="relative group">
+                <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4">accessories</a>
+
+                <!-- FULL WIDTH DROPDOWN -->
+                <div class="    fixed left-0 right-0 top-[160px]
+    bg-white px-10 py-10 mx-2
+    h-[400px] z-[9999] rounded-b-2xl
+
+    opacity-0 invisible
+    translate-y-4 scale-95
+
+    transition-all duration-100 ease-in
+
+    group-hover:opacity-100
+    group-hover:visible
+    group-hover:translate-y-0
+    group-hover:scale-100 ">
+
+                    <!-- CENTER CONTAINER -->
+                    <div class="w-full max-w-[1600px] mx-auto flex gap-4 justify-center">
+
+                        <!-- CARD -->
+                        <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+                            <div class="flex items-center justify-between">
+                                <h4 class="w-[50%]">Polishing Machines</h4>
+                                <div class="w-[50%] flex justify-center">
+                                    ➜
+                                </div>
+                            </div>
+                            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+                        </div>
+
+                        <!-- CARD -->
+                        <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+                            <div class="flex items-center justify-between">
+                                <h4 class="w-[50%]">Pressure Washer</h4>
+                                <div class="w-[50%] flex justify-center">
+                                    ➜
+                                </div>
+                            </div>
+                            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+                        </div>
+
+                        <!-- CARD -->
+                        <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+                            <div class="flex items-center justify-between">
+                                <h4 class="w-[50%]">Power Tools</h4>
+                                <div class="w-[50%] flex justify-center">
+                                    ➜
+                                </div>
+                            </div>
+                            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="relative group">
+                <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4">spare parts</a>
+
+                <!-- FULL WIDTH DROPDOWN -->
+                <div class="    fixed left-0 right-0 top-[160px]
+    bg-white px-10 py-10 mx-2
+    h-[400px] z-[9999] rounded-b-2xl
+
+    opacity-0 invisible
+    translate-y-4 scale-95
+
+    transition-all duration-100 ease-in
+
+    group-hover:opacity-100
+    group-hover:visible
+    group-hover:translate-y-0
+    group-hover:scale-100 ">
+
+                    <!-- CENTER CONTAINER -->
+                    <div class="w-full max-w-[1600px] mx-auto flex gap-4 justify-center">
+
+                        <!-- CARD -->
+                        <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+                            <div class="flex items-center justify-between">
+                                <h4 class="w-[50%]">Polishing Machines</h4>
+                                <div class="w-[50%] flex justify-center">
+                                    ➜
+                                </div>
+                            </div>
+                            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+                        </div>
+
+                        <!-- CARD -->
+                        <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+                            <div class="flex items-center justify-between">
+                                <h4 class="w-[50%]">Pressure Washer</h4>
+                                <div class="w-[50%] flex justify-center">
+                                    ➜
+                                </div>
+                            </div>
+                            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+                        </div>
+
+                        <!-- CARD -->
+                        <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+                            <div class="flex items-center justify-between">
+                                <h4 class="w-[50%]">Power Tools</h4>
+                                <div class="w-[50%] flex justify-center">
+                                    ➜
+                                </div>
+                            </div>
+                            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="relative group">
+                <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4">automobiles</a>
+
+                <!-- FULL WIDTH DROPDOWN -->
+                <div class="    fixed left-0 right-0 top-[160px]
+    bg-white px-10 py-10 mx-2
+    h-[400px] z-[9999] rounded-b-2xl
+
+    opacity-0 invisible
+    translate-y-4 scale-95
+
+    transition-all duration-100 ease-in
+
+    group-hover:opacity-100
+    group-hover:visible
+    group-hover:translate-y-0
+    group-hover:scale-100 ">
+
+                    <!-- CENTER CONTAINER -->
+                    <div class="w-full max-w-[1600px] mx-auto flex gap-4 justify-center">
+
+                        <!-- CARD -->
+                        <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+                            <div class="flex items-center justify-between">
+                                <h4 class="w-[50%]">Polishing Machines</h4>
+                                <div class="w-[50%] flex justify-center">
+                                    ➜
+                                </div>
+                            </div>
+                            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+                        </div>
+
+                        <!-- CARD -->
+                        <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+                            <div class="flex items-center justify-between">
+                                <h4 class="w-[50%]">Pressure Washer</h4>
+                                <div class="w-[50%] flex justify-center">
+                                    ➜
+                                </div>
+                            </div>
+                            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+                        </div>
+
+                        <!-- CARD -->
+                        <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+                            <div class="flex items-center justify-between">
+                                <h4 class="w-[50%]">Power Tools</h4>
+                                <div class="w-[50%] flex justify-center">
+                                    ➜
+                                </div>
+                            </div>
+                            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="relative group">
+                <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4">view all</a>
+
+                <!-- FULL WIDTH DROPDOWN -->
+                <div class="    fixed left-0 right-0 top-[160px]
+    bg-white px-10 py-10 mx-2
+    h-[400px] z-[9999] rounded-b-2xl
+
+    opacity-0 invisible
+    translate-y-4 scale-95
+
+    transition-all duration-100 ease-in
+
+    group-hover:opacity-100
+    group-hover:visible
+    group-hover:translate-y-0
+    group-hover:scale-100 ">
+
+                    <!-- CENTER CONTAINER -->
+                    <div class="w-full max-w-[1600px] mx-auto flex gap-4 justify-center">
+
+                        <!-- CARD -->
+                        <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+                            <div class="flex items-center justify-between">
+                                <h4 class="w-[50%]">Polishing Machines</h4>
+                                <div class="w-[50%] flex justify-center">
+                                    ➜
+                                </div>
+                            </div>
+                            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+                        </div>
+
+                        <!-- CARD -->
+                        <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+                            <div class="flex items-center justify-between">
+                                <h4 class="w-[50%]">Pressure Washer</h4>
+                                <div class="w-[50%] flex justify-center">
+                                    ➜
+                                </div>
+                            </div>
+                            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+                        </div>
+
+                        <!-- CARD -->
+                        <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+                            <div class="flex items-center justify-between">
+                                <h4 class="w-[50%]">Power Tools</h4>
+                                <div class="w-[50%] flex justify-center">
+                                    ➜
+                                </div>
+                            </div>
+                            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+                        </div>
+
+                    </div>
+                </div>
             </div>
 
         </div>
@@ -252,36 +692,36 @@
                         <h1 class="text-h1 text-[#CECECE]">Domestic Portable Cordless Pressure Washer</h1>
                     </div>
                     <div class="card-rating flex items-center justify-start gap-2 ">
-                        <span class="bg-green px-2 py-0.5 rounded-sm body-3 font-bold h-6 flex items-center text-black">
+                        <span class="bg-green px-2 py-0.5 rounded-sm caption-medium-14 font-bold h-6 flex items-center text-black">
                             <svg width="12" height="12" viewBox="0 0 24 24" fill="#000000"
                                 xmlns="http://www.w3.org/2000/svg" class="mr-1">
                                 <path
                                     d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
                             </svg>4.6
                         </span>
-                        <p class="body-3 font-medium text-[#7f7f7f]">36</p>
+                        <p class="caption-medium-14 text-[#7f7f7f]">(36)</p>
                     </div>
                 </div>
 
                 <!-- Features Tags -->
                 <div class="flex flex-wrap lg:max-w-[550px] gap-3 ">
                     <div
-                        class="lg:px-4 lg:py-3 p-2 lg:rounded-xl rounded-[4px] bg-[#F5F5F5] text-h7 text-[#535559] flex  ">
+                        class="lg:px-4 lg:py-3 p-2 lg:rounded-xl rounded-[4px] bg-[#F5F5F5] caption-medium-16 text-[#535559] flex  ">
                         Max. 26 Bar Pressure
                     </div>
 
                     <div
-                        class="lg:px-4 lg:py-3 p-2 lg:rounded-xl rounded-[4px] bg-[#F5F5F5] text-h7 text-[#535559] flex  ">
+                        class="lg:px-4 lg:py-3 p-2 lg:rounded-xl rounded-[4px] bg-[#F5F5F5] caption-medium-16 text-[#535559] flex  ">
                         Up To 8 Meter Spray Distance
                     </div>
 
                     <div
-                        class="lg:px-4 lg:py-3 p-2  lg:rounded-xl rounded-[4px] bg-[#F5F5F5] text-h7 text-[#535559] flex">
+                        class="lg:px-4 lg:py-3 p-2  lg:rounded-xl rounded-[4px] bg-[#F5F5F5] caption-medium-16 text-[#535559] flex">
                         4 L/Min Water Flow
                     </div>
 
                     <div
-                        class="lg:px-4 lg:py-3 p-2 lg:rounded-xl rounded-[4px] bg-[#F5F5F5] text-h7 text-[#535559] flex  ">
+                        class="lg:px-4 lg:py-3 p-2 lg:rounded-xl rounded-[4px] bg-[#F5F5F5] caption-medium-16 text-[#535559] flex  ">
                         Battery And Charger Not Included
                     </div>
                 </div>
@@ -294,8 +734,8 @@
                         <!-- Price -->
                         <div class="flex flex-col gap-4">
                             <div class="flex items-center gap-3">
-                                <h4 class="text-h4 text-[#1D1D1F]">Rs. 3,500</h4>
-                                <span class="body-2 text-[#7F7F7F] line-through font-normal">
+                                <h3 class=" text-h5 text-[#1D1D1F]">Rs. 3,500</h3>
+                                <span class="body-2 text-[#7F7F7F] flex items-center line-through font-normal">
                                     Rs. 3,600
                                 </span>
                             </div>
@@ -310,7 +750,7 @@
                                 onclick="if(this.nextElementSibling.innerText > 1) this.nextElementSibling.innerText--">
                                 −
                             </button>
-                            <span class="font-bold text-sm w-6 text-center" id="quantityDisplay">1</span>
+                            <span class="caption-medium-18 w-6 text-center" id="quantityDisplay">1</span>
                             <button
                                 class="w-3 h-3 flex items-center justify-center text-xl font-medium hover:bg-gray-50 rounded-r-md"
                                 onclick="this.previousElementSibling.innerText++">
@@ -436,7 +876,7 @@
                             </div>
 
                             <!-- Text Content -->
-                            <div class="flex flex-col gap-6 ">
+                            <div class="flex flex-col gap-6 w-full ">
                                 <h6 class="body-3 text-[#000000] leading-snug max-w-[420px]">
                                     JPT Heavy-Duty 2IV Domestic Portable Cordless Pressure Washer
                                 </h6>
@@ -483,7 +923,7 @@
                             </div>
 
                             <!-- Text Content -->
-                            <div class="flex flex-col gap-6">
+                            <div class="flex flex-col gap-6 w-full">
                                 <h6 class="body-3 text-[#000000] leading-snug max-w-[420px]">
                                     JPT Heavy-Duty 2IV Domestic Portable Cordless Pressure Washer
                                 </h6>
@@ -519,8 +959,8 @@
                 <div class="bg-[#F5F5F5] rounded-2xl lg:py-3 py-2 lg:px-4 px-2 flex  gap-2 relative group">
                     <!-- Reviewer Image/Product -->
                     <div
-                        class="w-16 h-16 sm:w-20 sm:h-20 bg-white rounded-md flex-shrink-0 p-2 flex items-center justify-center border border-[#E5E5E5]">
-                        <img src="./Assets/Product-1.png" alt="Reviewed Product" class="w-full h-full object-contain">
+                        class="w-16 h-16 sm:w-20 sm:h-20 bg-white rounded-xl flex-shrink-0 p-2 flex items-center justify-center">
+                        <img src="./Assets/Product-1.png" alt="Reviewed Product" class="w-15 h-15 object-contain">
                     </div>
 
                     <!-- Review Content -->
@@ -568,36 +1008,36 @@
 
                 <!-- Trust Badges -->
                 <div class="grid grid-cols-2 lg:grid-cols-4 lg:gap-6 gap-4">
-                    <div class="flex flex-col items-center text-center gap-4">
+                    <div class="flex flex-col items-center text-center gap-4 p-5">
                         <div class="w-12 h-12 flex items-center justify-center">
                             <img src="./Assets/Delivery-icon-grey.svg" alt="Delivery"
                                 class="w-full h-full object-contain">
                         </div>
-                        <p class="text-h7 font-bold text-[#7F7F7F] uppercase leading-tight">Fast & Free <br>
+                        <p class=" font-bold text-[#7F7F7F] uppercase leading-tight">Fast & Free <br>
                             Delivery</p>
                     </div>
 
-                    <div class="flex flex-col items-center text-center gap-4">
+                    <div class="flex flex-col items-center text-center gap-4 p-5">
                         <div class="w-12 h-12 flex items-center justify-center">
                             <img src="./Assets/Star-icon-grey.svg" alt="Quality" class="w-full h-full object-contain">
                         </div>
-                        <p class="text-h7 font-bold text-[#7F7F7F] uppercase leading-tight">100% Assured <br>
+                        <p class=" font-bold text-[#7F7F7F] uppercase leading-tight">100% Assured <br>
                             Quality</p>
                     </div>
 
-                    <div class="flex flex-col items-center text-center gap-4">
+                    <div class="flex flex-col items-center text-center gap-4 p-5">
                         <div class="w-12 h-12 flex items-center justify-center">
                             <img src="./Assets/Return-icon-grey.svg" alt="Returns" class="w-full h-full object-contain">
                         </div>
-                        <p class="text-h7 font-bold text-[#7F7F7F] uppercase leading-tight">Quick & Easy <br>
+                        <p class="font-bold text-[#7F7F7F] uppercase leading-tight">Quick & Easy <br>
                             Returns</p>
                     </div>
 
-                    <div class="flex flex-col items-center text-center gap-4">
+                    <div class="flex flex-col items-center text-center gap-4 p-5">
                         <div class="w-12 h-12 flex items-center justify-center">
                             <img src="./Assets/Pay-icon-grey.svg" alt="Pay" class="w-full h-full object-contain">
                         </div>
-                        <p class="text-h7 font-bold text-[#7F7F7F] uppercase leading-tight">Pay on <br>
+                        <p class=" font-bold text-[#7F7F7F] uppercase leading-tight">Pay on <br>
                             Delivery</p>
                     </div>
                 </div>
@@ -605,12 +1045,12 @@
                 <!-- Product Information Accordion -->
                 <div class="flex flex-col gap-4 ">
                     <!-- Product Description -->
-                    <details class="group bg-[#F5F5F7] rounded-xl border border-[#E5E5E5]/50 overflow-hidden">
+                    <details class="group bg-[#F5F5F5] rounded-xl border border-[#CECECE] overflow-hidden">
                         <summary
                             class="flex items-center justify-between p-5 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
                             <span class="body-2 font-bold text-[#1D1D1F]">Product Description</span>
                             <div
-                                class="w-6 h-6 bg-[#1D1D1F] rounded-full flex items-center justify-center text-white transition-transform duration-300 group-open:rotate-45">
+                                class="w-6 h-6 bg-[#1D1D1F] rounded-full flex items-center justify-center text-white transition-transform duration-400 group-open:rotate-135">
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                                     <line x1="12" y1="5" x2="12" y2="19"></line>
@@ -626,12 +1066,12 @@
                     </details>
 
                     <!-- Key Features -->
-                    <details class="group bg-[#F5F5F7] rounded-xl border border-[#E5E5E5]/50 overflow-hidden">
+                    <details class="group bg-[#F5F5F5] rounded-xl border border-[#CECECE] overflow-hidden">
                         <summary
                             class="flex items-center justify-between p-5 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
                             <span class="body-2 font-bold text-[#1D1D1F]">Key Features</span>
                             <div
-                                class="w-6 h-6 bg-[#1D1D1F] rounded-full flex items-center justify-center text-white transition-transform duration-300 group-open:rotate-45">
+                                class="w-6 h-6 bg-[#1D1D1F] rounded-full flex items-center justify-center text-white transition-transform duration-300 group-open:rotate-135">
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                                     <line x1="12" y1="5" x2="12" y2="19"></line>
@@ -651,12 +1091,12 @@
                     </details>
 
                     <!-- Technical Details -->
-                    <details class="group bg-[#F5F5F7] rounded-xl border border-[#E5E5E5]/50 overflow-hidden">
+                    <details class="group bg-[#F5F5F5] rounded-xl border border-[#CECECE] overflow-hidden">
                         <summary
                             class="flex items-center justify-between p-5 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
                             <span class="body-2 font-bold text-[#1D1D1F]">Technical Details</span>
                             <div
-                                class="w-6 h-6 bg-[#1D1D1F] rounded-full flex items-center justify-center text-white transition-transform duration-300 group-open:rotate-45">
+                                class="w-6 h-6 bg-[#1D1D1F] rounded-full flex items-center justify-center text-white transition-transform duration-300 group-open:rotate-135">
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                                     <line x1="12" y1="5" x2="12" y2="19"></line>
@@ -675,12 +1115,12 @@
                     </details>
 
                     <!-- What’s in the box? -->
-                    <details class="group bg-[#F5F5F7] rounded-xl border border-[#E5E5E5]/50 overflow-hidden">
+                    <details class="group bg-[#F5F5F5] rounded-xl border border-[#CECECE] overflow-hidden">
                         <summary
                             class="flex items-center justify-between p-5 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
                             <span class="body-2 font-bold text-[#1D1D1F]">What’s in the box?</span>
                             <div
-                                class="w-6 h-6 bg-[#1D1D1F] rounded-full flex items-center justify-center text-white transition-transform duration-300 group-open:rotate-45">
+                                class="w-6 h-6 bg-[#1D1D1F] rounded-full flex items-center justify-center text-white transition-transform duration-300 group-open:rotate-135">
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                                     <line x1="12" y1="5" x2="12" y2="19"></line>
@@ -738,7 +1178,7 @@
 
             <!-- FAQ Content Containers -->
             <div
-                class="w-full max-w-4xl border border-[#E5E5E5] rounded-3xl overflow-hidden bg-[#FBFBFB] lg:mt-6 mt-0 ">
+                class="w-full max-w-4xl border border-[#CECECE] rounded-3xl overflow-hidden bg-white lg:mt-6 mt-0 ">
 
                 <!-- Product FAQs -->
                 <div id="product-faqs" class="faq-content-pane flex flex-col lg:gap-6 gap-4 lg:p-12 p-6">
@@ -747,7 +1187,7 @@
                             class="flex items-center justify-between cursor-pointer list-none [&::-webkit-details-marker]:hidden">
                             <span class="caption-medium-18 font-bold text-[#1D1D1F]">What's in the Box?</span>
                             <div
-                                class="w-6 h-6 bg-[#1D1D1F] rounded-full flex items-center justify-center text-white transition-transform duration-300 group-open:rotate-45">
+                                class="w-6 h-6 bg-[#1D1D1F] rounded-full flex items-center justify-center text-white transition-transform duration-300 group-open:rotate-135">
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                                     <line x1="12" y1="5" x2="12" y2="19"></line>
@@ -766,7 +1206,7 @@
                             class="flex items-center justify-between cursor-pointer list-none [&::-webkit-details-marker]:hidden">
                             <span class="caption-medium-18 font-bold text-[#1D1D1F]">How does it work?</span>
                             <div
-                                class="w-6 h-6 bg-[#1D1D1F] rounded-full flex items-center justify-center text-white transition-transform duration-300 group-open:rotate-45">
+                                class="w-6 h-6 bg-[#1D1D1F] rounded-full flex items-center justify-center text-white transition-transform duration-300 group-open:rotate-135">
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                                     <line x1="12" y1="5" x2="12" y2="19"></line>
@@ -798,7 +1238,7 @@
                         </div>
                     </details>
 
-                    <details class="group border-b border-[#E5E5E5] pb-6  last:border-0">
+                    <details class="group border-b border-[#E5E5E5]   last:border-0">
                         <summary
                             class="flex items-center justify-between cursor-pointer list-none [&::-webkit-details-marker]:hidden">
                             <span class="caption-medium-18 font-bold text-[#1D1D1F]">How to use?</span>
@@ -878,12 +1318,12 @@
                         </div>
                     </details>
 
-                    <details class="group border-b border-[#E5E5E5] pb-6 last:border-0">
+                    <details class="group border-b border-[#E5E5E5]  last:border-0">
                         <summary
                             class="flex items-center justify-between cursor-pointer list-none [&::-webkit-details-marker]:hidden">
                             <span class="caption-medium-18 font-bold text-[#1D1D1F]">What is the flow rate?</span>
                             <div
-                                class="w-6 h-6 bg-[#1D1D1F] rounded-full flex items-center justify-center text-white transition-transform duration-300 group-open:rotate-45">
+                                class="w-6 h-6 bg-[#1D1D1F] rounded-full flex items-center justify-center text-white transition-transform duration-300 group-open:rotate-135">
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                                     <line x1="12" y1="5" x2="12" y2="19"></line>
@@ -957,7 +1397,7 @@
                         </div>
                     </details>
 
-                    <details class="group border-b border-[#E5E5E5] pb-6 last:border-0">
+                    <details class="group border-b border-[#E5E5E5] last:border-0">
                         <summary
                             class="flex items-center justify-between cursor-pointer list-none [&::-webkit-details-marker]:hidden">
                             <span class="caption-medium-18 font-bold text-[#1D1D1F]">Water leaking from the hose?</span>
@@ -983,10 +1423,10 @@
 
 
     <div class="bg-black lg:block hidden">
-        <section class="bg-[#f5f5f5] lg:py-20 py-10 overflow-hidden border-b-2  lg:rounded-b-[40px] rounded-b-[24px] ">
+        <section class="bg-white lg:py-20 py-10 overflow-hidden border-b-2  lg:rounded-b-[40px] rounded-b-[24px] ">
             <div class=" flex flex-col item-center lg:gap-12 gap-6 ">
-                <div class="  flex items-center justify-between">
-                    <div class=" container flex flex-row items-center justify-center text-center 
+                <div class=" container flex items-center justify-between">
+                    <div class="flex flex-row items-center justify-center text-center 
             lg:flex-col lg:items-start lg:text-left lg:gap-0 gap-2 lg:pl-0! pl-5!">
                         <h3 class="text-h3 font-bold">YOU MAY</h3>
                         <h3 class="text-h3 font-bold">ALSO LIKE</h3>
@@ -1006,13 +1446,13 @@
 
                                 @media (min-width: 768px) {
                                     #may-swiper .swiper-slide {
-                                        width: 22rem;
+                                        width: 20rem;
                                     }
                                 }
                             </style>
                             <!-- Card 1 -->
                             <div
-                                class="card flex flex-col justify-between rounded-3xl bg-white  hover:scale-[1.02] transition-all duration-300 snap-center swiper-slide cursor-pointer">
+                                class="card flex flex-col justify-between rounded-3xl bg-[#f5f5f5]  cursor-pointer snap-center swiper-slide">
                                 <div class="card-header flex justify-center relative p-6">
                                     <img src="./Assets/Product-1.png" alt="Product-1"
                                         class="w-full h-auto object-contain max-h-[250px]" />
@@ -1056,7 +1496,7 @@
 
                             <!-- Card 2 -->
                             <div
-                                class="card flex flex-col justify-between rounded-3xl bg-white  hover:scale-[1.02] transition-all duration-300 snap-center swiper-slide cursor-pointer">
+                                class="card flex flex-col justify-between rounded-3xl bg-[#f5f5f5] cursor-pointer  snap-center swiper-slide">
                                 <div class="card-header flex justify-center relative p-6">
                                     <img src="./Assets/Product-2.png" alt="Product-2"
                                         class="w-full h-auto object-contain max-h-[250px]" />
@@ -1100,7 +1540,7 @@
 
                             <!-- Card 3 -->
                             <div
-                                class="card flex flex-col justify-between rounded-3xl bg-white min-w-[20rem] md:min-w-[22rem] hover:scale-[1.02] transition-all duration-300 snap-center swiper-slide cursor-pointer">
+                                class="card flex flex-col justify-between rounded-3xl bg-[#f5f5f5]  cursor-pointer  snap-center swiper-slide">
                                 <div class="card-header flex justify-center relative p-6">
                                     <img src="./Assets/Product-3.png" alt="Product-3"
                                         class="w-full h-auto object-contain max-h-[250px]" />
@@ -1144,7 +1584,7 @@
 
                             <!-- Card 4 -->
                             <div
-                                class="card flex flex-col justify-between rounded-3xl bg-white min-w-[20rem] md:min-w-[22rem] hover:scale-[1.02] transition-all duration-300 snap-center swiper-slide cursor-pointer">
+                                class="card flex flex-col justify-between rounded-3xl bg-[#f5f5f5]  cursor-pointer  snap-center swiper-slide">
                                 <div class="card-header flex justify-center relative p-6">
                                     <img src="./Assets/Product-1.png" alt="Product-1"
                                         class="w-full h-auto object-contain max-h-[250px]" />
@@ -1187,7 +1627,7 @@
                             </div>
                             <!-- Card 5 -->
                             <div
-                                class="card flex flex-col justify-between rounded-3xl bg-white min-w-[20rem] md:min-w-[22rem] hover:scale-[1.02] transition-all duration-300 snap-center swiper-slide cursor-pointer">
+                                class="card flex flex-col justify-between rounded-3xl bg-[#f5f5f5]  cursor-pointer  snap-center swiper-slide">
                                 <div class="card-header flex justify-center relative p-6">
                                     <img src="./Assets/Product-2.png" alt="Product-2"
                                         class="w-full h-auto object-contain max-h-[250px]" />
@@ -1230,7 +1670,7 @@
                             </div>
                             <!-- Card 6 -->
                             <div
-                                class="card flex flex-col justify-between rounded-3xl bg-white min-w-[20rem] md:min-w-[22rem] hover:scale-[1.02] transition-all duration-300 snap-center swiper-slide cursor-pointer">
+                                class="card flex flex-col justify-between rounded-3xl bg-[#f5f5f5]  cursor-pointer  snap-center swiper-slide">
                                 <div class="card-header flex justify-center relative p-6">
                                     <img src="./Assets/Product-3.png" alt="Product-3"
                                         class="w-full h-auto object-contain max-h-[250px]" />
@@ -1279,8 +1719,8 @@
                 <div class="hidden lg:block">
                     <div class=" container">
                         <div class="">
-                            <div class="w-full h-[6px] bg-white rounded-[6px] overflow-hidden relative">
-                                <div id="may-progress-bar" class="h-full absolute top-0 left-0 rounded-[6px] lg:pl-40!"
+                            <div class="w-full h-[6px] bg-[#f5f5f5] rounded-[6px] overflow-hidden transition-all duration-300 ease-out relative">
+                                <div id="may-progress-bar" class="h-full absolute top-0 left-0 rounded-[6px] lg:pl-40! pl-5!"
                                     style="background-color: var(--color-red-primary); width: 0%">
                                 </div>
                             </div>
@@ -1301,15 +1741,18 @@
 
 
     <!-- Footer -->
-    <footer class="bg-black text-white lg:py-16 py-10 relative">
+    <footer class="bg-black text-white lg:py-16 py-10 relative"> 
         <a href="https://wa.me/919821551009" target="_blank" rel="noopener noreferrer"
-            class="fixed lg:bottom-[120px] bottom-[88px] cursor-pointer lg:right-8 right-[22px] bg-[#4FCA5D] rounded-lg p-2 z-50 lg:h-13 lg:w-13 h-11 w-11 flex items-center justify-center">
+            class="fixed lg:bottom-[120px] bottom-[88px] cursor-pointer lg:right-8 right-[22px] bg-[#4FCA5D] rounded-lg p-2 z-50 lg:h-13 lg:w-13 h-10 w-10 flex items-center justify-center">
             <img src="./Assets/whatsapp-icon-green.svg" alt="WhatsApp Chat" class="lg:w-12 lg:h-12 w-10 h-10" />
         </a>
-        <div class="container flex flex-col lg:gap-12 gap-8 ">
-            <div class=" ">
-                <img src="./Assets/Logo.svg" alt="JPT Logo" class="w-32 h-auto" />
-            </div>
+
+        <div class=" container flex flex-col lg:gap-12 gap-8 ">
+
+            <a href="index.html"
+                class="lg:mx-0 w-[82px] sm:w-[150px] lg:w-[152px] flex-shrink-0 cursor-pointer block">
+                <img src="./Assets/Logo.svg" alt="Logo" class="w-full h-auto object-contain" />
+            </a>
             <div class="flex flex-col lg:flex-row justify-between lg:gap-12 gap-10  ">
                 <!-- Brand Column -->
                 <div class="flex flex-col gap-8">
@@ -1347,9 +1790,11 @@
                     <div class="flex flex-col gap-6">
                         <h6 class="text-white text-lg font-bold! uppercase caption-medium-14">Terms and Policies</h6>
                         <ul class="flex flex-col gap-6">
-                            <li><a href="#" class="body-3 text-white/90 hover:text-white transition-colors">Terms of
+                            <li><a href="term-of-service.html"
+                                    class="body-3 text-white/90 hover:text-white transition-colors">Terms of
                                     Services</a></li>
-                            <li><a href="#" class="body-3 text-white/90 hover:text-white transition-colors">Return &
+                            <li><a href="return-a-product.html"
+                                    class="body-3 text-white/90 hover:text-white transition-colors">Return &
                                     Refund Policy</a></li>
                             <li><a href="#" class="body-3 text-white/90 hover:text-white transition-colors">Privacy
                                     Policy</a></li>
@@ -1362,9 +1807,11 @@
                     <div class="flex flex-col gap-6">
                         <h6 class="text-white text-lg font-bold! uppercase caption-medium-14 ">Report an Issue</h6>
                         <ul class="flex flex-col gap-6">
-                            <li><a href="#" class="body-3 text-white/90 hover:text-white transition-colors">Return a
+                            <li><a href="return-a-product.html"
+                                    class="body-3 text-white/90 hover:text-white transition-colors">Return a
                                     Product</a></li>
-                            <li><a href="#" class="body-3 text-white/90 hover:text-white transition-colors">Report a
+                            <li><a href="report-a-product-issue.html"
+                                    class="body-3 text-white/90 hover:text-white transition-colors">Report a
                                     Problem Issue</a></li>
                         </ul>
                     </div>
@@ -1375,11 +1822,14 @@
                         <ul class="flex flex-col gap-6">
                             <li><a href="#" class="body-3 text-white/90 hover:text-white transition-colors">Track My
                                     Order</a></li>
-                            <li><a href="#" class="body-3 text-white/90 hover:text-white transition-colors">Warranty
+                            <li><a href="warranty-claim.html"
+                                    class="body-3 text-white/90 hover:text-white transition-colors">Warranty
                                     Claim</a></li>
-                            <li><a href="#" class="body-3 text-white/90 hover:text-white transition-colors">Blog /
+                            <li><a href="blogs.html"
+                                    class="body-3 text-white/90 hover:text-white transition-colors">Blog /
                                     Resources</a></li>
-                            <li><a href="#" class="body-3 text-white/90 hover:text-white transition-colors">Contact
+                            <li><a href="contact-us.html"
+                                    class="body-3 text-white/90 hover:text-white transition-colors">Contact
                                     Us</a></li>
                         </ul>
                     </div>

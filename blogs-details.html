@@ -4,24 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blogs</title>
+    <title>About Us</title>
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
 <body>
-       <nav class="bg-white flex flex-col lg:px-0  ">
+    <nav class="bg-white flex flex-col lg:px-0  ">
         <!-- Badge -->
         <div class="lg:block hidden nav-badge body-4 bg-red text-white text-center py-3">
-            <div class="container mx-auto">
-                Delivery within INDIA in time for Christmas if you order by December 19,
-                2025!
-            </div>
+            Delivery within INDIA in time for Christmas if you order by December 19,
+            2025!
         </div>
 
         <!-- Navbar -->
-        <div class="container    w-full">
+        <div class="container w-full">
             <div class="flex items-center justify-between h-16">
 
                 <!-- LEFT (Mobile: Menu + Search) -->
@@ -40,6 +38,7 @@
                     <img src="./Assets/Logo.svg" alt="Logo" class="w-full h-auto object-contain" />
                 </a>
 
+
                 <!-- RIGHT (Mobile: Profile + Cart) -->
                 <div class="flex items-center gap-2 lg:hidden   w-20 h-20">
                     <a href="#" class="nav-link-right flex items-center justify-center rounded-md bg-off-white">
@@ -53,25 +52,20 @@
                 <!-- DESKTOP NAV LINKS -->
                 <div class="hidden lg:flex items-center gap-6">
                     <a href="#" id="shopToggle"
-                        class="nav-link nav-link-shop active caption-medium-12 rounded-md uppercase px-4 cursor-pointer">Shop</a>
-                    <a href="#"
-                        class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4 cursor-pointer">JPT
+                        class="nav-link nav-link-shop active caption-medium-12 rounded-md uppercase px-4">Shop</a>
+                    <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4">JPT
                         Insiders</a>
-                    <a href="#"
-                        class="nav-link nav-link-support caption-medium-12 rounded-md uppercase px-4 cursor-pointer">Support
+                    <a href="#" class="nav-link nav-link-support caption-medium-12 rounded-md uppercase px-4">Support
                         HUB</a>
 
                     <div class="flex gap-2">
-                        <a href="#"
-                            class="nav-link-right flex items-center justify-center rounded-md bg-off-white cursor-pointer">
+                        <a href="#" class="nav-link-right flex items-center justify-center rounded-md bg-off-white">
                             <img src="./Assets/Header-search.svg" alt="">
                         </a>
-                        <a href="#"
-                            class="nav-link-right flex items-center justify-center rounded-md bg-off-white cursor-pointer">
+                        <a href="#" class="nav-link-right flex items-center justify-center rounded-md bg-off-white">
                             <img src="./Assets/Header-profile.svg" alt="">
                         </a>
-                        <a href="#"
-                            class="nav-link-right flex items-center justify-center rounded-md bg-off-white cursor-pointer">
+                        <a href="#" class="nav-link-right flex items-center justify-center rounded-md bg-off-white">
                             <img src="./Assets/Header-cart.svg" alt="">
                         </a>
                     </div>
@@ -80,29 +74,482 @@
             </div>
         </div>
     </nav>
-  <!-- Sub Navbar --> 
-     <nav id="shopMenu" class="bg-white flex flex-col lg:px-0
-         overflow-hidden
-         max-h-0 opacity-0
-         transition-all duration-1000 ease-in-out">
-    <div class="lg:px-40 px-4 w-full">
+    <!-- Sub Navbar -->
+  <nav id="shopMenu" class="bg-white relative z-50   overflow-hidden  max-h-0 opacity-0
+         transition-all duration-1000 ease-in-out" >
+  <div class="hidden lg:flex items-center justify-center gap-8 py-4 ">
 
-        <!-- DESKTOP NAV LINKS -->
-        <div class="hidden lg:flex items-center justify-center gap-8 py-4">
-          <a href="#" class="nav-link nav-link-shop active caption-medium-12 rounded-md uppercase px-4">new</a>
-          <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4"> pressure washer</a>
-          <a href="#" class="nav-link nav-link-support caption-medium-12 rounded-md uppercase px-4">power tools</a>
-                 <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4">Hand Tools</a>
-                 <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4">ACCESSORIES</a>
-                 <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4">SPARE PARTS</a>
-                 <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4">Automobile</a>
-                    <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4">View all</a>
+    <!-- NAV ITEM -->
+    <div class="relative group  ">
+      <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4 ">new</a>
 
+      <!-- FULL WIDTH DROPDOWN -->
+      <div
+        class="    fixed left-0 right-0 top-[160px]
+    bg-white px-10 py-10 mx-2
+    h-[400px] z-[9999] rounded-b-2xl
+
+    opacity-0 invisible
+    translate-y-4 scale-95
+
+    transition-all duration-100 ease-in
+
+    group-hover:opacity-100
+    group-hover:visible
+    group-hover:translate-y-0
+    group-hover:scale-100 ">
+
+        <!-- CENTER CONTAINER -->
+        <div class="w-full max-w-[1600px] mx-auto flex gap-4 justify-center">
+
+          <!-- CARD -->
+          <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+            <div class="flex items-center justify-between">
+              <h4 class="w-[50%]">Polishing Machines</h4>
+              <div class="w-[50%] flex justify-center">
+                ➜
+              </div>
+            </div>
+            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+          </div>
+
+          <!-- CARD -->
+          <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+            <div class="flex items-center justify-between">
+              <h4 class="w-[50%]">Pressure Washer</h4>
+              <div class="w-[50%] flex justify-center">
+                ➜
+              </div>
+            </div>
+            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+          </div>
+
+          <!-- CARD -->
+          <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+            <div class="flex items-center justify-between">
+              <h4 class="w-[50%]">Power Tools</h4>
+              <div class="w-[50%] flex justify-center">
+                ➜
+              </div>
+            </div>
+            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+          </div>
 
         </div>
-
+      </div>
     </div>
-  </nav>
+
+   
+   <div class="relative group">
+      <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4">pressure washer</a>
+
+      <!-- FULL WIDTH DROPDOWN -->
+      <div
+      class="    fixed left-0 right-0 top-[160px]
+    bg-white px-10 py-10 mx-2
+    h-[400px] z-[9999] rounded-b-2xl
+
+    opacity-0 invisible
+    translate-y-4 scale-95
+
+    transition-all duration-100 ease-in
+
+    group-hover:opacity-100
+    group-hover:visible
+    group-hover:translate-y-0
+    group-hover:scale-100 ">
+
+        <!-- CENTER CONTAINER -->
+        <div class="w-full max-w-[1600px] mx-auto flex gap-4 justify-center">
+
+          <!-- CARD -->
+          <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+            <div class="flex items-center justify-between">
+              <h4 class="w-[50%]">Polishing Machines</h4>
+              <div class="w-[50%] flex justify-center">
+                ➜
+              </div>
+            </div>
+            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+          </div>
+
+          <!-- CARD -->
+          <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+            <div class="flex items-center justify-between">
+              <h4 class="w-[50%]">Pressure Washer</h4>
+              <div class="w-[50%] flex justify-center">
+                ➜
+              </div>
+            </div>
+            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+          </div>
+
+          <!-- CARD -->
+          <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+            <div class="flex items-center justify-between">
+              <h4 class="w-[50%]">Power Tools</h4>
+              <div class="w-[50%] flex justify-center">
+                ➜
+              </div>
+            </div>
+            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+     <div class="relative group">
+      <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4">power tools</a>
+
+      <!-- FULL WIDTH DROPDOWN -->
+      <div
+        class="    fixed left-0 right-0 top-[160px]
+    bg-white px-10 py-10 mx-2
+    h-[400px] z-[9999] rounded-b-2xl
+
+    opacity-0 invisible
+    translate-y-4 scale-95
+
+    transition-all duration-100 ease-in
+
+    group-hover:opacity-100
+    group-hover:visible
+    group-hover:translate-y-0
+    group-hover:scale-100 ">
+
+        <!-- CENTER CONTAINER -->
+        <div class="w-full max-w-[1600px] mx-auto flex gap-4 justify-center">
+
+          <!-- CARD -->
+          <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+            <div class="flex items-center justify-between">
+              <h4 class="w-[50%]">Polishing Machines</h4>
+              <div class="w-[50%] flex justify-center">
+                ➜
+              </div>
+            </div>
+            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+          </div>
+
+          <!-- CARD -->
+          <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+            <div class="flex items-center justify-between">
+              <h4 class="w-[50%]">Pressure Washer</h4>
+              <div class="w-[50%] flex justify-center">
+                ➜
+              </div>
+            </div>
+            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+          </div>
+
+          <!-- CARD -->
+          <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+            <div class="flex items-center justify-between">
+              <h4 class="w-[50%]">Power Tools</h4>
+              <div class="w-[50%] flex justify-center">
+                ➜
+              </div>
+            </div>
+            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+          </div>
+
+        </div>
+      </div>
+    </div>
+     <div class="relative group">
+      <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4">hand tools</a>
+
+      <!-- FULL WIDTH DROPDOWN -->
+      <div
+        class="    fixed left-0 right-0 top-[160px]
+    bg-white px-10 py-10 mx-2
+    h-[400px] z-[9999] rounded-b-2xl
+
+    opacity-0 invisible
+    translate-y-4 scale-95
+
+    transition-all duration-100 ease-in
+
+    group-hover:opacity-100
+    group-hover:visible
+    group-hover:translate-y-0
+    group-hover:scale-100 ">
+
+        <!-- CENTER CONTAINER -->
+        <div class="w-full max-w-[1600px] mx-auto flex gap-4 justify-center">
+
+          <!-- CARD -->
+          <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+            <div class="flex items-center justify-between">
+              <h4 class="w-[50%]">Polishing Machines</h4>
+              <div class="w-[50%] flex justify-center">
+                ➜
+              </div>
+            </div>
+            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+          </div>
+
+          <!-- CARD -->
+          <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+            <div class="flex items-center justify-between">
+              <h4 class="w-[50%]">Pressure Washer</h4>
+              <div class="w-[50%] flex justify-center">
+                ➜
+              </div>
+            </div>
+            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+          </div>
+
+          <!-- CARD -->
+          <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+            <div class="flex items-center justify-between">
+              <h4 class="w-[50%]">Power Tools</h4>
+              <div class="w-[50%] flex justify-center">
+                ➜
+              </div>
+            </div>
+            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+          </div>
+
+        </div>
+      </div>
+    </div>
+     <div class="relative group">
+      <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4">accessories</a>
+
+      <!-- FULL WIDTH DROPDOWN -->
+      <div
+    class="    fixed left-0 right-0 top-[160px]
+    bg-white px-10 py-10 mx-2
+    h-[400px] z-[9999] rounded-b-2xl
+
+    opacity-0 invisible
+    translate-y-4 scale-95
+
+    transition-all duration-100 ease-in
+
+    group-hover:opacity-100
+    group-hover:visible
+    group-hover:translate-y-0
+    group-hover:scale-100 ">
+
+        <!-- CENTER CONTAINER -->
+        <div class="w-full max-w-[1600px] mx-auto flex gap-4 justify-center">
+
+          <!-- CARD -->
+          <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+            <div class="flex items-center justify-between">
+              <h4 class="w-[50%]">Polishing Machines</h4>
+              <div class="w-[50%] flex justify-center">
+                ➜
+              </div>
+            </div>
+            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+          </div>
+
+          <!-- CARD -->
+          <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+            <div class="flex items-center justify-between">
+              <h4 class="w-[50%]">Pressure Washer</h4>
+              <div class="w-[50%] flex justify-center">
+                ➜
+              </div>
+            </div>
+            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+          </div>
+
+          <!-- CARD -->
+          <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+            <div class="flex items-center justify-between">
+              <h4 class="w-[50%]">Power Tools</h4>
+              <div class="w-[50%] flex justify-center">
+                ➜
+              </div>
+            </div>
+            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="relative group">
+      <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4">spare parts</a>
+
+      <!-- FULL WIDTH DROPDOWN -->
+      <div
+       class="    fixed left-0 right-0 top-[160px]
+    bg-white px-10 py-10 mx-2
+    h-[400px] z-[9999] rounded-b-2xl
+
+    opacity-0 invisible
+    translate-y-4 scale-95
+
+    transition-all duration-100 ease-in
+
+    group-hover:opacity-100
+    group-hover:visible
+    group-hover:translate-y-0
+    group-hover:scale-100 ">
+
+        <!-- CENTER CONTAINER -->
+        <div class="w-full max-w-[1600px] mx-auto flex gap-4 justify-center">
+
+          <!-- CARD -->
+          <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+            <div class="flex items-center justify-between">
+              <h4 class="w-[50%]">Polishing Machines</h4>
+              <div class="w-[50%] flex justify-center">
+                ➜
+              </div>
+            </div>
+            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+          </div>
+
+          <!-- CARD -->
+          <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+            <div class="flex items-center justify-between">
+              <h4 class="w-[50%]">Pressure Washer</h4>
+              <div class="w-[50%] flex justify-center">
+                ➜
+              </div>
+            </div>
+            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+          </div>
+
+          <!-- CARD -->
+          <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+            <div class="flex items-center justify-between">
+              <h4 class="w-[50%]">Power Tools</h4>
+              <div class="w-[50%] flex justify-center">
+                ➜
+              </div>
+            </div>
+            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+          </div>
+
+        </div>
+      </div>
+    </div>
+   <div class="relative group">
+      <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4">automobiles</a>
+
+      <!-- FULL WIDTH DROPDOWN -->
+      <div
+       class="    fixed left-0 right-0 top-[160px]
+    bg-white px-10 py-10 mx-2
+    h-[400px] z-[9999] rounded-b-2xl
+
+    opacity-0 invisible
+    translate-y-4 scale-95
+
+    transition-all duration-100 ease-in
+
+    group-hover:opacity-100
+    group-hover:visible
+    group-hover:translate-y-0
+    group-hover:scale-100 ">
+
+        <!-- CENTER CONTAINER -->
+        <div class="w-full max-w-[1600px] mx-auto flex gap-4 justify-center">
+
+          <!-- CARD -->
+          <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+            <div class="flex items-center justify-between">
+              <h4 class="w-[50%]">Polishing Machines</h4>
+              <div class="w-[50%] flex justify-center">
+                ➜
+              </div>
+            </div>
+            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+          </div>
+
+          <!-- CARD -->
+          <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+            <div class="flex items-center justify-between">
+              <h4 class="w-[50%]">Pressure Washer</h4>
+              <div class="w-[50%] flex justify-center">
+                ➜
+              </div>
+            </div>
+            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+          </div>
+
+          <!-- CARD -->
+          <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+            <div class="flex items-center justify-between">
+              <h4 class="w-[50%]">Power Tools</h4>
+              <div class="w-[50%] flex justify-center">
+                ➜
+              </div>
+            </div>
+            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+          </div>
+
+        </div>
+      </div>
+    </div>
+  <div class="relative group">
+      <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4">view all</a>
+
+      <!-- FULL WIDTH DROPDOWN -->
+      <div
+     class="    fixed left-0 right-0 top-[160px]
+    bg-white px-10 py-10 mx-2
+    h-[400px] z-[9999] rounded-b-2xl
+
+    opacity-0 invisible
+    translate-y-4 scale-95
+
+    transition-all duration-100 ease-in
+
+    group-hover:opacity-100
+    group-hover:visible
+    group-hover:translate-y-0
+    group-hover:scale-100 ">
+
+        <!-- CENTER CONTAINER -->
+        <div class="w-full max-w-[1600px] mx-auto flex gap-4 justify-center">
+
+          <!-- CARD -->
+          <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+            <div class="flex items-center justify-between">
+              <h4 class="w-[50%]">Polishing Machines</h4>
+              <div class="w-[50%] flex justify-center">
+                ➜
+              </div>
+            </div>
+            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+          </div>
+
+          <!-- CARD -->
+          <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+            <div class="flex items-center justify-between">
+              <h4 class="w-[50%]">Pressure Washer</h4>
+              <div class="w-[50%] flex justify-center">
+                ➜
+              </div>
+            </div>
+            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+          </div>
+
+          <!-- CARD -->
+          <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+            <div class="flex items-center justify-between">
+              <h4 class="w-[50%]">Power Tools</h4>
+              <div class="w-[50%] flex justify-center">
+                ➜
+              </div>
+            </div>
+            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
 
     <!-- Breadcrumb -->
     <div class="bg-[#f5f5f5] py-4 lg:block hidden">
@@ -115,319 +562,221 @@
                             stroke-linejoin="round" />
                     </svg>
                 </span>
-                <span>Blogs</span>
-                <span class="text-grey-light">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                    </svg>
-                </span>
-                <span>Power Cleaning at Home</span>
+                <span>About Us</span>
+
             </nav>
+
+
         </div>
     </div>
 
+    <!-- Hero Section -->
 
-  
-
-    <!-- Main Content -->
-    <section class="lg:py-12! pt-10 pb-6">
-        <div class="container flex flex-col lg:gap-10 gap-6">
-            <h1 class="text-display  font-bold w-full lg:w-[800px]">5 Key Features of Best Wet and
-                Dry Vacuum
-                Cleaners 2025</h1>
-            <div class="flex  gap-4">
-                <p class="body-2-regular text-[#535559]">Mustafa Dharwala</p>
-                <p class="body-2-regular text-[#535559]">May, 16 , 2025</p>
+    <section class="bg-white">
+        <div class="container pt-10 lg:pb-20 pb-10 flex flex-col lg;gap-10 gap-6">
+            <div class="flex flex-col lg:flex-row lg:gap-10 gap-8">
+                <h1 class="text-display ">Precision Machine Tools Built on Trust Since 1995</h1>
+                <div class="w-full rounded-2xl overflow-hidden">
+                    <img src="./Assets/about-hero.png" alt="" class="w-full h-full object-cover">
+                </div>
             </div>
-            <div class="w-full h-[220px] sm:h-[300px] md:h-[420px] lg:h-[560px] rounded-lg overflow-hidden">
-                <img src="./Assets/blogs-detail-image.png" alt="" class="w-full h-full object-cover" />
+            <div class="flex lg:flex-row flex-col lg:gap-10 gap-6">
+                <p class="body-2">JPT Tools is a trusted name in machine tools and equipment, delivering reliable hand
+                    tools, power tools, and cordless solutions to professionals across India. With decades of
+                    experience, we understand the demands of modern workshops and industrial environments.</p>
+                <p class="body-2">Our products are built to meet international standards of quality, safety, and
+                    performance. Every tool is designed with precision engineering and tested for durability, ensuring
+                    consistent results across every project.</p>
             </div>
 
         </div>
+
+
+    </section>
+  
+
+    <!-- Promise Section -->
+    <section class="container  lg:py-20 py-10 bg-off-white ">
+        <div class="flex  lg:gap-12 gap-8  lg:flex-row flex-col justify-center lg:px-12  ">
+            <h3 class="whitespace-nowrap">Our Promise</h3>
+            <p class="body-2 text-[#535559] flex justify-center">To empower professionals with reliable,
+                high-performance tools that simplify complex tasks and deliver consistent results. We believe in
+                building long-term relationships with our customers through quality products, dependable service, and
+                continuous innovation.</p>
+        </div>
     </section>
 
+
+    <!-- Core Values -->
+    <section class=" lg:py-20 py-10 ">
+        <div class="container flex flex-col lg:gap-12 gap-8">
+            <h3 class=" text-center">Our Core Values</h3>
+            <div class="flex lg:flex-row flex-col lg:gap-7 gap-6 lg:py-6 py-0">
+                <div class="flex gap-3">
+                     <div class="w-7 h-7 rounded-full flex items-center justify-center">
+                        <img src="./Assets/quality.svg" alt="">
+                    </div>
+                    <div>
+                        <p class="caption-medium-18  text-[#1D1D1F] font-bold!">Quality First</p>
+                        <p class="caption-medium-14 text-[#535559]">International standards in every product we deliver</p>
+                    </div>
+                </div>
+                <div class="flex gap-3">
+                      <div class="w-7 h-7 rounded-full flex items-center justify-center">
+                        <img src="./Assets/heart.svg" alt="">
+                    </div>
+                    <div>
+                        <p class="caption-medium-18  text-[#1D1D1F] font-bold!">Customer Focus</p>
+                        <p class="caption-medium-14 text-[#535559]">Satisfaction through reliability, safety, and service</p>
+                    </div>
+                </div>
+                <div class="flex gap-3">
+                      <div class="w-7 h-7 rounded-full flex items-center justify-center">
+                        <img src="./Assets/perfomance.svg" alt="">
+                    </div>
+                    <div>
+                        <p class="caption-medium-18  text-[#1D1D1F] font-bold!">Precision & Performance</p>
+                        <p class="caption-medium-14 text-[#535559]">Engineered for accuracy and durability</p>
+                    </div>
+                </div>
+                <div class="flex gap-3">
+                         <div class="w-7 h-7 rounded-full flex items-center justify-center">
+                        <img src="./Assets/promise.svg" alt="">
+                    </div>
+                    <div>
+                        <p class="caption-medium-18  text-[#1D1D1F] font-bold!">Integrity</p>
+                        <p class="caption-medium-14 text-[#535559]">Honest business practices and transparent relationships</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Our Story -->
+    <section class="lg:py-20 py-10">
+        <div class="container flex flex-col lg:gap-12 gap-8 justify-center">
+            <h3 class="text-center">Our Story</h3>
+            <div class="flex flex-col lg:gap-7 gap-6">
+                <p class="body-2 text-[#535559] text-center max-w-[800px] mx-auto">JPT Tools began its journey in 1995
+                    as a small machine tools shop with a clear vision—to provide reliable tools that professionals could
+                    depend on. Through consistent quality and dedication, we earned the trust of customers across
+                    industries.</p>
+                <p class="body-2 text-[#535559] text-center max-w-[800px] mx-auto">As demand grew, so did our range. We
+                    expanded from traditional hand tools to advanced power and cordless tools, aligning with global
+                    manufacturing standards and modern engineering practices.</p>
+                <p class="body-2 text-[#535559] text-center max-w-[800px] mx-auto">Today, JPT Tools stands as one of
+                    India’s leading suppliers, supported by a strong online platform that brings our complete catalog
+                    closer to customers. Our journey continues with the same passion—empowering every project with
+                    precision, pride, and performance.</p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Our Journey -->
     <div class="bg-black">
-        <section class=" bg-white lg:pb-20 pb-10 lg:rounded-b-[40px] rounded-b-[24px] ">
+        <section class="lg:py-20 py-10 bg-white rounded-b-4xl">
+            <div class="container flex flex-col lg:gap-12 gap-6 justify-center">
+                <h3 class="  text-center">Our Journey</h3>
+                <div class="w-full h-[1px] bg-[#E5E5E5] relative "></div>
 
 
-            <div class="container flex lg:flex-row flex-col  gap-7 ">
+                <div class="flex justify-between  z-10">
+                    <div class="flex flex-col lg:gap-10 gap-4 lg:mt-[-58px] mt-[-36px] cursor-pointer">
+                        <div class="w-full h-5 rounded-full flex items-center justify-center text-center ">
+                            <img src="./Assets/Ellipse.svg" alt="" class=" w-5 h-5">
+                        </div>
+                        <div class="flex flex-col lg:gap-6 gap-4">
+                        <h1 class="text-display text-[#ea0029]">1996</h1>
+                        <p class="caption-medium-20 text-[#1D1D1F] text-center">Malganj shop</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col lg:gap-10 gap-4 lg:mt-[-58px] mt-[-36px] cursor-pointer">
+                        <div class="w-full h-5 rounded-full flex items-center justify-center text-center ">
+                            <img src="./Assets/Ellipse.svg" alt="" class=" w-5 h-5">
+                        </div>
+                        <div class="flex flex-col lg:gap-6 gap-4">
+                        <h1 class="text-display text-[#7F7F7F]">1998</h1>
+                        <p class="caption-medium-20 text-[#7F7F7F]">Siyaganj shop</p>
+                        </div>
+                    </div>
+                         <div class="flex flex-col lg:gap-10 gap-4 lg:mt-[-58px] mt-[-36px] cursor-pointer">
+                        <div class="w-full h-5 rounded-full flex items-center justify-center text-center ">
+                            <img src="./Assets/Ellipse.svg" alt="" class=" w-5 h-5">
+                        </div>
+                        <div class="flex flex-col lg:gap-6 gap-4">
+                        <h1 class="text-display text-[#7F7F7F]">2021</h1>
+                        <p class="caption-medium-20 text-[#7F7F7F]">Warehouse</p>
+                        </div>
+                    </div>
+                </div>
 
-                <!-- Left Side -->
-                <div class="flex flex-col gap-7">
-                    <div class="flex flex-col gap-10 lg:p-6 p-4 bg-off-white lg:rounded-[16px] rounded-[8px] ">
-                        <h6 id="tocTrigger"
-                            class="body-2-regular flex justify-center font-bold lg:cursor-default cursor-pointer">Table
-                            of Content</h6>
-                        <!-- Table of Content Modal -->
-                        <div id="tocModal"
-                            class="fixed inset-0 z-50 flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-300">
-                            <!-- Backdrop -->
-                            <div class="absolute inset-0 bg-black/60 backdrop-blur-sm" id="tocOverlay"></div>
-
-                            <!-- Modal Content -->
-                            <div id="tocContent"
-                                class="relative bg-white w-[90%] max-w-md rounded-2xl px-4 py-6 shadow-2xl transform scale-95 transition-transform duration-300">
-
-                                <div class="flex flex-col gap-8">
-                                    <h3
-                                        class="body-2-regular flex justify-center font-bold lg:cursor-default cursor-pointer">
-                                        Table of Content</h3>
-
-                                    <div class="flex flex-col gap-6">
-                                      
-                                        <ul class="flex flex-col gap-6 body-3 text-[#535559] font-medium text-sm">
-                                              <li class="body-3 text-[#535559]">Powerful Suction to Handle Any
-                                            Challenge</li>
-                                            <li>Large Tank with Easy Drainage</li>
-                                            <li>Advanced Filtration for Clean Air and Longevity</li>
-                                            <li>Versatile Attachments and Easy Mobility</li>
-                                            <li>Self-Cleaning and Smart Features for Convenience</li>
-                                            <li>High-Quality Components for Durability</li>
-                                        </ul>
-                                        <div class="">
-                                            <p class="body-3 text-[#535559] text-base">Key Takeaways: What You Must
-                                                Remember</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Close Button (Floating below) -->
-                                <div class="absolute -bottom-16 left-1/2 -translate-x-1/2 cursor-pointer"
-                                    id="tocCloseBtn">
-                                    <div
-                                        class="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform">
-                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="black"
-                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                            <line x1="18" y1="6" x2="6" y2="18"></line>
-                                            <line x1="6" y1="6" x2="18" y2="18"></line>
-                                        </svg>
-                                    </div>
-                                </div>
+                <div> 
+                    <div class="flex lg:flex-row flex-col lg:gap-7 gap-4 relative">
+                        <div class="lg:w-[50%] w-full">
+                            <img src="./Assets/journey-image.png" alt="">
+                        </div>
+                        <div class="lg:w-[40%] w-full flex flex-col gap-11 ">
+                            <div class="h-[20%] lg:block hidden"></div>
+                            <div class="flex flex-col gap-6 lg:h-[80%] h-full ">
+                            <p class="body-1-medium text-[#1d1d1f] ">JPT Tools began its journey in 1995 as a small
+                                machine tools shop with a clear vision—to provide reliable tools that professionals
+                                could depend on. Through consistent quality and dedication, we earned the trust of
+                                customers across industries.</p>
                             </div>
                         </div>
-                        <div class="hidden lg:flex lg:flex-col lg:gap-8">
-                            <ul class="flex flex-col gap-8 text-[#535559]">
-                                <li class="text-h7 text-[#EA0029]">Powerful Suction to Handle Any Challenge</li>
-                                <li>Large Tank with Easy Drainage</li>
-                                <li>Advanced Filtration for Clean Air and Longevity</li>
-                                <li>Versatile Attachments and Easy Mobility</li>
-                                <li>Self-Cleaning and Smart Features for Convenience</li>
-                                <li>High-Quality Components for Durability</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="hidden lg:flex lg:flex-col lg:gap-10 lg:p-6 p-4 bg-off-white
-       lg:rounded-[16px] rounded-[8px]
-       lg:order-none">
-                        <h6 class="body-2-regular">Share this Article</h6>
-                        <div class="flex gap-4">
-                            <img src="./Assets/insta.svg" alt="">
-                            <img src="./Assets/facebook.svg" alt="">
-                            <img src="./Assets/twitter.svg" alt="">
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Right Side -->
-                <div class="flex flex-col gap-8 bg-white rounded-lg lg:w-[70%]  w-full">
-                    <div class="flex flex-col lg:gap-8 gap-6">
-                    <p class="text-h7 text-[#535559]">Spilled juice on the rug? Wet vacuum cleaner is the ideal
-                        choice. But who will take care of the dust and debris piling up in the garage. Do you need two
-                        vacuum cleaners for both these purposes? Well, no! Wet and dry vacuum cleaners are the unsung
-                        heroes
-                        of cleaning, built to tackle both soggy spills and dry messes that regular vacuums can’t handle.
-                        Whether you’re keeping your home spotless or managing a workshop, these versatile machines make
-                        tough jobs easier. 
-
-                    <p class="text-h7 text-[#535559] border-b border-[#E5E7EB] pb-10">As we head into 2025, the
-                        top
-                        wet and dry vacuums are packed with features that boost performance and save you time. Ready to
-                        find
-                        the right one for you? Here are the five key features to look for in the best wet and dry vacuum
-                        cleaners.</p>
-                        </div>
-                    <div class="flex flex-col lg:gap-8 gap-6">
-                        <h5>#1 Powerful Suction to Handle Any Challenge</h5>
-                        <p class="text-h7 text-[#535559]">At the core of every great wet and dry vacuum is its
-                            suction power. A strong motor, typically 1000W or higher, delivers the force to suck up
-                            everything from fine dust to heavier debris like small gravel or even shallow puddles. In
-                            2025,
-                            the best wet and dry vacuum cleaner models offer exceptional airflow (measured in liters per
-                            second or cubic feet per minute), ensuring they can take on any mess you throw their way.
-                        </p>
-                    </div>
-                    <div class="flex flex-col lg:gap-8 gap-6">
-                        <h6>Why Does Power Suction Matters</h6>
-                        <p class="text-h7 text-[#535559]">Whether you’re cleaning up a sticky kitchen spill or
-                            clearing sawdust from a workbench, powerful suction gets the job done in one pass. It’s the
-                            difference between a quick cleanup and a frustrating battle with stubborn debris. </p>
-                        <p class="text-h7 text-[#535559]">For example, a vacuum with high airflow can
-                            effortlessly
-                            handle muddy car mats or pet accidents, making it a reliable tool for busy households or
-                            active
-                            workshops.</p>
                     </div>
 
-                    <div class="flex flex-col lg:gap-8 gap-6 border-b border-[#E5E7EB] pb-10">
-                        <h6>3 Parameters Ensuring Powerful Suction</h6>
-                        <p class="text-h7 text-[#535559]">- Motor Strength: Aim for at least 1000W for robust
-                            performance. Cordless options often use brushless motors for better efficiency and longer
-                            life.
-                        </p>
-
-                        <p class="text-h7 text-[#535559]">- Airflow Rating: Look for higher liters per second
-                            (L/s)
-                            or cubic feet per minute (CFM) for stronger suction, especially for tough jobs.</p>
-
-                        <p class="text-h7 text-[#535559]">- Multi-Surface Performance: Ensure the vacuum works
-                            well
-                            on carpets, hard floors, and uneven surfaces like tiles or concrete.</p>
-
-                        <p class="text-h7 text-[#535559]">Pro Tip: Adjustable suction settings are a bonus,
-                            letting
-                            you dial down for delicate surfaces like curtains or crank up for heavy grime. </p>
-                        <p class="text-h7 text-[#535559]">For example, a vacuum with high airflow can
-                            effortlessly
-                            handle muddy car mats or pet accidents, making it a reliable tool for busy households or
-                            active
-                            workshops.</p>
-                    </div>
-
-                    <div class="flex flex-col lg:gap-8 gap-6">
-                        <h5>#2 Large Tank with Easy Drainage</h5>
-                        <div class="w-full h-[220px] sm:h-[300px] md:h-[420px] lg:h-[560px] rounded-lg overflow-hidden">
-                            <img src="./Assets/blogs-detail-image.png" alt="" class="w-full h-full object-cover" />
-                        </div>
-                        <p class="text-h7 text-[#535559]">Nobody wants to stop mid-cleanup to empty a small tank.
-                            The best wet and dry vacuums come with spacious tanks, ranging from 10L for home use to 30L
-                            or more for workshops or commercial spaces. Pair that with smart drainage systems, and
-                            you’ve got a vacuum that’s ready for big jobs without making a mess.</p>
-                        <div class="flex flex-col gap-6 lg:gap-8">
-                            <h6>How Does Storage Helps</h6>
-                            <p class="text-h7 text-[#535559]">A roomy tank means you can tackle large tasks; like
-                                cleaning a flooded basement or muddy patio without constant interruptions. Easy drainage
-                                features, such as a built-in valve, let you pour out liquids cleanly, sparing you the
-                                hassle of spills or splashes. It’s a practical touch that makes a big difference when
-                                you’re dealing with dirty water or sludge. </p>
-                        </div>
-                        <div class="flex flex-col gap-6 lg:gap-8  border-b border-[#E5E7EB] pb-10">
-                            <h6>Features to Look For</h6>
-                            <p class="text-h7 text-[#535559]">- Tank Capacity: 10L is good for home use; 30L+ is
-                                ideal for
-                                workshops or heavy-duty cleaning. </p>
-
-                            <p class="text-h7 text-[#535559]">- Drainage System: Look for built-in valves or
-                                easy-pour
-                                spouts to avoid spills.</p>
-
-                            <p class="text-h7 text-[#535559]">- Multi-Surface Performance: Ensure the vacuum
-                                works well
-                                on carpets, hard floors, and uneven surfaces like tiles or concrete.</p>
-
-                            <p class="text-h7 text-[#535559]">Pro Tip: Adjustable suction settings are a bonus,
-                                letting
-                                you dial down for delicate surfaces like curtains or crank up for heavy grime. </p>
-
-                        </div>
-                    </div>
-
-                    <div class="flex flex-col lg:gap-8 gap-6">
-                        <h5>#3 Advanced Filtration for Clean Air and Longevity</h5>
-                        <div class="w-full h-[220px] sm:h-[300px] md:h-[420px] lg:h-[560px] rounded-lg overflow-hidden">
-                            <img src="./Assets/blogs-detail-image.png" alt="" class="w-full h-full object-cover" />
-                        </div>
-                        <p class="text-h7 text-[#535559]">Nobody wants to stop mid-cleanup to empty a small tank.
-                            The best wet and dry vacuums come with spacious tanks, ranging from 10L for home use to 30L
-                            or more for workshops or commercial spaces. Pair that with smart drainage systems, and
-                            you’ve got a vacuum that’s ready for big jobs without making a mess.</p>
-                        <div class="flex flex-col gap-8">
-                            <h6>How Does Storage Helps</h6>
-                            <p class="text-h7 text-[#535559]">A roomy tank means you can tackle large tasks; like
-                                cleaning a flooded basement or muddy patio without constant interruptions. Easy drainage
-                                features, such as a built-in valve, let you pour out liquids cleanly, sparing you the
-                                hassle of spills or splashes. It’s a practical touch that makes a big difference when
-                                you’re dealing with dirty water or sludge. </p>
-                        </div>
-                        <div class="flex flex-col gap-6 lg:gap-8  lg:border-b border-none border-[#E5E7EB]  ">
-                            <h6>Features to Look For</h6>
-                            <p class="text-h7 text-[#535559]">- Tank Capacity: 10L is good for home use; 30L+ is
-                                ideal for
-                                workshops or heavy-duty cleaning. </p>
-
-                            <p class="text-h7 text-[#535559]">- Drainage System: Look for built-in valves or
-                                easy-pour
-                                spouts to avoid spills.</p>
-
-                            <p class="text-h7 text-[#535559]">- Multi-Surface Performance: Ensure the vacuum
-                                works well
-                                on carpets, hard floors, and uneven surfaces like tiles or concrete.</p>
-
-                            <p class="text-h7 text-[#535559]">Pro Tip: Adjustable suction settings are a bonus,
-                                letting
-                                you dial down for delicate surfaces like curtains or crank up for heavy grime. </p>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="flex flex-col lg:gap-10 gap-6 lg:p-6 p-4 bg-off-white
-              lg:rounded-[16px] rounded-[8px]
-              order-3 lg:order-none lg:hidden">
-                    <h6 class="body-2-regular">Share this Article</h6>
-                    <div class="flex gap-4">
-                        <img src="./Assets/insta.svg" alt="">
-                        <img src="./Assets/facebook.svg" alt="">
-                        <img src="./Assets/twitter.svg" alt="">
-                    </div>
                 </div>
             </div>
+
         </section>
     </div>
 
 
-
     <!-- Footer -->
-   <footer class="bg-black text-white lg:py-16 py-10 relative">
-   <a
- href="https://wa.me/919821551009"
-  target="_blank"
-  rel="noopener noreferrer"
-  class="fixed bottom-[120px] cursor-pointer right-8 bg-[#4FCA5D] rounded-lg p-2 z-50 h-13 w-13 flex items-center justify-center"
->
-  <img
-    src="./Assets/whatsapp-icon-green.svg"
-    alt="WhatsApp Chat"
-    class="w-12 h-12"
-  />
-</a>
+  <footer class="bg-black text-white lg:py-16 py-10 relative">
+    <a href="https://wa.me/919821551009" target="_blank" rel="noopener noreferrer"
+      class="fixed lg:bottom-[80px] bottom-[60px] cursor-pointer lg:right-8 right-[22px] bg-[#4FCA5D] rounded-lg p-2 z-50 lg:h-13 lg:w-13 h-10 w-10 flex items-center justify-center">
+      <img src="./Assets/whatsapp-icon-green.svg" alt="WhatsApp Chat" class="lg:w-12 lg:h-12 w-10 h-10" />
+    </a>
 
     <div class="container flex flex-col lg:gap-12 gap-8 ">
-      <div class=" ">
-        <img src="./Assets/Logo.svg" alt="JPT Logo" class="w-32 h-auto" />
-      </div>
-      <div class="flex flex-col lg:flex-row justify-between lg:gap-12 gap-10  ">
+
+      <a href="index.html" class="lg:mx-0 w-[82px] sm:w-[150px] lg:w-[152px] flex-shrink-0 cursor-pointer block">
+        <img src="./Assets/Logo.svg" alt="Logo" class="w-full h-auto object-contain" />
+      </a>
+      <div class="flex flex-col lg:flex-row justify-between gap-10  ">
         <!-- Brand Column -->
         <div class="flex flex-col gap-8">
 
           <div class="flex flex-col gap-9">
             <div>
-              <p class="body-semibold caption-medium-14 text-[#F5F5F5] leading-relaxed max-w-[320px]">
+              <p class="caption-medium-14 text-[#F5F5F5] leading-relaxed ">
                 38, Jain Colony, Behind Mann Mandir Hotel,<br>
                 Rau, Indore, Madhya Pradesh 453331 - India
               </p>
             </div>
             <div class="flex flex-col ">
-              <p class="text-h7 font-bold text-white">For help, reach out to our community care</p>
+              <p class="text-h7  text-[#FFF]">For help, reach out to our community care</p>
               <div class="flex flex-col ">
-                <a href="mailto:support@jpttools.com" class="text-sm text-[#F5F5F5]  w-fit">support@jpttools.com</a>
-                <a href="tel:+919821551009" class="text-sm text-[#F5F5F5] transition-colors w-fit">+91
+                <a href="mailto:support@jpttools.com" class=" text-[#CECECE]  w-fit">support@jpttools.com</a>
+                <a href="tel:+919821551009" class=" text-[#CECECE] transition-colors w-fit">+91
                   9821551009</a>
                 <div class="flex flex-wrap items-center gap-2">
                   <a href="#"
-                    class="text-h7 font-bold text-[#F5F5F5] border-b border-white w-fit hover:text-red hover:border-red transition-all pb-0.5">
+                    class="body-2  text-[#FFF] border-b border-white w-fit hover:text-red hover:border-red transition-all pb-0.5">
                     Whatsapp Us
                   </a>
-                  <span class="text-[#F5F5F5] text-sm">(11am to 6pm • Mon to Sat)</span>
+                  <span class="text-[#CECECE] text-sm">(11am to 6pm • Mon to Sat)</span>
                 </div>
               </div>
             </div>
@@ -439,41 +788,51 @@
         <div class="flex flex-col md:flex-row lg:gap-12 gap-8 md:gap-20 ">
           <!-- Terms and Policies -->
           <div class="flex flex-col gap-6">
-            <h6 class="text-white text-lg font-bold! uppercase caption-medium-14">Terms and Policies</h6>
+            <h6 class="text-[#F5F5F5] text-lg uppercase body-3  ">Terms and Policies</h6>
             <ul class="flex flex-col gap-6">
-              <li><a href="#" class="body-3 text-white/90 hover:text-white transition-colors">Terms of
+              <li><a href="term-of-service.html"
+                  class="caption-medium-14 text-[#CECECE] hover:text-white transition-colors">Terms
+                  of
                   Services</a></li>
-              <li><a href="#" class="body-3 text-white/90 hover:text-white transition-colors">Return &
+              <li><a href="return-a-product.html"
+                  class="caption-medium-14 text-[#CECECE] hover:text-white transition-colors">Return
+                  &
                   Refund Policy</a></li>
-              <li><a href="#" class="body-3 text-white/90 hover:text-white transition-colors">Privacy
+              <li><a href="#" class="caption-medium-14 text-[#CECECE] hover:text-white transition-colors">Privacy
                   Policy</a></li>
-              <li><a href="#" class="body-3 text-white/90 hover:text-white transition-colors">Shipping
+              <li><a href="#" class="caption-medium-14 text-[#CECECE] hover:text-white transition-colors">Shipping
                   Policy</a></li>
             </ul>
           </div>
 
           <!-- Report an Issue -->
           <div class="flex flex-col gap-6">
-            <h6 class="text-white text-lg font-bold! uppercase caption-medium-14 ">Report an Issue</h6>
+            <h6 class="text-[#F5F5F5] text-lg font-bold! uppercase  body-3">Report an Issue</h6>
             <ul class="flex flex-col gap-6">
-              <li><a href="#" class="body-3 text-white/90 hover:text-white transition-colors">Return a
+              <li><a href="return-a-product.html"
+                  class="caption-medium-14 text-[#CECECE] hover:text-white transition-colors">Return
+                  a
                   Product</a></li>
-              <li><a href="#" class="body-3 text-white/90 hover:text-white transition-colors">Report a
+              <li><a href="report-a-product-issue.html"
+                  class="caption-medium-14 text-[#CECECE] hover:text-white transition-colors">Report a
                   Problem Issue</a></li>
             </ul>
           </div>
 
           <!-- Customer Support -->
           <div class="flex flex-col gap-6">
-            <h6 class="text-white text-lg font-bold! uppercase caption-medium-14 ">Customer Support</h6>
+            <h6 class="text-[#F5F5F5] text-lg font-bold! uppercase body-3 ">Customer Support</h6>
             <ul class="flex flex-col gap-6">
-              <li><a href="#" class="body-3 text-white/90 hover:text-white transition-colors">Track My
+              <li><a href="#" class="caption-medium-14 text-[#CECECE] hover:text-white transition-colors">Track My
                   Order</a></li>
-              <li><a href="#" class="body-3 text-white/90 hover:text-white transition-colors">Warranty
+              <li><a href="warranty-claim.html"
+                  class="caption-medium-14 text-[#CECECE] hover:text-white transition-colors">Warranty
                   Claim</a></li>
-              <li><a href="#" class="body-3 text-white/90 hover:text-white transition-colors">Blog /
+              <li><a href="blogs.html" class="caption-medium-14 text-[#CECECE] hover:text-white transition-colors">Blog
+                  /
                   Resources</a></li>
-              <li><a href="#" class="body-3 text-white/90 hover:text-white transition-colors">Contact
+              <li><a href="contact-us.html"
+                  class="caption-medium-14 text-[#CECECE] hover:text-white transition-colors">Contact
                   Us</a></li>
             </ul>
           </div>
@@ -496,7 +855,7 @@
         <!-- Bottom Footer -->
         <div class="">
           <div class="">
-            <p class="body-3 text-white/60">© 2026, JPT</p>
+            <p class="caption-medium-14 text-[#F5F5F5]">© 2026, JPT</p>
           </div>
         </div>
       </div>

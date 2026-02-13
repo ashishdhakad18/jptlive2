@@ -176,11 +176,11 @@ document.addEventListener('DOMContentLoaded', () => {
         const updateAddonTabStyle = (activeCategory) => {
             addonTabButtons.forEach(btn => {
                 if (btn.dataset.category === activeCategory) {
-                    btn.classList.remove('text-[#7F7F7F]');
+                    btn.classList.remove('text-[#000]');
                     btn.classList.add('border-b-2', 'border-[#ea0029]', 'text-[#ea0029]');
                 } else {
                     btn.classList.remove('border-b-2', 'border-[#ea0029]', 'text-[#ea0029]');
-                    btn.classList.add('text-[#7F7F7F]');
+                    btn.classList.add('text-[#000]');
                 }
             });
         };

@@ -11,17 +11,15 @@
 </head>
 
 <body>
-  <nav class="bg-white flex flex-col lg:px-0  ">
+    <nav class="bg-white flex flex-col lg:px-0  ">
         <!-- Badge -->
         <div class="lg:block hidden nav-badge body-4 bg-red text-white text-center py-3">
-            <div class="container mx-auto">
-                Delivery within INDIA in time for Christmas if you order by December 19,
-                2025!
-            </div>
+            Delivery within INDIA in time for Christmas if you order by December 19,
+            2025!
         </div>
 
         <!-- Navbar -->
-        <div class="container    w-full">
+        <div class="container w-full">
             <div class="flex items-center justify-between h-16">
 
                 <!-- LEFT (Mobile: Menu + Search) -->
@@ -40,6 +38,7 @@
                     <img src="./Assets/Logo.svg" alt="Logo" class="w-full h-auto object-contain" />
                 </a>
 
+
                 <!-- RIGHT (Mobile: Profile + Cart) -->
                 <div class="flex items-center gap-2 lg:hidden   w-20 h-20">
                     <a href="#" class="nav-link-right flex items-center justify-center rounded-md bg-off-white">
@@ -53,25 +52,20 @@
                 <!-- DESKTOP NAV LINKS -->
                 <div class="hidden lg:flex items-center gap-6">
                     <a href="#" id="shopToggle"
-                        class="nav-link nav-link-shop active caption-medium-12 rounded-md uppercase px-4 cursor-pointer">Shop</a>
-                    <a href="#"
-                        class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4 cursor-pointer">JPT
+                        class="nav-link nav-link-shop active caption-medium-12 rounded-md uppercase px-4">Shop</a>
+                    <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4">JPT
                         Insiders</a>
-                    <a href="#"
-                        class="nav-link nav-link-support caption-medium-12 rounded-md uppercase px-4 cursor-pointer">Support
+                    <a href="#" class="nav-link nav-link-support caption-medium-12 rounded-md uppercase px-4">Support
                         HUB</a>
 
                     <div class="flex gap-2">
-                        <a href="#"
-                            class="nav-link-right flex items-center justify-center rounded-md bg-off-white cursor-pointer">
+                        <a href="#" class="nav-link-right flex items-center justify-center rounded-md bg-off-white">
                             <img src="./Assets/Header-search.svg" alt="">
                         </a>
-                        <a href="#"
-                            class="nav-link-right flex items-center justify-center rounded-md bg-off-white cursor-pointer">
+                        <a href="#" class="nav-link-right flex items-center justify-center rounded-md bg-off-white">
                             <img src="./Assets/Header-profile.svg" alt="">
                         </a>
-                        <a href="#"
-                            class="nav-link-right flex items-center justify-center rounded-md bg-off-white cursor-pointer">
+                        <a href="#" class="nav-link-right flex items-center justify-center rounded-md bg-off-white">
                             <img src="./Assets/Header-cart.svg" alt="">
                         </a>
                     </div>
@@ -83,30 +77,483 @@
 
 
     <!-- Sub Navbar -->
-    <nav id="shopMenu" class="bg-white flex flex-col lg:px-0
-         overflow-hidden
-         max-h-0 opacity-0
-         transition-all duration-1000 ease-in-out">
-        <div class="lg:px-40 px-4 w-full">
+ <nav id="shopMenu" class="bg-white relative z-50   overflow-hidden  max-h-0 opacity-0
+         transition-all duration-1000 ease-in-out" >
+  <div class="hidden lg:flex items-center justify-center gap-8 py-4 ">
 
-            <!-- DESKTOP NAV LINKS -->
-            <div class="hidden lg:flex items-center justify-center gap-8 py-4">
-                <a href="#" class="nav-link nav-link-shop active caption-medium-12 rounded-md uppercase px-4">new</a>
-                <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4"> pressure
-                    washer</a>
-                <a href="#" class="nav-link nav-link-support caption-medium-12 rounded-md uppercase px-4">power
-                    tools</a>
-                <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4">Hand Tools</a>
-                <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4">ACCESSORIES</a>
-                <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4">SPARE PARTS</a>
-                <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4">Automobile</a>
-                <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4">View all</a>
+    <!-- NAV ITEM -->
+    <div class="relative group  ">
+      <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4 ">new</a>
 
+      <!-- FULL WIDTH DROPDOWN -->
+      <div
+        class="    fixed left-0 right-0 top-[160px]
+    bg-white px-10 py-10 mx-2
+    h-[400px] z-[9999] rounded-b-2xl
 
+    opacity-0 invisible
+    translate-y-4 scale-95
+
+    transition-all duration-100 ease-in
+
+    group-hover:opacity-100
+    group-hover:visible
+    group-hover:translate-y-0
+    group-hover:scale-100 ">
+
+        <!-- CENTER CONTAINER -->
+        <div class="w-full max-w-[1600px] mx-auto flex gap-4 justify-center">
+
+          <!-- CARD -->
+          <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+            <div class="flex items-center justify-between">
+              <h4 class="w-[50%]">Polishing Machines</h4>
+              <div class="w-[50%] flex justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+  <path d="M23.2595 16.7052H4.88892C4.54526 16.7052 4.25757 16.5893 4.02586 16.3573C3.79388 16.1256 3.67789 15.8379 3.67789 15.4942C3.67789 15.1505 3.79388 14.8629 4.02586 14.6311C4.25757 14.3992 4.54526 14.2832 4.88892 14.2832H23.2595L14.9127 5.93631C14.6726 5.69626 14.5541 5.4153 14.557 5.09343C14.5603 4.77156 14.687 4.48536 14.9373 4.23481C15.1878 4.00094 15.4715 3.87984 15.7882 3.8715C16.105 3.86315 16.3886 3.98426 16.6392 4.23481L26.8769 14.4725C27.0281 14.6237 27.1347 14.7832 27.1966 14.9509C27.2588 15.1185 27.2899 15.2996 27.2899 15.4942C27.2899 15.6888 27.2588 15.8699 27.1966 16.0376C27.1347 16.2052 27.0281 16.3647 26.8769 16.5159L16.6392 26.7536C16.4156 26.9772 16.1386 27.0916 15.8084 27.0967C15.4782 27.1019 15.1878 26.9875 14.9373 26.7536C14.687 26.5031 14.5619 26.2154 14.5619 25.8905C14.5619 25.5655 14.687 25.2776 14.9373 25.0271L23.2595 16.7052Z" fill="#1A1818"/>
+</svg>
+              </div>
             </div>
+            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+          </div>
+
+          <!-- CARD -->
+          <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+            <div class="flex items-center justify-between">
+              <h4 class="w-[50%]">Pressure Washer</h4>
+              <div class="w-[50%] flex justify-center">
+                ➜
+              </div>
+            </div>
+            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+          </div>
+
+          <!-- CARD -->
+          <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+            <div class="flex items-center justify-between">
+              <h4 class="w-[50%]">Power Tools</h4>
+              <div class="w-[50%] flex justify-center">
+                ➜
+              </div>
+            </div>
+            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+          </div>
 
         </div>
-    </nav>
+      </div>
+    </div>
+
+   
+   <div class="relative group">
+      <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4">pressure washer</a>
+
+      <!-- FULL WIDTH DROPDOWN -->
+      <div
+      class="    fixed left-0 right-0 top-[160px]
+    bg-white px-10 py-10 mx-2
+    h-[400px] z-[9999] rounded-b-2xl
+
+    opacity-0 invisible
+    translate-y-4 scale-95
+
+    transition-all duration-100 ease-in
+
+    group-hover:opacity-100
+    group-hover:visible
+    group-hover:translate-y-0
+    group-hover:scale-100 ">
+
+        <!-- CENTER CONTAINER -->
+        <div class="w-full max-w-[1600px] mx-auto flex gap-4 justify-center">
+
+          <!-- CARD -->
+          <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+            <div class="flex items-center justify-between">
+              <h4 class="w-[50%]">Polishing Machines</h4>
+              <div class="w-[50%] flex justify-center">
+                ➜
+              </div>
+            </div>
+            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+          </div>
+
+          <!-- CARD -->
+          <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+            <div class="flex items-center justify-between">
+              <h4 class="w-[50%]">Pressure Washer</h4>
+              <div class="w-[50%] flex justify-center">
+                ➜
+              </div>
+            </div>
+            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+          </div>
+
+          <!-- CARD -->
+          <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+            <div class="flex items-center justify-between">
+              <h4 class="w-[50%]">Power Tools</h4>
+              <div class="w-[50%] flex justify-center">
+                ➜
+              </div>
+            </div>
+            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+     <div class="relative group">
+      <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4">power tools</a>
+
+      <!-- FULL WIDTH DROPDOWN -->
+      <div
+        class="    fixed left-0 right-0 top-[160px]
+    bg-white px-10 py-10 mx-2
+    h-[400px] z-[9999] rounded-b-2xl
+
+    opacity-0 invisible
+    translate-y-4 scale-95
+
+    transition-all duration-100 ease-in
+
+    group-hover:opacity-100
+    group-hover:visible
+    group-hover:translate-y-0
+    group-hover:scale-100 ">
+
+        <!-- CENTER CONTAINER -->
+        <div class="w-full max-w-[1600px] mx-auto flex gap-4 justify-center">
+
+          <!-- CARD -->
+          <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+            <div class="flex items-center justify-between">
+              <h4 class="w-[50%]">Polishing Machines</h4>
+              <div class="w-[50%] flex justify-center">
+                ➜
+              </div>
+            </div>
+            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+          </div>
+
+          <!-- CARD -->
+          <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+            <div class="flex items-center justify-between">
+              <h4 class="w-[50%]">Pressure Washer</h4>
+              <div class="w-[50%] flex justify-center">
+                ➜
+              </div>
+            </div>
+            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+          </div>
+
+          <!-- CARD -->
+          <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+            <div class="flex items-center justify-between">
+              <h4 class="w-[50%]">Power Tools</h4>
+              <div class="w-[50%] flex justify-center">
+                ➜
+              </div>
+            </div>
+            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+          </div>
+
+        </div>
+      </div>
+    </div>
+     <div class="relative group">
+      <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4">hand tools</a>
+
+      <!-- FULL WIDTH DROPDOWN -->
+      <div
+        class="    fixed left-0 right-0 top-[160px]
+    bg-white px-10 py-10 mx-2
+    h-[400px] z-[9999] rounded-b-2xl
+
+    opacity-0 invisible
+    translate-y-4 scale-95
+
+    transition-all duration-100 ease-in
+
+    group-hover:opacity-100
+    group-hover:visible
+    group-hover:translate-y-0
+    group-hover:scale-100 ">
+
+        <!-- CENTER CONTAINER -->
+        <div class="w-full max-w-[1600px] mx-auto flex gap-4 justify-center">
+
+          <!-- CARD -->
+          <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+            <div class="flex items-center justify-between">
+              <h4 class="w-[50%]">Polishing Machines</h4>
+              <div class="w-[50%] flex justify-center">
+                ➜
+              </div>
+            </div>
+            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+          </div>
+
+          <!-- CARD -->
+          <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+            <div class="flex items-center justify-between">
+              <h4 class="w-[50%]">Pressure Washer</h4>
+              <div class="w-[50%] flex justify-center">
+                ➜
+              </div>
+            </div>
+            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+          </div>
+
+          <!-- CARD -->
+          <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+            <div class="flex items-center justify-between">
+              <h4 class="w-[50%]">Power Tools</h4>
+              <div class="w-[50%] flex justify-center">
+                ➜
+              </div>
+            </div>
+            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+          </div>
+
+        </div>
+      </div>
+    </div>
+     <div class="relative group">
+      <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4">accessories</a>
+
+      <!-- FULL WIDTH DROPDOWN -->
+      <div
+    class="    fixed left-0 right-0 top-[160px]
+    bg-white px-10 py-10 mx-2
+    h-[400px] z-[9999] rounded-b-2xl
+
+    opacity-0 invisible
+    translate-y-4 scale-95
+
+    transition-all duration-100 ease-in
+
+    group-hover:opacity-100
+    group-hover:visible
+    group-hover:translate-y-0
+    group-hover:scale-100 ">
+
+        <!-- CENTER CONTAINER -->
+        <div class="w-full max-w-[1600px] mx-auto flex gap-4 justify-center">
+
+          <!-- CARD -->
+          <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+            <div class="flex items-center justify-between">
+              <h4 class="w-[50%]">Polishing Machines</h4>
+              <div class="w-[50%] flex justify-center">
+                ➜
+              </div>
+            </div>
+            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+          </div>
+
+          <!-- CARD -->
+          <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+            <div class="flex items-center justify-between">
+              <h4 class="w-[50%]">Pressure Washer</h4>
+              <div class="w-[50%] flex justify-center">
+                ➜
+              </div>
+            </div>
+            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+          </div>
+
+          <!-- CARD -->
+          <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+            <div class="flex items-center justify-between">
+              <h4 class="w-[50%]">Power Tools</h4>
+              <div class="w-[50%] flex justify-center">
+                ➜
+              </div>
+            </div>
+            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="relative group">
+      <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4">spare parts</a>
+
+      <!-- FULL WIDTH DROPDOWN -->
+      <div
+       class="    fixed left-0 right-0 top-[160px]
+    bg-white px-10 py-10 mx-2
+    h-[400px] z-[9999] rounded-b-2xl
+
+    opacity-0 invisible
+    translate-y-4 scale-95
+
+    transition-all duration-100 ease-in
+
+    group-hover:opacity-100
+    group-hover:visible
+    group-hover:translate-y-0
+    group-hover:scale-100 ">
+
+        <!-- CENTER CONTAINER -->
+        <div class="w-full max-w-[1600px] mx-auto flex gap-4 justify-center">
+
+          <!-- CARD -->
+          <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+            <div class="flex items-center justify-between">
+              <h4 class="w-[50%]">Polishing Machines</h4>
+              <div class="w-[50%] flex justify-center">
+                ➜
+              </div>
+            </div>
+            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+          </div>
+
+          <!-- CARD -->
+          <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+            <div class="flex items-center justify-between">
+              <h4 class="w-[50%]">Pressure Washer</h4>
+              <div class="w-[50%] flex justify-center">
+                ➜
+              </div>
+            </div>
+            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+          </div>
+
+          <!-- CARD -->
+          <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+            <div class="flex items-center justify-between">
+              <h4 class="w-[50%]">Power Tools</h4>
+              <div class="w-[50%] flex justify-center">
+                ➜
+              </div>
+            </div>
+            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+          </div>
+
+        </div>
+      </div>
+    </div>
+   <div class="relative group">
+      <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4">automobiles</a>
+
+      <!-- FULL WIDTH DROPDOWN -->
+      <div
+       class="    fixed left-0 right-0 top-[160px]
+    bg-white px-10 py-10 mx-2
+    h-[400px] z-[9999] rounded-b-2xl
+
+    opacity-0 invisible
+    translate-y-4 scale-95
+
+    transition-all duration-100 ease-in
+
+    group-hover:opacity-100
+    group-hover:visible
+    group-hover:translate-y-0
+    group-hover:scale-100 ">
+
+        <!-- CENTER CONTAINER -->
+        <div class="w-full max-w-[1600px] mx-auto flex gap-4 justify-center">
+
+          <!-- CARD -->
+          <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+            <div class="flex items-center justify-between">
+              <h4 class="w-[50%]">Polishing Machines</h4>
+              <div class="w-[50%] flex justify-center">
+                ➜
+              </div>
+            </div>
+            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+          </div>
+
+          <!-- CARD -->
+          <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+            <div class="flex items-center justify-between">
+              <h4 class="w-[50%]">Pressure Washer</h4>
+              <div class="w-[50%] flex justify-center">
+                ➜
+              </div>
+            </div>
+            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+          </div>
+
+          <!-- CARD -->
+          <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+            <div class="flex items-center justify-between">
+              <h4 class="w-[50%]">Power Tools</h4>
+              <div class="w-[50%] flex justify-center">
+                ➜
+              </div>
+            </div>
+            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+          </div>
+
+        </div>
+      </div>
+    </div>
+  <div class="relative group">
+      <a href="#" class="nav-link nav-link-jpt caption-medium-12 rounded-md uppercase px-4">view all</a>
+
+      <!-- FULL WIDTH DROPDOWN -->
+      <div
+     class="    fixed left-0 right-0 top-[160px]
+    bg-white px-10 py-10 mx-2
+    h-[400px] z-[9999] rounded-b-2xl
+
+    opacity-0 invisible
+    translate-y-4 scale-95
+
+    transition-all duration-100 ease-in
+
+    group-hover:opacity-100
+    group-hover:visible
+    group-hover:translate-y-0
+    group-hover:scale-100 ">
+
+        <!-- CENTER CONTAINER -->
+        <div class="w-full max-w-[1600px] mx-auto flex gap-4 justify-center">
+
+          <!-- CARD -->
+          <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+            <div class="flex items-center justify-between">
+              <h4 class="w-[50%]">Polishing Machines</h4>
+              <div class="w-[50%] flex justify-center">
+                ➜
+              </div>
+            </div>
+            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+          </div>
+
+          <!-- CARD -->
+          <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+            <div class="flex items-center justify-between">
+              <h4 class="w-[50%]">Pressure Washer</h4>
+              <div class="w-[50%] flex justify-center">
+                ➜
+              </div>
+            </div>
+            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+          </div>
+
+          <!-- CARD -->
+          <div class="flex flex-col gap-4 bg-[#F5F5F5] p-4 rounded-2xl w-[260px]">
+            <div class="flex items-center justify-between">
+              <h4 class="w-[50%]">Power Tools</h4>
+              <div class="w-[50%] flex justify-center">
+                ➜
+              </div>
+            </div>
+            <img src="./Assets/Product-3.png" class="h-[200px] object-contain">
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
 
 
     <!-- Breadcrumb -->
@@ -130,8 +577,20 @@
 
     <!-- Contact-Us -->
 
-    <section class="lg:pt-30 pt-10 lg:pb-20 pb-10">
-        <div class="container flex flex-col lg:gap-15 gap-8 justify-center ">
+    <section class="lg:pt-30 pt-10 lg:pb-20 pb-10 relative">
+         <!-- <a
+ href="https://wa.me/919821551009"
+  target="_blank"
+  rel="noopener noreferrer"
+  class="fixed bottom-[120px] cursor-pointer right-8 bg-[#4FCA5D] rounded-lg p-2 z-50 h-13 w-13 flex items-center justify-center"
+>
+ <img
+    src="./Assets/whatsapp-icon-green.svg"
+    alt="WhatsApp Chat"
+    class="w-12 h-12"
+  /> 
+</a>--> 
+        <div class="container flex flex-col lg:gap-15 gap-8 items-center justify-center ">
             <div class="flex flex-col lg:gap-8 gap-6 items-center justify-center">
                 <h4 class="text-h4 ">Contact Us</h4>
                 <p class="body-2 text-[#535559] flex justify-center text-center">Need help with your order or products?
@@ -142,8 +601,8 @@
             <div class="flex flex-col-reverse lg:flex-row lg:gap-7 gap-8 ">
                 <!-- Left Side -->
                 <div class="flex flex-col lg:gap-5 gap-8 lg:w-[55%] w-full  ">
-                    <div class="w-full h-[275px] lg:h-[333px] overflow-hidden rounded-2xl">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.280158077972!2d76.30441417475586!3d12.29583008795096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b4d8b7a0a1b2c3d%3A0x1234567890abcdef!2sJPT%20Tools!5e0!3m2!1sen!2sin!4v1707123456789!5m2!1sen!2sin"
+                    <div class="w-full h-[275px] lg:h-[353px] overflow-hidden rounded-2xl">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.155014039614!2d75.87709897506808!3d22.722479027460835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fdcab19c072d%3A0x9949a17a432377d8!2sHexcode%20Designs%20Private%20Limited!5e0!3m2!1sen!2sin!4v1770635630923!5m2!1sen!2sin"
                             class="w-full h-full border-0" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade">
                         </iframe>
@@ -177,11 +636,11 @@
                 <!-- Right Side -->
                 <div class="flex-1 lg:w-[50%] w-full">
                     <form class="flex flex-col gap-4">
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <div class="flex flex-col gap-2">
-                                <label for="name" class="caption-medium-14 text-[#535559] font-bold ">Name</label>
+                        <div class="flex flex-col lg:flex-row  gap-2">
+                            <div class="flex flex-col gap-2 ">
+                                <label for="name" class="caption-medium-14  text-[#535559] font-bold ">Name</label>
                                 <input type="text" id="name" placeholder="Your Name"
-                                    class="w-full px-4 py-3 rounded-lg border border-[#E5E5E5] focus:border-red outline-none transition-all body-2">
+                                    class="w-full px-4 py-3 rounded-lg border border-[#E5E5E5]  focus:border-red outline-none transition-all body-2">
                             </div>
                             <div class="flex flex-col gap-2">
                                 <label for="email" class="caption-medium-14 text-[#535559] font-bold ">Email</label>
@@ -235,7 +694,7 @@
                         </div>
 
                         <button type="submit"
-                            class="w-full btn btn-secondary btn-h-48 flex text-center justify-center lg:mt-4 mt-2">
+                            class="w-full btn btn-secondary btn-h-48 flex justify-center lg:mt-4 mt-2">
                             Send Message
                         </button>
                     </form>
@@ -275,24 +734,18 @@
 
 
     <!-- Footer -->
-     <footer class="bg-black text-white lg:py-16 py-10 relative">
-   <a
- href="https://wa.me/919821551009"
-  target="_blank"
-  rel="noopener noreferrer"
-  class="fixed bottom-[120px] cursor-pointer right-8 bg-[#4FCA5D] rounded-lg p-2 z-50 h-13 w-13 flex items-center justify-center"
->
-  <img
-    src="./Assets/whatsapp-icon-green.svg"
-    alt="WhatsApp Chat"
-    class="w-12 h-12"
-  />
-</a>
+    <footer class="bg-black text-white lg:py-16 py-10 relative">
+    <a href="https://wa.me/919821551009" target="_blank" rel="noopener noreferrer"
+      class="fixed lg:bottom-[120px] bottom-[88px] cursor-pointer lg:right-8 right-[22px] bg-[#4FCA5D] rounded-lg p-2 z-50 lg:h-13 lg:w-13 h-10 w-10 flex items-center justify-center ">
+      <img src="./Assets/whatsapp-icon-green.svg" alt="WhatsApp Chat" class="lg:w-12 lg:h-12 w-10 h-10 " />
+    </a>
 
     <div class="container flex flex-col lg:gap-12 gap-8 ">
-      <div class=" ">
-        <img src="./Assets/Logo.svg" alt="JPT Logo" class="w-32 h-auto" />
-      </div>
+
+      <a href="index.html"
+        class=" lg:mx-0 w-[82px] sm:w-[150px] lg:w-[152px] flex-shrink-0 cursor-pointer block">
+        <img src="./Assets/Logo.svg" alt="Logo" class="w-full h-auto object-contain" />
+      </a>
       <div class="flex flex-col lg:flex-row justify-between lg:gap-12 gap-10  ">
         <!-- Brand Column -->
         <div class="flex flex-col gap-8">
@@ -329,9 +782,9 @@
           <div class="flex flex-col gap-6">
             <h6 class="text-white text-lg font-bold! uppercase caption-medium-14">Terms and Policies</h6>
             <ul class="flex flex-col gap-6">
-              <li><a href="#" class="body-3 text-white/90 hover:text-white transition-colors">Terms of
+              <li><a href="term-of-service.html" class="body-3 text-white/90 hover:text-white transition-colors">Terms of
                   Services</a></li>
-              <li><a href="#" class="body-3 text-white/90 hover:text-white transition-colors">Return &
+              <li><a href="return-a-product.html" class="body-3 text-white/90 hover:text-white transition-colors">Return &
                   Refund Policy</a></li>
               <li><a href="#" class="body-3 text-white/90 hover:text-white transition-colors">Privacy
                   Policy</a></li>
@@ -344,9 +797,9 @@
           <div class="flex flex-col gap-6">
             <h6 class="text-white text-lg font-bold! uppercase caption-medium-14 ">Report an Issue</h6>
             <ul class="flex flex-col gap-6">
-              <li><a href="#" class="body-3 text-white/90 hover:text-white transition-colors">Return a
+              <li><a href="return-a-product.html" class="body-3 text-white/90 hover:text-white transition-colors">Return a
                   Product</a></li>
-              <li><a href="#" class="body-3 text-white/90 hover:text-white transition-colors">Report a
+              <li><a href="report-a-product-issue.html" class="body-3 text-white/90 hover:text-white transition-colors">Report a
                   Problem Issue</a></li>
             </ul>
           </div>
@@ -357,11 +810,11 @@
             <ul class="flex flex-col gap-6">
               <li><a href="#" class="body-3 text-white/90 hover:text-white transition-colors">Track My
                   Order</a></li>
-              <li><a href="#" class="body-3 text-white/90 hover:text-white transition-colors">Warranty
+              <li><a href="warranty-claim.html" class="body-3 text-white/90 hover:text-white transition-colors">Warranty
                   Claim</a></li>
-              <li><a href="#" class="body-3 text-white/90 hover:text-white transition-colors">Blog /
+              <li><a href="blogs.html" class="body-3 text-white/90 hover:text-white transition-colors">Blog /
                   Resources</a></li>
-              <li><a href="#" class="body-3 text-white/90 hover:text-white transition-colors">Contact
+              <li><a href="contact-us.html" class="body-3 text-white/90 hover:text-white transition-colors">Contact
                   Us</a></li>
             </ul>
           </div>
@@ -389,9 +842,8 @@
         </div>
       </div>
     </div>
-
-
   </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="index.js"></script>
 </body>
